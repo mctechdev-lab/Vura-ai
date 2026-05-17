@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<!-- Vura Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+<link rel="manifest" href="/manifest.json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Welcome to Vura AI</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#03030b;--card:rgba(11,11,30,.97);--purple:#8b5cf6;--blue:#00d2ff;--green:#10b981;--gold:#ffcc33;--border:rgba(255,255,255,.07);--text:#e8eaf6;--muted:#8892a4}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+.shell{display:flex;flex-direction:column;height:100vh;max-width:480px;margin:0 auto;padding:0 20px}
+/* Progress dots */
+.dots{display:flex;justify-content:center;gap:8px;padding:16px 0;flex-shrink:0}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.15);transition:all .35s cubic-bezier(.34,1.56,.64,1)}
+.dot.active{background:linear-gradient(90deg,var(--purple),var(--blue));width:28px;border-radius:4px;box-shadow:0 0 10px rgba(139,92,246,.5)}
+.dot.done{background:rgba(139,92,246,.5)}
+/* Step */
+.step{display:none;flex-direction:column;flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:20px}
+.step.active{display:flex}
+.step-icon{width:80px;height:80px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:20px auto 0;flex-shrink:0}
+.step-title{font-family:'Orbitron',monospace;font-size:1.2rem;font-weight:900;text-align:center;margin:16px 0 8px;line-height:1.3}
+.step-sub{font-size:.84rem;color:var(--muted);text-align:center;line-height:1.7;margin-bottom:20px}
+/* Options grid */
+.opt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;overflow-y:auto;padding-bottom:80px;scrollbar-width:none;max-height:calc(100vh - 280px)}
+.opt-grid::-webkit-scrollbar{display:none}
+.opt-card{
+  background:var(--card);border:1.5px solid var(--border);border-radius:16px;
+  padding:16px 10px;text-align:center;cursor:pointer;
+  transition:all .22s cubic-bezier(.34,1.56,.64,1);
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  position:relative;overflow:hidden;
+}
+.opt-card::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 0%,rgba(139,92,246,.12),transparent 70%);
+  opacity:0;transition:opacity .22s;
+}
+.opt-card:hover::before,.opt-card.sel::before{opacity:1}
+.opt-card:hover{border-color:rgba(139,92,246,.4);transform:translateY(-3px);box-shadow:0 8px 20px rgba(139,92,246,.15)}
+.opt-card.sel{border-color:rgba(139,92,246,.7);background:rgba(139,92,246,.15);transform:translateY(-3px);box-shadow:0 8px 24px rgba(139,92,246,.25)}
+.opt-card:active{transform:scale(.96)}
+.opt-card:hover{border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.05)}
+.opt-card.sel{border-color:rgba(139,92,246,.6);background:rgba(139,92,246,.12)}
+.opt-card:active{transform:scale(.97)}
+.oc-icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;margin:0 auto;transition:transform .22s}
+.oc-name{font-size:.78rem;font-weight:800;color:var(--text);line-height:1.3}
+.oc-desc{font-size:.62rem;color:var(--muted)}
+/* Name input step */
+.name-inp{width:100%;background:var(--card);border:1.5px solid var(--border);border-radius:13px;padding:14px 16px;color:var(--text);font-family:'Nunito',sans-serif;font-size:1rem;font-weight:700;outline:none;text-align:center;margin-bottom:12px;transition:border-color .18s}
+.name-inp:focus{border-color:rgba(139,92,246,.5)}
+.name-inp::placeholder{color:var(--muted)}
+/* Welcome step */
+.welcome-coins{display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(255,204,51,.1);border:1px solid rgba(255,204,51,.2);border-radius:13px;padding:14px;margin:12px 0;font-size:.9rem;font-weight:800;color:var(--gold)}
+.feature-list{display:flex;flex-direction:column;gap:8px;flex:1}
+.feat-item{display:flex;align-items:center;gap:10px;padding:10px 13px;background:var(--card);border:1px solid var(--border);border-radius:11px}
+.feat-ic{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.84rem;flex-shrink:0}
+.feat-name{font-size:.82rem;font-weight:800;color:var(--text)}
+.feat-sub{font-size:.65rem;color:var(--muted)}
+/* Buttons */
+.btn-next{
+  position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+  width:calc(100% - 40px);max-width:440px;
+  padding:15px;border:none;border-radius:14px;
+  background:linear-gradient(135deg,var(--purple),#6d28d9);
+  color:#fff;font-family:'Nunito',sans-serif;font-size:.96rem;font-weight:800;
+  cursor:pointer;z-index:100;
+  box-shadow:0 5px 24px rgba(139,92,246,.5);
+  transition:.2s;display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.btn-next:hover{transform:translateY(-2px)}
+.btn-next:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.skip-btn{text-align:center;padding:10px;font-size:.76rem;color:var(--muted);cursor:pointer;margin-top:6px;padding-bottom:90px}
+.skip-btn:hover{color:var(--text)}
+/* Confetti animation */
+.confetti-wrap{position:fixed;inset:0;pointer-events:none;z-index:999;overflow:hidden}
+.conf{position:absolute;width:8px;height:8px;border-radius:2px;animation:confFall linear forwards}
+@keyframes confFall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.step.active{animation:fadeInUp .3s ease}
+.step::-webkit-scrollbar{display:none}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="dots" id="dots">
+    <div class="dot active" data-d="0"></div>
+    <div class="dot" data-d="1"></div>
+    <div class="dot" data-d="2"></div>
+    <div class="dot" data-d="3"></div>
+  </div>
+
+  <!-- STEP 0: Name -->
+  <div class="step active" id="step0">
+    <div class="step-icon" style="background:linear-gradient(135deg,rgba(139,92,246,.2),rgba(109,40,217,.1));border:1px solid rgba(139,92,246,.3);animation:fadeInUp .4s ease">
+      <i class="fas fa-hand-wave" style="color:var(--purple)"></i>
+    </div>
+    <div class="step-title">Welcome to<br><span style="background:linear-gradient(90deg,var(--purple),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Vura AI</span></div>
+    <div class="step-sub">What should we call you? This is how you will appear to other students.</div>
+    <input class="name-inp" id="nameInp" placeholder="Enter your full name..." maxlength="30" autocomplete="off" style="margin-bottom:80px">
+    <button class="btn-next" id="step0Btn" disabled>
+      <i class="fas fa-arrow-right"></i> Continue
+    </button>
+  </div>
+
+  <!-- STEP 1: Exam type -->
+  <div class="step" id="step1">
+    <div class="step-title">What are you<br>preparing for?</div>
+    <div class="step-sub">We will personalise your experience based on your exam.</div>
+    <div class="opt-grid" id="examGrid"></div>
+    <button class="btn-next" id="step1Btn" disabled>
+      <i class="fas fa-arrow-right"></i> Continue
+    </button>
+    <div class="skip-btn" onclick="skipStep(1)">Skip for now</div>
+  </div>
+
+  <!-- STEP 2: Subjects -->
+  <div class="step" id="step2">
+    <div class="step-title">Choose your<br>subjects</div>
+    <div class="step-sub">Pick up to 5 subjects you want to focus on.</div>
+    <div class="opt-grid" id="subjGrid"></div>
+    <button class="btn-next" id="step2Btn" disabled>
+      <i class="fas fa-arrow-right"></i> Continue
+    </button>
+    <div class="skip-btn" onclick="skipStep(2)">Skip for now</div>
+  </div>
+
+  <!-- STEP 3: Welcome + VUX bonus -->
+  <div class="step" id="step3">
+    <div class="step-icon" style="background:rgba(255,204,51,.12);border:1px solid rgba(255,204,51,.2)">
+      <i class="fas fa-trophy" style="color:var(--gold)"></i>
+    </div>
+    <div class="step-title">You are all set,<br><span id="welcomeName" style="color:var(--purple)">—</span>!</div>
+    <div class="welcome-coins">
+      <i class="fas fa-coins"></i> 300 VUX coins added to your wallet!
+    </div>
+    <div class="feature-list">
+      <div class="feat-item"><div class="feat-ic" style="background:rgba(0,210,255,.1)"><i class="fas fa-robot" style="color:var(--blue)"></i></div><div><div class="feat-name">AI Chat</div><div class="feat-sub">Ask any question, get instant answers</div></div></div>
+      <div class="feat-item"><div class="feat-ic" style="background:rgba(139,92,246,.1)"><i class="fas fa-chalkboard-user" style="color:var(--purple)"></i></div><div><div class="feat-name">Classroom</div><div class="feat-sub">Study notes for every Nigerian exam</div></div></div>
+      <div class="feat-item"><div class="feat-ic" style="background:rgba(255,204,51,.1)"><i class="fas fa-graduation-cap" style="color:var(--gold)"></i></div><div><div class="feat-name">Smart Quiz</div><div class="feat-sub">Practice WAEC, JAMB past questions</div></div></div>
+      <div class="feat-item"><div class="feat-ic" style="background:rgba(16,185,129,.1)"><i class="fas fa-coins" style="color:var(--green)"></i></div><div><div class="feat-name">Earn VUX</div><div class="feat-sub">Study, answer questions, earn coins</div></div></div>
+    </div>
+    <button class="btn-next" id="step3Btn">
+      <i class="fas fa-rocket"></i> Start Learning
+    </button>
+  </div>
+</div>
+
+<script type="module">
+import { watchAuth, db } from './auth.js';
+import { doc, updateDoc, addDoc, collection, serverTimestamp, increment }
+  from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+const EXAMS = [
+  {id:'jamb',name:'JAMB UTME',icon:'fas fa-university',color:'rgba(0,210,255,.12)',ic:'var(--blue)'},
+  {id:'waec',name:'WAEC / SSCE',icon:'fas fa-certificate',color:'rgba(16,185,129,.12)',ic:'var(--green)'},
+  {id:'neco',name:'NECO',icon:'fas fa-scroll',color:'rgba(245,158,11,.12)',ic:'var(--gold)'},
+  {id:'nabteb',name:'NABTEB',icon:'fas fa-wrench',color:'rgba(249,115,22,.12)',ic:'var(--orange)'},
+  {id:'common',name:'Common Entrance',icon:'fas fa-child',color:'rgba(139,92,246,.12)',ic:'var(--purple)'},
+  {id:'postutme',name:'Post UTME',icon:'fas fa-building-columns',color:'rgba(255,61,112,.12)',ic:'var(--pink)'},
+  {id:'gce',name:'GCE / IGCSE',icon:'fas fa-globe',color:'rgba(99,102,241,.12)',ic:'#6366f1'},
+  {id:'university',name:'University',icon:'fas fa-graduation-cap',color:'rgba(255,204,51,.12)',ic:'var(--gold)'},
+];
+
+const SUBJECTS = [
+  {id:'math',name:'Mathematics',icon:'fas fa-square-root-variable',color:'rgba(245,158,11,.12)',ic:'var(--gold)'},
+  {id:'english',name:'English',icon:'fas fa-pen-nib',color:'rgba(0,210,255,.1)',ic:'var(--blue)'},
+  {id:'biology',name:'Biology',icon:'fas fa-dna',color:'rgba(16,185,129,.1)',ic:'var(--green)'},
+  {id:'chemistry',name:'Chemistry',icon:'fas fa-flask',color:'rgba(139,92,246,.1)',ic:'var(--purple)'},
+  {id:'physics',name:'Physics',icon:'fas fa-atom',color:'rgba(255,61,112,.1)',ic:'var(--pink)'},
+  {id:'economics',name:'Economics',icon:'fas fa-chart-line',color:'rgba(249,115,22,.1)',ic:'var(--orange)'},
+  {id:'government',name:'Government',icon:'fas fa-landmark',color:'rgba(99,102,241,.1)',ic:'#6366f1'},
+  {id:'literature',name:'Literature',icon:'fas fa-book',color:'rgba(234,179,8,.1)',ic:'#eab308'},
+  {id:'computer',name:'Computer',icon:'fas fa-laptop-code',color:'rgba(0,210,255,.1)',ic:'var(--blue)'},
+  {id:'commerce',name:'Commerce',icon:'fas fa-handshake',color:'rgba(16,185,129,.1)',ic:'var(--green)'},
+];
+
+let _uid = null, _step = 0, _name = '', _exam = '', _subjects = [];
+
+function goTo(step){
+  document.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));
+  document.getElementById('step'+step).classList.add('active');
+  document.querySelectorAll('.dot').forEach((d,i)=>{
+    d.classList.toggle('active',i===step);
+    d.classList.toggle('done',i<step);
+  });
+  _step=step;
+}
+
+window.skipStep = step => {
+  if(step===1){_exam='';goTo(2);renderSubjects();}
+  else if(step===2){_subjects=[];goTo(3);}
+};
+
+// Step 0 — Name
+const nameInp = document.getElementById('nameInp');
+nameInp.addEventListener('input',()=>{
+  _name=nameInp.value.trim();
+  document.getElementById('step0Btn').disabled=!_name;
+});
+document.getElementById('step0Btn').addEventListener('click',()=>{
+  if(!_name)return;
+  document.getElementById('welcomeName').textContent=_name.split(' ')[0];
+  renderExams();goTo(1);
+});
+
+// Step 1 — Exams
+function renderExams(){
+  document.getElementById('examGrid').innerHTML=EXAMS.map(e=>`
+    <div class="opt-card" data-exam="${e.id}" onclick="selectExam('${e.id}',this)">
+      <div class="oc-icon" style="background:${e.color};border:1px solid ${e.color.replace('.12','.25')}"><i class="${e.icon}" style="color:${e.ic}"></i></div>
+      <div class="oc-name">${e.name}</div>
+    </div>`).join('');
+}
+
+window.selectExam=(id,el)=>{
+  document.querySelectorAll('#examGrid .opt-card').forEach(c=>c.classList.remove('sel'));
+  el.classList.add('sel');_exam=id;
+  document.getElementById('step1Btn').disabled=false;
+};
+
+document.getElementById('step1Btn').addEventListener('click',()=>{renderSubjects();goTo(2);});
+
+// Step 2 — Subjects
+function renderSubjects(){
+  document.getElementById('subjGrid').innerHTML=SUBJECTS.map(s=>`
+    <div class="opt-card" data-subj="${s.id}" onclick="toggleSubject('${s.id}',this)">
+      <div class="oc-icon" style="background:${s.color};border:1px solid ${s.color.replace('.1','.2')}"><i class="${s.icon}" style="color:${s.ic}"></i></div>
+      <div class="oc-name">${s.name}</div>
+    </div>`).join('');
+}
+
+window.toggleSubject=(id,el)=>{
+  if(el.classList.contains('sel')){
+    el.classList.remove('sel');_subjects=_subjects.filter(s=>s!==id);
+  }else{
+    if(_subjects.length>=5){return;}
+    el.classList.add('sel');_subjects.push(id);
+  }
+  document.getElementById('step2Btn').disabled=!_subjects.length;
+};
+
+document.getElementById('step2Btn').addEventListener('click',()=>goTo(3));
+
+// Step 3 — Done
+document.getElementById('step3Btn').addEventListener('click',async()=>{
+  const btn=document.getElementById('step3Btn');
+  btn.disabled=true;btn.innerHTML='<div style="width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .6s linear infinite"></div>';
+  try{
+    // Save preferences to Firestore
+    await updateDoc(doc(db,'users',_uid),{
+      name:_name,
+      examFocus:_exam||null,
+      subjects:_subjects,
+      onboarded:true,
+      lastUpdated:serverTimestamp()
+    });
+    // Credit 300 VUX welcome bonus
+    await updateDoc(doc(db,'wallets',_uid),{
+      balance:increment(300),totalEarned:increment(300)
+    }).catch(()=>{});
+    await updateDoc(doc(db,'users',_uid),{vuxBalance:increment(300)}).catch(()=>{});
+    await addDoc(collection(db,'wallets',_uid,'transactions'),{
+      type:'Welcome Bonus',amount:300,timestamp:serverTimestamp(),date:new Date().toLocaleString()
+    }).catch(()=>{});
+    // Confetti!
+    launchConfetti();
+    setTimeout(()=>window.location.replace('appskeleton'),1500);
+  }catch(e){
+    btn.disabled=false;
+    btn.innerHTML='<i class="fas fa-rocket"></i> Start Learning';
+    window.location.replace('appskeleton');
+  }
+});
+
+function launchConfetti(){
+  const wrap=document.createElement('div');wrap.className='confetti-wrap';document.body.appendChild(wrap);
+  const colors=['#8b5cf6','#ffcc33','#00d2ff','#ff3d70','#10b981','#ff9500'];
+  for(let i=0;i<60;i++){
+    const c=document.createElement('div');c.className='conf';
+    c.style.cssText=`left:${Math.random()*100}%;top:-10px;background:${colors[i%colors.length]};animation-duration:${1+Math.random()*2}s;animation-delay:${Math.random()*.5}s;transform:rotate(${Math.random()*360}deg)`;
+    wrap.appendChild(c);
+  }
+  setTimeout(()=>wrap.remove(),3000);
+}
+
+watchAuth(async user=>{
+  if(!user){window.location.replace('login');return;}
+  _uid=user.uid;
+  // Check if already onboarded
+  const snap=await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js')
+    .then(({getDoc})=>getDoc(doc(db,'users',_uid))).catch(()=>null);
+  if(snap?.data()?.onboarded){window.location.replace('appskeleton');return;}
+  // Pre-fill name if available
+  const existingName=snap?.data()?.name||user.displayName||'';
+  if(existingName){
+    nameInp.value=existingName;_name=existingName;
+    document.getElementById('step0Btn').disabled=false;
+    document.getElementById('welcomeName').textContent=existingName.split(' ')[0];
+  }
+});
+</script>
+<style>@keyframes spin{to{transform:rotate(360deg)}}@keyframes orange{to{color:var(--orange)}}</style>
+</body>
+</html>
