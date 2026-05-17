@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<!-- Vura Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+<link rel="manifest" href="/manifest.json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Vura Social — Coming Soon</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#03030b;--card:rgba(11,11,30,.97);--purple:#8b5cf6;--pink:#ff3d70;--blue:#00d2ff;--green:#10b981;--gold:#ffcc33;--orange:#ff9500;--border:rgba(255,255,255,.07);--text:#e8eaf6;--muted:#8892a4}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 20px;text-align:center;position:relative;overflow:hidden}
+.hero-glow{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.25),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;animation:gPulse 4s ease-in-out infinite}
+@keyframes gPulse{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.6}50%{transform:translate(-50%,-50%) scale(1.15);opacity:1}}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.3);font-size:.72rem;font-weight:800;color:var(--purple);margin-bottom:20px;animation:fadeInDown .6s ease}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:translateY(0)}}
+.hero-title{font-family:'Orbitron',monospace;font-size:2.4rem;font-weight:900;line-height:1.1;margin-bottom:10px;animation:fadeInUp .6s ease .1s both}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.hero-title span{background:linear-gradient(135deg,var(--purple),var(--pink),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:.92rem;color:var(--muted);line-height:1.75;max-width:320px;margin:0 auto 28px;animation:fadeInUp .6s ease .2s both}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px;animation:fadeInUp .6s ease .3s both}
+.pill{padding:6px 14px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--muted);font-size:.72rem;font-weight:700;display:flex;align-items:center;gap:5px}
+.pill i{font-size:.65rem}
+.notify-btn{padding:14px 28px;border:none;border-radius:14px;background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;font-family:'Nunito',sans-serif;font-size:.92rem;font-weight:800;cursor:pointer;box-shadow:0 6px 24px rgba(139,92,246,.4);transition:.22s;display:flex;align-items:center;gap:8px;margin:0 auto;animation:fadeInUp .6s ease .4s both}
+.notify-btn:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(139,92,246,.5)}
+
+/* ── PHONE MOCKUP ── */
+.mockup-wrap{width:100%;max-width:320px;margin:40px auto;position:relative;animation:fadeInUp .8s ease .5s both}
+.phone{background:linear-gradient(145deg,#1a1a2e,#0f0f1e);border-radius:36px;border:2px solid rgba(255,255,255,.08);overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.04);position:relative}
+.phone-hdr{display:flex;align-items:center;justify-content:space-between;padding:12px 16px 8px;background:rgba(11,11,30,.95);border-bottom:1px solid rgba(255,255,255,.05)}
+.phone-logo{font-family:'Orbitron',monospace;font-size:.78rem;font-weight:900;background:linear-gradient(90deg,var(--purple),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.phone-icons{display:flex;gap:10px;font-size:.76rem;color:var(--muted)}
+
+/* Feed preview */
+.feed-preview{padding:10px 12px;display:flex;flex-direction:column;gap:10px;background:var(--bg)}
+.post-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.pc-hdr{display:flex;align-items:center;gap:8px;padding:10px 12px}
+.pc-av{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:900;color:#fff;flex-shrink:0}
+.pc-name{font-size:.76rem;font-weight:800;color:var(--text)}
+.pc-time{font-size:.6rem;color:var(--muted)}
+.pc-img{width:100%;height:120px;object-fit:cover;display:block}
+.pc-img-placeholder{width:100%;height:120px;display:flex;align-items:center;justify-content:center;font-size:.76rem;font-weight:700;color:rgba(255,255,255,.5);padding:12px;text-align:center;line-height:1.5}
+.pc-actions{display:flex;gap:14px;padding:8px 12px;border-top:1px solid var(--border)}
+.pc-act{display:flex;align-items:center;gap:4px;font-size:.66rem;font-weight:700;color:var(--muted)}
+.pc-act i{font-size:.72rem}
+
+/* Stories row */
+.stories-row{display:flex;gap:8px;padding:10px 12px;overflow-x:auto;border-bottom:1px solid var(--border);scrollbar-width:none;background:var(--card)}
+.stories-row::-webkit-scrollbar{display:none}
+.story-circle{display:flex;flex-direction:column;align-items:center;gap:3px;flex-shrink:0;cursor:pointer}
+.sc-ring{width:44px;height:44px;border-radius:50%;padding:2px;background:linear-gradient(135deg,var(--purple),var(--pink),var(--orange));display:flex;align-items:center;justify-content:center}
+.sc-av{width:38px;height:38px;border-radius:50%;background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:900;color:#fff;border:2px solid var(--bg)}
+.sc-name{font-size:.52rem;color:var(--muted);font-weight:700;max-width:44px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Phone nav */
+.phone-nav{background:rgba(11,11,30,.98);border-top:1px solid var(--border);padding:6px 8px calc(8px + env(safe-area-inset-bottom));display:flex;align-items:center}
+.pn-pill{display:flex;align-items:center;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:999px;padding:5px 8px;gap:4px;flex:1}
+.pn-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:.5rem;color:var(--muted);font-weight:700}
+.pn-item.active{color:var(--purple)}
+.pn-item i{font-size:.82rem}
+.pn-center{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--purple),#6d28d9);display:flex;align-items:center;justify-content:center;margin:-10px 6px 0;flex-shrink:0;box-shadow:0 3px 12px rgba(139,92,246,.5)}
+.pn-center i{color:#fff;font-size:.88rem}
+
+/* Reel preview */
+.reel-card{background:linear-gradient(135deg,#1a0533,#0d001a);border-radius:14px;overflow:hidden;position:relative;height:180px;display:flex;align-items:flex-end}
+.reel-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8),transparent);display:flex;flex-direction:column;justify-content:flex-end;padding:10px 12px}
+.reel-name{font-size:.72rem;font-weight:800;color:#fff;margin-bottom:3px}
+.reel-text{font-size:.64rem;color:rgba(255,255,255,.7);line-height:1.4;margin-bottom:6px}
+.reel-hashtags{display:flex;gap:4px;flex-wrap:wrap}
+.reel-tag{font-size:.58rem;color:var(--blue);font-weight:700}
+.reel-actions{position:absolute;right:10px;bottom:30px;display:flex;flex-direction:column;gap:14px;align-items:center}
+.ra-item{display:flex;flex-direction:column;align-items:center;gap:2px}
+.ra-item i{color:#fff;font-size:1rem}
+.ra-item span{font-size:.56rem;color:rgba(255,255,255,.7);font-weight:700}
+.reel-bg-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Orbitron',monospace;font-size:3rem;font-weight:900;color:rgba(139,92,246,.15);white-space:nowrap;user-select:none}
+
+/* ── FEATURES SECTION ── */
+.features{padding:32px 20px;max-width:640px;margin:0 auto}
+.sec-title{font-family:'Orbitron',monospace;font-size:1rem;font-weight:900;text-align:center;margin-bottom:6px}
+.sec-sub{font-size:.82rem;color:var(--muted);text-align:center;margin-bottom:24px;line-height:1.7}
+.features-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px}
+.feat-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 14px;transition:.2s;cursor:default}
+.feat-card:hover{border-color:rgba(139,92,246,.3);transform:translateY(-2px)}
+.fc-icon{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:.96rem;margin-bottom:10px}
+.fc-name{font-size:.8rem;font-weight:800;color:var(--text);margin-bottom:3px}
+.fc-desc{font-size:.65rem;color:var(--muted);line-height:1.5}
+.coming-badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:999px;background:rgba(255,204,51,.1);border:1px solid rgba(255,204,51,.2);color:var(--gold);font-size:.6rem;font-weight:800;margin-top:5px}
+
+/* ── TEAM LIST ── */
+.team-section{padding:0 20px 40px;max-width:640px;margin:0 auto}
+.team-title{font-family:'Orbitron',monospace;font-size:.9rem;font-weight:900;text-align:center;margin-bottom:6px}
+.team-sub{font-size:.78rem;color:var(--muted);text-align:center;margin-bottom:18px}
+.team-list{display:flex;flex-direction:column;gap:8px}
+.team-item{display:flex;align-items:center;gap:11px;padding:12px 14px;background:var(--card);border:1px solid var(--border);border-radius:13px}
+.ti-num{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:900;flex-shrink:0}
+.ti-name{font-size:.84rem;font-weight:800;color:var(--text)}
+.ti-desc{font-size:.66rem;color:var(--muted);margin-top:1px}
+.ti-status{margin-left:auto;font-size:.62rem;font-weight:800;padding:3px 8px;border-radius:999px;flex-shrink:0}
+.st-built{background:rgba(16,185,129,.12);color:var(--green)}
+.st-building{background:rgba(255,204,51,.1);color:var(--gold)}
+.st-planned{background:rgba(255,255,255,.06);color:var(--muted)}
+
+/* ── NOTIFY FORM ── */
+.notify-section{padding:0 20px 60px;max-width:480px;margin:0 auto;text-align:center}
+.notify-title{font-family:'Orbitron',monospace;font-size:.9rem;font-weight:900;margin-bottom:6px}
+.notify-sub{font-size:.78rem;color:var(--muted);margin-bottom:16px;line-height:1.7}
+.notify-form{display:flex;gap:8px}
+.notify-inp{flex:1;background:var(--card);border:1.5px solid var(--border);border-radius:11px;padding:11px 14px;color:var(--text);font-family:'Nunito',sans-serif;font-size:.86rem;outline:none;transition:border-color .18s}
+.notify-inp:focus{border-color:rgba(139,92,246,.5)}
+.notify-inp::placeholder{color:var(--muted)}
+.notify-sub-btn{padding:11px 16px;border:none;border-radius:11px;background:linear-gradient(135deg,var(--purple),#6d28d9);color:#fff;font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:800;cursor:pointer;flex-shrink:0;transition:.2s}
+.notify-sub-btn:hover{transform:translateY(-1px)}
+.success-msg{display:none;color:var(--green);font-size:.82rem;font-weight:700;margin-top:10px;align-items:center;gap:5px;justify-content:center}
+.success-msg.show{display:flex}
+
+/* Announcement banner */
+.announce-banner{background:linear-gradient(135deg,rgba(139,92,246,.15),rgba(255,61,112,.1));border:1px solid rgba(139,92,246,.25);border-radius:13px;padding:14px 16px;margin:0 20px 20px;display:flex;align-items:flex-start;gap:10px;animation:fadeInUp .6s ease .6s both}
+.ab-ic{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--purple),var(--pink));display:flex;align-items:center;justify-content:center;font-size:.86rem;flex-shrink:0}
+.ab-title{font-size:.8rem;font-weight:800;color:var(--text);margin-bottom:3px}
+.ab-text{font-size:.7rem;color:var(--muted);line-height:1.55}
+
+#toasts{position:fixed;top:11px;right:11px;z-index:9999;display:flex;flex-direction:column;gap:5px;max-width:260px}
+.toast{padding:9px 11px;border-radius:9px;font-size:.74rem;font-weight:700;display:flex;align-items:center;gap:6px;border:1px solid}
+.toast.success{background:rgba(16,185,129,.12);border-color:rgba(16,185,129,.22);color:#6ee7b7}
+.toast.info{background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.2);color:#c4b5fd}
+</style>
+</head>
+<body>
+<div id="toasts"></div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-badge"><i class="fas fa-rocket"></i> Coming Soon — MC Tech</div>
+  <div class="hero-title">Meet<span>Up</span></div>
+  <div class="hero-sub">The social media platform built exclusively for Nigerian students. Share knowledge, grow together, earn VUX.</div>
+  <div class="hero-pills">
+    <div class="pill"><i class="fas fa-users"></i> For Students</div>
+    <div class="pill"><i class="fas fa-film"></i> Educational Reels</div>
+    <div class="pill"><i class="fas fa-coins"></i> Earn VUX</div>
+    <div class="pill"><i class="fas fa-comments"></i> Study Rooms</div>
+    <div class="pill"><i class="fas fa-shield-halved"></i> Safe & Moderated</div>
+  </div>
+  <button class="notify-btn" onclick="scrollToNotify()">
+    <i class="fas fa-bell"></i> Get Notified When Live
+  </button>
+</div>
+
+<!-- ANNOUNCEMENT -->
+<div class="announce-banner">
+  <div class="ab-ic"><i class="fas fa-bullhorn" style="color:#fff"></i></div>
+  <div>
+    <div class="ab-title">Vura Social is under active development</div>
+    <div class="ab-text">We are building a full social media experience for Nigerian students. Posts, Reels, Study Rooms, DMs, Friends, Notifications and more. Expected launch: Coming Soon. Enter your email below to be notified first.</div>
+  </div>
+</div>
+
+<!-- PHONE MOCKUP — Feed Preview -->
+<div style="padding:0 20px;max-width:400px;margin:0 auto">
+  <div style="font-family:'Orbitron',monospace;font-size:.82rem;font-weight:900;text-align:center;margin-bottom:14px;color:var(--muted)">FEED PREVIEW</div>
+  <div class="mockup-wrap" style="margin:0 auto">
+    <div class="phone">
+      <!-- Header -->
+      <div class="phone-hdr">
+        <div class="phone-logo">Vura Social</div>
+        <div class="phone-icons">
+          <i class="fas fa-comment-dots"></i>
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <!-- Stories -->
+      <div class="stories-row">
+        <div class="story-circle">
+          <div class="sc-ring" style="background:linear-gradient(135deg,var(--purple),var(--blue))">
+            <div class="sc-av" style="background:#5b21b6">+</div>
+          </div>
+          <div class="sc-name">Your Story</div>
+        </div>
+        <div class="story-circle">
+          <div class="sc-ring"><div class="sc-av" style="background:#0891b2">A</div></div>
+          <div class="sc-name">Amaka</div>
+        </div>
+        <div class="story-circle">
+          <div class="sc-ring" style="background:linear-gradient(135deg,var(--orange),var(--gold))"><div class="sc-av" style="background:#b45309">C</div></div>
+          <div class="sc-name">Chidi</div>
+        </div>
+        <div class="story-circle">
+          <div class="sc-ring" style="background:linear-gradient(135deg,var(--green),var(--blue))"><div class="sc-av" style="background:#047857">F</div></div>
+          <div class="sc-name">Fatima</div>
+        </div>
+      </div>
+      <!-- Feed -->
+      <div class="feed-preview">
+        <!-- Post 1 -->
+        <div class="post-card">
+          <div class="pc-hdr">
+            <div class="pc-av" style="background:linear-gradient(135deg,#7c3aed,#db2777)">N</div>
+            <div>
+              <div class="pc-name">Ngozi Adaeze</div>
+              <div class="pc-time">Mathematics · 2h ago</div>
+            </div>
+          </div>
+          <div class="pc-img-placeholder" style="background:linear-gradient(135deg,rgba(124,58,237,.2),rgba(219,39,119,.1))">
+            <span>📐 The quadratic formula explained step by step with examples for WAEC 2026. Swipe to see all steps...</span>
+          </div>
+          <div class="pc-actions">
+            <div class="pc-act" style="color:var(--pink)"><i class="fas fa-heart"></i> 284</div>
+            <div class="pc-act"><i class="fas fa-comment"></i> 47</div>
+            <div class="pc-act"><i class="fas fa-share-nodes"></i> 31</div>
+            <div class="pc-act" style="margin-left:auto"><i class="fas fa-coins" style="color:var(--gold)"></i> Tip</div>
+          </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="post-card">
+          <div class="pc-hdr">
+            <div class="pc-av" style="background:linear-gradient(135deg,#0891b2,#0e7490)">E</div>
+            <div>
+              <div class="pc-name">Emeka Joshua</div>
+              <div class="pc-time">Biology · 4h ago</div>
+            </div>
+          </div>
+          <div class="pc-img-placeholder" style="background:linear-gradient(135deg,rgba(8,145,178,.2),rgba(14,116,144,.1))">
+            <span>🧬 Photosynthesis vs Respiration — key differences every SS3 student must know for NECO</span>
+          </div>
+          <div class="pc-actions">
+            <div class="pc-act" style="color:var(--pink)"><i class="fas fa-heart"></i> 156</div>
+            <div class="pc-act"><i class="fas fa-comment"></i> 23</div>
+            <div class="pc-act"><i class="fas fa-share-nodes"></i> 18</div>
+            <div class="pc-act" style="margin-left:auto"><i class="fas fa-coins" style="color:var(--gold)"></i> Tip</div>
+          </div>
+        </div>
+      </div>
+      <!-- Nav -->
+      <div class="phone-nav">
+        <div class="pn-pill">
+          <div class="pn-item active"><i class="fas fa-house"></i>Feed</div>
+          <div class="pn-item"><i class="fas fa-film"></i>Reels</div>
+        </div>
+        <div class="pn-center"><i class="fas fa-plus"></i></div>
+        <div class="pn-pill">
+          <div class="pn-item"><i class="fas fa-comments"></i>Rooms</div>
+          <div class="pn-item"><i class="fas fa-user"></i>Profile</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REELS PREVIEW -->
+<div style="padding:28px 20px 0;max-width:400px;margin:0 auto">
+  <div style="font-family:'Orbitron',monospace;font-size:.82rem;font-weight:900;text-align:center;margin-bottom:14px;color:var(--muted)">REELS PREVIEW</div>
+  <div class="phone">
+    <div class="phone-hdr" style="justify-content:center">
+      <div style="font-family:'Orbitron',monospace;font-size:.76rem;font-weight:900;color:var(--text)">Reels</div>
+    </div>
+    <div style="position:relative;background:#0a0010;overflow:hidden">
+      <div class="reel-card" style="border-radius:0;height:220px">
+        <div class="reel-bg-text">JAMB</div>
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(139,92,246,.3),rgba(255,61,112,.2))"></div>
+        <div class="reel-overlay">
+          <div class="reel-name">@study_with_ada</div>
+          <div class="reel-text">Watch time: 1:48 — Everything you need to know about Newton's Laws for JAMB Physics 2026</div>
+          <div class="reel-hashtags">
+            <span class="reel-tag">#JAMBPhysics</span>
+            <span class="reel-tag">#NewtonsLaws</span>
+            <span class="reel-tag">#StudyWithMe</span>
+          </div>
+        </div>
+        <div class="reel-actions">
+          <div class="ra-item"><i class="fas fa-heart" style="color:var(--pink)"></i><span style="color:rgba(255,255,255,.8)">1.2K</span></div>
+          <div class="ra-item"><i class="fas fa-comment"></i><span>89</span></div>
+          <div class="ra-item"><i class="fas fa-share-nodes"></i><span>234</span></div>
+          <div class="ra-item"><i class="fas fa-coins" style="color:var(--gold)"></i><span>Tip</span></div>
+          <div class="ra-item"><i class="fas fa-bookmark"></i><span>Save</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Nav -->
+    <div class="phone-nav">
+      <div class="pn-pill">
+        <div class="pn-item"><i class="fas fa-house"></i>Feed</div>
+        <div class="pn-item active"><i class="fas fa-film"></i>Reels</div>
+      </div>
+      <div class="pn-center"><i class="fas fa-plus"></i></div>
+      <div class="pn-pill">
+        <div class="pn-item"><i class="fas fa-comments"></i>Rooms</div>
+        <div class="pn-item"><i class="fas fa-user"></i>Profile</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="features" style="margin-top:32px">
+  <div class="sec-title">Everything Vura Social Will Have</div>
+  <div class="sec-sub">A complete social media experience built specifically for students</div>
+  <div class="features-grid">
+    <div class="feat-card">
+      <div class="fc-icon" style="background:rgba(0,210,255,.12)"><i class="fas fa-house" style="color:var(--blue)"></i></div>
+      <div class="fc-name">For You Feed</div>
+      <div class="fc-desc">Algorithm-powered feed showing educational posts relevant to your subjects</div>
+    </div>
+    <div class="feat-card">
+      <div class="fc-icon" style="background:rgba(255,61,112,.12)"><i class="fas fa-film" style="color:var(--pink)"></i></div>
+      <div class="fc-name">Educational Reels</div>
+      <div class="fc-desc">Short vertical videos (max 2 min) teaching exam topics in an engaging way</div>
+    </div>
+    <div class="feat-card">
+      <div class="fc-icon" style="background:rgba(139,92,246,.12)"><i class="fas fa-comment-dots" style="color:var(--purple)"></i></div>
+      <div class="fc-name">Direct Messages</div>
+      <div class="fc-desc">Private chat with any student. Send text, images, and study notes</div>
+    </div>
+    <div class="feat-card">
+      <div class="fc-icon" style="background:rgba(16,185,129,.12)"><i class="fas fa-comments" style="color:var(--green)"></i></div>
+      <div class="fc-name">Study Rooms</div>
+      <div class="fc-desc">Real-time group chat rooms by subject. Join Mathematics Room, Biology Room and more</div>
+    </div>
+    <div class="feat-card">
+      <div class="fc-icon" style="background:rgba(255,204,51,.12)"><i class="fas fa-coins" style="color:var(--gold)"></i></div>
+      <div class="fc-name">Earn VUX</div>
+      <div class="fc-desc">Get paid for helpful posts. Tips from followers, view earnings for creators</div>
+    </div>
+    <div class="feat-card">
+      <div class="fc-icon" style="background:rgba(249,115,22,.12)"><i class="fas fa-user-group" style="color:var(--orange)"></i></div>
+      <div class="fc-name">Friends System</div>
+      <div class="fc-desc">Add friends, follow creators, build your study network</div>
+    </div>
+    <div class="feat-card">
+      <div class="fc-icon" style="background:rgba(255,61,112,.12)"><i class="fas fa-circle-dot" style="color:var(--pink)"></i></div>
+      <div class="fc-name">Go Live</div>
+      <div class="fc-desc">Stream live study sessions, Q&A rounds and lessons to your followers</div>
+      <div class="coming-badge"><i class="fas fa-clock"></i> Coming Later</div>
+    </div>
+    <div class="feat-card">
+      <div class="fc-icon" style="background:rgba(99,102,241,.12)"><i class="fas fa-magnifying-glass" style="color:#6366f1"></i></div>
+      <div class="fc-name">Explore & Search</div>
+      <div class="fc-desc">Trending posts, top creators, hashtag search, subject filters</div>
+    </div>
+  </div>
+</div>
+
+<!-- TEAM LIST -->
+<div class="team-section">
+  <div class="team-title">Build Progress</div>
+  <div class="team-sub">Every feature and its current status</div>
+  <div class="team-list">
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-check"></i></div>
+      <div><div class="ti-name">Feed + Stories</div><div class="ti-desc">For You, Following, Explore tabs — post cards with all actions</div></div>
+      <div class="ti-status st-built">Built</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-check"></i></div>
+      <div><div class="ti-name">Reels</div><div class="ti-desc">Vertical video scroll — max 2 min upload — tip and share</div></div>
+      <div class="ti-status st-built">Built</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-check"></i></div>
+      <div><div class="ti-name">Composer</div><div class="ti-desc">Camera, photo, video, study note — hashtags, privacy, audience</div></div>
+      <div class="ti-status st-built">Built</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-check"></i></div>
+      <div><div class="ti-name">Study Rooms</div><div class="ti-desc">Real-time chat rooms by subject — earn VUX for participating</div></div>
+      <div class="ti-status st-built">Built</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-check"></i></div>
+      <div><div class="ti-name">Direct Messages</div><div class="ti-desc">Private one-on-one chat — send images — real-time delivery</div></div>
+      <div class="ti-status st-built">Built</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-check"></i></div>
+      <div><div class="ti-name">Notifications</div><div class="ti-desc">Likes, comments, follows, tips, DMs — real-time badge count</div></div>
+      <div class="ti-status st-built">Built</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-check"></i></div>
+      <div><div class="ti-name">Profile Viewer</div><div class="ti-desc">Tap any name — see posts grid, follow, message, view stats</div></div>
+      <div class="ti-status st-built">Built</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-check"></i></div>
+      <div><div class="ti-name">Friends System</div><div class="ti-desc">Send requests, accept, unfriend — suggestions based on school level</div></div>
+      <div class="ti-status st-built">Built</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-check"></i></div>
+      <div><div class="ti-name">Explore & Search</div><div class="ti-desc">Trending hashtags, top creators, search users, filter by subject</div></div>
+      <div class="ti-status st-built">Built</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(255,204,51,.12);color:var(--gold)"><i class="fas fa-hammer"></i></div>
+      <div><div class="ti-name">Real Firestore Feed</div><div class="ti-desc">Wiring real posts from database with infinite scroll</div></div>
+      <div class="ti-status st-building">In Progress</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(255,204,51,.12);color:var(--gold)"><i class="fas fa-hammer"></i></div>
+      <div><div class="ti-name">Creator Monetization</div><div class="ti-desc">Auto VUX per 1000 views — tier system — earnings dashboard</div></div>
+      <div class="ti-status st-building">In Progress</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(255,255,255,.06);color:var(--muted)"><i class="fas fa-clock"></i></div>
+      <div><div class="ti-name">Go Live</div><div class="ti-desc">Live streaming study sessions to followers</div></div>
+      <div class="ti-status st-planned">Planned</div>
+    </div>
+    <div class="team-item">
+      <div class="ti-num" style="background:rgba(255,255,255,.06);color:var(--muted)"><i class="fas fa-clock"></i></div>
+      <div><div class="ti-name">AdSense Integration</div><div class="ti-desc">Ads in feed every 5 posts — safe educational ads only</div></div>
+      <div class="ti-status st-planned">Planned</div>
+    </div>
+  </div>
+</div>
+
+<!-- NOTIFY FORM -->
+<div class="notify-section" id="notifySection">
+  <div class="notify-title">Get Notified First</div>
+  <div class="notify-sub">Enter your email and we will notify you the moment Vura Social goes live. Early users get 500 bonus VUX.</div>
+  <div class="notify-form">
+    <input class="notify-inp" id="notifyEmail" type="email" placeholder="your@email.com">
+    <button class="notify-sub-btn" onclick="submitNotify()"><i class="fas fa-paper-plane"></i></button>
+  </div>
+  <div class="success-msg" id="successMsg"><i class="fas fa-check-circle"></i> You are on the list! We will notify you when Vura Social launches.</div>
+</div>
+
+<script>
+function scrollToNotify(){
+  document.getElementById('notifySection').scrollIntoView({behavior:'smooth',block:'center'});
+  setTimeout(()=>document.getElementById('notifyEmail').focus(),600);
+}
+
+function submitNotify(){
+  const email = document.getElementById('notifyEmail').value.trim();
+  if(!email||!email.includes('@')){
+    showToast('Please enter a valid email address','error');return;
+  }
+  // Save to localStorage as fallback (Firebase not available here)
+  const list = JSON.parse(localStorage.getItem('vura-social_notify')||'[]');
+  if(!list.includes(email)){list.push(email);localStorage.setItem('vura-social_notify',JSON.stringify(list));}
+  document.getElementById('notifyEmail').value='';
+  document.getElementById('successMsg').classList.add('show');
+  showToast('You are on the list! Early access + 500 VUX bonus awaits.','success');
+}
+
+function showToast(m,t='success'){
+  const el=document.createElement('div');el.className='toast '+t;
+  el.innerHTML='<i class="fas fa-'+(t==='success'?'check':'circle-exclamation')+'"></i><span>'+m+'</span>';
+  document.getElementById('toasts').appendChild(el);
+  setTimeout(()=>el.remove(),4000);
+}
+</script>
+</body>
+</html>

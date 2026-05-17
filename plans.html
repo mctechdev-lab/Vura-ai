@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<!-- Vura Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+<link rel="manifest" href="/manifest.json">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vura — Upgrade Plan</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<style>
+:root{--bg:#03030b;--card:rgba(11,11,30,.93);--card2:rgba(16,16,42,.97);--blue:#00d2ff;--gold:#ffcc33;--green:#10b981;--orange:#ff9500;--purple:#9d50bb;--red:#ef4444;--border:rgba(255,255,255,0.07);--text:#e8eaf6;--muted:#8892a4}
+[data-theme="light"]{--bg:#f0f4f8;--card:rgba(255,255,255,.96);--card2:#fff;--border:rgba(0,0,0,.09);--text:#1e293b;--muted:#64748b}
+[data-theme="dim"]{--bg:#0f1117;--card:rgba(20,22,36,.95);--card2:rgba(26,28,44,.98);--border:rgba(255,255,255,.08);--text:#d4d8e8;--muted:#7a8499}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{min-height:100%;background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;overflow-x:hidden;transition:background .3s,color .3s;padding-bottom:88px}
+.bg-glow{position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 60% 40% at 20% 10%,rgba(157,80,187,.07) 0%,transparent 65%),radial-gradient(ellipse 50% 35% at 80% 85%,rgba(255,204,51,.05) 0%,transparent 65%)}
+.page{max-width:540px;margin:0 auto;padding:0 14px}
+
+.pg-hdr{display:flex;align-items:center;gap:11px;padding:18px 0 14px}
+.back-c{width:36px;height:36px;border-radius:10px;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.22s;flex-shrink:0}
+.back-c i{color:var(--muted);font-size:.85rem}
+.back-c:hover i{color:var(--purple)}
+.hdr-title{font-family:'Orbitron',monospace;font-size:1.05rem;font-weight:900;color:var(--text)}
+.hdr-sub{font-size:.7rem;color:var(--muted);margin-top:1px}
+
+/* CURRENT PLAN */
+.current-plan{background:linear-gradient(135deg,rgba(157,80,187,.12),rgba(58,123,213,.08));border:1px solid rgba(157,80,187,.22);border-radius:16px;padding:14px 16px;margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.cp-icon{width:42px;height:42px;border-radius:12px;background:rgba(157,80,187,.15);border:1px solid rgba(157,80,187,.25);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.cp-icon i{color:#c084fc}
+.cp-info{flex:1}
+.cp-label{font-size:.68rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.6px}
+.cp-name{font-weight:800;font-size:.92rem;color:var(--text);margin-top:1px}
+.cp-expiry{font-size:.68rem;color:var(--muted);margin-top:1px}
+.cp-bal{text-align:right}
+.cp-bal-vux{font-family:'Orbitron',monospace;font-size:.95rem;font-weight:900;color:var(--gold)}
+.cp-bal-lbl{font-size:.63rem;color:var(--muted)}
+
+/* PLAN CARDS */
+.plans-list{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
+.plan-card{background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:18px;cursor:pointer;transition:all .28s;position:relative;overflow:hidden}
+.plan-card.popular{border-color:var(--gold)}
+.plan-card.current-active{border-color:var(--green)}
+.plan-card:hover{transform:translateY(-3px);box-shadow:0 14px 35px rgba(0,0,0,.3)}
+.plan-badge{position:absolute;top:14px;right:14px;padding:3px 10px;border-radius:999px;font-size:.65rem;font-weight:700}
+.pb-popular{background:rgba(255,204,51,.15);border:1px solid rgba(255,204,51,.28);color:var(--gold)}
+.pb-current{background:rgba(16,185,129,.13);border:1px solid rgba(16,185,129,.24);color:var(--green)}
+.pb-best{background:rgba(157,80,187,.13);border:1px solid rgba(157,80,187,.24);color:#c084fc}
+.plan-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.plan-icon{width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.plan-name{font-family:'Orbitron',monospace;font-size:.9rem;font-weight:700;color:var(--text)}
+.plan-price{font-family:'Orbitron',monospace;font-size:1.1rem;font-weight:900;color:var(--text);margin-top:2px}
+.plan-price span{font-size:.7rem;color:var(--muted);font-family:'Nunito',sans-serif;font-weight:600}
+.plan-features{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
+.pf{display:flex;align-items:center;gap:7px;font-size:.79rem;color:var(--text)}
+.pf i{font-size:.72rem;flex-shrink:0}
+.pf.yes i{color:var(--green)}.pf.no i{color:var(--muted)}.pf.no{color:var(--muted)}
+.plan-btn{width:100%;padding:11px;border:none;border-radius:12px;font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:800;cursor:pointer;transition:.28s;display:flex;align-items:center;justify-content:center;gap:7px}
+.plan-btn i{font-size:.78rem}
+.plan-btn-pay{background:linear-gradient(135deg,var(--purple),#6a1b9a);color:#fff;box-shadow:0 5px 15px rgba(157,80,187,.25)}
+.plan-btn-pay.gold-btn{background:linear-gradient(135deg,var(--gold),var(--orange));color:#000;box-shadow:0 5px 15px rgba(255,204,51,.25)}
+.plan-btn-pay:hover{transform:translateY(-2px)}
+.plan-btn-current{background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.22);color:var(--green);cursor:default}
+.plan-btn-free{background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);cursor:default}
+
+/* PAYMENT METHODS */
+.pay-methods{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px 16px;margin-bottom:18px}
+.pm-title{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-bottom:10px;display:flex;align-items:center;gap:5px}
+.pm-title i{font-size:.68rem;color:var(--blue)}
+.pm-row{display:flex;gap:9px;flex-wrap:wrap}
+.pm-chip{display:flex;align-items:center;gap:5px;padding:6px 12px;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:8px;font-size:.74rem;font-weight:700;color:var(--muted)}
+.pm-chip i{font-size:.8rem}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:9px;margin-bottom:18px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:13px;overflow:hidden}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;cursor:pointer;font-size:.82rem;font-weight:700;color:var(--text);gap:10px}
+.faq-q i{color:var(--muted);font-size:.78rem;flex-shrink:0;transition:.22s}
+.faq-item.open .faq-q i{transform:rotate(180deg);color:var(--blue)}
+.faq-a{display:none;padding:0 14px 12px;font-size:.78rem;color:var(--muted);line-height:1.65}
+.faq-item.open .faq-a{display:block}
+
+/* TOAST */
+#toasts{position:fixed;top:14px;right:14px;z-index:9999;display:flex;flex-direction:column;gap:7px;max-width:270px}
+.toast{padding:10px 12px;border-radius:11px;font-size:.77rem;font-weight:700;display:flex;align-items:center;gap:7px;backdrop-filter:blur(16px);border:1px solid;animation:tIn .35s cubic-bezier(.34,1.56,.64,1)}
+.toast i{font-size:.87rem;flex-shrink:0}.toast span{flex:1}
+.toast.success{background:rgba(16,185,129,.14);border-color:rgba(16,185,129,.26);color:#6ee7b7}
+.toast.error{background:rgba(239,68,68,.14);border-color:rgba(239,68,68,.26);color:#fca5a5}
+.toast.info{background:rgba(0,210,255,.11);border-color:rgba(0,210,255,.22);color:#a5f3ff}
+.toast.removing{animation:tOut .28s ease forwards}
+@keyframes tIn{from{opacity:0;transform:translateX(34px)}to{opacity:1;transform:translateX(0)}}
+@keyframes tOut{to{opacity:0;transform:translateX(34px)}}
+.tc{margin-left:auto;background:none;border:none;color:inherit;cursor:pointer;opacity:.48;padding:0 0 0 4px}
+.sec-lbl{font-size:.7rem;font-weight:800;color:rgba(255,255,255,.38);text-transform:uppercase;letter-spacing:.9px;display:flex;align-items:center;gap:5px;margin-bottom:11px}
+[data-theme="light"] .sec-lbl{color:rgba(0,0,0,.35)}
+.sec-lbl i{font-size:.67rem;color:var(--blue)}
+</style>
+</head>
+<body>
+<div class="bg-glow"></div>
+<div id="toasts"></div>
+
+<div class="page">
+  <div class="pg-hdr">
+    <div class="back-c" onclick="goBack()"><i class="fas fa-arrow-left"></i></div>
+    <div>
+      <div class="hdr-title">Upgrade Plan</div>
+      <div class="hdr-sub">Unlock more VUX, AI models & premium features</div>
+    </div>
+  </div>
+
+  <!-- CURRENT PLAN -->
+  <div class="current-plan">
+    <div class="cp-icon"><i class="fas fa-shield-halved"></i></div>
+    <div class="cp-info">
+      <div class="cp-label">Current Plan</div>
+      <div class="cp-name" id="cpName">Free Plan</div>
+      <div class="cp-expiry" id="cpExpiry">No expiry</div>
+    </div>
+    <div class="cp-bal">
+      <div class="cp-bal-vux" id="cpBal">—</div>
+      <div class="cp-bal-lbl">VUX balance</div>
+    </div>
+  </div>
+
+  <!-- PLANS -->
+  <div class="sec-lbl"><i class="fas fa-layer-group"></i> Choose a Plan</div>
+  <div class="plans-list">
+
+    <!-- FREE -->
+    <div class="plan-card" id="plan-free">
+      <div class="plan-top">
+        <div class="plan-icon" style="background:rgba(100,116,139,.1);border:1px solid rgba(100,116,139,.2)"><i class="fas fa-user" style="color:var(--muted)"></i></div>
+        <div><div class="plan-name">Free</div><div class="plan-price">₦0 <span>/month</span></div></div>
+      </div>
+      <div class="plan-features">
+        <div class="pf yes"><i class="fas fa-check"></i>300 VUX daily reward</div>
+        <div class="pf yes"><i class="fas fa-check"></i>GPT-4o Mini access only</div>
+        <div class="pf yes"><i class="fas fa-check"></i>Basic quiz & games</div>
+        <div class="pf no"><i class="fas fa-xmark"></i>Ads shown</div>
+        <div class="pf no"><i class="fas fa-xmark"></i>No monthly bonus</div>
+      </div>
+      <button class="plan-btn plan-btn-free"><i class="fas fa-circle-check"></i> Your Current Plan</button>
+    </div>
+
+    <!-- STARTER -->
+    <div class="plan-card" id="plan-starter">
+      <div class="plan-top">
+        <div class="plan-icon" style="background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2)"><i class="fas fa-seedling" style="color:var(--green)"></i></div>
+        <div><div class="plan-name">Starter</div><div class="plan-price">₦1,000 <span>/month</span></div></div>
+      </div>
+      <div class="plan-features">
+        <div class="pf yes"><i class="fas fa-check"></i>500 VUX daily reward</div>
+        <div class="pf yes"><i class="fas fa-check"></i>3,000 VUX monthly bonus</div>
+        <div class="pf yes"><i class="fas fa-check"></i>GPT-4o Mini + GPT-4o access</div>
+        <div class="pf yes"><i class="fas fa-check"></i>Reduced ads</div>
+        <div class="pf no"><i class="fas fa-xmark"></i>No advanced models</div>
+      </div>
+      <button class="plan-btn plan-btn-pay" onclick="pay('starter',100000)"><i class="fas fa-credit-card"></i> Subscribe — ₦1,000/mo</button>
+    </div>
+
+    <!-- STANDARD -->
+    <div class="plan-card popular" id="plan-standard">
+      <div class="plan-badge pb-popular"><i class="fas fa-fire"></i> Most Popular</div>
+      <div class="plan-top">
+        <div class="plan-icon" style="background:rgba(0,210,255,.1);border:1px solid rgba(0,210,255,.2)"><i class="fas fa-bolt" style="color:var(--blue)"></i></div>
+        <div><div class="plan-name">Standard</div><div class="plan-price">₦3,000 <span>/month</span></div></div>
+      </div>
+      <div class="plan-features">
+        <div class="pf yes"><i class="fas fa-check"></i>700 VUX daily reward</div>
+        <div class="pf yes"><i class="fas fa-check"></i>7,000 VUX monthly bonus</div>
+        <div class="pf yes"><i class="fas fa-check"></i>GPT-4o Mini, GPT-4o & GPT-4 Turbo</div>
+        <div class="pf yes"><i class="fas fa-check"></i>No ads</div>
+        <div class="pf yes"><i class="fas fa-check"></i>Priority support</div>
+      </div>
+      <button class="plan-btn plan-btn-pay gold-btn" onclick="pay('standard',300000)"><i class="fas fa-credit-card"></i> Subscribe — ₦3,000/mo</button>
+    </div>
+
+    <!-- PRO -->
+    <div class="plan-card" id="plan-pro">
+      <div class="plan-top">
+        <div class="plan-icon" style="background:rgba(157,80,187,.1);border:1px solid rgba(157,80,187,.2)"><i class="fas fa-star" style="color:#c084fc"></i></div>
+        <div><div class="plan-name">Pro</div><div class="plan-price">₦7,000 <span>/month</span></div></div>
+      </div>
+      <div class="plan-features">
+        <div class="pf yes"><i class="fas fa-check"></i>1,000 VUX daily reward</div>
+        <div class="pf yes"><i class="fas fa-check"></i>12,000 VUX monthly bonus</div>
+        <div class="pf yes"><i class="fas fa-check"></i>All models including o1-mini</div>
+        <div class="pf yes"><i class="fas fa-check"></i>No ads · Priority AI access</div>
+        <div class="pf yes"><i class="fas fa-check"></i>Pro badge on leaderboard</div>
+      </div>
+      <button class="plan-btn plan-btn-pay" onclick="pay('pro',700000)"><i class="fas fa-credit-card"></i> Subscribe — ₦7,000/mo</button>
+    </div>
+
+    <!-- ELITE -->
+    <div class="plan-card" id="plan-elite">
+      <div class="plan-badge pb-best"><i class="fas fa-crown"></i> Best Value</div>
+      <div class="plan-top">
+        <div class="plan-icon" style="background:rgba(255,204,51,.1);border:1px solid rgba(255,204,51,.2)"><i class="fas fa-crown" style="color:var(--gold)"></i></div>
+        <div><div class="plan-name">Elite</div><div class="plan-price">₦15,000 <span>/month</span></div></div>
+      </div>
+      <div class="plan-features">
+        <div class="pf yes"><i class="fas fa-check"></i>2,000 VUX daily reward</div>
+        <div class="pf yes"><i class="fas fa-check"></i>25,000 VUX monthly bonus</div>
+        <div class="pf yes"><i class="fas fa-check"></i>All models · Priority processing</div>
+        <div class="pf yes"><i class="fas fa-check"></i>Elite badge · VIP support</div>
+        <div class="pf yes"><i class="fas fa-check"></i>Full access to every feature</div>
+      </div>
+      <button class="plan-btn plan-btn-pay gold-btn" onclick="pay('elite',1500000)"><i class="fas fa-crown"></i> Subscribe — ₦15,000/mo</button>
+    </div>
+
+  </div>
+
+  <!-- PAYMENT METHODS -->
+  <div class="pay-methods">
+    <div class="pm-title"><i class="fas fa-lock"></i> Secure Payment via Paystack</div>
+    <div class="pm-row">
+      <div class="pm-chip"><i class="fas fa-credit-card" style="color:var(--blue)"></i> Card</div>
+      <div class="pm-chip"><i class="fas fa-building-columns" style="color:var(--green)"></i> Bank Transfer</div>
+      <div class="pm-chip"><i class="fas fa-mobile" style="color:var(--orange)"></i> USSD</div>
+      <div class="pm-chip"><i class="fas fa-wallet" style="color:var(--gold)"></i> Mobile Money</div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="sec-lbl"><i class="fas fa-circle-question"></i> Common Questions</div>
+  <div class="faq-list">
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>When do I receive my VUX bonus?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a">Your monthly VUX bonus is credited to your wallet immediately after payment is confirmed by Paystack. Daily rewards also increase automatically once your plan is activated.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Can I cancel anytime?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a">Yes. You can cancel your subscription at any time. You keep your plan benefits until the end of the billing period. No refunds are issued for partial months.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What happens to my VUX if I downgrade?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a">Your existing VUX balance is always yours — it never expires. Only your daily reward amount and plan benefits change when you downgrade.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Is my payment information safe?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a">Yes. All payments are processed by Paystack, a PCI DSS Level 1 certified payment provider. We never store your card details.</div></div>
+  </div>
+</div>
+
+<script type="module">
+import { watchAuth, db } from './auth.js';
+import { doc, onSnapshot, getDoc } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+let _uid=null, _email='', _currentPlan='free', _bal=0;
+
+function applyTheme(){const t=localStorage.getItem('vura_theme')||'dark';document.documentElement.setAttribute('data-theme',t==='dark'?'':t==='light'?'light':'dim');}
+applyTheme();window.addEventListener('storage',applyTheme);
+
+function toast(m,t='success'){const el=document.createElement('div');el.className=`toast ${t}`;const ic={success:'fas fa-circle-check',error:'fas fa-circle-exclamation',info:'fas fa-circle-info'};el.innerHTML=`<i class="${ic[t]||ic.info}"></i><span>${m}</span><button class="tc" onclick="this.parentElement.classList.add('removing');setTimeout(()=>this.parentElement.remove(),280)"><i class="fas fa-xmark"></i></button>`;document.getElementById('toasts').appendChild(el);setTimeout(()=>{if(el.parentElement){el.classList.add('removing');setTimeout(()=>el.remove(),280);}},5000);}
+
+window.goBack=()=>{if(window.parent?.navigateTo)window.parent.navigateTo('dashboard');else history.back();};
+
+window.toggleFaq=el=>{el.closest('.faq-item').classList.toggle('open');};
+
+const planNames={free:'Free Plan',starter:'Starter Plan',standard:'Standard Plan',pro:'Pro Plan',elite:'Elite Plan'};
+
+function highlightCurrentPlan(plan){
+  // Reset all
+  document.querySelectorAll('.plan-card').forEach(c=>{c.classList.remove('current-active');});
+  document.querySelectorAll('.plan-btn').forEach(b=>{
+    if(b.classList.contains('plan-btn-free'))return;
+    b.classList.remove('plan-btn-current');
+  });
+  // Mark current
+  const card=document.getElementById(`plan-${plan}`);
+  if(card){
+    card.classList.add('current-active');
+    const btn=card.querySelector('.plan-btn');
+    if(btn&&plan!=='free'){
+      btn.className='plan-btn plan-btn-current';
+      btn.innerHTML='<i class="fas fa-circle-check"></i> Current Plan';
+      btn.onclick=null;
+    }
+  }
+}
+
+// PAYSTACK PAYMENT
+window.pay=async(plan,amountKobo)=>{
+  if(!_uid||!_email){toast('Please sign in first.','error');return;}
+  if(_currentPlan===plan){toast(`You're already on the ${planNames[plan]}!`,'info');return;}
+
+  const PAYSTACK_PUBLIC_KEY='pk_live_a3d8865c5d9d8c6416bedee8fc0bbdd3b239e55f';
+
+  const handler=PaystackPop.setup({
+    key: PAYSTACK_PUBLIC_KEY,
+    email: _email,
+    amount: amountKobo,
+    currency: 'NGN',
+    ref: `vux_${plan}_${_uid}_${Date.now()}`,
+    callback_url: 'https://mc-store.vercel.app/payment-success',
+    metadata:{ uid:_uid, plan, custom_fields:[{display_name:'User ID',variable_name:'uid',value:_uid},{display_name:'Plan',variable_name:'plan',value:plan}]},
+    onSuccess(transaction){
+      toast(`Payment successful! Activating ${planNames[plan]}...`,'success');
+      // Webhook at /api/paystack-webhook handles the actual plan upgrade
+      // Polling fallback: check after 5s
+      setTimeout(async()=>{
+        const snap=await getDoc(doc(db,'users',_uid));
+        if(snap.exists()&&snap.data().plan===plan){toast(`${planNames[plan]} is now active! 🎉`,'success');highlightCurrentPlan(plan);}
+        else toast('Payment received. Your plan will activate shortly. Contact vuraai.care@gmail.com if not updated within 5 minutes.','info');
+      },5000);
+    },
+    onCancel(){toast('Payment cancelled.','info');}
+  });
+  handler.openIframe();
+};
+
+watchAuth(async user=>{
+  if(!user){window.location.replace('login');return;}
+  _uid=user.uid;_email=user.email||'';
+  onSnapshot(doc(db,'wallets',_uid),s=>{if(!s.exists())return;_bal=s.data().balance||0;document.getElementById('cpBal').textContent=_bal.toLocaleString()+' VUX';});
+  onSnapshot(doc(db,'users',_uid),s=>{
+    if(!s.exists())return;const p=s.data();
+    _currentPlan=p.plan||'free';
+    document.getElementById('cpName').textContent=planNames[_currentPlan]||'Free Plan';
+    const expiry=p.planExpiry?new Date(p.planExpiry.toMillis()).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}):'No expiry';
+    document.getElementById('cpExpiry').textContent=_currentPlan==='free'?'No expiry':`Expires: ${expiry}`;
+    highlightCurrentPlan(_currentPlan);
+  });
+});
+</script>
+</body>
+</html>

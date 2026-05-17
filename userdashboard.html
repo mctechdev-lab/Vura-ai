@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAHqElEQVR4nGVW+49cZRl+nvc7Z87cdro72711S7u9LFsuFSRbCxRQEKGoASWooRBCDI0/mJgYwR9M/Bs0/mA0Gk0UE+OFKCAYQBIbhUJRaLHd3ra47Xa7t3Znd2d2Z+ac73394cxst3Imk5P55v3e93nvD8EMALa+614kAAMMAhAwAKTAaDACBmufK2ACmNmailQaZgQzJEHCtGVIBGYADDQQIMDU3sefVCmhgLJlkgZDy5gF6QuGFkCYWQoQBiEFbMG19ejaT9uwpJAEMBgpJFQTgKRk1suLODM1ABDQOecU7YP1coClfhFmMFUzAJ7QtSinPgQACF5VQJrRQDKwJEmSKuDAyGUyINQbAHGkIYlj0wTwkAyda0eYTOPTsm2pB1yXVTOISGiadPf077x+uLJQmZmZXZidBizIFgBL6iug6x3YtHlg44ZC4ejxU1cql0UCVQNM4FP3zDQNe5QmvJ0fgA6gc3z669+YmZnN5LLZjd1GOfb2W/955zDA3aN7Rm/bk0Ws9SsrtYYPcr974Y9KprEiPEiatvIvkk3LLjViDGCWyxce/erjSWy//dXPgBgun+vs/vTDj1yZvmiJDmzecvjVl1dXa8uL8wgKTx34WuXy/Cuvv+atHQIYzNMMpIBCCsSBAgYEzWuUK548df748dOFzu4wt8GJfPH+O5fHTwSlno7+wRd/+YM7PnvvH57/RZTt2FAqjh07fmFqMsrlTJWtpiFSzeKCtPLNlBRvIFvVmrV42mXMGDeaW7ft+tZTz/57oOP7D39pZX4GLI7u2//3d0416iuZfLEa5jTXaXKBpMEAE3HeewBQH6glNKHQWiVNOldvJufmFpIoVPXOSam86dkfPy+d3f3d152ePDMwvHvxzKm/vPCSZLKqeqW6wqmL2kxIAWGgqgcE8GmZCsUZACNA55xXrz72q1W/1PRJnMtvKBS2jn94KBuVyrfu28nm0Jbtrxy9tJgrAVA1LC9KvALTtE9JMVjaHmYq7cY0CkUEACGm1mg0S5lQfNyx41aO7C4WSwP9fbeN7v3k6N733nx19Auf2XHnnUgSoXMN9QxclKU40gEQF4AknIECIE0AGRBQVYoQEiFMmi6IOrYODsdHDpXCzNz0xMCJY67iK/WqPzsRnD6jarG30uZt+w8eLGYLqipOxAUAKI4iIoGQ7bZ3oYvyIo6kc2FHvrxcawzfcOvOkc9NTp8/dvLdj86d+utbb3RIV9/WkYWx45Xl2Qc+/+UtPb0DN1x3uZJcmZ1hOonMTH0608woACWIAKhvJnEdpJkJmHGmHTlXyFfjk3NXzgZBlCsWT1waX6xM7OzqqfjL227f0zdyS5RBOcyNvXtcnQmdAarezGCWzUYkKC5HcaYedAaIOICZsLBzcM+CVMLtQ6HFjYnJuamJemM1kFCBA9/8NjOd40ffr87/V4qdQSN35sShxcUZcQFU1RIDCDVTQgQGUw+mA04ACiWOa9XaVDk2PzbO+dUN5YHRux686frbfH35liefmW8Gv/nRD6fOnZUNPTdv7O3UhaWlWedC84kxnfYGAKaAtoYdSaMTcarqJDCzfL6jr2+HxrWu3MbBwZF6Y7FaW5lrVC6HudVz4zc99GBnT7A9ai6ePv/Cq2+aOEBVPYl0xsEM1t4HKXASagY6SgA1F4TOZWA+HxW7OsphV2exf/Pl1XpmOXnwU7cv9cYnDh/66Oipudl5lw2hCjODmhlJMyUU5s1AcbnW/iDUe7qACChEq2SdAeYTgqVy1/5HH+spbHzx978+f+Ec4BiGYRB69WaKlmrTuA4REUnXKUWyqT/igjCMGo0mxWlchwTiAo3rDLLOBUmjAVhvf2/g3NTFSQRRe7BQEx8EQeIT+AYYDm0bujh1IWk2050vZgqYadLXt+m7z33HfKJxY2jHcLFUCsNweNeNuVxW1e+6+cZ8qbS4VLs0M5/v6BrauqW7XC4WiiTLG8tJsxplMrtu2h1F0d137yvkCzCfBiZor1iqemMANO646/4nnjhw7qOJKJPZumXw5OnxarV6w8jw0nJtampqYmLinnvuMfNJorOzs4ODm44cOfLh0X8FmfzBg8/MzMwtLFScyBqFCZDWFN3KysqRD8bEBaVy798OvdNcrRZLXT/56c/ve2C/c+7Z57732ONPrNRquVL3sbGzb77+2tD27aVSKSyU3//gw717901MXvrTS2/0bxpoNJvNOEFLL0iJSKr6KMo99MhXslE4dmLs+l0j0xcvrKw2pi9N9Q1siuPk3vvufenPL3qf7Ng5/PY/Dx148unp6UtLi5XaSj0K5fA/Xt/1idtHR0cnJyfjZvzBe2/XaksizgwUidYoTxgE4lyj2YyiSNUSn8BA0ivy+fxKtUYnIvTeR5ko/dcnzUw2b6Zxs57P5xvNhgDepwu5xWwyrSyA6QyhSKuc00IxUGg+LVkCSsJUAaYfAyQ9Uv0YAUxpi7VW5TXUqi3aQrKOca1RvPaRtcChxUfXtAMQtPnEtZSwPW3bK3z9HfwfljXtrQlhTK+rmlmQ6uI1Nq5eb/++ajv1dr2Bj9NKNQ1c6AJJkqTFMtIFepUUr/NjDVfLJ6ZhsqsCZtdgSmmzYy6bzYTh/wADLyusPXDEKwAAAABJRU5ErkJggg==">
+<!-- Vura Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIjklEQVR4nHWX228dVxXGf2vvmTPn5hPbudiO09zdpJfQUjmkNwotpU0BtVAVUNOqqlAjHpCQEC0PSPwNIB4QCAQSFAlxqaCFFrWlEhG0aVNok5I49+LEcWzHiW/n2D5nZvbiYfYc2wk9kq3Rntl7rfWtb6/1LUEKCiDtfyseEMmeFVCMf6f+nQEVFPWruuy9a+9QVZafnBkUUEWQgoqIX3Bt42IM+I2KeBPZX+7UR/1yg4IDHNJ2LHOWtkNKkD/4oLKoUFS17a1isnWR9rf5EUt4LP2WHDTelkcCRcQgAs4lPhhTuGq/YIxF1fmDDYjFWotDUXe1uZWOiEiOLuqcdyD1aCwlNwchyBZlZRQiqGawiwRokpAkdcCCRNhCAQRc6l20gigkcYy6BEjBFBBrl6XVW1GFtpM+BW04PXTOJSgGYwLUJazp7WX79QNMT00zPj7B1MRYlr9iBVCSxXkQy7q+9WzoW8OqSoXDR09wZfoyxgQ4l9FUSNtsV3V5yqM2KZeIAogFBGuFp7/2dcbHJyiUihTXrEbFcOStN/nP2wcBYdfgbgZv202RGLd4hflGkzQo8dsX/oATaacjc0AQdUtENaao+TUiv3ISgCqlcoVHv/I4Saz85pc/BWKwZUqdq/nUw49wZewCmjj6Nmzk4Ct/ZmGhwdzMJAQVntr3VaYvT/Lya6+SeiJmiVfQFPGpMIhnuLEgBiTIspU6olKV4yfOcfToSSqdqwlLq7DG8IX772TuzDGC2lo6evt58Rff547P3Mvvn/85UbGDVbUqQ0eOcn50hKhU8tGbNsKZHYMYS5BFblB1iBhS9UBItqWoMWO2gKoQN1ts2rKTbz71LP/u6+B7D3+R+clxkCqDd+3l72+foLk4T6FcpR6WcKVO1JxHxN9/FGMsaZpmpHMpgdMEUYMYQUXyMoRYy2Ir4eylKZIoxLkUaw217vU8+6PnMZ2r6V19HSdHTtE3sIuZUyf4ywsvYQpFnHNcqc8joxdwrcTXkKygOZdmV5s0v4YZFFmaxBPPkroUl8akC3XS2RZpElMqr6JS2cSZDw5QjGp033oX26XF5o1befnwRWZKNX+LFOZmMPE8eGTxRUh9XVUUVYdZuoSKGMEY4zEwqFOazRa1QohJYzq23Yrs2EW1WqOvt4fbBvfw8cE9vPvGKwx+/tNsu/NOSBKMWGzTkUqAjYqIsYhYXzOC7CZgUc+Mdv5FAgRwziHGIBgiQpKWJYg62NQ/QHzoALWwwKWxYfqOHcFOp0wv1klPDxOcPIVzSpwqtQ1b2Lt/P9ViBeccxprMOGQOmazOGJF2EUVsiI3KGGMREawN6Sh3M9doMnDDrWzf8VlGxs5x5Pg7fHj2BH9983U6TBc9m3YwNXSU6bkJHvjcl9i4dh19N1zH5emEKxPj+AygqqhLyXuNqmBAMEHkSdkiiRd9KVYMQsEqrqOErZSpx8e5dOU0QRBRqlY5dvEMM9PDbO9ay3R6mS2376Znxy1EBegOSwy9cxRnFSMZx5xLswKkSrEYIQJibEnF2Mwz/6ExWRUshBW29+9mykwTbt1MqDHN4REujQ6z2FwgMCEO2PeNbyGFTs4cfo/65H8x1U6CZolTxw4wMzOeQe8cThOPtcvSjsGgeON588kKhhFDHDeoN0bpjpV06AwyucCq7j4G736Qm66/jXRxjluefIbJVsCvf/gDRs+exqxay81r1tHpppidncDaEE0TVPIW70mvXitk7TgTGSoWYyzOOawJUFXK5Q56erbh4gZdpTX09+9gsTlDvTHPpeY0l8MSC2fPcNNDD9K5NmBr1GLm5DleeOUN1FjA4Vzqu59b6sW6TA/kUYuAUwWxiAnAKTYIsbYAmlKOqnR1dBN2dVLt3cDlhUUKcwkPfuJ2ZtfFHDt4gA8Pn+DSxCS2GIJzoIqSNR8R8dA70DTrzMaWtC0nBFyaIjZACBCTt2fXLlaaJghCrbuLvY8+xtrKGl783a84d/4sYJEwJAxCUpdmEbcNKy5eBGOyWqNeQRpTVHxlMjYgDCOazRZirN8QYGyAixeRoIi1AUmzCSjretcRWMvohREIoryZIiK4JCUIApI0gbQJErJ5y2YujJ4nabV8SgST5UVRl9DTs57vPPdtNE1wcZPN2wao1mqEYcjAzhsplYo4l7Lz5hsp12rMzDa4OD5JuaOLzZs2srq7m2qliojQvaabpFUnKhTYedMuoijik5+8i0q5ApqSo+5FadYDnEszLUCTO+6+nyee2MfZD4eJCgU2bezn+Mkz1Ot1btgxwOxcg9HRUYaHh7nnnntQTUkSx8TEBP396zl06BAfHP4XQaHM/v3PMD5+iampaawxK2R6kHWpTAHNz89z6P0hjA2oda/jbwfeprVQp1rr4sc/+Rn3PbAXay3PPvddHnv8CeYbDUq11RwZOs0br73K5q1bqdVqhJVu3nv/A/bsuYvhkYv88aXX6V3fR7PVohVn7F+mwiMVyaKPohIPPfJlilHI0LEhrt+5g7EL55lfaDJ2cZSevvXEccK9993LS396kTRN2LZ9gLf+eYB9Tz7N2NhFZmemacwvEoWGg/94jZ0fu53BwUFGRkaIWzHvv/sWjcasV94gxkSej1kqwiDAWEuz1SKKIpzTjEiakSt1UC6Xma83EGswRkjTlKgQtb9LkxaFYhlVR9xapFwu02w1MxWQ5nrQ9x/xo9mSWs1qtfhcZQVK8o6dCZc0v5biq1kmOjO5tSTzjZ+2nHMfMU2pr4Ta1mHXfLJ845Lf7bfkEyGs3J2PY23C5dPKitMybdRWw9cOWb6F6orJ8JpDrjbedmG5wRzZ/Eznlg0mHuqVh648cml1pZM5eFc78H8HOAGnjsCG2MCQJEmmBzJv/VSrVyHVNpR3seyDNjLe+PJocx5dE4TPobFCqVikEIb8DyYeOpWGlTyxAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+<link rel="manifest" href="/manifest.json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vura — Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#03030b;--card:rgba(11,11,30,.92);--card2:rgba(16,16,42,.96);--blue:#00d2ff;--gold:#ffcc33;--green:#10b981;--orange:#ff9500;--purple:#9d50bb;--pink:#ff3d70;--red:#ef4444;--border:rgba(255,255,255,0.07);--text:#e8eaf6;--muted:#8892a4;}
+[data-theme="light"]{--bg:#f0f4f8;--card:rgba(255,255,255,.95);--card2:#fff;--border:rgba(0,0,0,.09);--text:#1e293b;--muted:#64748b}
+[data-theme="dim"]{--bg:#0f1117;--card:rgba(20,22,36,.95);--card2:rgba(26,28,44,.98);--border:rgba(255,255,255,.08);--text:#d4d8e8;--muted:#7a8499}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+button,a,[onclick]{touch-action:manipulation;cursor:pointer}
+html,body{min-height:100%;background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+body{overflow-x:hidden;padding-bottom:88px}
+.bg-glow{position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 60% 40% at 15% 8%,rgba(0,210,255,.05) 0%,transparent 70%),radial-gradient(ellipse 50% 35% at 85% 85%,rgba(157,80,187,.04) 0%,transparent 70%)}
+.page{max-width:540px;margin:0 auto;padding:0 14px}
+
+/* TOP BAR */
+.top-bar{display:flex;align-items:center;justify-content:space-between;padding:18px 0 10px}
+.greet-row{font-size:.7rem;color:var(--muted);font-weight:700;display:flex;align-items:center;gap:4px}
+.greet-row i{font-size:.68rem;color:var(--gold)}
+.name-row{font-family:'Orbitron',monospace;font-size:1.05rem;font-weight:900;color:var(--text);display:flex;align-items:center;gap:7px}
+.name-row i{color:var(--gold);font-size:.85rem}
+.tb-right{display:flex;align-items:center;gap:8px}
+.notif-btn{width:38px;height:38px;border-radius:11px;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;transition:.22s}
+.notif-btn i{color:var(--muted);font-size:.9rem}
+.notif-badge{position:absolute;top:7px;right:7px;width:6px;height:6px;border-radius:50%;background:var(--red);border:1.5px solid var(--bg);display:none}
+.avatar{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),#3a7bd5);display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-size:.9rem;font-weight:900;color:#fff;cursor:pointer;border:2px solid rgba(0,210,255,.28);flex-shrink:0;text-transform:uppercase}
+
+/* BALANCE CARD — OPay style with mini tx inside */
+.bal-card{background:linear-gradient(135deg,#0a2a4a,#061828);border:1px solid rgba(0,210,255,.2);border-radius:20px;padding:18px 18px 0;margin-bottom:13px;position:relative;overflow:hidden}
+.bal-card::before{content:'';position:absolute;top:-50px;right:-50px;width:160px;height:160px;border-radius:50%;background:rgba(0,210,255,.06);pointer-events:none}
+.bc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.bc-label{font-size:.68rem;color:rgba(255,255,255,.45);font-weight:700;text-transform:uppercase;letter-spacing:.8px;display:flex;align-items:center;gap:5px}
+.bc-label i{font-size:.65rem;color:var(--blue)}
+.bc-live{display:flex;align-items:center;gap:4px;font-size:.65rem;font-weight:700;color:var(--green)}
+.live-dot{width:5px;height:5px;border-radius:50%;background:var(--green);animation:ldot 1.4s ease-in-out infinite}
+@keyframes ldot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.6)}}
+.bc-amount{font-family:'Orbitron',monospace;font-size:2.4rem;font-weight:900;color:#fff;line-height:1}
+.bc-ticker{font-family:'Orbitron',monospace;font-size:.76rem;font-weight:700;color:rgba(0,210,255,.7);margin-left:5px}
+.bc-naira{font-size:.76rem;color:rgba(255,255,255,.35);margin-bottom:13px;display:flex;align-items:center;gap:3px;margin-top:3px;font-weight:600}
+.bc-naira i{color:var(--gold);font-size:.7rem}
+.bc-btns{display:flex;gap:9px;margin-bottom:15px}
+.bcb{flex:1;padding:10px 0;border:none;border-radius:11px;font-family:'Nunito',sans-serif;font-size:.78rem;font-weight:800;cursor:pointer;transition:all .28s;display:flex;align-items:center;justify-content:center;gap:5px}
+.bcb i{font-size:.75rem}
+.bcb-p{background:linear-gradient(135deg,var(--blue),#2d6dc7);color:#fff;box-shadow:0 5px 15px rgba(0,210,255,.2)}
+.bcb-g{background:rgba(255,255,255,.07);border:1px solid var(--border);color:var(--text)}
+
+/* OPay mini tx inside balance card */
+.bc-tx-section{border-top:1px solid rgba(255,255,255,.06);margin:0 -18px;padding:10px 15px 14px}
+.bc-tx-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.bc-tx-title{font-size:.66rem;font-weight:800;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.7px}
+.bc-tx-all{font-size:.68rem;font-weight:700;color:var(--blue);background:none;border:none;font-family:'Nunito',sans-serif;cursor:pointer;display:flex;align-items:center;gap:3px}
+.bc-tx-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);cursor:pointer}
+.bc-tx-item:last-child{border-bottom:none}
+.bc-tx-item:active{opacity:.7}
+.bc-tx-ic{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.76rem;flex-shrink:0}
+.bc-tx-mid{flex:1;min-width:0}
+.bc-tx-nm{font-size:.77rem;font-weight:700;color:rgba(255,255,255,.7);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bc-tx-dt{font-size:.61rem;color:rgba(255,255,255,.28);margin-top:1px}
+.bc-tx-amt{font-family:'Orbitron',monospace;font-size:.77rem;font-weight:700;white-space:nowrap}
+.bc-tx-amt.cr{color:var(--green)}.bc-tx-amt.db{color:var(--red)}
+.bc-tx-empty{text-align:center;padding:14px 0;font-size:.74rem;color:rgba(255,255,255,.2)}
+
+/* CLAIM CARD */
+.claim-card{background:linear-gradient(135deg,rgba(30,22,5,.97),rgba(20,15,3,.98));border:1px solid rgba(255,204,51,.2);border-radius:17px;padding:13px 15px;margin-bottom:17px;box-shadow:0 0 20px rgba(255,204,51,.06)}
+.claim-inner{display:flex;align-items:center;gap:11px}
+.claim-icon{width:44px;height:44px;border-radius:12px;background:rgba(255,204,51,.15);border:1px solid rgba(255,204,51,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.claim-icon i{color:var(--gold);font-size:1.2rem}
+.claim-body{flex:1;min-width:0}
+.claim-title{font-weight:800;font-size:.86rem;color:var(--text)}
+.claim-sub{font-size:.7rem;color:var(--muted);font-weight:600;margin-top:1px}
+.claim-sub b{color:var(--gold)}
+.claim-cd{font-family:'Orbitron',monospace;font-size:.67rem;color:var(--orange);font-weight:700;margin-top:2px;display:none}
+.btn-claim{padding:9px 14px;border:none;border-radius:10px;font-family:'Nunito',sans-serif;font-size:.77rem;font-weight:800;cursor:pointer;transition:all .28s;flex-shrink:0;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.btn-claim.ready{background:linear-gradient(135deg,var(--gold),var(--orange));color:#000;box-shadow:0 4px 14px rgba(255,204,51,.26)}
+.btn-claim.done{background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);cursor:not-allowed}
+/* 2-ad requirement bar */
+.claim-ad-req{margin-top:9px;background:rgba(255,204,51,.06);border:1px solid rgba(255,204,51,.13);border-radius:10px;padding:8px 11px;display:flex;align-items:center;gap:9px}
+.cad-dots{display:flex;gap:5px}
+.cad-dot{width:22px;height:6px;border-radius:3px;background:rgba(255,255,255,.1);transition:.3s}
+.cad-dot.on{background:var(--gold)}
+.cad-txt{font-size:.7rem;color:var(--muted);font-weight:600;flex:1;line-height:1.4}
+.cad-txt b{color:var(--gold)}
+.cad-btn{padding:5px 10px;border:none;border-radius:7px;font-family:'Nunito',sans-serif;font-size:.7rem;font-weight:800;background:linear-gradient(135deg,var(--gold),var(--orange));color:#000;cursor:pointer;white-space:nowrap;flex-shrink:0}
+
+/* SECTION HEADER */
+.sec-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}
+.sec-lbl{font-size:.7rem;font-weight:800;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.9px;display:flex;align-items:center;gap:5px}
+.sec-lbl i{font-size:.68rem;color:var(--blue)}
+.sec-more{font-size:.73rem;font-weight:700;color:var(--blue);background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:3px;font-family:'Nunito',sans-serif}
+
+/* PLAN + REFERRAL mini row */
+.mini-row{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:20px}
+.mini-c{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:13px;display:flex;flex-direction:column;gap:7px;cursor:pointer;transition:.22s}
+.mini-c:hover{border-color:rgba(0,210,255,.16);transform:translateY(-2px)}
+.mini-top{display:flex;align-items:center;gap:7px}
+.mini-icon{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
+.mini-title{font-size:.78rem;font-weight:800;color:var(--text)}
+.mini-sub{font-size:.66rem;color:var(--muted)}
+.mini-act{font-size:.7rem;font-weight:800;color:var(--blue);display:flex;align-items:center;gap:3px}
+
+/* QUICK ACTIONS */
+.act-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:20px}
+.ac{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:14px 8px 12px;text-align:center;cursor:pointer;transition:all .28s;position:relative;overflow:hidden}
+.ac:hover{transform:translateY(-4px);border-color:rgba(0,210,255,.2)}
+.ac:active{transform:scale(.96)}
+.ac-icon{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin:0 auto 8px}
+.ac-name{font-size:.73rem;font-weight:800;color:var(--text)}
+.ac-hint{font-size:.6rem;color:var(--muted);margin-top:1px;font-weight:600}
+.ac-badge{position:absolute;top:6px;right:6px;padding:1px 5px;border-radius:4px;font-size:.56rem;font-weight:800}
+.ab-hot{background:rgba(239,68,68,.18);border:1px solid rgba(239,68,68,.28);color:#fca5a5}
+.ab-new{background:rgba(16,185,129,.16);border:1px solid rgba(16,185,129,.26);color:#6ee7b7}
+.ab-earn{background:rgba(255,204,51,.14);border:1px solid rgba(255,204,51,.26);color:var(--gold)}
+
+/* STATS */
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:20px}
+.stat-c{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:12px 9px;text-align:center}
+.stat-c-val{font-family:'Orbitron',monospace;font-size:.95rem;font-weight:900;color:var(--text);display:block;margin-bottom:2px}
+.stat-c-lbl{font-size:.6rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+
+/* AD EARN */
+.ad-card{background:linear-gradient(135deg,rgba(255,149,0,.1),rgba(255,61,112,.07));border:1px solid rgba(255,149,0,.2);border-radius:17px;padding:14px 15px;margin-bottom:20px}
+.ad-inner{display:flex;align-items:flex-start;gap:12px}
+.ad-icon{width:46px;height:46px;border-radius:13px;background:rgba(255,149,0,.15);border:1px solid rgba(255,149,0,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ad-icon i{color:var(--orange);font-size:1.3rem}
+.ad-body{flex:1;min-width:0}
+.ad-title{font-weight:800;font-size:.88rem;color:var(--text);margin-bottom:2px}
+.ad-sub{font-size:.7rem;color:var(--muted);line-height:1.5}
+.ad-sub b{color:var(--orange)}
+.ad-progress{display:flex;align-items:center;gap:7px;margin-top:7px;margin-bottom:8px}
+.adp-dots{display:flex;gap:4px}
+.adp-dot{width:22px;height:5px;border-radius:3px;background:rgba(255,255,255,.08);transition:.3s}
+.adp-dot.on{background:var(--orange)}
+.adp-txt{font-size:.67rem;color:var(--muted);font-weight:600}
+.adp-txt b{color:var(--orange)}
+.ad-btns{display:flex;gap:7px;flex-wrap:wrap}
+.adb{padding:7px 13px;border:none;border-radius:9px;font-family:'Nunito',sans-serif;font-size:.75rem;font-weight:800;cursor:pointer;transition:.25s;display:flex;align-items:center;gap:5px}
+.adb-watch{background:linear-gradient(135deg,var(--orange),var(--pink));color:#fff;box-shadow:0 4px 12px rgba(255,149,0,.2)}
+.adb-watch:hover{transform:translateY(-2px)}
+.adb-info{background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted)}
+
+/* NEWS */
+.news-scroll{display:flex;gap:11px;overflow-x:auto;padding-bottom:5px;margin-bottom:20px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.news-scroll::-webkit-scrollbar{display:none}
+.nc{flex-shrink:0;width:210px;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;cursor:pointer;transition:all .22s}
+.nc:hover{transform:translateY(-3px);border-color:rgba(0,210,255,.16)}
+.nc:active{transform:scale(.97)}
+.nc-img{width:100%;height:105px;object-fit:cover;display:block}
+.nc-img-ph{width:100%;height:105px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(0,210,255,.07),rgba(157,80,187,.05))}
+.nc-img-ph i{font-size:1.8rem;color:rgba(0,210,255,.25)}
+.nc-body{padding:9px 11px}
+.nc-cat{font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--blue);margin-bottom:3px;display:flex;align-items:center;gap:3px}
+.nc-title{font-size:.75rem;font-weight:700;color:var(--text);line-height:1.42;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nc-time{font-size:.62rem;color:var(--muted);margin-top:4px;display:flex;align-items:center;gap:3px}
+
+/* YOUTUBE VIDEOS */
+.yt-scroll{display:flex;gap:11px;overflow-x:auto;padding-bottom:8px;margin-bottom:20px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.yt-scroll::-webkit-scrollbar{display:none}
+.yt-card{flex-shrink:0;width:200px;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;cursor:pointer;transition:all .22s;position:relative}
+.yt-card:hover{transform:translateY(-3px);border-color:rgba(255,61,112,.2)}
+.yt-card:active{transform:scale(.97)}
+.yt-thumb{width:100%;height:112px;object-fit:cover;display:block;background:#111}
+.yt-play-btn{position:absolute;top:38px;left:50%;transform:translateX(-50%);width:38px;height:38px;border-radius:50%;background:rgba(255,0,0,.88);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(255,0,0,.3);transition:.22s}
+.yt-card:hover .yt-play-btn{background:rgba(255,0,0,1);transform:translateX(-50%) scale(1.08)}
+.yt-play-btn i{color:#fff;font-size:.78rem;margin-left:2px}
+.yt-body{padding:9px 10px}
+.yt-title{font-size:.74rem;font-weight:700;color:var(--text);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:4px}
+.yt-meta{font-size:.61rem;color:var(--muted);display:flex;align-items:center;gap:4px}
+.yt-meta i{color:var(--pink);font-size:.58rem}
+
+/* IN-APP YOUTUBE VIEWER */
+#ytViewer{position:fixed;inset:0;z-index:10000;background:#000;display:none;flex-direction:column}
+.ytv-hdr{display:flex;align-items:center;gap:10px;padding:12px 14px;background:rgba(0,0,0,.95);flex-shrink:0;border-bottom:1px solid rgba(255,255,255,.06)}
+.ytv-back{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.ytv-back i{color:#fff;font-size:.82rem}
+.ytv-title{flex:1;font-weight:700;font-size:.84rem;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ytv-ext{padding:6px 12px;border:none;border-radius:8px;background:rgba(255,0,0,.8);color:#fff;font-family:'Nunito',sans-serif;font-size:.72rem;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:5px;text-decoration:none;flex-shrink:0}
+.ytv-frame{flex:1;background:#000}
+.ytv-frame iframe{width:100%;height:100%;border:none;display:block}
+
+/* NEWS READER */
+#newsReader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:none;flex-direction:column}
+.nr-hdr{display:flex;align-items:center;gap:10px;padding:13px 14px;border-bottom:1px solid var(--border);background:var(--card);flex-shrink:0}
+.nr-back{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.nr-back i{color:var(--muted);font-size:.82rem}
+.nr-title{flex:1;font-weight:700;font-size:.85rem;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nr-ext{padding:7px 13px;border:none;border-radius:9px;background:var(--blue);color:#000;font-family:'Nunito',sans-serif;font-size:.75rem;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:5px;flex-shrink:0}
+.nr-body{flex:1;overflow-y:auto;padding:20px 16px;max-width:640px;margin:0 auto;width:100%}
+.nr-img{width:100%;max-height:220px;object-fit:cover;border-radius:14px;margin-bottom:16px;border:1px solid var(--border);display:block}
+.nr-cat{font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--blue);margin-bottom:8px}
+.nr-h1{font-family:'Orbitron',monospace;font-size:1.05rem;font-weight:900;color:var(--text);line-height:1.3;margin-bottom:10px}
+.nr-meta{font-size:.7rem;color:var(--muted);margin-bottom:16px;display:flex;gap:10px;flex-wrap:wrap}
+.nr-desc{font-size:.88rem;color:var(--text);line-height:1.82;margin-bottom:16px}
+.nr-cta{background:linear-gradient(135deg,rgba(0,210,255,.1),rgba(58,123,213,.07));border:1px solid rgba(0,210,255,.2);border-radius:13px;padding:14px;text-align:center}
+.nr-cta-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border:none;border-radius:10px;background:linear-gradient(135deg,var(--blue),#2d6dc7);color:#fff;font-family:'Nunito',sans-serif;font-size:.8rem;font-weight:800;cursor:pointer;text-decoration:none;margin-top:10px}
+
+/* TX FILTERS */
+.txf-btn{padding:6px 14px;border:1px solid var(--border);border-radius:8px;background:rgba(255,255,255,.04);color:var(--muted);font-family:'Nunito',sans-serif;font-size:.74rem;font-weight:700;cursor:pointer;transition:.18s;white-space:nowrap;display:flex;align-items:center;gap:4px}
+.txf-btn.active{background:rgba(0,210,255,.1);border-color:rgba(0,210,255,.25);color:var(--blue)}
+.tx-item{display:flex;align-items:center;gap:11px;background:var(--card);border:1px solid var(--border);border-radius:13px;padding:12px 13px;margin-bottom:7px;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
+.tx-item::after{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px}
+.tx-item.credit::after{background:var(--green)}.tx-item.debit::after{background:var(--red)}
+.tx-item:hover{background:var(--card2);transform:translateX(2px)}
+.tx-ic{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:.92rem;flex-shrink:0}
+.tx-mid{flex:1;min-width:0}
+.tx-nm{font-size:.82rem;font-weight:700;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tx-dt{font-size:.66rem;color:var(--muted);margin-top:1px}
+.tx-rt{text-align:right;flex-shrink:0}
+.tx-am{font-family:'Orbitron',monospace;font-size:.84rem;font-weight:700}
+.tx-am.credit{color:var(--green)}.tx-am.debit{color:var(--red)}
+
+/* SHIMMER */
+.sh-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;flex-shrink:0}
+.sh{background:linear-gradient(90deg,rgba(255,255,255,.04) 25%,rgba(255,255,255,.08) 50%,rgba(255,255,255,.04) 75%);background-size:200% 100%;animation:sh 1.4s infinite;border-radius:5px}
+@keyframes sh{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* TOAST */
+#toasts{position:fixed;top:14px;right:14px;z-index:99999;display:flex;flex-direction:column;gap:7px;max-width:280px}
+.toast{padding:10px 12px;border-radius:11px;font-size:.78rem;font-weight:700;display:flex;align-items:center;gap:7px;backdrop-filter:blur(16px);border:1px solid;animation:tIn .35s cubic-bezier(.34,1.56,.64,1)}
+.toast i{font-size:.87rem;flex-shrink:0}.toast span{flex:1}
+.toast.success{background:rgba(16,185,129,.14);border-color:rgba(16,185,129,.26);color:#6ee7b7}
+.toast.error{background:rgba(239,68,68,.14);border-color:rgba(239,68,68,.26);color:#fca5a5}
+.toast.info{background:rgba(0,210,255,.11);border-color:rgba(0,210,255,.22);color:#a5f3ff}
+.toast.removing{animation:tOut .28s ease forwards}
+@keyframes tIn{from{opacity:0;transform:translateX(34px)}to{opacity:1;transform:translateX(0)}}
+@keyframes tOut{to{opacity:0;transform:translateX(34px)}}
+.tc{margin-left:auto;background:none;border:none;color:inherit;cursor:pointer;opacity:.48;padding:0 0 0 4px}
+canvas#claimCv{position:fixed;inset:0;z-index:9998;pointer-events:none}
+@media(max-width:340px){.act-grid{grid-template-columns:repeat(2,1fr)}.mini-row{grid-template-columns:1fr}}
+
+/* ── EXAM COUNTDOWN ── */
+.ec-card{background:linear-gradient(135deg,rgba(139,92,246,.1),rgba(99,102,241,.07));border:1px solid rgba(139,92,246,.22);border-radius:14px;padding:12px 14px;margin-bottom:8px;display:flex;align-items:center;gap:11px;position:relative;overflow:hidden}
+.ec-card-ic{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--purple),var(--indigo));display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
+.ec-days{font-family:'Orbitron',monospace;font-size:.78rem;font-weight:900;color:#fff;line-height:1}
+.ec-days-lbl{font-size:.42rem;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.4px}
+.ec-info{flex:1}
+.ec-exam-name{font-weight:800;font-size:.84rem;color:var(--text);margin-bottom:1px}
+.ec-date{font-size:.66rem;color:var(--muted)}
+.ec-del{background:none;border:none;color:var(--muted);cursor:pointer;font-size:.72rem;padding:3px 6px;border-radius:6px;transition:.15s}
+.ec-del:hover{color:var(--red);background:rgba(239,68,68,.09)}
+.ec-add-btn{width:100%;padding:11px;border:1.5px dashed rgba(255,255,255,.1);border-radius:13px;background:transparent;color:var(--muted);font-family:'Nunito',sans-serif;font-size:.78rem;font-weight:700;cursor:pointer;transition:.18s;display:flex;align-items:center;justify-content:center;gap:6px}
+.ec-add-btn:hover{border-color:var(--purple);color:var(--purple);background:rgba(139,92,246,.05)}
+
+/* ── DAILY CHALLENGE ── */
+.dc-card{background:linear-gradient(135deg,rgba(249,115,22,.08),rgba(245,158,11,.05));border:1px solid rgba(249,115,22,.2);border-radius:14px;padding:13px 14px}
+.dc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+.dc-label{font-size:.65rem;font-weight:800;color:var(--orange);text-transform:uppercase;letter-spacing:.6px;display:flex;align-items:center;gap:4px}
+.dc-diff{padding:2px 8px;border-radius:5px;font-size:.62rem;font-weight:800}
+.dc-diff.easy{background:rgba(16,185,129,.12);color:var(--green)}
+.dc-diff.medium{background:rgba(249,115,22,.12);color:var(--orange)}
+.dc-diff.hard{background:rgba(239,68,68,.12);color:var(--red)}
+.dc-q{font-size:.86rem;color:var(--text);line-height:1.72;margin-bottom:12px;font-weight:600}
+.dc-opts{display:flex;flex-direction:column;gap:7px}
+.dc-opt{padding:10px 12px;border:1.5px solid var(--border);border-radius:10px;background:rgba(255,255,255,.03);cursor:pointer;font-family:'Nunito',sans-serif;font-size:.82rem;font-weight:600;color:var(--text);text-align:left;transition:.16s;display:flex;align-items:center;gap:8px}
+.dc-opt:hover{border-color:rgba(249,115,22,.4);background:rgba(249,115,22,.05)}
+.dc-opt.correct{border-color:rgba(16,185,129,.5);background:rgba(16,185,129,.08);color:var(--green)}
+.dc-opt.wrong{border-color:rgba(239,68,68,.5);background:rgba(239,68,68,.08);color:var(--red)}
+.dc-opt-letter{width:24px;height:24px;border-radius:7px;background:var(--card2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.68rem;font-weight:800;font-family:'Orbitron',monospace;color:var(--muted);flex-shrink:0}
+.dc-result{margin-top:10px;padding:10px 12px;border-radius:10px;font-size:.78rem;font-weight:700;line-height:1.5}
+.dc-result.correct{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);color:var(--green)}
+.dc-result.wrong{background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.18);color:var(--red)}
+.dc-bonus{display:inline-flex;align-items:center;gap:4px;margin-top:6px;font-size:.7rem;font-weight:800;color:var(--gold)}
+
+/* ── STUDY TIMER ── */
+.st-card{background:linear-gradient(135deg,rgba(16,185,129,.08),rgba(0,210,255,.05));border:1px solid rgba(16,185,129,.2);border-radius:14px;padding:13px 14px}
+.st-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.st-label{font-size:.73rem;font-weight:800;color:var(--green);display:flex;align-items:center;gap:5px}
+.st-session-info{font-size:.65rem;color:var(--muted)}
+.st-display{text-align:center;margin:4px 0 12px}
+.st-time{font-family:'Orbitron',monospace;font-size:2.4rem;font-weight:900;color:var(--text);line-height:1}
+.st-phase{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-top:3px}
+.st-progress{height:5px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden;margin-bottom:12px}
+.st-progress-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--blue));border-radius:99px;transition:width 1s linear}
+.st-btns{display:flex;gap:8px}
+.st-btn{flex:1;padding:10px;border-radius:10px;font-family:'Nunito',sans-serif;font-size:.8rem;font-weight:800;cursor:pointer;border:none;transition:.18s;display:flex;align-items:center;justify-content:center;gap:6px}
+.st-start{background:linear-gradient(135deg,var(--green),#059669);color:#fff;box-shadow:0 3px 10px rgba(16,185,129,.25)}
+.st-start:hover{transform:translateY(-1px)}
+.st-reset{background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--text)}
+.st-presets{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.st-preset{padding:5px 12px;border-radius:999px;font-size:.7rem;font-weight:700;border:1px solid var(--border);color:var(--muted);cursor:pointer;transition:.15s;background:rgba(255,255,255,.03);font-family:'Nunito',sans-serif}
+.st-preset.sel{background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.35);color:var(--green)}
+.st-vux-earn{display:flex;align-items:center;gap:4px;font-size:.65rem;color:var(--gold);margin-top:6px;text-align:center;justify-content:center}
+.st-sessions-today{font-size:.65rem;color:var(--muted);text-align:center;margin-top:3px}
+
+</style>
+</head>
+<body>
+<div class="bg-glow"></div>
+<canvas id="claimCv"></canvas>
+<div id="toasts"></div>
+
+<!-- NEWS READER -->
+<div id="newsReader">
+  <div class="nr-hdr">
+    <div class="nr-back" onclick="closeReader()"><i class="fas fa-arrow-left"></i></div>
+    <div class="nr-title" id="nrTitle">Article</div>
+    <button class="nr-ext" onclick="openExternal()"><i class="fas fa-arrow-up-right-from-square"></i> Full</button>
+  </div>
+  <div class="nr-body" id="nrBody"></div>
+</div>
+
+<!-- IN-APP YOUTUBE VIEWER -->
+<div id="ytViewer">
+  <div class="ytv-hdr">
+    <div class="ytv-back" onclick="closeYt()"><i class="fas fa-arrow-left"></i></div>
+    <div class="ytv-title" id="ytvTitle">Video</div>
+    <a class="ytv-ext" id="ytvLink" href="#" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube</a>
+  </div>
+  <div class="ytv-frame"><iframe id="ytvFrame" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
+<!-- TX HISTORY OVERLAY -->
+<div id="txOverlay" style="display:none;position:fixed;inset:0;z-index:9990;background:var(--bg);flex-direction:column">
+  <div style="display:flex;align-items:center;gap:11px;padding:14px;border-bottom:1px solid var(--border);background:var(--card);flex-shrink:0">
+    <div onclick="closeTxHistory()" style="width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer"><i class="fas fa-arrow-left" style="color:var(--muted);font-size:.85rem"></i></div>
+    <div style="flex:1"><div style="font-family:'Orbitron',monospace;font-size:.88rem;font-weight:900;color:var(--text)">Transaction History</div><div style="font-size:.66rem;color:var(--muted);margin-top:1px">All VUX activity</div></div>
+  </div>
+  <div style="display:flex;gap:7px;padding:10px 13px;border-bottom:1px solid var(--border);background:var(--card);flex-shrink:0;overflow-x:auto;scrollbar-width:none">
+    <button class="txf-btn active" onclick="setTxFilter('all',this)">All</button>
+    <button class="txf-btn" onclick="setTxFilter('credit',this)"><i class="fas fa-arrow-down" style="color:var(--green);font-size:.62rem"></i> Earned</button>
+    <button class="txf-btn" onclick="setTxFilter('debit',this)"><i class="fas fa-arrow-up" style="color:var(--red);font-size:.62rem"></i> Spent</button>
+  </div>
+  <div id="txOverlayList" style="flex:1;overflow-y:auto;padding:10px 13px"></div>
+</div>
+
+<div class="page">
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div>
+      <div class="greet-row"><i class="fas fa-sun" id="greetIc"></i><span id="greetTxt">Good morning</span></div>
+      <div class="name-row"><span id="userName">Loading...</span><i class="fas fa-hand-wave"></i></div>
+    </div>
+    <div class="tb-right">
+      <div class="notif-btn" onclick="navParent('settings')"><i class="fas fa-bell"></i><div class="notif-badge" id="notifBadge"></div></div>
+      <div class="avatar" id="avatarEl" onclick="navParent('settings')"></div>
+    </div>
+  </div>
+
+  <!-- BALANCE CARD with OPay mini tx -->
+  <div class="bal-card">
+    <div class="bc-top">
+      <div class="bc-label"><i class="fas fa-coins"></i> VUX Balance</div>
+      <div class="bc-live"><div class="live-dot"></div> LIVE</div>
+    </div>
+    <div><span class="bc-amount" id="vuxBal">—</span><span class="bc-ticker">VUX</span></div>
+    <div class="bc-naira"><i class="fas fa-naira-sign"></i><span id="nairaVal">—</span></div>
+    <div class="bc-btns">
+      <button class="bcb bcb-p" onclick="navParent('ai')"><i class="fas fa-robot"></i> Use AI</button>
+      <button class="bcb bcb-g" onclick="openTxHistory()"><i class="fas fa-clock-rotate-left"></i> History</button>
+      <button class="bcb bcb-g" onclick="goTo('topup')"><i class="fas fa-arrow-up-from-bracket"></i> Top Up</button>
+    </div>
+    <!-- OPay-style recent transactions inside the card -->
+    <div class="bc-tx-section">
+      <div class="bc-tx-hdr">
+        <div class="bc-tx-title"><i class="fas fa-clock-rotate-left" style="font-size:.57rem;margin-right:4px"></i>Recent Transactions</div>
+        <button class="bc-tx-all" onclick="openTxHistory()">View All <i class="fas fa-chevron-right" style="font-size:.6rem"></i></button>
+      </div>
+      <div id="bcTxList"><div class="bc-tx-empty">No transactions yet</div></div>
+    </div>
+  </div>
+
+  <!-- DAILY CLAIM — requires 2 ads -->
+  <div class="claim-card">
+    <div class="claim-inner">
+      <div class="claim-icon"><i class="fas fa-gift"></i></div>
+      <div class="claim-body">
+        <div class="claim-title">Daily VUX Reward</div>
+        <div class="claim-sub">Claim <b id="claimAmt">200</b> VUX every 24 hours</div>
+        <div class="claim-cd" id="claimCd"></div>
+      </div>
+      <button class="btn-claim ready" id="claimBtn" onclick="doClaim()"><i class="fas fa-hand-holding-heart"></i> Claim</button>
+    </div>
+    <!-- Ad requirement — 2 Google ads must be watched -->
+    <div class="claim-ad-req" id="claimAdReq">
+      <div class="cad-dots">
+        <div class="cad-dot" id="cDot1"></div>
+        <div class="cad-dot" id="cDot2"></div>
+      </div>
+      <div class="cad-txt" id="cAdTxt">Watch <b id="cAdNeed">2</b> ads to unlock daily claim</div>
+      <button class="cad-btn" onclick="watchAdForClaim()"><i class="fas fa-play" style="font-size:.6rem;margin-right:3px"></i>Watch</button>
+    </div>
+  </div>
+
+  <!-- PLAN + REFERRAL -->
+  <div class="mini-row">
+    <div class="mini-c" onclick="navParent('settings')">
+      <div class="mini-top">
+        <div class="mini-icon" style="background:rgba(157,80,187,.1);border:1px solid rgba(157,80,187,.2)"><i class="fas fa-shield-halved" style="color:#c084fc"></i></div>
+        <div><div class="mini-title" id="planLabel">Free Plan</div><div class="mini-sub">Current tier</div></div>
+      </div>
+      <div class="mini-act"><i class="fas fa-arrow-up"></i> Upgrade Plan</div>
+    </div>
+    <div class="mini-c" onclick="shareRef()">
+      <div class="mini-top">
+        <div class="mini-icon" style="background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2)"><i class="fas fa-link" style="color:var(--green)"></i></div>
+        <div><div class="mini-title" id="refCodeLbl">VUX-——</div><div class="mini-sub">Referral code</div></div>
+      </div>
+      <div class="mini-act"><i class="fas fa-share-nodes"></i> Share & Earn</div>
+    </div>
+  </div>
+
+  <!-- QUICK ACTIONS — Smart Tutor is a tool here, not a nav tab -->
+  <div class="sec-hd"><div class="sec-lbl"><i class="fas fa-grid-2"></i> Quick Actions</div></div>
+  <div class="act-grid">
+    <div class="ac" onclick="navParent('ai')"><div class="ac-badge ab-hot">HOT</div><div class="ac-icon" style="background:rgba(0,210,255,.1);border:1px solid rgba(0,210,255,.18)"><i class="fas fa-robot" style="color:var(--blue)"></i></div><div class="ac-name">AI Chat</div><div class="ac-hint">Ask anything</div></div>
+    <div class="ac" onclick="goTo('quiz')"><div class="ac-badge ab-earn">+VUX</div><div class="ac-icon" style="background:rgba(255,204,51,.1);border:1px solid rgba(255,204,51,.18)"><i class="fas fa-graduation-cap" style="color:var(--gold)"></i></div><div class="ac-name">Smart Quiz</div><div class="ac-hint">1 VUX/answer</div></div>
+    <div class="ac" onclick="goTo('classroom')"><div class="ac-badge" style="background:rgba(0,210,255,.12);color:var(--blue)">NEW</div><div class="ac-icon" style="background:rgba(0,210,255,.1);border:1px solid rgba(0,210,255,.18)"><i class="fas fa-chalkboard-user" style="color:var(--blue)"></i></div><div class="ac-name">Classroom</div><div class="ac-hint">Notes + Exams</div></div>
+    <div class="ac" onclick="navParent('gaming')"><div class="ac-icon" style="background:rgba(255,61,112,.1);border:1px solid rgba(255,61,112,.18)"><i class="fas fa-gamepad" style="color:var(--pink)"></i></div><div class="ac-name">Games</div><div class="ac-hint">Play & earn</div></div>
+    <div class="ac" onclick="goTo('ranking')"><div class="ac-badge ab-new">NEW</div><div class="ac-icon" style="background:rgba(255,204,51,.1);border:1px solid rgba(255,204,51,.18)"><i class="fas fa-trophy" style="color:var(--gold)"></i></div><div class="ac-name">Rankings</div><div class="ac-hint">Leaderboard</div></div>
+    <div class="ac" onclick="goTo('referral')"><div class="ac-badge ab-earn">+600</div><div class="ac-icon" style="background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.18)"><i class="fas fa-share-nodes" style="color:var(--green)"></i></div><div class="ac-name">Referral</div><div class="ac-hint">Earn per friend</div></div>
+    <div class="ac" onclick="goTo('smart-tutor')"><div class="ac-icon" style="background:rgba(157,80,187,.1);border:1px solid rgba(157,80,187,.18)"><i class="fas fa-brain" style="color:#c084fc"></i></div><div class="ac-name">Smart Tutor</div><div class="ac-hint">Deep study</div></div>
+  </div>
+
+  <!-- STATS -->
+  <div class="sec-hd"><div class="sec-lbl"><i class="fas fa-chart-simple"></i> Stats</div></div>
+  <div class="stats-row">
+    <div class="stat-c"><span class="stat-c-val" id="statEarned">—</span><div class="stat-c-lbl"><i class="fas fa-arrow-trend-up" style="color:var(--green)"></i> Earned</div></div>
+    <div class="stat-c"><span class="stat-c-val" id="statSpent">—</span><div class="stat-c-lbl"><i class="fas fa-paper-plane" style="color:var(--blue)"></i> Spent</div></div>
+    <div class="stat-c"><span class="stat-c-val" id="statPlan">Free</span><div class="stat-c-lbl"><i class="fas fa-layer-group" style="color:var(--purple)"></i> Plan</div></div>
+  </div>
+
+
+  <!-- ══ EXAM COUNTDOWN ══ -->
+  <div class="sec-hd" style="margin-top:4px">
+    <div class="sec-lbl"><i class="fas fa-calendar-clock"></i> Exam Countdown</div>
+    <button class="sec-more" onclick="openExamCountdownSetup()"><i class="fas fa-plus"></i> Add</button>
+  </div>
+  <div id="examCountdownCards" style="padding:0 12px 6px">
+    <!-- Rendered by JS -->
+  </div>
+
+  <!-- ══ DAILY CHALLENGE ══ -->
+  <div class="sec-hd">
+    <div class="sec-lbl"><i class="fas fa-fire"></i> Daily Challenge</div>
+    <div id="dcStreakBadge" style="display:flex;align-items:center;gap:4px;font-size:.68rem;font-weight:800;color:var(--orange)"><i class="fas fa-fire" style="font-size:.65rem"></i><span id="dcStreakTxt">0 day streak</span></div>
+  </div>
+  <div id="dailyChallengeCard" style="padding:0 12px 12px">
+    <!-- Rendered by JS -->
+  </div>
+
+  <!-- ══ STUDY TIMER ══ -->
+  <div class="sec-hd">
+    <div class="sec-lbl"><i class="fas fa-stopwatch"></i> Study Timer</div>
+  </div>
+  <div style="padding:0 12px 6px" id="studyTimerCard">
+    <!-- Rendered by JS -->
+  </div>
+
+
+
+  <!-- AD EARN -->
+  <div class="ad-card">
+    <div class="ad-inner">
+      <div class="ad-icon"><i class="fas fa-play-circle"></i></div>
+      <div class="ad-body">
+        <div class="ad-title">Watch Ads & Earn VUX — Coming Soon</div>
+        <div class="ad-sub">Watch a real Google ad, earn <b>+8 VUX</b>. Google must approve the ad view first. Up to <b>20 ads/day</b>. 3-min cooldown.</div>
+        <div class="ad-progress">
+          <div class="adp-dots"><div class="adp-dot" id="adDot1"></div><div class="adp-dot" id="adDot2"></div></div>
+          <div class="adp-txt"><b id="adWatchedCount">0</b>/2 watched (referral unlock)</div>
+        </div>
+        <div class="ad-btns">
+          <button class="adb adb-watch" onclick="watchAd()"><i class="fas fa-play"></i> Watch Ad (+8 VUX)</button>
+          <button class="adb adb-info" onclick="showAdInfo()"><i class="fas fa-circle-info"></i> Rules</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWS -->
+  <div class="sec-hd">
+    <div class="sec-lbl"><i class="fas fa-newspaper"></i> Today's News</div>
+    <button class="sec-more" onclick="loadNews()"><i class="fas fa-rotate-right"></i></button>
+  </div>
+  <div class="news-scroll" id="newsScroll">
+    <div class="sh-card" style="width:210px"><div class="sh" style="height:105px"></div><div style="padding:9px 11px;display:flex;flex-direction:column;gap:5px"><div class="sh" style="height:9px;width:45%"></div><div class="sh" style="height:11px"></div><div class="sh" style="height:11px;width:75%"></div></div></div>
+    <div class="sh-card" style="width:210px"><div class="sh" style="height:105px"></div><div style="padding:9px 11px;display:flex;flex-direction:column;gap:5px"><div class="sh" style="height:9px;width:45%"></div><div class="sh" style="height:11px"></div><div class="sh" style="height:11px;width:75%"></div></div></div>
+    <div class="sh-card" style="width:210px"><div class="sh" style="height:105px"></div><div style="padding:9px 11px;display:flex;flex-direction:column;gap:5px"><div class="sh" style="height:9px;width:45%"></div><div class="sh" style="height:11px"></div><div class="sh" style="height:11px;width:75%"></div></div></div>
+  </div>
+
+  <!-- YOUTUBE MOTIVATION -->
+  <div class="sec-hd">
+    <div class="sec-lbl"><i class="fab fa-youtube" style="color:var(--pink)"></i> Student Motivation</div>
+    <button class="sec-more" onclick="loadYt()"><i class="fas fa-rotate-right"></i></button>
+  </div>
+  <div class="yt-scroll" id="ytScroll">
+    <div class="sh-card" style="width:200px"><div class="sh" style="height:112px"></div><div style="padding:9px 10px;display:flex;flex-direction:column;gap:5px"><div class="sh" style="height:10px"></div><div class="sh" style="height:10px;width:70%"></div></div></div>
+    <div class="sh-card" style="width:200px"><div class="sh" style="height:112px"></div><div style="padding:9px 10px;display:flex;flex-direction:column;gap:5px"><div class="sh" style="height:10px"></div><div class="sh" style="height:10px;width:70%"></div></div></div>
+    <div class="sh-card" style="width:200px"><div class="sh" style="height:112px"></div><div style="padding:9px 10px;display:flex;flex-direction:column;gap:5px"><div class="sh" style="height:10px"></div><div class="sh" style="height:10px;width:70%"></div></div></div>
+  </div>
+</div>
+
+<script type="module">
+import { watchAuth, db } from './auth.js';
+import { doc, onSnapshot, collection, query, orderBy, limit, updateDoc, increment, serverTimestamp, addDoc }
+  from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+let _uid=null,_bal=0,_unsubTx=null,_allTxs=[],_txFilter='all';
+let _newsData=[],_extUrl='#';
+
+// THEME
+function applyTheme(){const t=localStorage.getItem('vura_theme')||'dark';document.documentElement.setAttribute('data-theme',t==='light'?'light':t==='dim'?'dim':'');}
+applyTheme();window.addEventListener('storage',applyTheme);
+
+// TOAST
+function toast(m,t='success'){
+  const el=document.createElement('div');el.className=`toast ${t}`;
+  const ic={success:'fa-circle-check',error:'fa-circle-exclamation',info:'fa-circle-info'};
+  el.innerHTML=`<i class="fas ${ic[t]||ic.info}"></i><span>${m}</span><button class="tc" onclick="this.parentElement.classList.add('removing');setTimeout(()=>this.parentElement.remove(),280)"><i class="fas fa-xmark"></i></button>`;
+  document.getElementById('toasts').appendChild(el);
+  setTimeout(()=>{if(el.parentElement){el.classList.add('removing');setTimeout(()=>el.remove(),280);}},4500);
+}
+window.toast=toast;
+
+window.goTo=p=>window.location.href=p;
+window.navParent=n=>{if(window.parent?.navigateTo)window.parent.navigateTo(n);else window.location.href='appskeleton';};
+window.shareRef=()=>{
+  const code=document.getElementById('refCodeLbl').textContent;
+  const url=`${location.origin}/signup?ref=${code}`;
+  if(navigator.share)navigator.share({title:'Join Vura AI',text:'Join me on Vura — get 200 VUX free!',url});
+  else navigator.clipboard.writeText(url).then(()=>toast('Referral link copied!','info'));
+};
+
+// GREETING
+(()=>{
+  const h=new Date().getHours();
+  const g=h<12?['Good morning','fas fa-sun']:h<17?['Good afternoon','fas fa-cloud-sun']:h<21?['Good evening','fas fa-sunset']:['Good night','fas fa-moon'];
+  document.getElementById('greetTxt').textContent=g[0];document.getElementById('greetIc').className=g[1];
+})();
+
+// CONFETTI
+const cc=document.getElementById('claimCv'),cx=cc.getContext('2d');
+const COLS=['#ff3d70','#00d2ff','#ffcc33','#10b981','#9d50bb','#ff9500'];let parts=[];
+function launchConf(){cc.width=innerWidth;cc.height=innerHeight;parts=[];for(let i=0;i<140;i++)parts.push({x:Math.random()*cc.width,y:Math.random()*cc.height*.3-40,vx:(Math.random()-.5)*8,vy:Math.random()*5+2,col:COLS[Math.floor(Math.random()*COLS.length)],w:Math.random()*10+4,h:Math.random()*5+2,rot:Math.random()*360,rv:(Math.random()-.5)*7,al:1,life:0,ml:90+Math.random()*60});animConf();}
+function animConf(){cx.clearRect(0,0,cc.width,cc.height);let alive=false;parts.forEach(p=>{p.life++;p.vy+=.1;p.x+=p.vx;p.y+=p.vy;p.rot+=p.rv;p.al=Math.max(0,1-p.life/p.ml);if(p.al>0)alive=true;cx.save();cx.globalAlpha=p.al;cx.fillStyle=p.col;cx.translate(p.x,p.y);cx.rotate(p.rot*Math.PI/180);cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);cx.restore();});if(alive)requestAnimationFrame(animConf);else cx.clearRect(0,0,cc.width,cc.height);}
+
+// COUNTDOWN
+let cdIv=null;
+function startCd(nextMs){
+  const btn=document.getElementById('claimBtn'),cd=document.getElementById('claimCd');
+  btn.className='btn-claim done';btn.innerHTML='<i class="fas fa-check"></i> Claimed';btn.disabled=true;cd.style.display='block';
+  document.getElementById('claimAdReq').style.display='none';
+  function tick(){const d=nextMs-Date.now();if(d<=0){cd.style.display='none';clearInterval(cdIv);btn.className='btn-claim ready';btn.innerHTML='<i class="fas fa-hand-holding-heart"></i> Claim';btn.disabled=false;updateAdUI();return;}
+  const h=String(Math.floor(d/3600000)).padStart(2,'0'),m=String(Math.floor((d%3600000)/60000)).padStart(2,'0'),s=String(Math.floor((d%60000)/1000)).padStart(2,'0');cd.textContent=`Next: ${h}:${m}:${s}`;}
+  tick();clearInterval(cdIv);cdIv=setInterval(tick,1000);
+}
+
+// AD COUNT
+function getWatched(){return parseInt(localStorage.getItem('vux_ads_'+(_uid||''))||'0');}
+
+function updateAdUI(){
+  if(!_uid)return;
+  const w=getWatched();const need=Math.max(0,2-w);
+  // Claim dots
+  const d1=document.getElementById('cDot1'),d2=document.getElementById('cDot2');
+  if(d1)d1.className='cad-dot'+(w>=1?' on':'');
+  if(d2)d2.className='cad-dot'+(w>=2?' on':'');
+  const need_el=document.getElementById('cAdNeed');if(need_el)need_el.textContent=need;
+  const req=document.getElementById('claimAdReq');
+  const btn=document.getElementById('claimBtn');
+  if(w>=2){
+    if(req)req.style.display='none';
+    if(btn&&!btn.disabled){btn.style.opacity='1';btn.style.pointerEvents='auto';}
+  }else{
+    if(req)req.style.display='flex';
+    const txt=document.getElementById('cAdTxt');
+    if(txt)txt.innerHTML=`Watch <b>${need}</b> more ad${need>1?'s':''} to unlock daily claim`;
+    if(btn&&!btn.disabled){btn.style.opacity='.4';btn.style.pointerEvents='none';}
+  }
+  // Ad section dots
+  const a1=document.getElementById('adDot1'),a2=document.getElementById('adDot2'),cnt=document.getElementById('adWatchedCount');
+  if(a1)a1.className='adp-dot'+(w>=1?' on':'');
+  if(a2)a2.className='adp-dot'+(w>=2?' on':'');
+  if(cnt)cnt.textContent=Math.min(w,2);
+}
+
+// DAILY CLAIM
+const {getUserProfile}=await import('./auth.js');
+function claimAmt(plan){const d=new Date().getDay();const hi=d>=1&&d<=4;return({free:hi?200:150,starter:hi?600:500,standard:hi?800:700,pro:hi?1200:1000,elite:hi?2200:2000}[plan]||(hi?200:150));}
+
+window.doClaim=async()=>{
+  if(!_uid)return;
+  if(getWatched()<2){toast(`Watch ${2-getWatched()} more ad${2-getWatched()>1?'s':''} to unlock daily claim!`,'info');watchAdForClaim();return;}
+  const p=await getUserProfile(_uid);if(!p)return;
+  const last=p.lastClaim?p.lastClaim.toMillis():0;
+  if(Date.now()-last<864e5){toast('Already claimed today!','info');startCd(last+864e5);return;}
+  const amt=claimAmt(p.plan||'free');
+  try{
+    await updateDoc(doc(db,'users',_uid),{vuxBalance:increment(amt),lastClaim:serverTimestamp()});
+    await updateDoc(doc(db,'wallets',_uid),{balance:increment(amt),totalEarned:increment(amt)});
+    await addDoc(collection(db,'wallets',_uid,'transactions'),{type:'Daily Reward',amount:amt,timestamp:serverTimestamp(),date:new Date().toLocaleString()});
+    launchConf();toast(`+${amt} VUX claimed! 🎉`,'success');startCd(Date.now()+864e5);
+  }catch{toast('Claim failed. Try again.','error');}
+};
+
+// ══════════════════════════════════════════════════════════════
+// AD SYSTEM — Monetag (rewarded) + HilltopAds (banner)
+// Rules: 2 ads required before claim, 15 ads/day max, 3-min cooldown
+// ══════════════════════════════════════════════════════════════
+let _adTimer=null;
+let _adWatchCount=0; // tracks ads watched this session
+
+// ── Ad network removed — awaiting Google AdSense approval ──
+// Watch Ad button shows a placeholder until AdSense is approved
+function loadMonetagScript(){
+  // Monetag removed — Google AdSense pending approval
+  console.log('Ad network: pending AdSense approval');
+}
+
+// Ad network removed — awaiting Google AdSense approval
+
+// ── Show full-screen ad overlay with Monetag ──
+function showAdOverlay(onComplete,onDismiss){
+  const old=document.getElementById('adOverlay');if(old)old.remove();
+  loadMonetagScript();
+
+  const ov=document.createElement('div');ov.id='adOverlay';
+  ov.style.cssText='position:fixed;inset:0;z-index:9998;background:rgba(0,0,0,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;overflow-y:auto';
+  ov.innerHTML=`
+  <div style="width:100%;max-width:400px;background:linear-gradient(145deg,#0d1224,#060e1a);border:1px solid rgba(0,210,255,.18);border-radius:18px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.8)">
+
+    <!-- Header -->
+    <div style="padding:13px 15px;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:space-between;background:rgba(0,210,255,.04)">
+      <div style="font-size:.76rem;font-weight:700;color:rgba(255,255,255,.55);display:flex;align-items:center;gap:6px">
+        <i class="fas fa-play-circle" style="color:var(--gold)"></i>Advertisement
+      </div>
+      <div id="adTimerTxt" style="font-family:'Orbitron',monospace;font-size:.78rem;font-weight:700;color:var(--gold)">Loading...</div>
+    </div>
+
+    <!-- Ad content area — Monetag loads here -->
+    <div id="adHolder" style="padding:16px;min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+      <div style="text-align:center">
+        <div style="font-size:2.2rem;margin-bottom:8px">⏳</div>
+        <div style="font-size:.82rem;font-weight:700;color:rgba(255,255,255,.7);margin-bottom:4px">Ad Rewards Coming Soon</div>
+        <div style="font-size:.7rem;color:rgba(255,255,255,.3);line-height:1.6;max-width:240px">We are awaiting Google AdSense approval. Ad rewards will be available very soon!</div>
+      </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div style="padding:0 14px 10px">
+      <div style="height:4px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden">
+        <div id="adProgressBar" style="height:100%;background:linear-gradient(90deg,var(--gold),var(--orange));border-radius:99px;width:0%;transition:width 1s linear"></div>
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div style="padding:7px 14px;background:rgba(0,0,0,.3);font-size:.63rem;color:rgba(255,255,255,.28);display:flex;align-items:center;gap:5px;border-top:1px solid rgba(255,255,255,.04)">
+      <i class="fas fa-coins" style="color:var(--gold)"></i> Watch full ad to earn +8 VUX
+    </div>
+
+    <!-- Buttons -->
+    <div style="padding:12px 14px;border-top:1px solid rgba(255,255,255,.06);display:flex;gap:9px">
+      <button id="adSkipBtn" onclick="_dismissAd()" disabled
+        style="flex:1;padding:10px;border:1px solid rgba(255,255,255,.1);border-radius:10px;background:rgba(255,255,255,.04);color:rgba(255,255,255,.3);font-family:'Nunito',sans-serif;font-size:.77rem;font-weight:700;cursor:not-allowed;opacity:.4;transition:all .2s">
+        <i class="fas fa-forward"></i> Skip
+      </button>
+      <button id="adEarnBtn" onclick="_claimAd()" disabled
+        style="flex:1;padding:10px;border:none;border-radius:10px;background:linear-gradient(135deg,var(--gold),var(--orange));color:#000;font-family:'Nunito',sans-serif;font-size:.77rem;font-weight:800;cursor:not-allowed;opacity:.4;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:5px">
+        <i class="fas fa-coins"></i> Claim +8 VUX
+      </button>
+    </div>
+  </div>`;
+
+  document.body.appendChild(ov);
+
+  // 5-second countdown — Monetag ad plays in background via script tag
+  let secs=5;
+  document.getElementById('adTimerTxt').textContent='Watch: 5s';
+  _adTimer=setInterval(()=>{
+    secs--;
+    const el=document.getElementById('adTimerTxt');
+    const bar=document.getElementById('adProgressBar');
+    const pct=((5-secs)/5)*100;
+    if(bar)bar.style.width=pct+'%';
+    if(el)el.textContent=secs>0?`Watch: ${secs}s`:'Ready!';
+    if(secs<=0){
+      clearInterval(_adTimer);
+      // Hide spinner, show ready state
+      const spinner=document.getElementById('adLoadSpinner');
+      if(spinner)spinner.style.display='none';
+      const holder=document.getElementById('adHolder');
+      if(holder)holder.innerHTML='<div style="text-align:center"><div style="font-size:2rem;margin-bottom:8px">✅</div><div style="font-size:.82rem;font-weight:800;color:var(--green)">Ad watched!</div><div style="font-size:.7rem;color:rgba(255,255,255,.4);margin-top:4px">Tap Claim to receive your VUX</div></div>';
+      // Enable buttons
+      const skip=document.getElementById('adSkipBtn');
+      const earn=document.getElementById('adEarnBtn');
+      if(skip){skip.disabled=false;skip.style.cursor='pointer';skip.style.opacity='1';}
+      if(earn){earn.disabled=false;earn.style.cursor='pointer';earn.style.opacity='1';}
+    }
+  },1000);
+
+  window._adComplete=onComplete;
+  window._adDismiss=onDismiss;
+}
+
+window._dismissAd=()=>{
+  clearInterval(_adTimer);
+  document.getElementById('adOverlay')?.remove();
+  if(window._adDismiss)window._adDismiss();
+  toast('Ad skipped. No VUX reward.','info');
+};
+
+window._claimAd=()=>{
+  clearInterval(_adTimer);
+  document.getElementById('adOverlay')?.remove();
+  if(window._adComplete)window._adComplete(true);
+};
+
+// ── WATCH AD (main function) ──
+window.watchAd=async()=>{
+  if(!_uid){toast('Sign in first.','error');return;}
+
+  // Check daily limit (15/day) from Firestore via local cache
+  const todayKey='vux_adday_'+new Date().toDateString();
+  const todayCount=parseInt(localStorage.getItem(todayKey)||'0');
+  if(todayCount>=15){
+    toast('Daily limit reached (15 ads/day). Come back tomorrow!','info');
+    return;
+  }
+
+  // Check 3-minute cooldown
+  const lastAdTime=parseInt(localStorage.getItem('vux_adlast_'+_uid)||'0');
+  const cooldown=3*60*1000;
+  const waited=Date.now()-lastAdTime;
+  if(waited<cooldown){
+    const remaining=Math.ceil((cooldown-waited)/1000);
+    toast(`Please wait ${remaining}s before next ad.`,'info');
+    return;
+  }
+
+  showAdOverlay(async(adCompleted)=>{
+    if(!adCompleted){toast('Ad not completed. No reward.','info');return;}
+    try{
+      const r=await fetch('/api/ads',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({uid:_uid,adType:'rewarded_video',platform:'web',adShown:true,adCompleted:true})
+      });
+      const d=await r.json();
+      if(d.success){
+        // Credit VUX to Firestore
+        await updateDoc(doc(db,'wallets',_uid),{balance:increment(d.vuxReward),totalEarned:increment(d.vuxReward)});
+        await updateDoc(doc(db,'users',_uid),{vuxBalance:increment(d.vuxReward)});
+        await addDoc(collection(db,'wallets',_uid,'transactions'),{
+          type:'Ad Reward — Monetag',
+          amount:d.vuxReward,
+          timestamp:serverTimestamp(),
+          date:new Date().toLocaleString()
+        });
+        // Update local counters
+        const newCount=todayCount+1;
+        localStorage.setItem(todayKey,newCount);
+        localStorage.setItem('vux_adlast_'+_uid,Date.now());
+        // Track watched count for unlock logic
+        const watched=getWatched()+1;
+        localStorage.setItem('vux_ads_'+_uid,watched);
+        updateAdUI();
+        toast(`+${d.vuxReward} VUX earned! (${newCount}/15 today)`,'success');
+        if(d.referralUnlocked)toast('Referral rewards unlocked!','success');
+      }else if(d.limitReached){
+        toast('Daily limit reached (15 ads/day).','info');
+      }else if(d.waitSeconds){
+        toast(`Wait ${d.waitSeconds}s before next ad.`,'info');
+      }else{
+        toast(d.error||'Ad error. Try again.','error');
+      }
+    }catch{toast('Ad service error. Try again.','error');}
+  },()=>{});
+};
+
+window.watchAdForClaim=()=>watchAd();
+window.showAdInfo=()=>toast('Watch 2 ads to unlock daily claim. Max 15 ads/day, 3-min cooldown. Powered by Monetag.','info');
+
+// NEWS
+const CAT_IC={AI:'fas fa-robot',Education:'fas fa-graduation-cap',Gaming:'fas fa-gamepad',Africa:'fas fa-earth-africa',Tech:'fas fa-microchip',News:'fas fa-newspaper'};
+function timeAgo(d){if(!d)return '';const diff=Date.now()-new Date(d).getTime();const m=Math.floor(diff/6e4);if(m<60)return `${m}m ago`;const h=Math.floor(m/60);if(h<24)return `${h}h ago`;return `${Math.floor(h/24)}d ago`;}
+
+window.loadNews=async()=>{
+  const s=document.getElementById('newsScroll');
+  s.innerHTML='<div class="sh-card" style="width:210px;flex-shrink:0"><div class="sh" style="height:105px"></div></div>'.repeat(3);
+  try{const r=await fetch('/api/news');const d=await r.json();_newsData=d.articles||[];renderNews();}
+  catch{renderNewsStatic();}
+};
+function renderNews(){
+  if(!_newsData.length){renderNewsStatic();return;}
+  document.getElementById('newsScroll').innerHTML=_newsData.map((a,i)=>`
+    <div class="nc" onclick="openReader(${i})">
+      ${a.image?`<img class="nc-img" src="${a.image}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`:``}
+      <div class="nc-img-ph" style="${a.image?'display:none':''}"><i class="${CAT_IC[a.category]||'fas fa-newspaper'}"></i></div>
+      <div class="nc-body">
+        <div class="nc-cat"><i class="${CAT_IC[a.category]||'fas fa-newspaper'}"></i>${a.category||'News'}</div>
+        <div class="nc-title">${a.title}</div>
+        <div class="nc-time"><i class="fas fa-clock"></i>${timeAgo(a.publishedAt)}</div>
+      </div>
+    </div>`).join('');
+}
+function renderNewsStatic(){
+  _newsData=[
+    {title:'AI Tools Are Transforming How Students Study',description:'AI-powered platforms help students prepare for exams smarter.',image:'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&q=75',source:'EdTech Africa',publishedAt:new Date().toISOString(),category:'Education',url:'#'},
+    {title:'OpenAI Launches New GPT-4o Updates',description:'Better math reasoning and step-by-step explanations.',image:'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=400&q=75',source:'TechCrunch',publishedAt:new Date(Date.now()-3600000).toISOString(),category:'AI',url:'#'},
+    {title:'5 Study Techniques Backed by Neuroscience',description:'Spaced repetition, active recall, and interleaving explained.',image:'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=75',source:'Study Weekly',publishedAt:new Date(Date.now()-7200000).toISOString(),category:'Education',url:'#'},
+  ];renderNews();
+}
+window.openReader=(i)=>{
+  const a=_newsData[i];if(!a)return;_extUrl=a.url||'#';
+  document.getElementById('nrTitle').textContent=a.title;
+  document.getElementById('nrBody').innerHTML=`
+    ${a.image?`<img class="nr-img" src="${a.image}" onerror="this.style.display='none'">`:``}
+    <div class="nr-cat"><i class="${CAT_IC[a.category]||'fas fa-newspaper'}"></i>${a.category||'News'} · ${a.source||''}</div>
+    <div class="nr-h1">${a.title}</div>
+    <div class="nr-meta"><span><i class="fas fa-clock"></i> ${timeAgo(a.publishedAt)}</span><span><i class="fas fa-newspaper"></i> ${a.source||'News'}</span></div>
+    <div class="nr-desc">${a.description||'No summary available.'}</div>
+    <div class="nr-cta"><div style="font-weight:800;font-size:.85rem;color:var(--text);margin-bottom:6px">Read the full article?</div><div style="font-size:.76rem;color:var(--muted);margin-bottom:10px">This is a summary. Tap below for the original.</div><a href="${a.url}" target="_blank" rel="noopener" class="nr-cta-btn"><i class="fas fa-arrow-up-right-from-square"></i> Read Full Article</a></div>`;
+  document.getElementById('newsReader').style.display='flex';document.body.style.overflow='hidden';
+};
+window.closeReader=()=>{document.getElementById('newsReader').style.display='none';document.body.style.overflow='';};
+window.openExternal=()=>{if(_extUrl&&_extUrl!=='#')window.open(_extUrl,'_blank','noopener');};
+
+// YOUTUBE MOTIVATION VIDEOS
+// Uses the same YouTube API key as smart-tutor (YOUTUBE_API_KEY env var)
+const YT_QUERIES=['student motivation study','motivational speech students','how to study effectively','growth mindset students','study tips exam success','focus motivation study session','success mindset young students','inspirational quotes students motivation'];
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
+function fmtDur(sec){if(!sec)return '';const m=Math.floor(sec/60),s=sec%60;return `${m}:${String(s).padStart(2,'0')}`;}
+
+window.loadYt=async()=>{
+  const scroll=document.getElementById('ytScroll');
+  scroll.innerHTML='<div class="sh-card" style="width:200px;flex-shrink:0"><div class="sh" style="height:112px"></div><div style="padding:9px 10px"><div class="sh" style="height:10px;margin-bottom:5px"></div><div class="sh" style="height:10px;width:70%"></div></div></div>'.repeat(3);
+  const q=YT_QUERIES[Math.floor(Math.random()*YT_QUERIES.length)];
+  try{
+    const r=await fetch('/api/tutor',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query:q,mode:'videos'})});
+    const d=await r.json();
+    const vids=(d.videos||[]).slice(0,10);
+    if(vids.length)renderYt(vids);else renderYtFallback();
+  }catch{renderYtFallback();}
+};
+
+function renderYt(vids){
+  document.getElementById('ytScroll').innerHTML=vids.map(v=>{
+    const id=v.videoId||v.id;
+    const title=v.title||'Motivational Video';
+    const ch=v.author||v.authorId||'YouTube';
+    const thumb=v.videoThumbnails?.[0]?.url||`https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
+    const dur=v.lengthSeconds?fmtDur(v.lengthSeconds):'';
+    return `<div class="yt-card" onclick="openYt('${id}','${esc(title).replace(/'/g,"\\'")}')">
+      <img class="yt-thumb" src="${esc(thumb)}" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/${id}/mqdefault.jpg'">
+      <div class="yt-play-btn"><i class="fas fa-play"></i></div>
+      ${dur?`<div style="position:absolute;bottom:116px;right:7px;background:rgba(0,0,0,.75);color:#fff;font-size:.6rem;font-weight:700;padding:1px 5px;border-radius:4px">${dur}</div>`:''}
+      <div class="yt-body">
+        <div class="yt-title">${esc(title)}</div>
+        <div class="yt-meta"><i class="fab fa-youtube"></i>${esc(ch)}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderYtFallback(){
+  // 10 curated motivational videos for students
+  const vids=[
+    {id:'ZXsQAXx_ao0',t:'How Successful People Think — Develop a Growth Mindset',ch:'Motivation Madness'},
+    {id:'mgmVOuLgFB0',t:'The Secret to Studying Effectively',ch:'Thomas Frank'},
+    {id:'W9oLIJpOaec',t:'Why You Procrastinate and How to Stop Today',ch:'TED-Ed'},
+    {id:'1-SvuFIQjK8',t:'Morning Motivation for Students — Start Strong',ch:'Motivation2Study'},
+    {id:'lmyZMtPVodo',t:'Top 5 Study Techniques That Actually Work',ch:'Science of People'},
+    {id:'8ZhoeSaPF-k',t:'You Are Capable of Amazing Things — Believe in Yourself',ch:'Fearless Soul'},
+    {id:'r9-3K3rkWRE',t:'How to Build Unbreakable Focus as a Student',ch:'Justin Sung'},
+    {id:'Hu4Yvq-g7_Y',t:'The Power of Showing Up Every Day',ch:'Chris Do'},
+    {id:'TQMbvJNRpLeE',t:'Exam Tips: How Top Students Study',ch:'StudyWithKai'},
+    {id:'IlU-zDU6aQ0',t:'Work Hard in Silence — Let Success Make the Noise',ch:'Motivation Archive'},
+  ];
+  document.getElementById('ytScroll').innerHTML=vids.map(v=>`
+    <div class="yt-card" onclick="openYt('${v.id}','${esc(v.t).replace(/'/g,"\\'")}')">
+      <img class="yt-thumb" src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg" loading="lazy">
+      <div class="yt-play-btn"><i class="fas fa-play"></i></div>
+      <div class="yt-body">
+        <div class="yt-title">${esc(v.t)}</div>
+        <div class="yt-meta"><i class="fab fa-youtube"></i>${v.ch}</div>
+      </div>
+    </div>`).join('');
+}
+
+// Open video in-app (prevents leaving the site)
+window.openYt=(id,title)=>{
+  document.getElementById('ytvTitle').textContent=title||'Video';
+  document.getElementById('ytvLink').href=`https://www.youtube.com/watch?v=${id}`;
+  document.getElementById('ytvFrame').src=`https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+  document.getElementById('ytViewer').style.display='flex';document.body.style.overflow='hidden';
+};
+window.closeYt=()=>{
+  document.getElementById('ytViewer').style.display='none';
+  document.getElementById('ytvFrame').src='';// stop playback
+  document.body.style.overflow='';
+};
+
+// TX CONFIG
+const TX_CFG={'Daily Reward':{icon:'fas fa-gift',bg:'rgba(255,204,51,.14)',ic:'var(--gold)'},'Ad Reward':{icon:'fas fa-play-circle',bg:'rgba(255,149,0,.12)',ic:'var(--orange)'},'Game Reward':{icon:'fas fa-gamepad',bg:'rgba(255,61,112,.12)',ic:'var(--pink)'},'Quiz Correct':{icon:'fas fa-graduation-cap',bg:'rgba(0,210,255,.12)',ic:'var(--blue)'},'Referral':{icon:'fas fa-share-nodes',bg:'rgba(16,185,129,.12)',ic:'var(--green)'},'AI Chat':{icon:'fas fa-robot',bg:'rgba(157,80,187,.12)',ic:'#c084fc'},'VUX Purchase':{icon:'fas fa-arrow-up-from-bracket',bg:'rgba(0,210,255,.12)',ic:'var(--blue)'},default:{icon:'fas fa-coins',bg:'rgba(0,210,255,.08)',ic:'var(--blue)'}};
+function getCfg(tx){const e=Object.entries(TX_CFG).find(([k])=>tx.type?.includes(k));return e?e[1]:TX_CFG.default;}
+
+// OPay mini tx list inside balance card
+function renderBcTx(txs){
+  const c=document.getElementById('bcTxList');
+  if(!txs.length){c.innerHTML='<div class="bc-tx-empty">No transactions yet</div>';return;}
+  c.innerHTML=txs.slice(0,2).map(tx=>{
+    const cfg=getCfg(tx);const isC=(tx.amount||0)>=0;
+    const dt=tx.timestamp?new Date(tx.timestamp.toMillis()).toLocaleDateString('en-GB',{day:'numeric',month:'short'}):'—';
+    return `<div class="bc-tx-item" onclick="openTxDetail(${JSON.stringify(JSON.stringify(tx))})">
+      <div class="bc-tx-ic" style="background:${cfg.bg}"><i class="${cfg.icon}" style="color:${cfg.ic};font-size:.74rem"></i></div>
+      <div class="bc-tx-mid"><div class="bc-tx-nm">${tx.type||'Transaction'}</div><div class="bc-tx-dt">${dt}</div></div>
+      <div class="bc-tx-amt ${isC?'cr':'db'}">${isC?'+':''}${tx.amount||0} VUX</div>
+    </div>`;
+  }).join('');
+}
+
+// TX OVERLAY
+window.openTxHistory=()=>{document.getElementById('txOverlay').style.display='flex';renderTxOverlay();};
+window.closeTxHistory=()=>document.getElementById('txOverlay').style.display='none';
+window.setTxFilter=(f,el)=>{_txFilter=f;document.querySelectorAll('.txf-btn').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderTxOverlay();};
+function renderTxOverlay(){
+  const c=document.getElementById('txOverlayList');if(!c)return;
+  const list=_txFilter==='all'?_allTxs:_allTxs.filter(t=>_txFilter==='credit'?(t.amount||0)>0:(t.amount||0)<0);
+  if(!list.length){c.innerHTML='<div style="padding:30px;text-align:center;color:var(--muted)"><i class="fas fa-inbox" style="font-size:2rem;display:block;margin-bottom:8px"></i>No transactions</div>';return;}
+  const g={};list.forEach(tx=>{const date=(tx.date||'').split(',')[0]||'Today';if(!g[date])g[date]=[];g[date].push(tx);});
+  let html='';
+  Object.entries(g).forEach(([date,items])=>{
+    html+=`<div style="font-size:.67rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;padding:10px 0 5px;display:flex;align-items:center;gap:7px">${date}<span style="flex:1;height:1px;background:var(--border);display:block"></span></div>`;
+    items.forEach(tx=>{
+      const cfg=getCfg(tx);const isC=(tx.amount||0)>=0;const t=isC?'credit':'debit';
+      html+=`<div class="tx-item ${t}" onclick="openTxDetail(${JSON.stringify(JSON.stringify(tx))})">
+        <div class="tx-ic" style="background:${cfg.bg};border:1px solid rgba(255,255,255,.06)"><i class="${cfg.icon}" style="color:${cfg.ic}"></i></div>
+        <div class="tx-mid"><div class="tx-nm">${tx.type||'Transaction'}</div><div class="tx-dt">${tx.date||''}</div></div>
+        <div class="tx-rt"><div class="tx-am ${t}">${isC?'+':''}${tx.amount||0} VUX</div></div>
+      </div>`;
+    });
+  });
+  c.innerHTML=html;
+}
+window.openTxDetail=(txJson)=>{try{const tx=JSON.parse(txJson);sessionStorage.setItem('vux_tx_detail',JSON.stringify(tx));window.location.href='transaction-detail';}catch{window.location.href='transaction-detail';}};
+
+// FIRESTORE + AUTH
+function subTx(){
+  if(_unsubTx)_unsubTx();
+  const q=query(collection(db,'wallets',_uid,'transactions'),orderBy('timestamp','desc'),limit(100));
+  _unsubTx=onSnapshot(q,snap=>{
+    _allTxs=snap.docs.map(d=>({id:d.id,...d.data()}));
+    renderBcTx(_allTxs);
+    renderTxOverlay();
+  });
+}
+
+
+// ══════════════════════════════════════════════════════════════
+// EXAM COUNTDOWN
+// ══════════════════════════════════════════════════════════════
+const EC_EXAMS = ['WAEC/SSCE','JAMB UTME','NECO','NABTEB','Common Entrance','Post UTME','GCE','Primary 6 Exam','JSS 3 Basic Exam','University Exam','Other'];
+
+function loadExamCountdowns(){
+  const data = JSON.parse(localStorage.getItem('vux_ec_'+(_uid||'')) || '[]');
+  const container = document.getElementById('examCountdownCards');
+  if(!container)return;
+  if(!data.length){
+    container.innerHTML = '<button class="ec-add-btn" onclick="openExamCountdownSetup()"><i class="fas fa-plus"></i> Add your first exam countdown</button>';
+    return;
+  }
+  const now = new Date();
+  container.innerHTML = data.map((ec,i) => {
+    const target = new Date(ec.date);
+    const diff = Math.max(0, Math.ceil((target - now) / (1000*60*60*24)));
+    const urgentColor = diff <= 30 ? 'var(--red)' : diff <= 60 ? 'var(--orange)' : 'var(--purple)';
+    return `<div class="ec-card">
+      <div class="ec-card-ic" style="background:linear-gradient(135deg,${urgentColor},${urgentColor}88)">
+        <div class="ec-days">${diff}</div>
+        <div class="ec-days-lbl">${diff===1?'day':'days'}</div>
+      </div>
+      <div class="ec-info">
+        <div class="ec-exam-name">${esc(ec.name)}</div>
+        <div class="ec-date"><i class="fas fa-calendar" style="font-size:.58rem;margin-right:3px"></i>${new Date(ec.date).toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}</div>
+      </div>
+      <button class="ec-del" onclick="deleteExamCountdown(${i})" title="Remove"><i class="fas fa-trash"></i></button>
+    </div>`;
+  }).join('') + '<button class="ec-add-btn" onclick="openExamCountdownSetup()" style="margin-top:4px"><i class="fas fa-plus"></i> Add another exam</button>';
+}
+
+window.deleteExamCountdown = i => {
+  const data = JSON.parse(localStorage.getItem('vux_ec_'+(_uid||'')) || '[]');
+  data.splice(i,1);
+  localStorage.setItem('vux_ec_'+(_uid||''), JSON.stringify(data));
+  loadExamCountdowns();
+  toast('Exam countdown removed','info');
+};
+
+window.openExamCountdownSetup = () => {
+  // Build a custom bottom sheet for adding exam
+  const existing = document.getElementById('ecSetupSheet');
+  if(existing)existing.remove();
+  const sheet = document.createElement('div');
+  sheet.id = 'ecSetupSheet';
+  sheet.style.cssText='position:fixed;inset:0;z-index:9990;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);display:flex;align-items:flex-end;justify-content:center';
+  sheet.innerHTML=`<div style="background:var(--card);border-radius:22px 22px 0 0;padding:18px 16px 34px;width:100%;max-width:640px;animation:slideUp .26s ease">
+    <div style="width:36px;height:4px;border-radius:99px;background:var(--border);margin:0 auto 14px"></div>
+    <div style="font-size:.88rem;font-weight:800;color:var(--text);margin-bottom:14px;text-align:center">Add Exam Countdown</div>
+    <div style="margin-bottom:10px">
+      <div style="font-size:.7rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">Exam Type</div>
+      <select id="ecExamSel" style="width:100%;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:700;outline:none;-webkit-appearance:none">
+        ${EC_EXAMS.map(e=>`<option value="${e}">${e}</option>`).join('')}
+      </select>
+    </div>
+    <div style="margin-bottom:14px">
+      <div style="font-size:.7rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">Exam Date</div>
+      <input type="date" id="ecDateInp" style="width:100%;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:700;outline:none;-webkit-appearance:none" min="${new Date().toISOString().split('T')[0]}">
+    </div>
+    <button onclick="saveExamCountdown()" style="width:100%;padding:13px;border:none;border-radius:13px;background:linear-gradient(135deg,var(--purple),var(--indigo));color:#fff;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px"><i class="fas fa-plus"></i> Add Countdown</button>
+    <button onclick="document.getElementById('ecSetupSheet').remove()" style="width:100%;padding:11px;border:1px solid var(--border);border-radius:13px;background:transparent;color:var(--muted);font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:700;cursor:pointer;margin-top:8px">Cancel</button>
+  </div>`;
+  document.body.appendChild(sheet);
+  sheet.addEventListener('click',e=>{if(e.target===sheet)sheet.remove();});
+};
+
+window.saveExamCountdown = () => {
+  const name = document.getElementById('ecExamSel')?.value;
+  const date = document.getElementById('ecDateInp')?.value;
+  if(!date){toast('Please select an exam date','error');return;}
+  if(new Date(date) <= new Date()){toast('Exam date must be in the future','error');return;}
+  const data = JSON.parse(localStorage.getItem('vux_ec_'+(_uid||'')) || '[]');
+  data.push({name,date});
+  localStorage.setItem('vux_ec_'+(_uid||''), JSON.stringify(data));
+  document.getElementById('ecSetupSheet')?.remove();
+  loadExamCountdowns();
+  toast('Exam countdown added!','success');
+};
+
+// ══════════════════════════════════════════════════════════════
+// DAILY CHALLENGE
+// ══════════════════════════════════════════════════════════════
+const DC_QUESTIONS = [
+  {q:'Which process do plants use to make food from sunlight?',opts:['Respiration','Photosynthesis','Transpiration','Digestion'],ans:1,diff:'Easy',subject:'Biology',vux:5},
+  {q:'What is the value of x if 2x + 6 = 14?',opts:['3','4','5','6'],ans:1,diff:'Easy',subject:'Mathematics',vux:5},
+  {q:'The powerhouse of the cell is the:',opts:['Nucleus','Ribosome','Mitochondria','Chloroplast'],ans:2,diff:'Easy',subject:'Biology',vux:5},
+  {q:'Which of these is NOT a state of matter?',opts:['Solid','Liquid','Plasma','Energy'],ans:3,diff:'Medium',subject:'Physics',vux:8},
+  {q:'The chemical formula for water is:',opts:['CO2','H2O','NaCl','O2'],ans:1,diff:'Easy',subject:'Chemistry',vux:5},
+  {q:'Who was the first President of Nigeria?',opts:['Nnamdi Azikiwe','Obafemi Awolowo','Tafawa Balewa','Aguiyi-Ironsi'],ans:0,diff:'Medium',subject:'Government',vux:8},
+  {q:'What is the speed of light in a vacuum (approximately)?',opts:['3×10⁸ m/s','3×10⁶ m/s','3×10¹⁰ m/s','3×10⁴ m/s'],ans:0,diff:'Medium',subject:'Physics',vux:8},
+  {q:'Which organ is responsible for pumping blood in the human body?',opts:['Liver','Kidney','Lungs','Heart'],ans:3,diff:'Easy',subject:'Biology',vux:5},
+  {q:'What is 15% of 400?',opts:['45','60','55','70'],ans:1,diff:'Easy',subject:'Mathematics',vux:5},
+  {q:'Which gas makes up the largest percentage of Earth atmosphere?',opts:['Oxygen','Carbon dioxide','Nitrogen','Hydrogen'],ans:2,diff:'Medium',subject:'Chemistry',vux:8},
+];
+
+function loadDailyChallenge(){
+  const container = document.getElementById('dailyChallengeCard');
+  if(!container)return;
+  const today = new Date().toDateString();
+  const dcKey = 'vux_dc_' + today + '_' + (_uid||'');
+  const streakKey = 'vux_dc_streak_' + (_uid||'');
+  const done = localStorage.getItem(dcKey);
+  // Pick question based on day
+  const dayIdx = new Date().getDate() % DC_QUESTIONS.length;
+  const q = DC_QUESTIONS[dayIdx];
+  const streak = parseInt(localStorage.getItem(streakKey)||'0');
+  document.getElementById('dcStreakTxt').textContent = streak + ' day streak';
+
+  if(done){
+    const result = JSON.parse(done);
+    container.innerHTML=`<div class="dc-card">
+      <div class="dc-top"><div class="dc-label"><i class="fas fa-fire"></i> Today — ${q.subject}</div><span class="dc-diff ${q.diff.toLowerCase()}">${q.diff}</span></div>
+      <div class="dc-q">${q.q}</div>
+      <div style="text-align:center;padding:12px 0">
+        <div style="font-size:1.6rem;margin-bottom:6px">${result.correct?'✅':'❌'}</div>
+        <div style="font-size:.84rem;font-weight:800;color:${result.correct?'var(--green)':'var(--red)'}">${result.correct?'Correct! Well done.':'Incorrect. The answer was '+q.opts[q.ans]}</div>
+        <div class="dc-bonus"><i class="fas fa-coins"></i> ${result.correct?'+'+q.vux+' VUX earned':'Better luck tomorrow!'}</div>
+        <div style="font-size:.65rem;color:var(--muted);margin-top:5px">Come back tomorrow for a new challenge</div>
+      </div>
+    </div>`;
+    return;
+  }
+
+  let dcOptsHtml2='';
+  ['A','B','C','D'].forEach(function(l,i){dcOptsHtml2+='<button class="dc-opt" onclick="answerDC('+i+')">'+'<div class="dc-opt-letter">'+l+'</div>'+esc(q.opts[i])+'</button>';});
+  container.innerHTML='<div class="dc-card">'
+    +'<div class="dc-top"><div class="dc-label"><i class="fas fa-fire"></i> Today — '+q.subject+'</div><span class="dc-diff '+q.diff.toLowerCase()+'">'+q.diff+'</span></div>'
+    +'<div class="dc-q">'+esc(q.q)+'</div>'
+    +'<div class="dc-opts">'+dcOptsHtml2+'</div>'
+    +'<div style="font-size:.65rem;color:var(--muted);margin-top:8px;text-align:center"><i class="fas fa-coins" style="color:var(--gold)"></i> Correct earns +'+q.vux+' VUX</div>'
+    +'</div>';
+}
+
+window.answerDC = async idx => {
+  const today = new Date().toDateString();
+  const dayIdx = new Date().getDate() % DC_QUESTIONS.length;
+  const q = DC_QUESTIONS[dayIdx];
+  const dcKey = 'vux_dc_' + today + '_' + (_uid||'');
+  const streakKey = 'vux_dc_streak_' + (_uid||'');
+  const lastKey = 'vux_dc_last_' + (_uid||'');
+  if(localStorage.getItem(dcKey))return;
+  const correct = idx === q.ans;
+  localStorage.setItem(dcKey, JSON.stringify({correct,answer:idx}));
+  // Update streak
+  const lastDate = localStorage.getItem(lastKey);
+  const yesterday = new Date(Date.now()-86400000).toDateString();
+  let streak = parseInt(localStorage.getItem(streakKey)||'0');
+  if(lastDate === yesterday || streak === 0) streak++;
+  else if(lastDate !== today) streak = 1;
+  localStorage.setItem(streakKey, streak);
+  localStorage.setItem(lastKey, today);
+  document.getElementById('dcStreakTxt').textContent = streak + ' day streak';
+  // Credit VUX if correct
+  if(correct && _uid){
+    try{
+      await updateDoc(doc(db,'wallets',_uid),{balance:increment(q.vux),totalEarned:increment(q.vux)});
+      await updateDoc(doc(db,'users',_uid),{vuxBalance:increment(q.vux)});
+      await addDoc(collection(db,'wallets',_uid,'transactions'),{type:'Daily Challenge',amount:q.vux,timestamp:serverTimestamp(),date:new Date().toLocaleString()});
+      toast('+'+q.vux+' VUX earned!','success');
+    }catch{}
+  }
+  loadDailyChallenge();
+};
+
+// ══════════════════════════════════════════════════════════════
+// STUDY TIMER (Pomodoro)
+// ══════════════════════════════════════════════════════════════
+let _stInterval = null;
+let _stRunning = false;
+let _stSeconds = 25*60;
+let _stTotal = 25*60;
+let _stPhase = 'study'; // study | break
+let _stSessions = 0;
+const ST_PRESETS = [{label:'25 min',mins:25},{label:'45 min',mins:45},{label:'1 hr',mins:60},{label:'Custom',mins:0}];
+
+function renderStudyTimer(){
+  const container = document.getElementById('studyTimerCard');
+  if(!container)return;
+  const todayKey = 'vux_st_sessions_' + new Date().toDateString() + '_' + (_uid||'');
+  _stSessions = parseInt(localStorage.getItem(todayKey)||'0');
+  container.innerHTML=`<div class="st-card">
+    <div class="st-top">
+      <div class="st-label"><i class="fas fa-stopwatch"></i> Focus Timer</div>
+      <div class="st-session-info" id="stSessionInfo">${_stSessions} session${_stSessions!==1?'s':''} today</div>
+    </div>
+    <div class="st-presets" id="stPresets">
+      ${ST_PRESETS.map((p,i)=>`<button class="st-preset${i===0?' sel':''}" onclick="setSTPreset(${i},${p.mins})">${p.label}</button>`).join('')}
+    </div>
+    <div class="st-display">
+      <div class="st-time" id="stDisplay">25:00</div>
+      <div class="st-phase" id="stPhaseLabel">Study Session</div>
+    </div>
+    <div class="st-progress"><div class="st-progress-fill" id="stProgressFill" style="width:100%"></div></div>
+    <div class="st-btns">
+      <button class="st-btn st-start" id="stStartBtn" onclick="toggleStudyTimer()"><i class="fas fa-play"></i> Start</button>
+      <button class="st-btn st-reset" onclick="resetStudyTimer()"><i class="fas fa-rotate-left"></i> Reset</button>
+    </div>
+    <div class="st-vux-earn"><i class="fas fa-coins"></i> Complete a session to earn +15 VUX</div>
+    <div class="st-sessions-today" id="stSessionsToday">${_stSessions} session${_stSessions!==1?'s':''} completed today</div>
+  </div>`;
+}
+
+window.setSTPreset = (idx,mins) => {
+  if(mins===0){
+    // Show inline custom input instead of prompt (prompt is blocked in iframes)
+    const customMins = parseInt(window._stCustomMins||'25');
+    mins = customMins;
+    // Show mini input in the card
+    const presetEl = document.getElementById('stPresets');
+    if(presetEl){
+      const inp = document.createElement('input');
+      inp.type='number';inp.min='1';inp.max='120';inp.value='25';
+      inp.placeholder='Minutes';
+      inp.style.cssText='width:80px;padding:5px 8px;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text);font-size:.8rem;font-family:Nunito,sans-serif;outline:none;margin-left:4px';
+      inp.onchange=e=>{window._stCustomMins=e.target.value;};
+      inp.onkeydown=e=>{if(e.key==='Enter'){const m=Math.min(120,Math.max(1,parseInt(inp.value)||25));_stSeconds=m*60;_stTotal=m*60;inp.remove();updateSTDisplay();}};
+      presetEl.appendChild(inp);
+      setTimeout(()=>inp.focus(),50);
+      return;
+    }
+  }
+  _stSeconds = mins * 60;
+  _stTotal = mins * 60;
+  document.querySelectorAll('.st-preset').forEach((b,i)=>b.classList.toggle('sel',i===idx));
+  updateSTDisplay();
+  if(_stRunning){clearInterval(_stInterval);_stRunning=false;document.getElementById('stStartBtn').innerHTML='<i class="fas fa-play"></i> Start';}
+};
+
+window.toggleStudyTimer = () => {
+  if(_stRunning){
+    clearInterval(_stInterval);
+    _stRunning=false;
+    document.getElementById('stStartBtn').innerHTML='<i class="fas fa-play"></i> Resume';
+  } else {
+    _stRunning=true;
+    document.getElementById('stStartBtn').innerHTML='<i class="fas fa-pause"></i> Pause';
+    _stInterval=setInterval(async()=>{
+      _stSeconds--;
+      updateSTDisplay();
+      if(_stSeconds<=0){
+        clearInterval(_stInterval);_stRunning=false;
+        if(_stPhase==='study'){
+          _stSessions++;
+          const todayKey = 'vux_st_sessions_' + new Date().toDateString() + '_' + (_uid||'');
+          localStorage.setItem(todayKey, _stSessions);
+          toast('Study session complete! +15 VUX','success');
+          // Credit VUX
+          if(_uid){
+            try{
+              await updateDoc(doc(db,'wallets',_uid),{balance:increment(15),totalEarned:increment(15)});
+              await updateDoc(doc(db,'users',_uid),{vuxBalance:increment(15)});
+              await addDoc(collection(db,'wallets',_uid,'transactions'),{type:'Study Session Reward',amount:15,timestamp:serverTimestamp(),date:new Date().toLocaleString()});
+            }catch{}
+          }
+          _stPhase='break';
+          _stSeconds=5*60;_stTotal=5*60;
+          document.getElementById('stPhaseLabel').textContent='Break Time';
+          document.getElementById('stSessionInfo').textContent=_stSessions+' session'+(_stSessions!==1?'s':'')+' today';
+          document.getElementById('stSessionsToday').textContent=_stSessions+' session'+(_stSessions!==1?'s':'')+' completed today';
+          document.getElementById('stStartBtn').innerHTML='<i class="fas fa-play"></i> Start Break';
+        } else {
+          _stPhase='study';
+          _stSeconds=_stTotal=25*60;
+          document.getElementById('stPhaseLabel').textContent='Study Session';
+          document.getElementById('stStartBtn').innerHTML='<i class="fas fa-play"></i> Start';
+          toast('Break over! Ready to study again.','info');
+        }
+        updateSTDisplay();
+      }
+    },1000);
+  }
+};
+
+window.resetStudyTimer = () => {
+  clearInterval(_stInterval);_stRunning=false;
+  _stPhase='study';_stSeconds=25*60;_stTotal=25*60;
+  document.getElementById('stStartBtn').innerHTML='<i class="fas fa-play"></i> Start';
+  document.getElementById('stPhaseLabel').textContent='Study Session';
+  updateSTDisplay();
+};
+
+function updateSTDisplay(){
+  const m=Math.floor(_stSeconds/60);const s=_stSeconds%60;
+  const el=document.getElementById('stDisplay');
+  const fill=document.getElementById('stProgressFill');
+  if(el)el.textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+  if(fill)fill.style.width=((_stSeconds/_stTotal)*100)+'%';
+  // Change color on break
+  if(fill)fill.style.background=_stPhase==='break'?'linear-gradient(90deg,var(--blue),var(--purple))':'linear-gradient(90deg,var(--green),var(--blue))';
+}
+
+watchAuth(async user=>{
+  if(!user){window.location.replace('login');return;}
+  _uid=user.uid;
+  const name=user.displayName||user.email?.split('@')[0]||'User';
+  document.getElementById('userName').textContent=name.split(' ')[0];
+  document.getElementById('avatarEl').textContent=name[0].toUpperCase();
+  updateAdUI();
+  loadExamCountdowns();
+  loadDailyChallenge();
+  renderStudyTimer();
+
+  try{
+    onSnapshot(doc(db,'wallets',_uid),s=>{
+      if(!s.exists())return;const d=s.data();_bal=d.balance||0;
+      document.getElementById('vuxBal').textContent=_bal.toLocaleString();
+      document.getElementById('nairaVal').textContent=`≈ ₦${(_bal*0.124).toFixed(2)}`;
+      document.getElementById('statEarned').textContent=(d.totalEarned||0).toLocaleString();
+      document.getElementById('statSpent').textContent=(d.totalSpent||0).toLocaleString();
+    });
+    onSnapshot(doc(db,'users',_uid),s=>{
+      if(!s.exists())return;const p=s.data();
+      const n=p.name||name;document.getElementById('userName').textContent=n.split(' ')[0];document.getElementById('avatarEl').textContent=n[0].toUpperCase();
+      const pm={free:'Free Plan',starter:'Starter Plan',standard:'Standard Plan',pro:'Pro Plan',elite:'Elite Plan'};
+      document.getElementById('planLabel').textContent=pm[p.plan]||'Free Plan';
+      document.getElementById('refCodeLbl').textContent=p.referralCode||'VUX-——';
+      document.getElementById('statPlan').textContent=(p.plan||'free').charAt(0).toUpperCase()+(p.plan||'free').slice(1);
+      const d=new Date().getDay(),hi=d>=1&&d<=4;
+      document.getElementById('claimAmt').textContent=({free:hi?200:150,starter:hi?600:500,standard:hi?800:700,pro:hi?1200:1000,elite:hi?2200:2000}[p.plan]||(hi?200:150)).toLocaleString();
+      const last=p.lastClaim?p.lastClaim.toMillis():0;
+      if(Date.now()-last<864e5)startCd(last+864e5);
+    });
+  }catch(e){console.warn('Firestore:',e);}
+  try{subTx();}catch(e){}
+  try{loadNews();}catch(e){}
+  try{loadYt();}catch(e){}
+});
+</script>
+
+
+</body>
+</html>

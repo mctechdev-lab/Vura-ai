@@ -1,0 +1,14 @@
+{
+  "name": "Vura AI — Nigeria's #1 AI Study Platform",
+  "short_name": "Vura AI",
+  "description": "Ace JAMB, WAEC and NECO with AI tutoring, quizzes, games and VUX coin rewards.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#03030b",
+  "theme_color": "#00d2ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

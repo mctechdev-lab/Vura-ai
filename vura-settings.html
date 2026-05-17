@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6229569177818177" crossorigin="anonymous"></script>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<!-- Vura Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+<link rel="manifest" href="/manifest.json">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vura — Settings</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#03030b;--card:rgba(11,11,30,.92);--card2:rgba(16,16,42,.96);--blue:#00d2ff;--gold:#ffcc33;--green:#10b981;--orange:#ff9500;--purple:#9d50bb;--pink:#ff3d70;--red:#ef4444;--border:rgba(255,255,255,0.07);--text:#e8eaf6;--muted:#8892a4;}
+[data-theme="light"]{--bg:#f0f4f8;--card:rgba(255,255,255,.96);--card2:#fff;--border:rgba(0,0,0,.09);--text:#1e293b;--muted:#64748b}
+[data-theme="dim"]{--bg:#0f1117;--card:rgba(20,22,36,.95);--card2:rgba(26,28,44,.98);--border:rgba(255,255,255,.08);--text:#d4d8e8;--muted:#7a8499}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+button,a,[onclick]{touch-action:manipulation;cursor:pointer}
+html,body{min-height:100%;background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+body{overflow-x:hidden;padding-bottom:88px}
+.bg-glow{position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 60% 40% at 20% 15%,rgba(0,210,255,.04) 0%,transparent 70%),radial-gradient(ellipse 50% 35% at 80% 80%,rgba(157,80,187,.04) 0%,transparent 70%)}
+.page{max-width:540px;margin:0 auto;padding:0 14px}
+.pg-hdr{padding:18px 0 14px;display:flex;align-items:center;gap:11px}
+.back-c{width:36px;height:36px;border-radius:10px;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.22s;flex-shrink:0}
+.back-c i{color:var(--muted);font-size:.85rem}
+.back-c:hover{border-color:rgba(0,210,255,.25)}
+.hdr-info-title{font-family:'Orbitron',monospace;font-size:1.05rem;font-weight:900;color:var(--text)}
+.hdr-info-sub{font-size:.7rem;color:var(--muted);margin-top:1px}
+.profile-strip{display:flex;align-items:center;gap:14px;background:linear-gradient(145deg,rgba(16,16,36,.97),rgba(10,10,24,.98));border:1px solid var(--border);border-radius:17px;padding:14px 15px;margin-bottom:8px;cursor:pointer;transition:.22s}
+.profile-strip:hover{border-color:rgba(0,210,255,.2)}
+.pa{width:54px;height:54px;border-radius:15px;background:linear-gradient(135deg,var(--blue),#2d6dc7);display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-size:1.2rem;font-weight:900;color:#fff;box-shadow:0 0 18px rgba(0,210,255,.22);flex-shrink:0;text-transform:uppercase;position:relative;overflow:hidden}
+.pa-edit{position:absolute;bottom:0;right:0;width:18px;height:18px;background:var(--blue);border-radius:5px 0 0 0;display:flex;align-items:center;justify-content:center}
+.pa-edit i{font-size:.48rem;color:#fff}
+.pi{flex:1;min-width:0}
+.pi-name{font-weight:800;font-size:.94rem;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pi-handle{font-size:.7rem;color:var(--blue);margin-top:1px;font-weight:700}
+.pi-plan{display:inline-flex;align-items:center;gap:4px;padding:2px 9px;border-radius:999px;font-size:.63rem;font-weight:800;margin-top:4px;background:rgba(157,80,187,.13);border:1px solid rgba(157,80,187,.23);color:#c084fc}
+.pi-view-btn{font-size:.7rem;font-weight:700;color:var(--blue);display:flex;align-items:center;gap:3px;margin-top:4px}
+
+/* INSTALL BANNER */
+.install-banner{background:linear-gradient(135deg,rgba(0,210,255,.12),rgba(58,123,213,.1));border:2.5px solid rgba(0,210,255,.35);border-radius:18px;padding:18px 16px;margin-bottom:14px;position:relative;overflow:hidden}
+.install-banner::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(0,210,255,.06);pointer-events:none}
+.ib-top{display:flex;align-items:center;gap:13px;margin-bottom:12px}
+.ib-icon{width:52px;height:52px;border-radius:15px;background:linear-gradient(135deg,var(--blue),#2d6dc7);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 6px 18px rgba(0,210,255,.3)}
+.ib-icon i{color:#fff;font-size:1.4rem}
+.ib-title{font-family:'Orbitron',monospace;font-size:.9rem;font-weight:900;color:#fff;margin-bottom:3px}
+.ib-sub{font-size:.72rem;color:rgba(255,255,255,.6);line-height:1.5}
+.ib-step{display:flex;align-items:center;gap:9px;font-size:.76rem;color:rgba(255,255,255,.7);margin-bottom:6px}
+.ib-step-num{width:22px;height:22px;border-radius:50%;background:rgba(0,210,255,.2);border:1px solid rgba(0,210,255,.3);display:flex;align-items:center;justify-content:center;font-size:.67rem;font-weight:800;color:var(--blue);flex-shrink:0}
+.ib-btns{display:flex;gap:9px;margin-top:12px}
+.ib-btn{flex:1;padding:12px;border:none;border-radius:12px;font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;transition:.25s}
+.ib-btn-main{background:linear-gradient(135deg,var(--blue),#2d6dc7);color:#fff;box-shadow:0 5px 15px rgba(0,210,255,.3)}
+.ib-btn-main:hover{transform:translateY(-2px)}
+.ib-btn-sec{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.6)}
+.ib-platform-row{display:flex;gap:7px;margin-top:10px}
+.ib-plat{flex:1;padding:8px 6px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);text-align:center;font-size:.64rem;font-weight:700;color:rgba(255,255,255,.45);display:flex;flex-direction:column;align-items:center;gap:3px}
+.ib-plat i{font-size:1rem;color:rgba(255,255,255,.55)}
+
+/* TABS */
+.tab-bar{display:flex;overflow-x:auto;background:var(--card);border:1px solid var(--border);border-radius:15px;padding:4px;margin-bottom:18px;scrollbar-width:none;gap:2px}
+.tab-bar::-webkit-scrollbar{display:none}
+.tb{flex-shrink:0;padding:8px 11px;border:none;border-radius:11px;background:transparent;color:var(--muted);font-family:'Nunito',sans-serif;font-size:.73rem;font-weight:700;cursor:pointer;transition:all .22s;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.tb i{font-size:.71rem}
+.tb.active{background:linear-gradient(135deg,rgba(0,210,255,.16),rgba(58,123,213,.1));color:var(--text);border:1px solid rgba(0,210,255,.22)}
+.panel{display:none}.panel.active{display:flex;flex-direction:column;gap:13px}
+
+/* SBLOCK */
+.sblock{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.sblock-title{font-size:.67rem;font-weight:800;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.9px;padding:11px 14px 7px;display:flex;align-items:center;gap:5px}
+[data-theme="light"] .sblock-title{color:rgba(0,0,0,.35)}
+.sblock-title i{font-size:.65rem;color:var(--blue)}
+.sr{display:flex;align-items:center;gap:11px;padding:12px 14px;cursor:pointer;transition:.18s;border-top:1px solid var(--border)}
+.sr:first-child{border-top:none}
+.sr:hover{background:rgba(255,255,255,.03);transform:translateX(3px)}
+.sr:active{background:rgba(255,255,255,.05)}
+.sr-icon{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
+.sr-body{flex:1;min-width:0}
+.sr-title{font-size:.83rem;font-weight:700;color:var(--text)}
+.sr-sub{font-size:.68rem;color:var(--muted);margin-top:1px;line-height:1.45}
+.sr-right{display:flex;align-items:center;gap:7px;flex-shrink:0}
+.sr-right i{font-size:.75rem;color:var(--muted)}
+.sr-val{font-size:.73rem;color:var(--muted);font-weight:600}
+.sr-badge{padding:2px 8px;border-radius:999px;font-size:.63rem;font-weight:700}
+.sb-green{background:rgba(16,185,129,.13);border:1px solid rgba(16,185,129,.23);color:var(--green)}
+.sb-blue{background:rgba(0,210,255,.1);border:1px solid rgba(0,210,255,.2);color:var(--blue)}
+.sb-soon{background:rgba(255,149,0,.1);border:1px solid rgba(255,149,0,.2);color:var(--orange)}
+.tog{width:42px;height:23px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid var(--border);position:relative;cursor:pointer;transition:all .28s;flex-shrink:0}
+.tog.on{background:var(--green);border-color:var(--green);box-shadow:0 0 9px rgba(16,185,129,.28)}
+.tog::after{content:'';position:absolute;width:17px;height:17px;border-radius:50%;background:#fff;top:2px;left:2px;transition:transform .28s}
+.tog.on::after{transform:translateX(19px)}
+.theme-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;padding:13px 14px}
+.theme-opt{background:rgba(255,255,255,.04);border:1.5px solid var(--border);border-radius:13px;padding:14px 10px;text-align:center;cursor:pointer;transition:all .25s}
+.theme-opt.selected{border-color:var(--blue);background:rgba(0,210,255,.08)}
+.theme-opt:hover{border-color:rgba(0,210,255,.25)}
+.theme-preview{width:100%;height:42px;border-radius:9px;margin-bottom:8px;overflow:hidden;display:flex}
+.tp-left{width:35%}.tp-right{flex:1;display:flex;flex-direction:column;gap:3px;padding:5px}.tp-line{border-radius:3px;height:5px}
+.theme-name{font-size:.72rem;font-weight:800;color:var(--text)}.theme-sub{font-size:.6rem;color:var(--muted);margin-top:1px}
+.inp-group{padding:9px 14px 13px;border-top:1px solid var(--border)}.inp-group:first-child{border-top:none}
+.inp-lbl{font-size:.68rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px;display:flex;align-items:center;gap:4px}
+.inp-lbl i{font-size:.65rem;color:var(--blue)}
+.inp-wrap{position:relative}
+.inp-ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.8rem;pointer-events:none;z-index:2}
+.inp{width:100%;padding:11px 12px 11px 38px;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:11px;color:var(--text);font-family:'Nunito',sans-serif;font-size:.86rem;font-weight:600;outline:none;transition:.25s;-webkit-appearance:none}
+.inp::placeholder{color:rgba(136,146,164,.42)}
+.inp:focus{background:rgba(0,210,255,.06);border-color:rgba(0,210,255,.45);box-shadow:0 0 0 3px rgba(0,210,255,.08)}
+.inp.readonly{background:rgba(255,255,255,.03);color:var(--muted);cursor:not-allowed}
+.inp-hint{font-size:.65rem;color:var(--muted);margin-top:4px;display:flex;align-items:center;gap:3px}
+.inp-hint i{font-size:.6rem;color:var(--orange)}.inp-hint.locked i{color:var(--red)}
+.ctx-wrap{padding:9px 14px 13px;border-top:1px solid var(--border)}
+.ctx-ta{width:100%;min-height:76px;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:11px;color:var(--text);font-family:'Nunito',sans-serif;font-size:.83rem;font-weight:600;outline:none;transition:.25s;padding:11px 13px;resize:none;line-height:1.6}
+.ctx-ta::placeholder{color:rgba(136,146,164,.38)}
+.ctx-ta:focus{background:rgba(0,210,255,.06);border-color:rgba(0,210,255,.45)}
+.ctx-count{font-size:.64rem;color:var(--muted);text-align:right;margin-top:3px}
+.sel-wrap{position:relative}
+.sel{width:100%;padding:11px 12px 11px 38px;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:11px;color:var(--text);font-family:'Nunito',sans-serif;font-size:.86rem;font-weight:600;outline:none;cursor:pointer;-webkit-appearance:none;appearance:none;transition:.25s}
+.sel:focus{border-color:rgba(0,210,255,.45)}
+.sel option{background:#0d0d22;color:#fff}
+.save-btn{width:100%;padding:13px;border:none;border-radius:12px;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:800;cursor:pointer;transition:.28s;display:flex;align-items:center;justify-content:center;gap:7px}
+.save-primary{background:linear-gradient(135deg,var(--blue),#2d6dc7);color:#fff;box-shadow:0 6px 18px rgba(0,210,255,.22)}
+.save-primary:hover{transform:translateY(-2px)}
+.save-primary:disabled{opacity:.48;cursor:not-allowed;transform:none}
+.danger-zone{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.18);border-radius:16px;overflow:hidden}
+.model-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:0 14px 13px}
+.mc{background:rgba(255,255,255,.04);border:1.5px solid var(--border);border-radius:12px;padding:11px;cursor:pointer;transition:.22s}
+.mc.sel-mc{border-color:var(--blue);background:rgba(0,210,255,.07)}
+.mc:hover{border-color:rgba(0,210,255,.28)}
+.mc-head{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.mc-icon{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.78rem}
+.mc-name{font-size:.76rem;font-weight:800;color:var(--text)}
+.mc-desc{font-size:.63rem;color:var(--muted);line-height:1.4}
+.mc-speed{font-size:.6rem;font-weight:700;margin-top:3px}
+
+/* SOCIAL PROFILE PREVIEW */
+.profile-preview{background:linear-gradient(135deg,rgba(0,210,255,.08),rgba(157,80,187,.06));border:1px solid rgba(0,210,255,.15);border-radius:16px;padding:16px;text-align:center}
+.pp-avatar{width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,var(--blue),#2d6dc7);display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-size:1.4rem;font-weight:900;color:#fff;margin:0 auto 10px;border:3px solid rgba(0,210,255,.3);overflow:hidden;position:relative}
+.pp-name{font-family:'Orbitron',monospace;font-size:.88rem;font-weight:900;color:var(--text);margin-bottom:2px}
+.pp-handle{font-size:.73rem;color:var(--blue);font-weight:700;margin-bottom:8px}
+.pp-bio{font-size:.78rem;color:var(--muted);line-height:1.6;margin-bottom:12px;font-style:italic}
+.pp-social-row{display:flex;gap:8px;justify-content:center;margin-bottom:8px}
+.pp-soc{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.9rem;border:1px solid var(--border)}
+
+/* ABOUT HERO */
+.about-hero{background:linear-gradient(135deg,#050a18,#0a1628);border:1px solid rgba(0,210,255,.15);border-radius:18px;padding:22px 18px;text-align:center;position:relative;overflow:hidden}
+.ah-logo{font-family:'Orbitron',monospace;font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,var(--blue),#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:4px}
+.ah-sub{font-size:.75rem;color:rgba(255,255,255,.45);margin-bottom:12px}
+.ah-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:14px}
+.ah-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:12px 8px;text-align:center}
+.ah-stat-val{font-family:'Orbitron',monospace;font-size:.88rem;font-weight:900;color:var(--blue)}
+.ah-stat-lbl{font-size:.6rem;color:rgba(255,255,255,.35);margin-top:3px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+
+/* PROFILE VIEWER OVERLAY */
+#profileViewer{position:fixed;inset:0;z-index:9999;background:var(--bg);display:none;flex-direction:column;overflow-y:auto}
+.pv-hdr{display:flex;align-items:center;gap:10px;padding:14px;border-bottom:1px solid var(--border);background:var(--card);position:sticky;top:0;z-index:2}
+.pv-back{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.pv-back i{color:var(--muted);font-size:.82rem}
+.pv-body{max-width:540px;margin:0 auto;width:100%;padding:20px 14px 40px}
+.pv-cover{height:110px;background:linear-gradient(135deg,#0a1a3a,#0d1f3c,#1a0a2e);border-radius:16px;margin-bottom:-40px;position:relative;overflow:hidden}
+.pv-cover::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(0,210,255,.15),transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(157,80,187,.12),transparent 60%)}
+.pv-av{width:72px;height:72px;border-radius:20px;background:linear-gradient(135deg,var(--blue),#2d6dc7);display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-size:1.5rem;font-weight:900;color:#fff;border:3px solid var(--bg);margin:0 0 0 16px;position:relative;z-index:2;overflow:hidden}
+.pv-name{font-family:'Orbitron',monospace;font-size:1.05rem;font-weight:900;color:var(--text);margin-bottom:2px}
+.pv-handle{font-size:.75rem;color:var(--blue);font-weight:700;margin-bottom:6px}
+.pv-bio{font-size:.82rem;color:var(--muted);line-height:1.65;margin-bottom:14px}
+.pv-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:16px}
+.pv-stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:11px 8px;text-align:center}
+.pv-stat-val{font-family:'Orbitron',monospace;font-size:.88rem;font-weight:900;color:var(--text)}
+.pv-stat-lbl{font-size:.6rem;color:var(--muted);margin-top:2px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+.pv-soc-link{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:10px;border:1px solid var(--border);background:var(--card);font-size:.75rem;font-weight:700;color:var(--text);text-decoration:none;transition:.2s;margin:0 6px 6px 0;display:inline-flex}
+.pv-soc-link:hover{transform:translateY(-2px)}
+
+#toasts{position:fixed;top:14px;right:14px;z-index:9999;display:flex;flex-direction:column;gap:7px;max-width:270px}
+.toast{padding:10px 12px;border-radius:11px;font-size:.77rem;font-weight:700;display:flex;align-items:center;gap:7px;backdrop-filter:blur(16px);border:1px solid;animation:tIn .35s cubic-bezier(.34,1.56,.64,1)}
+.toast i{font-size:.87rem;flex-shrink:0}.toast span{flex:1}
+.toast.success{background:rgba(16,185,129,.14);border-color:rgba(16,185,129,.26);color:#6ee7b7}
+.toast.error{background:rgba(239,68,68,.14);border-color:rgba(239,68,68,.26);color:#fca5a5}
+.toast.info{background:rgba(0,210,255,.11);border-color:rgba(0,210,255,.22);color:#a5f3ff}
+.toast.removing{animation:tOut .28s ease forwards}
+@keyframes tIn{from{opacity:0;transform:translateX(34px)}to{opacity:1;transform:translateX(0)}}
+@keyframes tOut{to{opacity:0;transform:translateX(34px)}}
+.tc{margin-left:auto;background:none;border:none;color:inherit;cursor:pointer;opacity:.48;padding:0 0 0 4px}
+.spinner{width:15px;height:15px;border:2px solid rgba(255,255,255,.2);border-top-color:#fff;border-radius:50%;animation:spin .6s linear infinite;flex-shrink:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="bg-glow"></div>
+<div id="toasts"></div>
+
+<!-- PUBLIC PROFILE VIEWER -->
+<div id="profileViewer">
+  <div class="pv-hdr">
+    <div class="pv-back" onclick="closeProfileViewer()"><i class="fas fa-arrow-left"></i></div>
+    <div style="font-family:'Orbitron',monospace;font-size:.88rem;font-weight:900;color:var(--text);flex:1">My Public Profile</div>
+    <button onclick="shareProfile()" style="padding:7px 13px;border:none;border-radius:9px;background:linear-gradient(135deg,var(--blue),#2d6dc7);color:#fff;font-family:'Nunito',sans-serif;font-size:.75rem;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:5px"><i class="fas fa-share-nodes" style="font-size:.67rem"></i>Share</button>
+  </div>
+  <div class="pv-body">
+    <div class="pv-cover"></div>
+    <div style="display:flex;align-items:flex-end;gap:12px;margin-bottom:14px">
+      <div class="pv-av" id="pvAv"><span id="pvAvInitial">?</span></div>
+      <div style="padding-bottom:4px;flex:1">
+        <div class="pv-name" id="pvName">—</div>
+        <div class="pv-handle" id="pvHandle">@—</div>
+      </div>
+    </div>
+    <div class="pv-bio" id="pvBio">No bio yet.</div>
+    <div class="pv-stats">
+      <div class="pv-stat"><div class="pv-stat-val" id="pvLnx">—</div><div class="pv-stat-lbl">VUX</div></div>
+      <div class="pv-stat"><div class="pv-stat-val" id="pvPlan">Free</div><div class="pv-stat-lbl">Plan</div></div>
+      <div class="pv-stat"><div class="pv-stat-val" id="pvCountry">—</div><div class="pv-stat-lbl">Country</div></div>
+    </div>
+    <div style="font-size:.7rem;font-weight:800;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px">Social Links</div>
+    <div id="pvSocialLinks" style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:16px"><span style="font-size:.78rem;color:var(--muted)">No social links yet.</span></div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:13px;padding:13px">
+      <div style="font-size:.7rem;font-weight:800;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px">Account Info</div>
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="display:flex;justify-content:space-between;font-size:.78rem"><span style="color:var(--muted)">Member since</span><span id="pvJoined" style="font-weight:700">—</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:.78rem"><span style="color:var(--muted)">Education</span><span id="pvEdu" style="font-weight:700">—</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:.78rem"><span style="color:var(--muted)">Referral code</span><span id="pvRef" style="font-family:'Orbitron',monospace;font-size:.75rem;color:var(--blue);font-weight:700">—</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="pg-hdr">
+    <div class="back-c" onclick="goBack()"><i class="fas fa-arrow-left"></i></div>
+    <div><div class="hdr-info-title">Settings</div><div class="hdr-info-sub">Manage your account & preferences</div></div>
+  </div>
+
+  <!-- PROFILE STRIP -->
+  <div class="profile-strip" onclick="openProfileViewer()">
+    <div class="pa" id="pa"><span id="paInitial">?</span><div class="pa-edit"><i class="fas fa-eye"></i></div></div>
+    <div class="pi">
+      <div class="pi-name" id="piName">Loading...</div>
+      <div class="pi-handle" id="piHandle">@—</div>
+      <div class="pi-plan" id="piPlan"><i class="fas fa-shield-halved"></i> Free Plan</div>
+      <div class="pi-view-btn"><i class="fas fa-eye" style="font-size:.63rem"></i> View public profile</div>
+    </div>
+  </div>
+
+  <!-- INSTALL APP BANNER — Bold & Prominent -->
+  <div class="install-banner" id="installBanner">
+    <div class="ib-top">
+      <div class="ib-icon"><i class="fas fa-mobile-screen-button"></i></div>
+      <div>
+        <div class="ib-title">📲 Install Vura App</div>
+        <div class="ib-sub">Add to home screen · Works offline · Loads faster · Feels native</div>
+      </div>
+    </div>
+    <div id="iosSteps" style="display:none">
+      <div class="ib-step"><div class="ib-step-num">1</div><span>Tap <b style="color:#fff">Share</b> <i class="fas fa-arrow-up-from-bracket" style="color:var(--blue)"></i> in Safari</span></div>
+      <div class="ib-step" style="margin-top:4px"><div class="ib-step-num">2</div><span>Select <b style="color:#fff">"Add to Home Screen"</b> then tap <b style="color:#fff">Add</b></span></div>
+    </div>
+    <div class="ib-btns">
+      <button class="ib-btn ib-btn-main" id="installBtn" onclick="doInstall()"><i class="fas fa-download"></i> Install App Now</button>
+      <button class="ib-btn ib-btn-sec" onclick="document.getElementById('installBanner').style.display='none'"><i class="fas fa-xmark"></i> Later</button>
+    </div>
+    <div class="ib-platform-row">
+      <div class="ib-plat"><i class="fab fa-android"></i>Android</div>
+      <div class="ib-plat"><i class="fab fa-apple"></i>iOS/iPad</div>
+      <div class="ib-plat"><i class="fas fa-desktop"></i>Desktop</div>
+    </div>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tb active" data-tab="profile"><i class="fas fa-user"></i> Profile</button>
+    <button class="tb" data-tab="social"><i class="fas fa-share-nodes"></i> Social</button>
+    <button class="tb" data-tab="ai"><i class="fas fa-robot"></i> AI</button>
+    <button class="tb" data-tab="appearance"><i class="fas fa-palette"></i> Theme</button>
+    <button class="tb" data-tab="notifs"><i class="fas fa-bell"></i> Alerts</button>
+    <button class="tb" data-tab="security"><i class="fas fa-shield-halved"></i> Security</button>
+    <button class="tb" data-tab="support"><i class="fas fa-headset"></i> Help</button>
+    <button class="tb" data-tab="about"><i class="fas fa-building"></i> About</button>
+  </div>
+
+  <!-- PROFILE TAB -->
+  <div class="panel active" id="tab-profile">
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-id-card"></i> Personal Information</div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-hashtag"></i> User ID</div>
+        <div class="inp-wrap"><i class="fas fa-fingerprint inp-ic"></i><input class="inp readonly" id="inpUid" readonly placeholder="Loading..."></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-signature"></i> Full Name</div>
+        <div class="inp-wrap"><i class="fas fa-user inp-ic"></i><input class="inp" id="inpName" placeholder="Your full name"></div>
+        <div class="inp-hint" id="nameHint" style="display:none"><i class="fas fa-lock"></i> Name can only be changed once</div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-at"></i> Username / Handle</div>
+        <div class="inp-wrap"><i class="fas fa-at inp-ic"></i><input class="inp" id="inpHandle" placeholder="@yourusername" maxlength="30"></div>
+        <div class="inp-hint"><i class="fas fa-circle-info"></i> Shown on your public profile</div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-envelope"></i> Email Address</div>
+        <div class="inp-wrap"><i class="fas fa-at inp-ic"></i><input class="inp readonly" id="inpEmail" readonly></div>
+        <div class="inp-hint"><i class="fas fa-circle-info"></i> Email cannot be changed</div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-earth-africa"></i> Country</div>
+        <div class="inp-wrap"><i class="fas fa-location-dot inp-ic"></i>
+          <select class="inp" id="inpCountry" style="padding-left:38px">
+            <option value="">Select your country</option>
+            <option value="Nigeria">🇳🇬 Nigeria</option>
+            <option value="Ghana">🇬🇭 Ghana</option>
+            <option value="Kenya">🇰🇪 Kenya</option>
+            <option value="South Africa">🇿🇦 South Africa</option>
+            <option value="Egypt">🇪🇬 Egypt</option>
+            <option value="Ethiopia">🇪🇹 Ethiopia</option>
+            <option value="Tanzania">🇹🇿 Tanzania</option>
+            <option value="Uganda">🇺🇬 Uganda</option>
+            <option value="Rwanda">🇷🇼 Rwanda</option>
+            <option value="Cameroon">🇨🇲 Cameroon</option>
+            <option value="Senegal">🇸🇳 Senegal</option>
+            <option value="Ivory Coast">🇨🇮 Ivory Coast</option>
+            <option value="Zimbabwe">🇿🇼 Zimbabwe</option>
+            <option value="Morocco">🇲🇦 Morocco</option>
+            <option value="Algeria">🇩🇿 Algeria</option>
+            <option value="Tunisia">🇹🇳 Tunisia</option>
+            <option value="United States">🇺🇸 United States</option>
+            <option value="United Kingdom">🇬🇧 United Kingdom</option>
+            <option value="Canada">🇨🇦 Canada</option>
+            <option value="India">🇮🇳 India</option>
+            <option value="Pakistan">🇵🇰 Pakistan</option>
+            <option value="Bangladesh">🇧🇩 Bangladesh</option>
+            <option value="Other">🌍 Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-calendar"></i> Age</div>
+        <div class="inp-wrap"><i class="fas fa-birthday-cake inp-ic"></i>
+          <select class="inp" id="inpAge" style="padding-left:38px">
+            <option value="">Select your age</option>
+            <option value="10">10</option><option value="11">11</option>
+            <option value="12">12</option><option value="13">13</option>
+            <option value="14">14</option><option value="15">15</option>
+            <option value="16">16</option><option value="17">17</option>
+            <option value="18">18</option><option value="19">19</option>
+            <option value="20">20</option><option value="21">21</option>
+            <option value="22">22</option><option value="23">23</option>
+            <option value="24">24</option><option value="25">25</option>
+            <option value="26">26</option><option value="27">27</option>
+            <option value="28">28</option><option value="29">29</option>
+            <option value="30">30</option><option value="31">31</option>
+            <option value="32">32</option><option value="33">33</option>
+            <option value="34">34</option><option value="35">35</option>
+            <option value="36">36</option><option value="37">37</option>
+            <option value="38">38</option><option value="39">39</option>
+            <option value="40">40</option><option value="45">45</option>
+            <option value="50">50</option><option value="55">55+</option>
+          </select>
+        </div>
+        <div class="inp-hint" id="ageHint" style="display:none"><i class="fas fa-lock"></i> Age can only be changed once</div>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-quote-left"></i> Bio</div>
+      <div class="ctx-wrap" style="border-top:none">
+        <div class="inp-lbl" style="margin-bottom:6px"><i class="fas fa-pen"></i> Tell people about yourself</div>
+        <textarea class="ctx-ta" id="inpBio" maxlength="200" placeholder="e.g. SS3 student in Lagos 🇳🇬 | Science lover | Aiming for medicine at UNILAG" oninput="document.getElementById('bioLen').textContent=this.value.length"></textarea>
+        <div class="ctx-count"><span id="bioLen">0</span>/200</div>
+      </div>
+    </div>
+    <button class="save-btn save-primary" id="saveProfileBtn" onclick="saveProfile()"><i class="fas fa-floppy-disk"></i> Save Profile</button>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-layer-group"></i> Subscription</div>
+      <div class="sr" onclick="goTo('plans')"><div class="sr-icon" style="background:rgba(157,80,187,.1);border:1px solid rgba(157,80,187,.18)"><i class="fas fa-crown" style="color:#c084fc"></i></div><div class="sr-body"><div class="sr-title" id="srPlanName">Free Plan</div><div class="sr-sub">Upgrade for more VUX daily & AI access</div></div><div class="sr-right"><span class="sr-badge sb-blue" id="srPlanBadge">FREE</span><i class="fas fa-chevron-right"></i></div></div>
+      <div class="sr" onclick="goTo('referral')"><div class="sr-icon" style="background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.18)"><i class="fas fa-share-nodes" style="color:var(--green)"></i></div><div class="sr-body"><div class="sr-title">Referral Program</div><div class="sr-sub">Earn 600 VUX per friend who joins</div></div><div class="sr-right"><span class="sr-badge sb-green">+600 VUX</span><i class="fas fa-chevron-right"></i></div></div>
+    </div>
+    <div class="danger-zone">
+      <div class="sblock-title" style="color:rgba(239,68,68,.55)"><i class="fas fa-triangle-exclamation" style="color:var(--red)"></i> Account Actions</div>
+      <div class="sr" onclick="doLogout()"><div class="sr-icon" style="background:rgba(239,68,68,.09);border:1px solid rgba(239,68,68,.18)"><i class="fas fa-right-from-bracket" style="color:var(--red)"></i></div><div class="sr-body"><div class="sr-title" style="color:var(--red)">Sign Out</div><div class="sr-sub">You will be redirected to login</div></div><div class="sr-right"><i class="fas fa-chevron-right" style="color:var(--red)"></i></div></div>
+      <div class="sr" onclick="confirmDelete()"><div class="sr-icon" style="background:rgba(239,68,68,.09);border:1px solid rgba(239,68,68,.18)"><i class="fas fa-trash" style="color:var(--red)"></i></div><div class="sr-body"><div class="sr-title" style="color:var(--red)">Delete Account</div><div class="sr-sub">Permanently remove all data</div></div><div class="sr-right"><i class="fas fa-chevron-right" style="color:var(--red)"></i></div></div>
+    </div>
+  </div>
+
+  <!-- SOCIAL TAB -->
+  <div class="panel" id="tab-social">
+    <div class="profile-preview">
+      <div class="pp-avatar" id="ppAv"><span id="ppAvInitial">?</span></div>
+      <div class="pp-name" id="ppName">—</div>
+      <div class="pp-handle" id="ppHandle">No handle set</div>
+      <div class="pp-bio" id="ppBio">Add a bio in the Profile tab</div>
+      <div class="pp-social-row" id="ppSocialRow"><span style="font-size:.72rem;color:var(--muted)">No social links yet</span></div>
+      <div style="font-size:.68rem;color:var(--muted);margin-top:4px">👆 This is how others see your profile</div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-link"></i> Social Media Links</div>
+      <div class="inp-group" style="border-top:none">
+        <div class="inp-lbl"><i class="fab fa-instagram" style="color:#e1306c"></i> Instagram</div>
+        <div class="inp-wrap"><i class="fab fa-instagram inp-ic" style="color:#e1306c"></i><input class="inp" id="socInsta" placeholder="@yourhandle"></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fab fa-twitter" style="color:#1da1f2"></i> X / Twitter</div>
+        <div class="inp-wrap"><i class="fab fa-twitter inp-ic" style="color:#1da1f2"></i><input class="inp" id="socTwitter" placeholder="@yourhandle"></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fab fa-tiktok" style="color:#ff0050"></i> TikTok</div>
+        <div class="inp-wrap"><i class="fab fa-tiktok inp-ic" style="color:#ff0050"></i><input class="inp" id="socTiktok" placeholder="@yourhandle"></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fab fa-linkedin" style="color:#0a66c2"></i> LinkedIn</div>
+        <div class="inp-wrap"><i class="fab fa-linkedin inp-ic" style="color:#0a66c2"></i><input class="inp" id="socLinkedin" placeholder="linkedin.com/in/yourname"></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fab fa-youtube" style="color:#ff0000"></i> YouTube</div>
+        <div class="inp-wrap"><i class="fab fa-youtube inp-ic" style="color:#ff0000"></i><input class="inp" id="socYoutube" placeholder="@yourchannel"></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fab fa-whatsapp" style="color:#25d366"></i> WhatsApp</div>
+        <div class="inp-wrap"><i class="fab fa-whatsapp inp-ic" style="color:#25d366"></i><input class="inp" id="socWhatsapp" placeholder="+234 800 000 0000" type="tel"></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-globe" style="color:var(--blue)"></i> Website / Portfolio</div>
+        <div class="inp-wrap"><i class="fas fa-globe inp-ic"></i><input class="inp" id="socWebsite" placeholder="https://yourwebsite.com"></div>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-eye"></i> Profile Visibility</div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.17)"><i class="fas fa-chart-bar" style="color:var(--green)"></i></div><div class="sr-body"><div class="sr-title">Show on Leaderboard</div><div class="sr-sub">Make my profile visible in rankings</div></div><div class="tog on" id="tog-leaderboard" onclick="togSwitch('leaderboard')"></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(0,210,255,.09);border:1px solid rgba(0,210,255,.17)"><i class="fas fa-flag" style="color:var(--blue)"></i></div><div class="sr-body"><div class="sr-title">Show Country Flag</div><div class="sr-sub">Display my country on my public profile</div></div><div class="tog on" id="tog-flag" onclick="togSwitch('flag')"></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(255,204,51,.09);border:1px solid rgba(255,204,51,.17)"><i class="fas fa-share-nodes" style="color:var(--gold)"></i></div><div class="sr-body"><div class="sr-title">Show Social Links Publicly</div><div class="sr-sub">Others can see and tap your social handles</div></div><div class="tog on" id="tog-showsocial" onclick="togSwitch('showsocial')"></div></div>
+    </div>
+    <button class="save-btn save-primary" onclick="saveSocial()"><i class="fas fa-floppy-disk"></i> Save Social Profile</button>
+    <button class="save-btn" style="background:linear-gradient(135deg,var(--purple),#6a1b9a);color:#fff" onclick="openProfileViewer()"><i class="fas fa-eye"></i> Preview My Public Profile</button>
+  </div>
+
+  <!-- AI TAB -->
+  <div class="panel" id="tab-ai">
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-microchip"></i> Default AI Model</div>
+      <div class="model-grid">
+        <div class="mc sel-mc" id="mc-fast" onclick="pickModel('fast')"><div class="mc-head"><div class="mc-icon" style="background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.2)"><i class="fas fa-bolt" style="color:var(--green)"></i></div><div class="mc-name">GPT-4o Mini</div></div><div class="mc-desc">Fast, general Q&A</div><div class="mc-speed" style="color:var(--green)"><i class="fas fa-gauge-high"></i> Fastest · ~1-20 VUX</div></div>
+        <div class="mc" id="mc-smart" onclick="pickModel('smart')"><div class="mc-head"><div class="mc-icon" style="background:rgba(0,210,255,.12);border:1px solid rgba(0,210,255,.2)"><i class="fas fa-brain" style="color:var(--blue)"></i></div><div class="mc-name">GPT-4o</div></div><div class="mc-desc">Essays, code, complex</div><div class="mc-speed" style="color:var(--blue)"><i class="fas fa-gauge"></i> Smart · ~5-120 VUX</div></div>
+        <div class="mc" id="mc-advanced" onclick="pickModel('advanced')"><div class="mc-head"><div class="mc-icon" style="background:rgba(157,80,187,.12);border:1px solid rgba(157,80,187,.2)"><i class="fas fa-star" style="color:#c084fc"></i></div><div class="mc-name">GPT-4 Turbo</div></div><div class="mc-desc">Research, reasoning</div><div class="mc-speed" style="color:#c084fc"><i class="fas fa-gauge-simple-low"></i> Advanced · ~10-300 VUX</div></div>
+        <div class="mc" id="mc-premium" onclick="pickModel('premium')"><div class="mc-head"><div class="mc-icon" style="background:rgba(255,204,51,.12);border:1px solid rgba(255,204,51,.2)"><i class="fas fa-sparkles" style="color:var(--gold)"></i></div><div class="mc-name">o1-mini</div></div><div class="mc-desc">Step-by-step reasoning</div><div class="mc-speed" style="color:var(--gold)"><i class="fas fa-gauge-simple-low"></i> o1 · ~5-60 VUX</div></div>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-sliders"></i> AI Behaviour</div>
+      <div class="inp-group" style="border-top:none">
+        <div class="inp-lbl"><i class="fas fa-comment-dots"></i> AI Tone</div>
+        <div class="sel-wrap"><i class="fas fa-comment-dots inp-ic" style="pointer-events:none"></i><select class="sel" id="aiTone" style="padding-left:38px"><option value="friendly">Friendly & Casual</option><option value="academic">Academic & Formal</option><option value="concise">Short & Concise</option><option value="detailed">Detailed & Thorough</option><option value="tutor">Patient Tutor</option></select></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-language"></i> Response Language</div>
+        <div class="sel-wrap"><i class="fas fa-globe inp-ic" style="pointer-events:none"></i><select class="sel" id="aiLang" style="padding-left:38px"><option value="en">English</option><option value="yo">Yoruba</option><option value="ig">Igbo</option><option value="ha">Hausa</option><option value="fr">French</option><option value="es">Spanish</option><option value="pt">Portuguese</option><option value="ar">Arabic</option></select></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-graduation-cap"></i> Education Level</div>
+        <div class="sel-wrap"><i class="fas fa-school inp-ic" style="pointer-events:none"></i><select class="sel" id="eduLevel" style="padding-left:38px"><option value="primary">Primary School</option><option value="jss">Junior Secondary</option><option value="sss">Senior Secondary (WAEC/NECO)</option><option value="university">University / Tertiary</option><option value="professional">Professional / Graduate</option></select></div>
+      </div>
+      <div class="inp-group">
+        <div class="inp-lbl"><i class="fas fa-book"></i> Subjects of Interest</div>
+        <div class="inp-wrap"><i class="fas fa-list inp-ic"></i><input class="inp" id="aiSubjects" placeholder="e.g. Biology, Math, Chemistry"></div>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-address-card"></i> Brain Box (Personal Context)</div>
+      <div class="ctx-wrap" style="border-top:none">
+        <div class="inp-lbl" style="margin-bottom:6px"><i class="fas fa-circle-info"></i> Tell the AI about yourself</div>
+        <textarea class="ctx-ta" id="aiCtx" maxlength="500" placeholder="e.g. I am an SS3 student preparing for WAEC. I study Biology, Chemistry and Physics..." oninput="document.getElementById('ctxLen').textContent=this.value.length"></textarea>
+        <div class="ctx-count"><span id="ctxLen">0</span>/500</div>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-toggle-on"></i> AI Features</div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.17)"><i class="fas fa-brain" style="color:var(--green)"></i></div><div class="sr-body"><div class="sr-title">AI Memory (Brain Box)</div><div class="sr-sub">Remember past questions & context</div></div><div class="tog on" id="tog-memory" onclick="togSwitch('memory')"></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(255,204,51,.09);border:1px solid rgba(255,204,51,.17)"><i class="fas fa-superscript" style="color:var(--gold)"></i></div><div class="sr-body"><div class="sr-title">Math Formula Rendering</div><div class="sr-sub">Display equations and LaTeX</div></div><div class="tog on" id="tog-math" onclick="togSwitch('math')"></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(157,80,187,.09);border:1px solid rgba(157,80,187,.17)"><i class="fas fa-code" style="color:#c084fc"></i></div><div class="sr-body"><div class="sr-title">Code Syntax Highlighting</div><div class="sr-sub">Colour-coded code blocks</div></div><div class="tog on" id="tog-code" onclick="togSwitch('code')"></div></div>
+    </div>
+    <button class="save-btn save-primary" onclick="saveAI()"><i class="fas fa-floppy-disk"></i> Save AI Settings</button>
+  </div>
+
+  <!-- APPEARANCE TAB -->
+  <div class="panel" id="tab-appearance">
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-palette"></i> App Theme</div>
+      <div class="theme-grid">
+        <div class="theme-opt" id="th-dark" onclick="setTheme('dark')"><div class="theme-preview" style="background:#03030b"><div class="tp-left" style="background:#0e1524"></div><div class="tp-right"><div class="tp-line" style="background:rgba(0,210,255,.4);width:80%"></div><div class="tp-line" style="background:rgba(255,255,255,.12);width:60%"></div></div></div><div class="theme-name">Dark</div><div class="theme-sub">Space black</div></div>
+        <div class="theme-opt" id="th-light" onclick="setTheme('light')"><div class="theme-preview" style="background:#f0f4f8"><div class="tp-left" style="background:#fff;border-right:1px solid rgba(0,0,0,.08)"></div><div class="tp-right"><div class="tp-line" style="background:rgba(0,210,255,.5);width:80%"></div><div class="tp-line" style="background:rgba(0,0,0,.12);width:60%"></div></div></div><div class="theme-name">Light</div><div class="theme-sub">Clean white</div></div>
+        <div class="theme-opt" id="th-dim" onclick="setTheme('dim')"><div class="theme-preview" style="background:#0f1117"><div class="tp-left" style="background:#14163a"></div><div class="tp-right"><div class="tp-line" style="background:rgba(0,210,255,.35);width:80%"></div><div class="tp-line" style="background:rgba(255,255,255,.1);width:60%"></div></div></div><div class="theme-name">Dim</div><div class="theme-sub">Easy on eyes</div></div>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-text-size"></i> Display</div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(0,210,255,.09);border:1px solid rgba(0,210,255,.17)"><i class="fas fa-compress" style="color:var(--blue)"></i></div><div class="sr-body"><div class="sr-title">Compact Mode</div><div class="sr-sub">Reduce spacing for more content</div></div><div class="tog" id="tog-compact" onclick="togSwitch('compact')"></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.17)"><i class="fas fa-image" style="color:var(--green)"></i></div><div class="sr-body"><div class="sr-title">Show News Images</div><div class="sr-sub">Load article images in news feed</div></div><div class="tog on" id="tog-newsimg" onclick="togSwitch('newsimg')"></div></div>
+    </div>
+  </div>
+
+  <!-- NOTIFICATIONS TAB -->
+  <div class="panel" id="tab-notifs">
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-bell"></i> Notification Preferences</div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(255,204,51,.09);border:1px solid rgba(255,204,51,.17)"><i class="fas fa-sun" style="color:var(--gold)"></i></div><div class="sr-body"><div class="sr-title">Daily Reward Reminder</div><div class="sr-sub">Remind me to claim my VUX each day</div></div><div class="tog on" id="tog-dailyremind" onclick="togSwitch('dailyremind')"></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.17)"><i class="fas fa-coins" style="color:var(--green)"></i></div><div class="sr-body"><div class="sr-title">Transaction Alerts</div><div class="sr-sub">Notify on every VUX credit or debit</div></div><div class="tog on" id="tog-txalert" onclick="togSwitch('txalert')"></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(0,210,255,.09);border:1px solid rgba(0,210,255,.17)"><i class="fas fa-share-nodes" style="color:var(--blue)"></i></div><div class="sr-body"><div class="sr-title">Referral Notifications</div><div class="sr-sub">Alert when someone joins using my code</div></div><div class="tog on" id="tog-refnotif" onclick="togSwitch('refnotif')"></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(255,149,0,.09);border:1px solid rgba(255,149,0,.17)"><i class="fas fa-trophy" style="color:var(--orange)"></i></div><div class="sr-body"><div class="sr-title">Leaderboard Updates</div><div class="sr-sub">Alert when my rank changes</div></div><div class="tog" id="tog-rank" onclick="togSwitch('rank')"></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(157,80,187,.09);border:1px solid rgba(157,80,187,.17)"><i class="fas fa-newspaper" style="color:#c084fc"></i></div><div class="sr-body"><div class="sr-title">News & Platform Updates</div><div class="sr-sub">New features, game launches, events</div></div><div class="tog on" id="tog-news" onclick="togSwitch('news')"></div></div>
+    </div>
+    <button class="save-btn save-primary" onclick="saveToggles()"><i class="fas fa-floppy-disk"></i> Save Notification Settings</button>
+  </div>
+
+  <!-- SECURITY TAB -->
+  <div class="panel" id="tab-security">
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-lock"></i> Password & Auth</div>
+      <div class="sr" onclick="sendReset()"><div class="sr-icon" style="background:rgba(0,210,255,.09);border:1px solid rgba(0,210,255,.17)"><i class="fas fa-key" style="color:var(--blue)"></i></div><div class="sr-body"><div class="sr-title">Change Password</div><div class="sr-sub">Send a reset link to your email</div></div><div class="sr-right"><i class="fas fa-chevron-right"></i></div></div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.17)"><i class="fas fa-shield-check" style="color:var(--green)"></i></div><div class="sr-body"><div class="sr-title">Two-Factor Authentication</div><div class="sr-sub">Add phone number as 2FA</div></div><div class="sr-right"><span class="sr-badge sb-soon">SOON</span><i class="fas fa-chevron-right"></i></div></div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-file-shield"></i> Legal</div>
+      <div class="sr" onclick="window.open('privacy','_blank')"><div class="sr-icon" style="background:rgba(157,80,187,.09);border:1px solid rgba(157,80,187,.17)"><i class="fas fa-file-shield" style="color:#c084fc"></i></div><div class="sr-body"><div class="sr-title">Privacy Policy</div><div class="sr-sub">How we handle your data</div></div><div class="sr-right"><i class="fas fa-arrow-up-right-from-square" style="font-size:.68rem"></i></div></div>
+      <div class="sr" onclick="window.open('terms','_blank')"><div class="sr-icon" style="background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.17)"><i class="fas fa-file-contract" style="color:var(--green)"></i></div><div class="sr-body"><div class="sr-title">Terms of Service</div><div class="sr-sub">Our terms and conditions</div></div><div class="sr-right"><i class="fas fa-arrow-up-right-from-square" style="font-size:.68rem"></i></div></div>
+    </div>
+    <button class="save-btn save-primary" onclick="saveToggles()"><i class="fas fa-floppy-disk"></i> Save Security Settings</button>
+  </div>
+
+  <!-- SUPPORT TAB -->
+  <div class="panel" id="tab-support">
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-headset"></i> Contact & Help</div>
+      <div class="sr" onclick="window.open('mailto:vuraai.care@gmail.com')"><div class="sr-icon" style="background:rgba(0,210,255,.09);border:1px solid rgba(0,210,255,.17)"><i class="fas fa-envelope" style="color:var(--blue)"></i></div><div class="sr-body"><div class="sr-title">Email Support</div><div class="sr-sub">vuraai.care@gmail.com</div></div><div class="sr-right"><i class="fas fa-arrow-up-right-from-square" style="font-size:.68rem"></i></div></div>
+      <div class="sr" onclick="toast('FAQ coming soon!','info')"><div class="sr-icon" style="background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.17)"><i class="fas fa-book-open" style="color:var(--green)"></i></div><div class="sr-body"><div class="sr-title">FAQ & Help Centre</div><div class="sr-sub">Common questions answered</div></div><div class="sr-right"><span class="sr-badge sb-soon">SOON</span></div></div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-comment-dots"></i> Send Feedback</div>
+      <div class="inp-group" style="border-top:none">
+        <div class="inp-lbl"><i class="fas fa-tag"></i> Category</div>
+        <div class="sel-wrap"><i class="fas fa-list inp-ic" style="pointer-events:none"></i><select class="sel" id="fbCat" style="padding-left:38px"><option value="bug">Bug Report</option><option value="feature">Feature Request</option><option value="payment">Payment Issue</option><option value="ai">AI Issue</option><option value="general">General Feedback</option></select></div>
+      </div>
+      <div class="ctx-wrap"><div class="inp-lbl" style="margin-bottom:6px"><i class="fas fa-pen"></i> Your Message</div><textarea class="ctx-ta" id="fbText" maxlength="800" placeholder="Describe your issue or feedback in detail..."></textarea></div>
+      <div style="padding:0 14px 13px"><button class="save-btn save-primary" onclick="sendFeedback()"><i class="fas fa-paper-plane"></i> Send Feedback</button></div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-shield-halved"></i> Badges & Achievements</div>
+      <div class="sr" onclick="goTo('badges')"><div class="sr-icon" style="background:rgba(255,204,51,.09);border:1px solid rgba(255,204,51,.17)"><i class="fas fa-trophy" style="color:var(--gold)"></i></div><div class="sr-body"><div class="sr-title">My Badges</div><div class="sr-sub">View, earn and purchase honour badges</div></div><div class="sr-right"><i class="fas fa-chevron-right"></i></div></div>
+    </div>
+  </div>
+
+  <!-- ABOUT TAB -->
+  <div class="panel" id="tab-about">
+    <div class="about-hero">
+      <div class="ah-logo">VURA AI</div>
+      <div class="ah-sub">Built by MC Tech · Made with ❤️ in Nigeria 🇳🇬</div>
+      <div style="display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin-bottom:12px">
+        <span style="padding:4px 11px;border-radius:999px;font-size:.65rem;font-weight:700;background:rgba(0,210,255,.12);border:1px solid rgba(0,210,255,.22);color:var(--blue)"><i class="fas fa-graduation-cap"></i> EdTech</span>
+        <span style="padding:4px 11px;border-radius:999px;font-size:.65rem;font-weight:700;background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.22);color:var(--green)"><i class="fas fa-robot"></i> AI-Powered</span>
+        <span style="padding:4px 11px;border-radius:999px;font-size:.65rem;font-weight:700;background:rgba(255,204,51,.12);border:1px solid rgba(255,204,51,.22);color:var(--gold)"><i class="fas fa-coins"></i> VUX Economy</span>
+        <span style="padding:4px 11px;border-radius:999px;font-size:.65rem;font-weight:700;background:rgba(157,80,187,.12);border:1px solid rgba(157,80,187,.22);color:#c084fc"><i class="fas fa-earth-africa"></i> Africa-First</span>
+      </div>
+      <div style="font-size:.81rem;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:4px">Vura AI is an intelligent super-app for students worldwide. We combine AI tutoring, gamification, social learning, and a real coin economy to make education rewarding, fun, and accessible to everyone.</div>
+      <div class="ah-stats">
+        <div class="ah-stat"><div class="ah-stat-val">AI</div><div class="ah-stat-lbl">Powered</div></div>
+        <div class="ah-stat"><div class="ah-stat-val">VUX</div><div class="ah-stat-lbl">Economy</div></div>
+        <div class="ah-stat"><div class="ah-stat-val">v1.0</div><div class="ah-stat-lbl">Version</div></div>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-building"></i> Company</div>
+      <div class="sr" onclick="goTo('about')"><div class="sr-icon" style="background:rgba(0,210,255,.09);border:1px solid rgba(0,210,255,.17)"><i class="fas fa-circle-info" style="color:var(--blue)"></i></div><div class="sr-body"><div class="sr-title">About Vura AI</div><div class="sr-sub">Our story, mission and vision</div></div><div class="sr-right"><i class="fas fa-chevron-right"></i></div></div>
+      <div class="sr" onclick="window.open('https://mctech.com.ng','_blank','noopener')"><div class="sr-icon" style="background:rgba(157,80,187,.09);border:1px solid rgba(157,80,187,.17)"><i class="fas fa-globe" style="color:var(--purple)"></i></div><div class="sr-body"><div class="sr-title">MC Tech Website</div><div class="sr-sub">mctech.com.ng — our parent company</div></div><div class="sr-right"><i class="fas fa-arrow-up-right-from-square" style="font-size:.68rem"></i></div></div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-share-nodes"></i> Follow Vura AI</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:10px 14px 14px">
+        <a href="https://twitter.com/vuraai" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:9px;padding:11px 12px;background:rgba(29,161,242,.08);border:1px solid rgba(29,161,242,.2);border-radius:12px;text-decoration:none;transition:.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''"><i class="fab fa-twitter" style="color:#1da1f2;font-size:1rem"></i><div><div style="font-size:.77rem;font-weight:700;color:var(--text)">Twitter/X</div><div style="font-size:.63rem;color:var(--muted)">@vuraai</div></div></a>
+        <a href="https://instagram.com/vuraai" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:9px;padding:11px 12px;background:rgba(225,48,108,.08);border:1px solid rgba(225,48,108,.2);border-radius:12px;text-decoration:none;transition:.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''"><i class="fab fa-instagram" style="color:#e1306c;font-size:1rem"></i><div><div style="font-size:.77rem;font-weight:700;color:var(--text)">Instagram</div><div style="font-size:.63rem;color:var(--muted)">@vuraai</div></div></a>
+        <a href="https://tiktok.com/@vuraai" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:9px;padding:11px 12px;background:rgba(255,0,80,.08);border:1px solid rgba(255,0,80,.2);border-radius:12px;text-decoration:none;transition:.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''"><i class="fab fa-tiktok" style="color:#ff0050;font-size:1rem"></i><div><div style="font-size:.77rem;font-weight:700;color:var(--text)">TikTok</div><div style="font-size:.63rem;color:var(--muted)">@vuraai</div></div></a>
+        <a href="https://wa.me/2349000000000" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:9px;padding:11px 12px;background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.2);border-radius:12px;text-decoration:none;transition:.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''"><i class="fab fa-whatsapp" style="color:#25d366;font-size:1rem"></i><div><div style="font-size:.77rem;font-weight:700;color:var(--text)">WhatsApp</div><div style="font-size:.63rem;color:var(--muted)">Community</div></div></a>
+      </div>
+    </div>
+    <div class="sblock">
+      <div class="sblock-title"><i class="fas fa-circle-info"></i> App Information</div>
+      <div class="sr"><div class="sr-icon" style="background:rgba(0,210,255,.09);border:1px solid rgba(0,210,255,.17)"><i class="fas fa-code-branch" style="color:var(--blue)"></i></div><div class="sr-body"><div class="sr-title">App Version</div><div class="sr-sub">Vura AI Platform</div></div><div class="sr-right"><span class="sr-val">v1.0.0</span></div></div>
+      <div class="sr" onclick="window.open('terms','_blank')"><div class="sr-icon" style="background:rgba(16,185,129,.09);border:1px solid rgba(16,185,129,.17)"><i class="fas fa-file-contract" style="color:var(--green)"></i></div><div class="sr-body"><div class="sr-title">Terms & Conditions</div></div><div class="sr-right"><i class="fas fa-chevron-right"></i></div></div>
+      <div class="sr" onclick="window.open('privacy','_blank')"><div class="sr-icon" style="background:rgba(239,68,68,.09);border:1px solid rgba(239,68,68,.17)"><i class="fas fa-file-shield" style="color:var(--red)"></i></div><div class="sr-body"><div class="sr-title">Privacy Policy</div></div><div class="sr-right"><i class="fas fa-chevron-right"></i></div></div>
+      <div class="sr" onclick="toast('Thank you for using Vura AI! We appreciate you \u2764\ufe0f','success')"><div class="sr-icon" style="background:rgba(255,204,51,.09);border:1px solid rgba(255,204,51,.17)"><i class="fas fa-heart" style="color:var(--gold)"></i></div><div class="sr-body"><div class="sr-title">Built by MC Tech \U0001f1f3\U0001f1ec</div><div class="sr-sub">Made with \u2764\ufe0f in Nigeria for the world</div></div><div class="sr-right"><i class="fas fa-chevron-right"></i></div></div>
+    </div>
+  </div>
+
+</div>
+
+<script type="module">
+import { watchAuth, db } from './auth.js';
+import { doc, getDoc, updateDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+let _uid=null,_profile={},_prefs={},_selectedModel='fast',_deferredInstall=null;
+
+// THEME
+const savedTheme=localStorage.getItem('vura_theme')||(window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark');
+applyTheme(savedTheme);
+function applyTheme(t){
+  localStorage.setItem('vura_theme',t);
+  document.documentElement.setAttribute('data-theme',t==='dark'?'':t==='light'?'light':'dim');
+  ['dark','light','dim'].forEach(x=>document.getElementById('th-'+x)?.classList.remove('selected'));
+  document.getElementById('th-'+t)?.classList.add('selected');
+  try{window.parent.document.querySelectorAll('iframe').forEach(f=>{try{f.contentDocument?.documentElement?.setAttribute('data-theme',t==='dark'?'':t==='light'?'light':'dim');}catch{}});}catch{}
+  window.dispatchEvent(new StorageEvent('storage',{key:'vura_theme',newValue:t}));
+}
+window.setTheme=t=>{applyTheme(t);toast('Theme: '+t.charAt(0).toUpperCase()+t.slice(1),'success');};
+
+// TABS
+document.querySelectorAll('.tb[data-tab]').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.tb').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    document.getElementById('tab-'+b.dataset.tab).classList.add('active');
+    if(b.dataset.tab==='social')updateProfilePreview();
+  });
+});
+
+// TOAST
+function toast(m,t='success'){
+  const el=document.createElement('div');el.className='toast '+t;
+  const ic={success:'fa-circle-check',error:'fa-circle-exclamation',info:'fa-circle-info'};
+  el.innerHTML='<i class="fas '+( ic[t]||ic.info)+'"></i><span>'+m+'</span><button class="tc" onclick="this.parentElement.classList.add(\'removing\');setTimeout(()=>this.parentElement.remove(),280)"><i class="fas fa-xmark"></i></button>';
+  document.getElementById('toasts').appendChild(el);
+  setTimeout(()=>{if(el.parentElement){el.classList.add('removing');setTimeout(()=>el.remove(),280);}},4000);
+}
+window.toast=toast;
+window.goBack=()=>{if(window.parent?.navigateTo)window.parent.navigateTo('dashboard');else history.back();};
+window.goTo=p=>window.location.href=p;
+window.togSwitch=id=>{const el=document.getElementById('tog-'+id);el.classList.toggle('on');_prefs[id]=el.classList.contains('on');};
+window.pickModel=m=>{_selectedModel=m;['fast','smart','advanced','premium'].forEach(k=>document.getElementById('mc-'+k).classList.remove('sel-mc'));document.getElementById('mc-'+m).classList.add('sel-mc');};
+
+// PWA INSTALL
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();_deferredInstall=e;});
+window.addEventListener('appinstalled',()=>{document.getElementById('installBanner').style.display='none';toast('Vura App installed! \ud83c\udf89','success');});
+window.doInstall=()=>{
+  const ua=navigator.userAgent;
+  const isIos=/iPad|iPhone|iPod/.test(ua);
+  if(_deferredInstall){_deferredInstall.prompt();_deferredInstall.userChoice.then(r=>{if(r.outcome==='accepted')toast('Installing Vura... \ud83d\ude80','success');_deferredInstall=null;});return;}
+  if(isIos){document.getElementById('iosSteps').style.display='block';document.getElementById('installBtn').innerHTML='<i class="fas fa-circle-info"></i> Follow Steps Above';toast('On iOS: tap Share \u2192 Add to Home Screen','info');return;}
+  toast('Open in Chrome/Edge and tap the install icon (\u2295) in the address bar','info');
+};
+
+// PROFILE VIEWER
+window.openProfileViewer=()=>{updateProfileViewer();document.getElementById('profileViewer').style.display='flex';document.body.style.overflow='hidden';};
+window.closeProfileViewer=()=>{document.getElementById('profileViewer').style.display='none';document.body.style.overflow='';};
+window.shareProfile=()=>{
+  const handle=(document.getElementById('inpHandle')?.value||_uid||'').replace('@','');
+  const url=location.origin+'/profile?u='+handle;
+  if(navigator.share)navigator.share({title:'My Vura Profile',url});
+  else navigator.clipboard.writeText(url).then(()=>toast('Profile link copied!','info'));
+};
+function updateProfileViewer(){
+  const name=document.getElementById('inpName')?.value||'User';
+  const handle=(document.getElementById('inpHandle')?.value||'').replace('@','');
+  const bio=document.getElementById('inpBio')?.value||'No bio yet.';
+  const country=document.getElementById('inpCountry')?.value||'--';
+  const pm={free:'Free',starter:'Starter',standard:'Standard',pro:'Pro',elite:'Elite'};
+  document.getElementById('pvAvInitial').textContent=name[0]?.toUpperCase()||'?';
+  document.getElementById('pvName').textContent=name;
+  document.getElementById('pvHandle').textContent=handle?'@'+handle:'';
+  document.getElementById('pvBio').textContent=bio;
+  document.getElementById('pvLnx').textContent=(_profile.vuxBalance||0).toLocaleString();
+  document.getElementById('pvPlan').textContent=pm[_profile.plan||'free']||'Free';
+  document.getElementById('pvCountry').textContent=country;
+  document.getElementById('pvRef').textContent=_profile.referralCode||'--';
+  const edus={primary:'Primary',jss:'Junior Sec',sss:'Senior Sec',university:'University',professional:'Professional'};
+  document.getElementById('pvEdu').textContent=edus[(_profile.aiPrefs||{}).eduLevel]||'--';
+  const joined=_profile.createdAt?new Date(_profile.createdAt.toMillis()).toLocaleDateString('en-GB',{month:'short',year:'numeric'}):'--';
+  document.getElementById('pvJoined').textContent=joined;
+  const s=_profile.socials||{};
+  const links=[];
+  if(s.instagram)links.push({i:'fab fa-instagram',c:'#e1306c',l:'Instagram',u:'https://instagram.com/'+s.instagram.replace('@','')});
+  if(s.twitter)links.push({i:'fab fa-twitter',c:'#1da1f2',l:'Twitter',u:'https://twitter.com/'+s.twitter.replace('@','')});
+  if(s.tiktok)links.push({i:'fab fa-tiktok',c:'#ff0050',l:'TikTok',u:'https://tiktok.com/'+s.tiktok});
+  if(s.linkedin)links.push({i:'fab fa-linkedin',c:'#0a66c2',l:'LinkedIn',u:s.linkedin.startsWith('http')?s.linkedin:'https://'+s.linkedin});
+  if(s.youtube)links.push({i:'fab fa-youtube',c:'#ff0000',l:'YouTube',u:'https://youtube.com/'+s.youtube});
+  if(s.website)links.push({i:'fas fa-globe',c:'var(--blue)',l:'Website',u:s.website});
+  document.getElementById('pvSocialLinks').innerHTML=links.length?links.map(l=>'<a href="'+l.u+'" target="_blank" rel="noopener" class="pv-soc-link"><i class="'+l.i+'" style="color:'+l.c+'"></i>'+l.l+'</a>').join(''):'<span style="font-size:.78rem;color:var(--muted)">No social links yet.</span>';
+}
+
+// SOCIAL PROFILE PREVIEW
+function updateProfilePreview(){
+  const name=document.getElementById('inpName')?.value||'--';
+  const handle=(document.getElementById('inpHandle')?.value||'').replace('@','');
+  const bio=document.getElementById('inpBio')?.value||'Add a bio in the Profile tab';
+  document.getElementById('ppName').textContent=name;
+  document.getElementById('ppHandle').textContent=handle?'@'+handle:'No handle set';
+  document.getElementById('ppBio').textContent=bio;
+  document.getElementById('ppAvInitial').textContent=name[0]?.toUpperCase()||'?';
+  const row=document.getElementById('ppSocialRow');
+  const items=[];
+  const vals={instagram:document.getElementById('socInsta')?.value,twitter:document.getElementById('socTwitter')?.value,tiktok:document.getElementById('socTiktok')?.value,youtube:document.getElementById('socYoutube')?.value};
+  if(vals.instagram)items.push({i:'fab fa-instagram',c:'#e1306c',bg:'rgba(225,48,108,.15)'});
+  if(vals.twitter)items.push({i:'fab fa-twitter',c:'#1da1f2',bg:'rgba(29,161,242,.15)'});
+  if(vals.tiktok)items.push({i:'fab fa-tiktok',c:'#ff0050',bg:'rgba(255,0,80,.15)'});
+  if(vals.youtube)items.push({i:'fab fa-youtube',c:'#ff0000',bg:'rgba(255,0,0,.15)'});
+  row.innerHTML=items.length?items.map(i=>'<div class="pp-soc" style="background:'+i.bg+';border-color:rgba(255,255,255,.08)"><i class="'+i.i+'" style="color:'+i.c+'"></i></div>').join(''):'<span style="font-size:.72rem;color:var(--muted)">No links yet</span>';
+}
+['inpName','inpHandle','inpBio','socInsta','socTwitter','socTiktok','socYoutube'].forEach(id=>{document.getElementById(id)?.addEventListener('input',updateProfilePreview);});
+
+// LOAD PROFILE
+async function loadProfile(uid){
+  const snap=await getDoc(doc(db,'users',uid));if(!snap.exists())return;
+  _profile=snap.data();
+  document.getElementById('inpUid').value=uid;
+  document.getElementById('inpName').value=_profile.name||'';
+  document.getElementById('inpHandle').value=_profile.handle||'';
+  document.getElementById('inpEmail').value=_profile.email||'';
+  document.getElementById('inpCountry').value=_profile.country||'';
+  document.getElementById('inpAge').value=_profile.age||'';
+  document.getElementById('inpBio').value=_profile.bio||'';
+  document.getElementById('bioLen').textContent=(_profile.bio||'').length;
+  document.getElementById('piName').textContent=_profile.name||'--';
+  document.getElementById('piHandle').textContent=_profile.handle?'@'+_profile.handle:'@--';
+  document.getElementById('paInitial').textContent=(_profile.name||'?')[0].toUpperCase();
+  const pm={free:'Free Plan',starter:'Starter',standard:'Standard',pro:'Pro Plan',elite:'Elite Plan'};
+  document.getElementById('piPlan').innerHTML='<i class="fas fa-shield-halved"></i> '+(pm[_profile.plan]||'Free Plan');
+  document.getElementById('srPlanName').textContent=pm[_profile.plan]||'Free Plan';
+  document.getElementById('srPlanBadge').textContent=(_profile.plan||'free').toUpperCase();
+  if((_profile.nameChangedCount||0)>=1){const n=document.getElementById('inpName');n.classList.add('readonly');n.readOnly=true;document.getElementById('nameHint').style.display='flex';document.getElementById('nameHint').classList.add('locked');}
+  if((_profile.ageChangedCount||0)>=1){const a=document.getElementById('inpAge');a.classList.add('readonly');a.disabled=true;document.getElementById('ageHint').style.display='flex';document.getElementById('ageHint').classList.add('locked');}
+  const s=_profile.socials||{};
+  document.getElementById('socInsta').value=s.instagram||'';
+  document.getElementById('socTwitter').value=s.twitter||'';
+  document.getElementById('socTiktok').value=s.tiktok||'';
+  document.getElementById('socLinkedin').value=s.linkedin||'';
+  document.getElementById('socYoutube').value=s.youtube||'';
+  document.getElementById('socWhatsapp').value=s.whatsapp||'';
+  document.getElementById('socWebsite').value=s.website||'';
+  const prefs=_profile.aiPrefs||{};
+  if(prefs.model)pickModel(prefs.model);
+  if(prefs.tone)document.getElementById('aiTone').value=prefs.tone;
+  if(prefs.lang)document.getElementById('aiLang').value=prefs.lang;
+  if(prefs.context){document.getElementById('aiCtx').value=prefs.context;document.getElementById('ctxLen').textContent=prefs.context.length;}
+  if(prefs.eduLevel)document.getElementById('eduLevel').value=prefs.eduLevel;
+  if(prefs.subjects)document.getElementById('aiSubjects').value=prefs.subjects;
+  const togDefs={memory:true,math:true,code:true,dailyremind:true,txalert:true,refnotif:true,news:true,leaderboard:true,flag:true,showsocial:true};
+  const tog={...togDefs,...(_profile.toggles||{})};
+  Object.entries(tog).forEach(([k,v])=>{const el=document.getElementById('tog-'+k);if(el){v?el.classList.add('on'):el.classList.remove('on');_prefs[k]=v;}});
+  updateProfilePreview();
+}
+
+// SAVE PROFILE
+window.saveProfile=async()=>{
+  if(!_uid)return;
+  const btn=document.getElementById('saveProfileBtn');btn.disabled=true;btn.innerHTML='<div class="spinner"></div> Saving...';
+  const raw=(document.getElementById('inpHandle').value||'').trim().replace(/[@\s]/g,'').toLowerCase();
+  const upd={country:document.getElementById('inpCountry').value.trim(),bio:document.getElementById('inpBio').value.trim(),handle:raw,lastUpdated:serverTimestamp()};
+  if(!(_profile.nameChangedCount>=1)){const n=document.getElementById('inpName').value.trim();if(n&&n!==_profile.name){upd.name=n;upd.nameChangedCount=(_profile.nameChangedCount||0)+1;}}
+  if(!(_profile.ageChangedCount>=1)){const a=document.getElementById('inpAge').value;if(a&&a!==String(_profile.age||'')){upd.age=Number(a);upd.ageChangedCount=(_profile.ageChangedCount||0)+1;}}
+  try{
+    await updateDoc(doc(db,'users',_uid),upd);
+    _profile={..._profile,...upd};
+    document.getElementById('piName').textContent=upd.name||_profile.name||'--';
+    document.getElementById('piHandle').textContent=raw?'@'+raw:'@--';
+    document.getElementById('paInitial').textContent=(upd.name||_profile.name||'?')[0].toUpperCase();
+    toast('Profile saved! \u2705','success');updateProfilePreview();
+  }catch{toast('Failed to save.','error');}
+  btn.disabled=false;btn.innerHTML='<i class="fas fa-floppy-disk"></i> Save Profile';
+};
+
+// SAVE SOCIAL
+window.saveSocial=async()=>{
+  if(!_uid)return;
+  const socials={instagram:document.getElementById('socInsta').value.trim(),twitter:document.getElementById('socTwitter').value.trim(),tiktok:document.getElementById('socTiktok').value.trim(),linkedin:document.getElementById('socLinkedin').value.trim(),youtube:document.getElementById('socYoutube').value.trim(),whatsapp:document.getElementById('socWhatsapp').value.trim(),website:document.getElementById('socWebsite').value.trim()};
+  Object.keys(socials).forEach(k=>{if(!socials[k])delete socials[k];});
+  try{await updateDoc(doc(db,'users',_uid),{socials,toggles:_prefs,lastUpdated:serverTimestamp()});_profile.socials=socials;toast('Social profile saved! \u2705','success');updateProfilePreview();}
+  catch{toast('Failed to save.','error');}
+};
+
+// SAVE AI
+window.saveAI=async()=>{
+  if(!_uid)return;
+  const aiPrefs={model:_selectedModel,tone:document.getElementById('aiTone').value,lang:document.getElementById('aiLang').value,context:document.getElementById('aiCtx').value.trim(),eduLevel:document.getElementById('eduLevel').value,subjects:document.getElementById('aiSubjects').value.trim()};
+  try{await updateDoc(doc(db,'users',_uid),{aiPrefs,lastUpdated:serverTimestamp()});toast('AI settings saved!','success');}
+  catch{toast('Failed to save.','error');}
+};
+
+// SAVE TOGGLES
+window.saveToggles=async()=>{
+  if(!_uid)return;
+  try{await updateDoc(doc(db,'users',_uid),{toggles:_prefs});toast('Settings saved!','success');}
+  catch{toast('Failed to save.','error');}
+};
+
+// RESET PASSWORD
+window.sendReset=async()=>{
+  const {resetPassword}=await import('./auth.js');
+  const r=await resetPassword(_profile.email);
+  if(r.success)toast('Reset link sent to '+_profile.email,'success');else toast(r.error,'error');
+};
+
+// FEEDBACK
+window.sendFeedback=()=>{
+  const cat=document.getElementById('fbCat').value;const msg=document.getElementById('fbText').value.trim();
+  if(!msg){toast('Write your feedback first.','error');return;}
+  const sub=encodeURIComponent('[Vura Feedback] '+cat);
+  const body=encodeURIComponent('From: '+(_profile.email||'user')+'\nUID: '+_uid+'\n\n'+msg);
+  window.open('mailto:vuraai.care@gmail.com?subject='+sub+'&body='+body);
+  document.getElementById('fbText').value='';toast('Feedback sent \u2014 thank you! \ud83d\ude4f','success');
+};
+
+// LOGOUT
+window.doLogout=async()=>{
+  const {logoutUser}=await import('./auth.js');
+  const r=await logoutUser();if(r.success)window.location.replace('login');else toast('Logout failed.','error');
+};
+
+// DELETE
+window.confirmDelete=()=>{
+  if(!confirm('Permanently delete your Vura account? All data, VUX and history will be lost forever.'))return;
+  toast('To delete: email vuraai.care@gmail.com from your registered address.','info');
+};
+
+// AUTH
+watchAuth(async user=>{
+  if(!user){window.location.replace('login');return;}
+  _uid=user.uid;
+  const name=user.displayName||user.email?.split('@')[0]||'User';
+  document.getElementById('piName').textContent=name;
+  document.getElementById('piHandle').textContent='@'+name.toLowerCase().replace(/\s/g,'');
+  document.getElementById('paInitial').textContent=name[0].toUpperCase();
+  document.getElementById('inpName').value=name;
+  document.getElementById('inpEmail').value=user.email||'';
+  document.getElementById('inpUid').value=user.uid;
+  try{await loadProfile(_uid);}catch(e){console.warn('Firestore:',e);}
+});
+</script>
+</body>
+</html>

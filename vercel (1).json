@@ -1,0 +1,31 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/login", "destination": "/login.html" },
+    { "source": "/signup", "destination": "/signup.html" },
+    { "source": "/dashboard", "destination": "/appskeleton.html" },
+    { "source": "/profile", "destination": "/userdashboard.html" },
+    { "source": "/quiz", "destination": "/quiz.html" },
+    { "source": "/classroom", "destination": "/classroom.html" },
+    { "source": "/games", "destination": "/gaming-section.html" },
+    { "source": "/social", "destination": "/vura-social.html" },
+    { "source": "/ranking", "destination": "/ranking.html" },
+    { "source": "/referral", "destination": "/referral.html" },
+    { "source": "/plans", "destination": "/plans.html" },
+    { "source": "/topup", "destination": "/topup.html" },
+    { "source": "/settings", "destination": "/vura-settings.html" },
+    { "source": "/badges", "destination": "/badges.html" },
+    { "source": "/ai-chat", "destination": "/ai-chat-bot-assitant.html" },
+    { "source": "/ai-imagine", "destination": "/ai-imagine.html" },
+    { "source": "/smart-tutor", "destination": "/smart-tutor.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/admin", "destination": "/admin.html" },
+    { "source": "/onboarding", "destination": "/onboarding.html" },
+    { "source": "/offline", "destination": "/offline.html" },
+    { "source": "/(.*)", "destination": "/404.html" }
+  ]
+}
