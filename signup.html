@@ -141,7 +141,7 @@ html,body{width:100%;min-height:100vh;font-family:'Nunito',sans-serif;background
 <div id="successOverlay">
   <div class="success-circle"><i class="fas fa-check"></i></div>
   <div class="suc-title">Account Created!</div>
-  <div class="suc-sub">Welcome to Vura — 300 VUX added! 🎁</div>
+  <div class="suc-sub">Welcome to Vura AI — 300 VUX added! 🎁</div>
   <div class="bar-wrap"><div class="bar-fill" id="barFill"></div></div>
   <div style="font-size:.78rem;color:rgba(255,255,255,.35)">Taking you inside...</div>
 </div>
@@ -212,7 +212,7 @@ html,body{width:100%;min-height:100vh;font-family:'Nunito',sans-serif;background
   <div class="terms-row">
     <input type="checkbox" class="terms-chk" id="termsChk">
     <div class="terms-text">
-      I agree to Vura's <a href="terms" target="_blank">Terms of Service</a> and <a href="privacy" target="_blank">Privacy Policy</a>
+      I agree to Lenovox's <a href="terms" target="_blank">Terms of Service</a> and <a href="privacy" target="_blank">Privacy Policy</a>
     </div>
   </div>
 
@@ -237,99 +237,7 @@ html,body{width:100%;min-height:100vh;font-family:'Nunito',sans-serif;background
 </div>
 
 <script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import {
-  getAuth, createUserWithEmailAndPassword, signInWithPopup,
-  GoogleAuthProvider, updateProfile
-} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-import {
-  getFirestore, doc, setDoc, getDoc, addDoc, collection, serverTimestamp
-} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyAmk0Nyxfk4u9q_Ma2esj4ch8XMW6e49o4",
-  authDomain: "vura-ai2026.firebaseapp.com",
-  projectId: "vura-ai2026",
-  storageBucket: "vura-ai2026.firebasestorage.app",
-  messagingSenderId: "973528287420",
-  appId: "1:973528287420:web:bceffa7ce783add77528b9",
-  measurementId: "G-RGMSXC3BM4"
-};
-
-const app  = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db   = getFirestore(app);
-const gProvider = new GoogleAuthProvider();
-gProvider.setCustomParameters({ prompt: 'select_account' });
-
-function saveLocalSession(user) {
-  localStorage.setItem('vura_session', JSON.stringify({
-    uid: user.uid, displayName: user.displayName || '',
-    email: user.email || '', photoURL: user.photoURL || '',
-    expiresAt: Date.now() + 30 * 24 * 60 * 60 * 1000
-  }));
-}
-
-function genRefCode(uid) { return 'VUX-' + uid.substring(0,6).toUpperCase(); }
-
-async function createProfile(user, extras = {}) {
-  const ref  = doc(db, 'users', user.uid);
-  const snap = await getDoc(ref);
-  if (!snap.exists()) {
-    await setDoc(ref, {
-      uid: user.uid, name: user.displayName || extras.name || 'Vura Student',
-      email: user.email || '', phone: '', photoURL: user.photoURL || '',
-      plan: 'free', planExpiry: null, vuxBalance: 300,
-      referralCode: genRefCode(user.uid), referredBy: extras.referredBy || null,
-      totalQuizzes: 0, totalCorrect: 0, totalQuestions: 0,
-      totalGamesPlayed: 0, totalLessonsCompleted: 0, onboarded: false,
-      createdAt: serverTimestamp(), lastLogin: serverTimestamp(), lastActive: serverTimestamp()
-    });
-    await setDoc(doc(db, 'wallets', user.uid), {
-      uid: user.uid, balance: 300, totalEarned: 300, totalSpent: 0, lastUpdated: serverTimestamp()
-    });
-    await addDoc(collection(db, 'wallets', user.uid, 'transactions'), {
-      type: 'Welcome Bonus', amount: 300, timestamp: serverTimestamp()
-    });
-  }
-}
-
-function friendlyError(code) {
-  const map = {
-    'auth/email-already-in-use': 'This email is already registered.',
-    'auth/invalid-email':        'Please enter a valid email address.',
-    'auth/weak-password':        'Password must be at least 6 characters.',
-    'auth/network-request-failed': 'Network error. Check your connection.',
-    'auth/popup-closed-by-user': 'Sign-in cancelled.',
-    'auth/popup-blocked':        'Please allow popups for this site.',
-    'auth/unauthorized-domain':  'Domain not authorized. Add vura-ai.vercel.app in Firebase Console → Authentication → Authorized Domains.',
-  };
-  return map[code] || 'Something went wrong. Please try again.';
-}
-
-async function signUpUser({email, password, name, referredBy}) {
-  try {
-    const res = await createUserWithEmailAndPassword(auth, email, password);
-    await updateProfile(res.user, { displayName: name });
-    await createProfile(res.user, { name, referredBy });
-    saveLocalSession(res.user);
-    return { success: true, user: res.user };
-  } catch(err) {
-    return { success: false, error: friendlyError(err.code) };
-  }
-}
-
-async function googleLoginUser() {
-  try {
-    const res = await signInWithPopup(auth, gProvider);
-    await createProfile(res.user);
-    saveLocalSession(res.user);
-    return { success: true, user: res.user };
-  } catch(err) {
-    if (err.code === 'auth/popup-closed-by-user') return { success: false, error: 'Sign-in cancelled.' };
-    return { success: false, error: friendlyError(err.code) };
-  }
-}
+import { signUpUser, googleLoginUser } from './auth.js';
 
 // URL referral
 const p=new URLSearchParams(location.search),ref=p.get('ref');

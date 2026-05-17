@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6229569177818177" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<!-- Vura Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
+<link rel="manifest" href="/manifest.json">
+
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vura AI — Welcome Back</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#03030b;--blue:#00d2ff;--purple:#9d50bb;--gold:#ffcc33;--green:#10b981;--red:#ef4444;--glass:rgba(255,255,255,0.05);--border:rgba(255,255,255,0.09);--text:#e8eaf6;--muted:#8892a4}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;min-height:100vh;font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center}
+
+/* ── BACKGROUND ── */
+.univ{position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 50% 40%,#0d0d2b 0%,#03030b 70%)}
+.nebula{position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(circle at 18% 28%,rgba(93,63,211,.5) 0%,transparent 52%),
+             radial-gradient(circle at 82% 68%,rgba(0,210,255,.32) 0%,transparent 52%),
+             radial-gradient(circle at 52% 85%,rgba(157,80,187,.22) 0%,transparent 45%);
+  filter:blur(72px);opacity:.8}
+#star-canvas{position:fixed;inset:0;z-index:-1;pointer-events:none}
+
+/* ── SCENE / CARD ── */
+.scene{perspective:1000px;padding:20px;width:100%;display:flex;justify-content:center}
+.auth-card{
+  width:100%;max-width:460px;padding:46px 38px;
+  background:linear-gradient(145deg,rgba(14,14,42,.95),rgba(5,5,18,.97));
+  backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);
+  border-radius:28px;border:1px solid var(--border);
+  box-shadow:0 0 0 1px rgba(0,210,255,.07),0 32px 72px rgba(0,0,0,.7),
+             inset 0 1px 0 rgba(255,255,255,.06);
+  transform-style:preserve-3d;will-change:transform;
+  animation:cardRise .7s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes cardRise{from{opacity:0;transform:translateY(50px) scale(.93)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+/* ── LOGO ── */
+.logo-wrap{text-align:center;margin-bottom:26px}
+.logo{font-family:'Orbitron',monospace;font-size:2.1rem;font-weight:900;letter-spacing:3px;
+  background:linear-gradient(90deg,#ffffff 30%,var(--blue));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  display:inline-flex;align-items:center;gap:10px}
+.logo-dot{width:13px;height:13px;border-radius:50%;
+  background:linear-gradient(135deg,#ffb347,var(--gold));
+  box-shadow:0 0 18px var(--gold);animation:pulse 2s ease-in-out infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 0 18px var(--gold)}50%{transform:scale(1.35);box-shadow:0 0 32px var(--gold),0 0 60px rgba(255,204,51,.3)}}
+.typing-text{font-size:.92rem;color:var(--muted);min-height:21px;margin-top:9px;font-weight:600}
+
+/* ── TABS ── */
+.method-tabs{display:flex;gap:5px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:13px;padding:4px;margin-bottom:20px}
+.mtab{flex:1;padding:9px 0;border:none;border-radius:9px;background:transparent;color:var(--muted);font-family:'Nunito',sans-serif;font-size:.82rem;font-weight:700;cursor:pointer;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:7px}
+.mtab i{font-size:.85rem}
+.mtab.active{background:linear-gradient(135deg,rgba(0,210,255,.2),rgba(157,80,187,.15));color:#fff;border:1px solid rgba(0,210,255,.28);box-shadow:0 4px 16px rgba(0,210,255,.14)}
+
+/* ── INPUTS ── */
+.inp-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.inp-label{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.9px;display:flex;align-items:center;gap:6px}
+.inp-label i{font-size:.7rem}
+.inp-wrap{position:relative}
+.inp-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.85rem;pointer-events:none;z-index:2;transition:.3s}
+.form-input{width:100%;padding:14px 46px 14px 44px;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:13px;color:#fff;font-family:'Nunito',sans-serif;font-size:.92rem;font-weight:600;outline:none;transition:all .3s;-webkit-appearance:none;appearance:none}
+.form-input::placeholder{color:rgba(136,146,164,.5)}
+.form-input:focus{background:rgba(0,210,255,.08);border-color:rgba(0,210,255,.55);box-shadow:0 0 0 3px rgba(0,210,255,.12),0 0 22px rgba(0,210,255,.1)}
+.inp-wrap:focus-within .inp-icon{color:var(--blue)}
+.pw-eye{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--muted);cursor:pointer;font-size:.9rem;padding:4px;transition:.25s;z-index:3}
+.pw-eye:hover{color:var(--blue)}
+
+/* ── PHONE ROW ── */
+.phone-row{display:flex;gap:8px}
+.cc-input{width:82px;flex-shrink:0;padding:14px 8px;text-align:center;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:13px;color:#fff;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:700;outline:none}
+
+/* ── OTP ── */
+.otp-row{display:flex;gap:7px;margin:6px 0}
+.otp-box{flex:1;padding:16px 0;text-align:center;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:12px;color:#fff;font-family:'Orbitron',monospace;font-size:1.3rem;font-weight:700;outline:none;transition:all .25s;-webkit-appearance:none}
+.otp-box:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,210,255,.12);background:rgba(0,210,255,.07)}
+
+/* ── FIELD ERROR ── */
+.ferr{display:none;margin-top:5px;padding:7px 12px;background:rgba(239,68,68,.12);border-left:3px solid var(--red);border-radius:8px;font-size:.76rem;color:#fca5a5;font-weight:600;animation:errIn .3s ease}
+.ferr.show{display:flex;align-items:center;gap:7px}
+@keyframes errIn{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:translateX(0)}}
+
+/* ── BUTTONS ── */
+.btn{width:100%;padding:14px;border:none;border-radius:15px;font-family:'Nunito',sans-serif;font-size:.98rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:all .3s cubic-bezier(.34,1.56,.64,1);position:relative;overflow:hidden}
+.btn i{font-size:.95rem;transition:.3s}
+.btn::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.11) 0%,transparent 55%)}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none !important}
+.btn-primary{background:linear-gradient(135deg,#00d2ff,#3a7bd5);color:#fff;box-shadow:0 8px 28px rgba(0,210,255,.32),0 2px 0 rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.14)}
+.btn-primary:hover{box-shadow:0 14px 38px rgba(0,210,255,.44)}
+.btn-google{background:#ffffff;color:#1a1a1a;box-shadow:0 6px 22px rgba(0,0,0,.32),0 2px 0 #ccc}
+.btn-google:hover{box-shadow:0 10px 28px rgba(0,0,0,.4)}
+.btn-group{display:flex;flex-direction:column;gap:11px;margin-top:4px}
+.btn-ghost{background:rgba(255,255,255,.06);border:1.5px solid var(--border);color:var(--text)}
+
+/* ── DIVIDER ── */
+.divider{display:flex;align-items:center;gap:12px;margin:16px 0}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
+.divider span{font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:.5px;white-space:nowrap}
+
+/* ── LINKS ── */
+.links-row{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+.lnk{font-size:.82rem;color:var(--muted);font-weight:700;cursor:pointer;background:none;border:none;font-family:'Nunito',sans-serif;display:flex;align-items:center;gap:5px;transition:.2s;text-decoration:none}
+.lnk:hover{color:var(--blue)}
+.lnk i{font-size:.8rem}
+.lnk a{color:var(--blue);text-decoration:none}
+.lnk a:hover{text-decoration:underline}
+.forgot-row{display:flex;justify-content:flex-end;margin:-8px 0 12px}
+.resend-row{text-align:center;margin-top:12px;font-size:.81rem;color:var(--muted)}
+.resend-btn{background:none;border:none;color:var(--blue);font-weight:700;cursor:pointer;font-family:'Nunito',sans-serif;font-size:.81rem}
+.resend-btn:disabled{color:var(--muted);cursor:default}
+.back-btn{background:none;border:none;color:var(--blue);font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:7px;margin-bottom:18px;padding:0;transition:.2s}
+.back-btn:hover{gap:10px}
+.back-btn i{transition:transform .2s}
+.back-btn:hover i{transform:translateX(-3px)}
+
+/* ── SPINNER ── */
+.spinner{width:17px;height:17px;border:2.5px solid rgba(255,255,255,.22);border-top-color:#fff;border-radius:50%;animation:spin .65s linear infinite;flex-shrink:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── VIEWS ── */
+.view{display:none}.view.active{display:block}
+.view-title{text-align:center;margin-bottom:20px}
+.view-icon{font-size:2.8rem;color:var(--blue);margin-bottom:10px;display:block}
+.view-title h3{font-family:'Orbitron',monospace;font-size:1.05rem;font-weight:700;margin-bottom:5px}
+.view-title p{font-size:.83rem;color:var(--muted)}
+
+/* ── MASCOT ── */
+.mascot{position:fixed;bottom:26px;right:26px;width:70px;height:70px;
+  background:linear-gradient(135deg,#667eea,#764ba2);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 36px rgba(102,126,234,.48);
+  animation:mFloat 3.2s ease-in-out infinite;z-index:300;cursor:pointer;
+  border:2px solid rgba(255,255,255,.14);transition:transform .3s}
+.mascot i{font-size:2rem;color:#fff}
+.mascot:hover{transform:scale(1.12) translateY(-4px) !important}
+@keyframes mFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
+.mbubble{position:fixed;bottom:110px;right:26px;background:rgba(8,8,30,.97);border:1px solid rgba(0,210,255,.25);border-radius:14px;padding:10px 14px;font-size:.76rem;font-weight:700;color:#fff;max-width:178px;line-height:1.55;z-index:300;box-shadow:0 8px 28px rgba(0,0,0,.45);animation:bPop .3s cubic-bezier(.34,1.56,.64,1)}
+@keyframes bPop{from{opacity:0;transform:scale(.65) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.mbubble::after{content:'';position:absolute;bottom:-7px;right:26px;border:7px solid transparent;border-top-color:rgba(8,8,30,.97)}
+
+/* ── SUCCESS OVERLAY ── */
+#successOverlay{
+  position:fixed;inset:0;z-index:9999;
+  background:rgba(3,3,11,.94);
+  display:none;flex-direction:column;align-items:center;justify-content:center;
+  gap:18px;animation:fadeOverlay .35s ease}
+@keyframes fadeOverlay{from{opacity:0}to{opacity:1}}
+.success-circle{
+  width:100px;height:100px;border-radius:50%;
+  background:linear-gradient(135deg,#10b981,#059669);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 0 60px rgba(16,185,129,.5),0 0 120px rgba(16,185,129,.25);
+  animation:scaleIn .5s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes scaleIn{from{transform:scale(0)}to{transform:scale(1)}}
+.success-circle i{font-size:2.8rem;color:#fff;animation:checkIn .4s .3s ease both}
+@keyframes checkIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+.success-title{font-family:'Orbitron',monospace;font-size:1.5rem;font-weight:900;color:#fff;text-align:center;animation:fadeUp .5s .4s ease both}
+.success-sub{font-size:.92rem;color:rgba(255,255,255,.6);text-align:center;animation:fadeUp .5s .5s ease both}
+.redirect-bar-wrap{width:240px;height:4px;background:rgba(255,255,255,.1);border-radius:999px;overflow:hidden;animation:fadeUp .5s .6s ease both}
+.redirect-bar{height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:999px;width:0%;transition:width 2s linear}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── CONFETTI CANVAS ── */
+#confettiCanvas{position:fixed;inset:0;z-index:9998;pointer-events:none}
+
+/* ── TOAST ── */
+#toasts{position:fixed;top:18px;right:18px;z-index:10000;display:flex;flex-direction:column;gap:9px;max-width:320px}
+.toast{padding:12px 16px;border-radius:13px;font-size:.83rem;font-weight:700;display:flex;align-items:center;gap:9px;backdrop-filter:blur(16px);border:1px solid;animation:tIn .4s cubic-bezier(.34,1.56,.64,1)}
+.toast i{font-size:1rem;flex-shrink:0}
+.toast span{flex:1}
+.toast.success{background:rgba(16,185,129,.16);border-color:rgba(16,185,129,.32);color:#6ee7b7}
+.toast.error{background:rgba(239,68,68,.16);border-color:rgba(239,68,68,.32);color:#fca5a5}
+.toast.removing{animation:tOut .35s ease forwards}
+@keyframes tIn{from{opacity:0;transform:translateX(42px)}to{opacity:1;transform:translateX(0)}}
+@keyframes tOut{to{opacity:0;transform:translateX(42px)}}
+.t-close{margin-left:auto;cursor:pointer;opacity:.55;font-size:.9rem;background:none;border:none;color:inherit;padding:0 0 0 6px}
+.t-close:hover{opacity:1}
+
+/* ── GOOGLE ICON IMG ── */
+.g-icon{width:19px;height:19px;flex-shrink:0}
+
+@media(max-width:500px){.auth-card{padding:30px 20px;margin:12px}.logo{font-size:1.75rem}}
+</style>
+</head>
+<body>
+
+<div class="univ"></div>
+<div class="nebula"></div>
+<canvas id="star-canvas"></canvas>
+<canvas id="confettiCanvas"></canvas>
+<div id="toasts"></div>
+
+<!-- SUCCESS OVERLAY -->
+<div id="successOverlay">
+  <div class="success-circle"><i class="fas fa-check"></i></div>
+  <div class="success-title">Login Successful!</div>
+  <div class="success-sub" id="successName">Welcome back to Vura AI 🚀</div>
+  <div class="redirect-bar-wrap"><div class="redirect-bar" id="redirectBar"></div></div>
+  <div style="font-size:.78rem;color:rgba(255,255,255,.35);margin-top:-8px">Redirecting you now...</div>
+</div>
+
+<!-- MASCOT -->
+<div class="mascot" id="mascot" onclick="toggleBubble()">
+  <i class="fas fa-robot"></i>
+</div>
+<div class="mbubble" id="mbubble" style="display:none">👋 Need help signing in? Try Google — it's the fastest!</div>
+
+<div class="scene">
+<div class="auth-card" id="authCard">
+
+  <div class="logo-wrap">
+    <div class="logo"><div class="logo-dot"></div>VURA</div>
+    <div class="typing-text" id="typingText"></div>
+  </div>
+
+  <!-- ══ VIEW: MAIN ══ -->
+  <div class="view active" id="viewMain">
+
+    <div class="method-tabs">
+      <button class="mtab active" id="tabEmail" onclick="setMethod('email')">
+        <i class="fas fa-envelope"></i> Email
+      </button>
+      <button class="mtab" id="tabPhone" onclick="setMethod('phone')">
+        <i class="fas fa-mobile-screen-button"></i> Phone
+      </button>
+    </div>
+
+    <!-- EMAIL FORM -->
+    <div id="emailForm">
+      <div class="inp-group">
+        <label class="inp-label"><i class="fas fa-envelope"></i> Email Address</label>
+        <div class="inp-wrap">
+          <i class="fas fa-at inp-icon"></i>
+          <input class="form-input" type="email" id="loginEmail" placeholder="your@email.com" autocomplete="email">
+        </div>
+        <div class="ferr" id="emailError"><i class="fas fa-circle-exclamation"></i><span></span></div>
+      </div>
+      <div class="inp-group">
+        <label class="inp-label"><i class="fas fa-lock"></i> Password</label>
+        <div class="inp-wrap">
+          <i class="fas fa-lock inp-icon"></i>
+          <input class="form-input" type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password">
+          <button class="pw-eye" type="button" id="togglePw"><i class="fas fa-eye"></i></button>
+        </div>
+        <div class="ferr" id="passwordError"><i class="fas fa-circle-exclamation"></i><span></span></div>
+      </div>
+      <div class="forgot-row">
+        <button class="lnk" onclick="showView('viewForgot')">
+          <i class="fas fa-key"></i> Forgot Password?
+        </button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" id="btnLogin">
+          <i class="fas fa-right-to-bracket"></i> <span>Sign In</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- PHONE FORM -->
+    <div id="phoneForm" style="display:none">
+      <div class="inp-group">
+        <label class="inp-label"><i class="fas fa-mobile-screen-button"></i> Phone Number</label>
+        <div class="phone-row">
+          <input class="cc-input" id="countryCode" value="+234" maxlength="5">
+          <input class="form-input" type="tel" id="phoneNum" placeholder="8012345678" autocomplete="tel" style="padding-left:14px">
+        </div>
+        <div class="ferr" id="phoneError"><i class="fas fa-circle-exclamation"></i><span></span></div>
+      </div>
+      <div id="recaptcha-container"></div>
+      <div class="btn-group">
+        <button class="btn btn-primary" id="btnSendOTP">
+          <i class="fas fa-paper-plane"></i> <span>Send OTP Code</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="divider"><span>OR CONTINUE WITH</span></div>
+
+    <button class="btn btn-google" id="btnGoogle">
+      <img class="g-icon" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+      Continue with Google
+    </button>
+
+    <div class="divider"><span>PREVIEW MODE</span></div>
+
+    <button class="btn btn-ghost" id="btnGuest">
+      <i class="fas fa-eye"></i>
+      <span>Continue as Guest</span>
+    </button>
+
+    <div class="links-row">
+      <button class="lnk" onclick="showView('viewForgot')"><i class="fas fa-key"></i> Forgot?</button>
+      <span class="lnk"><i class="fas fa-user-plus"></i><a href="signup">Create Account</a></span>
+    </div>
+  </div>
+
+  <!-- ══ VIEW: OTP ══ -->
+  <div class="view" id="viewOTP">
+    <button class="back-btn" onclick="showView('viewMain')"><i class="fas fa-arrow-left"></i> Back</button>
+    <div class="view-title">
+      <i class="fas fa-mobile-screen-button view-icon"></i>
+      <h3>Enter OTP Code</h3>
+      <p>Sent to <strong id="otpPhone" style="color:var(--blue)"></strong></p>
+    </div>
+    <div class="otp-row">
+      <input class="otp-box" maxlength="1" id="o1" inputmode="numeric">
+      <input class="otp-box" maxlength="1" id="o2" inputmode="numeric">
+      <input class="otp-box" maxlength="1" id="o3" inputmode="numeric">
+      <input class="otp-box" maxlength="1" id="o4" inputmode="numeric">
+      <input class="otp-box" maxlength="1" id="o5" inputmode="numeric">
+      <input class="otp-box" maxlength="1" id="o6" inputmode="numeric">
+    </div>
+    <div class="btn-group" style="margin-top:18px">
+      <button class="btn btn-primary" id="btnVerify">
+        <i class="fas fa-shield-check"></i> <span>Verify & Sign In</span>
+      </button>
+    </div>
+    <div class="resend-row">
+      Didn't receive it?
+      <button class="resend-btn" id="resendBtn" onclick="handleResend()">Resend</button>
+      <span id="resendTimer"></span>
+    </div>
+  </div>
+
+  <!-- ══ VIEW: FORGOT ══ -->
+  <div class="view" id="viewForgot">
+    <button class="back-btn" onclick="showView('viewMain')"><i class="fas fa-arrow-left"></i> Back</button>
+    <div class="view-title">
+      <i class="fas fa-key view-icon"></i>
+      <h3>Reset Password</h3>
+      <p>We'll send a reset link to your email</p>
+    </div>
+    <div class="inp-group" style="margin-top:6px">
+      <label class="inp-label"><i class="fas fa-envelope"></i> Email Address</label>
+      <div class="inp-wrap">
+        <i class="fas fa-at inp-icon"></i>
+        <input class="form-input" type="email" id="resetEmail" placeholder="your@email.com">
+      </div>
+    </div>
+    <div class="btn-group" style="margin-top:4px">
+      <button class="btn btn-primary" id="btnReset">
+        <i class="fas fa-paper-plane"></i> <span>Send Reset Link</span>
+      </button>
+    </div>
+  </div>
+
+</div><!-- /auth-card -->
+</div><!-- /scene -->
+
+<script type="module">
+import { loginUser, googleLoginUser, sendPhoneOTP, verifyPhoneOTP, resetPassword } from './auth.js';
+
+// ═══════════════════════════════
+// STARS
+// ═══════════════════════════════
+const sc=document.getElementById('star-canvas'),sx=sc.getContext('2d');let stars=[];
+function initStars(){sc.width=innerWidth;sc.height=innerHeight;stars=Array.from({length:150},()=>({x:Math.random()*sc.width,y:Math.random()*sc.height,s:Math.random()*1.9,o:Math.random()*.75+.2,sp:Math.random()*.04+.008}));}
+function drawStars(){sx.clearRect(0,0,sc.width,sc.height);stars.forEach(s=>{sx.fillStyle=`rgba(255,255,255,${s.o})`;sx.beginPath();sx.arc(s.x,s.y,s.s,0,Math.PI*2);sx.fill();s.y-=s.sp;if(s.y<0){s.y=sc.height;s.x=Math.random()*sc.width;}});requestAnimationFrame(drawStars);}
+window.onresize=initStars;initStars();drawStars();
+
+// ═══════════════════════════════
+// TYPING EFFECT
+// ═══════════════════════════════
+const words=["Welcome back! 👋","Ready to learn? Let's go!","Your universe awaits...","Earn VUX. Level up. Repeat."];
+let wi=0,ci=0,del=false;
+function type(){const w=words[wi],el=document.getElementById('typingText');if(!del){el.textContent=w.slice(0,ci++);if(ci>w.length){del=true;setTimeout(type,1700);return;}}else{el.textContent=w.slice(0,ci--);if(ci<0){del=false;wi=(wi+1)%words.length;}}setTimeout(type,del?42:72);}
+type();
+
+// ═══════════════════════════════
+// 3D TILT
+// ═══════════════════════════════
+const card=document.getElementById('authCard');
+document.querySelector('.scene').addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`rotateY(${x*11}deg) rotateX(${-y*9}deg)`;});
+document.querySelector('.scene').addEventListener('mouseleave',()=>{card.style.transform='rotateY(0deg) rotateX(0deg)';});
+
+// ═══════════════════════════════
+// CONFETTI ENGINE
+// ═══════════════════════════════
+const cc=document.getElementById('confettiCanvas'),cx=cc.getContext('2d');
+const COLORS=['#ff3d70','#00d2ff','#ffcc33','#10b981','#9d50bb','#ff9500','#00ff88','#ff6b6b','#4ecdc4','#45b7d1'];
+let particles=[];
+function launchConfetti(){
+  cc.width=innerWidth;cc.height=innerHeight;
+  particles=[];
+  for(let i=0;i<220;i++){
+    particles.push({
+      x:Math.random()*cc.width,y:Math.random()*cc.height*.3-50,
+      vx:(Math.random()-0.5)*9,vy:Math.random()*6+3,
+      color:COLORS[Math.floor(Math.random()*COLORS.length)],
+      w:Math.random()*10+5,h:Math.random()*5+3,
+      rot:Math.random()*360,rv:(Math.random()-0.5)*8,
+      alpha:1,life:0,maxLife:120+Math.random()*80,
+      shape:Math.random()>.5?'rect':'circle'
+    });
+  }
+  animConfetti();
+}
+function animConfetti(){
+  cx.clearRect(0,0,cc.width,cc.height);
+  let alive=false;
+  particles.forEach(p=>{
+    p.life++;p.vy+=.12;p.vx*=.99;p.x+=p.vx;p.y+=p.vy;p.rot+=p.rv;
+    p.alpha=Math.max(0,1-p.life/p.maxLife);
+    if(p.alpha>0){alive=true;}
+    cx.save();cx.globalAlpha=p.alpha;cx.fillStyle=p.color;
+    cx.translate(p.x,p.y);cx.rotate(p.rot*Math.PI/180);
+    if(p.shape==='circle'){cx.beginPath();cx.arc(0,0,p.w/2,0,Math.PI*2);cx.fill();}
+    else{cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);}
+    cx.restore();
+  });
+  if(alive)requestAnimationFrame(animConfetti);
+  else cx.clearRect(0,0,cc.width,cc.height);
+}
+
+// ═══════════════════════════════
+// SUCCESS OVERLAY
+// ═══════════════════════════════
+function showSuccess(name){
+  document.getElementById('successName').textContent=`Welcome back, ${name || 'friend'}! 🚀`;
+  const overlay=document.getElementById('successOverlay');
+  overlay.style.display='flex';
+  launchConfetti();
+  setTimeout(()=>{
+    const bar=document.getElementById('redirectBar');
+    bar.style.width='100%';
+  },100);
+  setTimeout(()=>{window.location.href='appskeleton';},2400);
+}
+
+// ═══════════════════════════════
+// TOAST
+// ═══════════════════════════════
+function toast(msg,type='success'){
+  const el=document.createElement('div');el.className=`toast ${type}`;
+  const icon=type==='success'?'fas fa-circle-check':'fas fa-circle-exclamation';
+  el.innerHTML=`<i class="${icon}"></i><span>${msg}</span><button class="t-close" onclick="this.parentElement.classList.add('removing');setTimeout(()=>this.parentElement.remove(),350)"><i class="fas fa-xmark"></i></button>`;
+  document.getElementById('toasts').appendChild(el);
+  setTimeout(()=>{if(el.parentElement){el.classList.add('removing');setTimeout(()=>el.remove(),350);}},5000);
+}
+
+// ═══════════════════════════════
+// MASCOT
+// ═══════════════════════════════
+const bubs=["Hi there! Sign in to earn LNX coins 🪙","Use Google for the fastest sign-in ⚡","Forgot password? Tap the key icon 🔑","Over 50,000 students are already inside! 🌍"];let bi=0;
+window.toggleBubble=()=>{const b=document.getElementById('mbubble');if(b.style.display==='none'){b.innerHTML=`<i class="fas fa-comment-dots" style="color:var(--blue);margin-right:5px"></i>${bubs[bi%bubs.length]}`;bi++;b.style.display='block';}else b.style.display='none';};
+
+// ═══════════════════════════════
+// HELPERS
+// ═══════════════════════════════
+window.showView=id=>{document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');};
+window.setMethod=m=>{
+  document.getElementById('emailForm').style.display=m==='email'?'block':'none';
+  document.getElementById('phoneForm').style.display=m==='phone'?'block':'none';
+  document.getElementById('tabEmail').classList.toggle('active',m==='email');
+  document.getElementById('tabPhone').classList.toggle('active',m==='phone');
+};
+document.getElementById('togglePw').onclick=()=>{
+  const i=document.getElementById('loginPassword'),ic=document.querySelector('#togglePw i');
+  i.type=i.type==='password'?'text':'password';
+  ic.className=i.type==='password'?'fas fa-eye':'fas fa-eye-slash';
+};
+function setLoad(id,on){const b=document.getElementById(id);if(!b)return;if(on){b._o=b.innerHTML;b.innerHTML='<div class="spinner"></div><span>Loading...</span>';b.disabled=true;}else{b.innerHTML=b._o;b.disabled=false;}}
+function fErr(id,msg){const e=document.getElementById(id+'Error');if(!e)return;e.querySelector('span').textContent=msg;e.classList.add('show');}
+function clrErr(){document.querySelectorAll('.ferr').forEach(e=>e.classList.remove('show'));}
+
+// ═══════════════════════════════
+// EMAIL LOGIN
+// ═══════════════════════════════
+document.getElementById('btnLogin').onclick=async()=>{
+  clrErr();
+  const email=document.getElementById('loginEmail').value.trim();
+  const pw=document.getElementById('loginPassword').value;
+  if(!email){fErr('email','Please enter your email address.');return;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){fErr('email','Please enter a valid email format.');return;}
+  if(!pw){fErr('password','Please enter your password.');return;}
+  setLoad('btnLogin',true);
+  const r=await loginUser({email,password:pw});
+  setLoad('btnLogin',false);
+  if(r.success){showSuccess(r.user?.displayName||email.split('@')[0]);}
+  else{toast(r.error,'error');if(r.error.toLowerCase().includes('email')||r.error.includes('found'))fErr('email',r.error);else fErr('password',r.error);}
+};
+
+// ═══════════════════════════════
+// GOOGLE LOGIN
+// ═══════════════════════════════
+document.getElementById('btnGoogle').onclick=async()=>{
+  const r=await googleLoginUser();
+  if(r.success){showSuccess(r.user?.displayName||'friend');}
+  else{toast(r.error,'error');}
+};
+
+// ═══════════════════════════════
+// GUEST LOGIN
+// ═══════════════════════════════
+document.getElementById('btnGuest').onclick=()=>{
+  // Create guest session
+  const guestUser = {
+    uid: 'guest_' + Date.now(),
+    email: 'guest@vura.ai',
+    displayName: 'Guest User',
+    photoURL: '',
+    isGuest: true
+  };
+  
+  // Store guest session in localStorage
+  localStorage.setItem('guestMode', 'true');
+  localStorage.setItem('guestUser', JSON.stringify(guestUser));
+  
+  // Show success and redirect
+  showSuccess('Guest');
+};
+
+// ═══════════════════════════════
+// PHONE OTP
+// ═══════════════════════════════
+document.getElementById('btnSendOTP').onclick=async()=>{
+  const code=document.getElementById('countryCode').value.trim();
+  const num=document.getElementById('phoneNum').value.trim();
+  if(!num){fErr('phone','Enter your phone number.');return;}
+  const full=code+num;document.getElementById('otpPhone').textContent=full;
+  setLoad('btnSendOTP',true);
+  const r=await sendPhoneOTP(full,'recaptcha-container');
+  setLoad('btnSendOTP',false);
+  if(r.success){showView('viewOTP');startResendTimer();}
+  else toast(r.error,'error');
+};
+document.getElementById('btnVerify').onclick=async()=>{
+  const code=['o1','o2','o3','o4','o5','o6'].map(id=>document.getElementById(id).value).join('');
+  if(code.length<6){toast('Enter all 6 digits.','error');return;}
+  setLoad('btnVerify',true);
+  const r=await verifyPhoneOTP(code);
+  setLoad('btnVerify',false);
+  if(r.success){showSuccess(r.user?.displayName||'friend');}
+  else toast(r.error,'error');
+};
+['o1','o2','o3','o4','o5','o6'].forEach((id,i,arr)=>{
+  const el=document.getElementById(id);
+  el.addEventListener('input',()=>{if(el.value&&arr[i+1])document.getElementById(arr[i+1]).focus();});
+  el.addEventListener('keydown',e=>{if(e.key==='Backspace'&&!el.value&&arr[i-1])document.getElementById(arr[i-1]).focus();});
+});
+window.handleResend=async()=>{window.recaptchaVerifier=null;const c=document.getElementById('countryCode').value.trim(),n=document.getElementById('phoneNum').value.trim();await sendPhoneOTP(c+n,'recaptcha-container');startResendTimer();};
+function startResendTimer(){const btn=document.getElementById('resendBtn'),t=document.getElementById('resendTimer');btn.disabled=true;let s=60;t.textContent=` (${s}s)`;const iv=setInterval(()=>{s--;t.textContent=s>0?` (${s}s)`:'';if(s<=0){clearInterval(iv);btn.disabled=false;}},1000);}
+
+// ═══════════════════════════════
+// RESET PASSWORD
+// ═══════════════════════════════
+document.getElementById('btnReset').onclick=async()=>{
+  const email=document.getElementById('resetEmail').value.trim();
+  if(!email){toast('Enter your email address.','error');return;}
+  setLoad('btnReset',true);
+  const r=await resetPassword(email);
+  setLoad('btnReset',false);
+  if(r.success){toast('Reset link sent! Check your inbox.','success');}
+  else toast(r.error,'error');
+};
+
+document.getElementById('loginPassword').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('btnLogin').click();});
+</script>
+</body>
+</html>
