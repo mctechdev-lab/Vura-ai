@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Privacy Policy — Vura AI</title>
+<meta name="description" content="Vura AI Privacy Policy — how we collect, use, protect, and handle your personal data in compliance with GDPR and global data protection standards."/>
+<link rel="icon" type="image/png" href="vura-logo.png"/>
+<link rel="apple-touch-icon" href="vura-logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:#03030b;color:#e8e8f0;line-height:1.7;font-size:16px}
+a{text-decoration:none;color:inherit}
+:root{--blue:#00d2ff;--purple:#9d50bb;--gold:#ffcc33;--green:#10b981;--bg:#03030b;--card-bg:rgba(13,13,40,.92);--card-border:rgba(255,255,255,.08);--muted:#8888aa;--grad:linear-gradient(135deg,#00d2ff,#9d50bb);--radius:14px}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#03030b}::-webkit-scrollbar-thumb{background:var(--purple);border-radius:3px}
+.nebula{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.nebula::before{content:'';position:absolute;width:700px;height:700px;top:-200px;right:-200px;background:radial-gradient(circle,rgba(0,210,255,.07) 0%,transparent 70%);border-radius:50%}
+.nebula::after{content:'';position:absolute;width:500px;height:500px;bottom:-100px;left:-100px;background:radial-gradient(circle,rgba(157,80,187,.07) 0%,transparent 70%);border-radius:50%}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;background:rgba(3,3,11,.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-logo{font-family:'Orbitron',sans-serif;font-size:1.3rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:2px}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:.9rem;font-weight:600;color:var(--muted);transition:.3s}
+.nav-links a:hover{color:#fff}
+.nav-links a.active{color:var(--blue)}
+.btn-nav{padding:9px 22px;border-radius:50px;background:var(--grad);color:#fff;font-family:'Nunito',sans-serif;font-size:.88rem;font-weight:700;border:none;cursor:pointer;transition:.3s}
+.btn-nav:hover{opacity:.85;transform:translateY(-1px)}
+.page-hero{padding:140px 0 70px;text-align:center;position:relative;z-index:1;border-bottom:1px solid rgba(255,255,255,.05);background:linear-gradient(180deg,rgba(0,210,255,.04) 0%,transparent 100%)}
+.page-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 20px;border-radius:50px;background:rgba(0,210,255,.08);border:1px solid rgba(0,210,255,.2);color:var(--blue);font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}
+.page-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:#fff;margin-bottom:12px;line-height:1.2}
+.page-title span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.page-meta{font-size:.9rem;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:16px}
+.page-meta span{display:flex;align-items:center;gap:6px}
+.page-meta i{color:var(--blue)}
+.container{max-width:900px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.content{padding:60px 0 80px}
+.toc{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:28px 32px;margin-bottom:48px}
+.toc-title{font-family:'Orbitron',sans-serif;font-size:.85rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.toc-list a{color:var(--muted);font-size:.92rem;font-weight:600;transition:.3s;display:flex;align-items:center;gap:8px}
+.toc-list a:hover{color:var(--blue);transform:translateX(4px)}
+.toc-list a i{color:var(--blue);font-size:.7rem;opacity:.6}
+.legal-section{margin-bottom:48px;scroll-margin-top:100px}
+.section-header{display:flex;align-items:flex-start;gap:16px;padding:20px 24px;background:linear-gradient(135deg,rgba(0,210,255,.06),rgba(157,80,187,.04));border:1px solid rgba(0,210,255,.12);border-radius:var(--radius) var(--radius) 0 0}
+.section-icon{width:44px;height:44px;border-radius:10px;flex-shrink:0;background:rgba(0,210,255,.1);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:1rem}
+.section-num{font-size:.72rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+.section-heading{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:700;color:#fff;line-height:1.3}
+.section-body{padding:28px;background:var(--card-bg);border:1px solid var(--card-border);border-top:none;border-radius:0 0 var(--radius) var(--radius)}
+.section-body p{color:var(--muted);font-size:.95rem;margin-bottom:14px;line-height:1.75}
+.section-body p:last-child{margin-bottom:0}
+.section-body ul{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px;margin:14px 0}
+.section-body li{display:flex;align-items:flex-start;gap:10px;color:var(--muted);font-size:.93rem;line-height:1.6}
+.section-body li i{color:var(--blue);font-size:.75rem;margin-top:5px;flex-shrink:0}
+.section-body strong{color:#e8e8f0;font-weight:700}
+.section-body a{color:var(--blue);transition:.3s}
+.section-body a:hover{text-decoration:underline}
+.highlight-box{background:rgba(0,210,255,.06);border:1px solid rgba(0,210,255,.15);border-radius:10px;padding:18px 20px;margin:16px 0;display:flex;gap:12px;align-items:flex-start}
+.highlight-box i{color:var(--blue);flex-shrink:0;margin-top:2px}
+.highlight-box p{color:#c8c8e8;font-size:.9rem;margin:0!important;line-height:1.6}
+.warning-box{background:rgba(255,204,51,.06);border-color:rgba(255,204,51,.15)}
+.warning-box i{color:var(--gold)}
+.success-box{background:rgba(16,185,129,.06);border-color:rgba(16,185,129,.15)}
+.success-box i{color:var(--green)}
+.gdpr-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 18px;border-radius:8px;
+  background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);
+  color:var(--green);font-size:.82rem;font-weight:700;
+  margin-bottom:16px;
+}
+.data-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.88rem}
+.data-table th{background:rgba(0,210,255,.08);color:var(--blue);font-weight:700;padding:12px 14px;text-align:left;border-bottom:1px solid rgba(0,210,255,.15)}
+.data-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.05);color:var(--muted);vertical-align:top}
+.data-table tr:last-child td{border-bottom:none}
+.data-table td:first-child{color:#e8e8f0;font-weight:600}
+.rights-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.right-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:14px 16px;display:flex;align-items:flex-start;gap:10px}
+.right-card i{color:var(--green);flex-shrink:0;margin-top:2px}
+.right-card strong{display:block;color:#e8e8f0;font-size:.88rem;margin-bottom:3px}
+.right-card p{color:var(--muted);font-size:.8rem;margin:0;line-height:1.5}
+.contact-card{background:linear-gradient(135deg,rgba(0,210,255,.08),rgba(157,80,187,.08));border:1px solid rgba(0,210,255,.2);border-radius:var(--radius);padding:32px;text-align:center;margin-top:48px}
+.contact-card h3{font-family:'Orbitron',sans-serif;font-size:1.1rem;color:#fff;margin-bottom:10px}
+.contact-card p{color:var(--muted);font-size:.95rem;margin-bottom:20px}
+.contact-email{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:50px;background:var(--grad);color:#fff;font-weight:700;font-size:.95rem}
+footer{background:rgba(5,5,20,.8);border-top:1px solid rgba(255,255,255,.05);padding:40px 0;text-align:center;position:relative;z-index:1}
+.footer-logo{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+.footer-legal-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:16px}
+.footer-legal-links a{font-size:.85rem;color:var(--muted);transition:.3s;padding:4px 0;border-bottom:1px solid transparent}
+.footer-legal-links a:hover{color:var(--blue);border-color:var(--blue)}
+.footer-legal-links a.current{color:var(--blue)}
+.footer-copy{font-size:.82rem;color:rgba(136,136,170,.5)}
+@media(max-width:640px){.nav-links{display:none}.section-body{padding:20px}.toc{padding:20px}.page-hero{padding:120px 0 50px}.rights-grid{grid-template-columns:1fr}.data-table{font-size:.78rem}}
+</style>
+</head>
+<body>
+<div class="nebula"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">VURA AI</a>
+    <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house" style="margin-right:5px"></i>Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html" class="active">Privacy</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="refund.html">Refunds</a>
+      <button class="btn-nav" onclick="location.href='index.html#pricing'">Get Started</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="page-badge"><i class="fa-solid fa-lock"></i> Data Protection</div>
+    <h1 class="page-title">Privacy <span>Policy</span></h1>
+    <p style="color:var(--muted);font-size:1rem;max-width:580px;margin:12px auto 0">Your privacy matters to us. This policy explains exactly what data we collect, why we collect it, and how we protect it — clearly and without legal jargon.</p>
+    <div class="page-meta">
+      <span><i class="fa-solid fa-calendar"></i> Effective: 1 January 2025</span>
+      <span><i class="fa-solid fa-rotate"></i> Last Updated: 1 June 2025</span>
+      <span><i class="fa-solid fa-shield-halved"></i> GDPR Compliant</span>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="container">
+
+    <div class="gdpr-badge"><i class="fa-solid fa-shield-check"></i> This policy complies with GDPR (EU), NDPR (Nigeria), and applicable global data protection regulations.</div>
+
+    <!-- TOC -->
+    <div class="toc">
+      <div class="toc-title"><i class="fa-solid fa-list"></i> Table of Contents</div>
+      <ul class="toc-list">
+        <li><a href="#p1"><i class="fa-solid fa-chevron-right"></i> 1. Who We Are (Data Controller)</a></li>
+        <li><a href="#p2"><i class="fa-solid fa-chevron-right"></i> 2. What Data We Collect</a></li>
+        <li><a href="#p3"><i class="fa-solid fa-chevron-right"></i> 3. How We Use Your Data</a></li>
+        <li><a href="#p4"><i class="fa-solid fa-chevron-right"></i> 4. Legal Basis for Processing (GDPR)</a></li>
+        <li><a href="#p5"><i class="fa-solid fa-chevron-right"></i> 5. Data Storage &amp; Firebase</a></li>
+        <li><a href="#p6"><i class="fa-solid fa-chevron-right"></i> 6. Third-Party Services</a></li>
+        <li><a href="#p7"><i class="fa-solid fa-chevron-right"></i> 7. Children's Privacy</a></li>
+        <li><a href="#p8"><i class="fa-solid fa-chevron-right"></i> 8. Data Sharing &amp; Disclosure</a></li>
+        <li><a href="#p9"><i class="fa-solid fa-chevron-right"></i> 9. Your Rights Under GDPR</a></li>
+        <li><a href="#p10"><i class="fa-solid fa-chevron-right"></i> 10. Data Retention</a></li>
+        <li><a href="#p11"><i class="fa-solid fa-chevron-right"></i> 11. International Data Transfers</a></li>
+        <li><a href="#p12"><i class="fa-solid fa-chevron-right"></i> 12. Security Measures</a></li>
+        <li><a href="#p13"><i class="fa-solid fa-chevron-right"></i> 13. Changes to This Policy</a></li>
+        <li><a href="#p14"><i class="fa-solid fa-chevron-right"></i> 14. Contact &amp; Data Subject Requests</a></li>
+      </ul>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="legal-section" id="p1">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-building"></i></div>
+        <div><div class="section-num">Section 01</div><div class="section-heading">Who We Are — Data Controller</div></div>
+      </div>
+      <div class="section-body">
+        <p><strong>Vura AI</strong> is a product of <strong>Michael Chibuzor Technology</strong> ("we", "us", "our"), a technology company registered in Nigeria. We operate the Vura AI study platform and are the data controller responsible for your personal information collected through our website, applications, and services.</p>
+        <ul>
+          <li><i class="fa-solid fa-building" style="color:var(--blue)"></i><span><strong>Company:</strong> Michael Chibuzor Technology</span></li>
+          <li><i class="fa-solid fa-globe" style="color:var(--blue)"></i><span><strong>Website:</strong> www.vura-ai.com</span></li>
+          <li><i class="fa-solid fa-envelope" style="color:var(--blue)"></i><span><strong>Data Protection Contact:</strong> <a href="mailto:support@vura-ai.com">support@vura-ai.com</a></span></li>
+          <li><i class="fa-solid fa-flag" style="color:var(--blue)"></i><span><strong>Country of Registration:</strong> Federal Republic of Nigeria</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="legal-section" id="p2">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+        <div><div class="section-num">Section 02</div><div class="section-heading">What Data We Collect</div></div>
+      </div>
+      <div class="section-body">
+        <p>We collect the minimum data necessary to provide and improve our educational services. Here is a full breakdown of the categories of data we collect:</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Data Category</th>
+              <th>Specific Data Points</th>
+              <th>Collection Method</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Identity Data</td>
+              <td>Full name, username, profile photo (optional)</td>
+              <td>Registration form</td>
+            </tr>
+            <tr>
+              <td>Contact Data</td>
+              <td>Email address, phone number (optional)</td>
+              <td>Registration / profile settings</td>
+            </tr>
+            <tr>
+              <td>Location Data</td>
+              <td>Country of residence, time zone</td>
+              <td>Registration form</td>
+            </tr>
+            <tr>
+              <td>Academic Data</td>
+              <td>Exam type, subject preferences, quiz scores, performance analytics</td>
+              <td>Platform usage</td>
+            </tr>
+            <tr>
+              <td>Payment Data</td>
+              <td>Payment method, transaction ID, subscription tier (card numbers NOT stored)</td>
+              <td>Paystack / Stripe (processed by payment provider)</td>
+            </tr>
+            <tr>
+              <td>Usage Data</td>
+              <td>Pages visited, features used, time spent, session duration, clicks</td>
+              <td>Automatic (analytics)</td>
+            </tr>
+            <tr>
+              <td>Device Data</td>
+              <td>IP address, browser type, device type, operating system</td>
+              <td>Automatic (server logs)</td>
+            </tr>
+            <tr>
+              <td>VUX Data</td>
+              <td>VUX balance, earn history, spend history, referrals made</td>
+              <td>Platform activity</td>
+            </tr>
+            <tr>
+              <td>Communications</td>
+              <td>Support messages, feedback, survey responses</td>
+              <td>User-submitted</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="highlight-box success-box">
+          <i class="fa-solid fa-circle-check"></i>
+          <p>We do <strong>not</strong> collect or store your payment card numbers. All payment processing is handled securely by Paystack and Stripe, which are PCI-DSS compliant payment processors.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="legal-section" id="p3">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-gears"></i></div>
+        <div><div class="section-num">Section 03</div><div class="section-heading">How We Use Your Data</div></div>
+      </div>
+      <div class="section-body">
+        <p>We use your data to deliver, personalise, and improve the Vura AI experience. Specifically, we use your information to:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>Create and manage your Vura AI account and verify your identity.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Personalise your study experience — recommending relevant exams, subjects, and question types based on your goals and performance.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Power the AI Tutor to provide contextually relevant explanations and study support.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Track and display your VUX coin balance, earning history, and study streak rewards.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Process subscription payments and send payment confirmations and receipts.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Send important account notifications, security alerts, and service updates.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Send promotional emails and platform news (only with your consent; you can unsubscribe anytime).</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Analyse aggregate, anonymised usage patterns to improve Platform features, performance, and content quality.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Detect and prevent fraudulent activities, abuse, and security threats.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Comply with our legal obligations under Nigerian and applicable international law.</span></li>
+        </ul>
+        <p>We do <strong>not</strong> sell your personal data to third parties for their marketing purposes.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="legal-section" id="p4">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fa-solid fa-shield-check"></i></div>
+        <div><div class="section-num">Section 04</div><div class="section-heading">Legal Basis for Processing (GDPR)</div></div>
+      </div>
+      <div class="section-body">
+        <p>For users in the European Economic Area (EEA), United Kingdom, and other GDPR-applicable jurisdictions, we process your personal data under the following legal bases:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Contractual Necessity:</strong> Processing your registration information, payment data, and account activity is necessary to fulfil our contract with you — i.e., to provide the Vura AI service.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Legitimate Interests:</strong> We process usage analytics and security data under our legitimate interest in improving the Platform and preventing fraud, where these interests are not overridden by your rights.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Consent:</strong> We send marketing emails and use non-essential cookies only with your explicit consent, which you can withdraw at any time.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Legal Obligation:</strong> We may process data where required to comply with applicable laws, court orders, or regulatory requirements.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="legal-section" id="p5">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-brands fa-google"></i></div>
+        <div><div class="section-num">Section 05</div><div class="section-heading">Data Storage &amp; Firebase (Google Cloud)</div></div>
+      </div>
+      <div class="section-body">
+        <p>Your Vura AI data is stored securely using <strong>Google Firebase</strong>, a cloud platform operated by Google LLC. Firebase provides industry-standard security including data encryption at rest and in transit (TLS/SSL), automatic backups, and high availability infrastructure.</p>
+        <div class="highlight-box">
+          <i class="fa-solid fa-server"></i>
+          <p>Your data is stored on Google Cloud servers and may be hosted in data centres located outside your country of residence (including the United States and Europe). Firebase complies with GDPR, ISO 27001, SOC 2 Type II, and other international data security standards.</p>
+        </div>
+        <p>For full details on Firebase's data handling, please refer to <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase Privacy and Security</a>.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="legal-section" id="p6">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-plug"></i></div>
+        <div><div class="section-num">Section 06</div><div class="section-heading">Third-Party Services We Use</div></div>
+      </div>
+      <div class="section-body">
+        <p>Vura AI uses the following trusted third-party services to operate the Platform. Each service has its own privacy policy:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Google Firebase:</strong> Database, authentication, hosting, and cloud functions. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy Policy</a></span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Paystack:</strong> Nigerian and African payment processing. Card data is handled by Paystack and never stored on our servers. <a href="https://paystack.com/ng/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a></span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Stripe:</strong> International payment processing. <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Google Analytics:</strong> Anonymous usage statistics to understand how students use the Platform. Data is anonymised and aggregated.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Font Awesome (CDN):</strong> Icon assets loaded from the Font Awesome content delivery network. No personal data is collected.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Google Fonts:</strong> Typography loaded from Google's servers. Google may collect IP addresses. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></span></li>
+        </ul>
+        <p>We enter into data processing agreements with all third-party processors to ensure your data is handled responsibly and in compliance with applicable privacy laws.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="legal-section" id="p7">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(255,204,51,.1);color:var(--gold)"><i class="fa-solid fa-child"></i></div>
+        <div><div class="section-num">Section 07</div><div class="section-heading">Children's Privacy</div></div>
+      </div>
+      <div class="section-body">
+        <p>We are committed to protecting the privacy of young users. Our Platform is designed for exam-preparation students and we recognise that many of our users may be minors:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Under 13:</strong> We do not knowingly collect personal data from children under the age of 13. If we discover such data has been collected, it will be deleted immediately.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Ages 13–17:</strong> Users between 13 and 17 must have parental or guardian consent to use the Platform. Parents can review, modify, or delete their child's data by contacting us.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Data Minimisation:</strong> We collect only the data strictly necessary for educational service delivery for younger users.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>No Profiling for Ads:</strong> We do not use the data of users under 18 for advertising profiling or behavioural targeting.</span></li>
+        </ul>
+        <div class="highlight-box warning-box">
+          <i class="fa-solid fa-shield-halved"></i>
+          <p>If you are a parent or guardian and believe your child under 13 has created an account, please contact us immediately at <strong>support@vura-ai.com</strong>. We will investigate and remove the account within 72 hours.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 8 -->
+    <div class="legal-section" id="p8">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-share-nodes"></i></div>
+        <div><div class="section-num">Section 08</div><div class="section-heading">Data Sharing &amp; Disclosure</div></div>
+      </div>
+      <div class="section-body">
+        <p>We do <strong>not sell</strong> your personal data. We only share your data in the following limited circumstances:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Service Providers:</strong> Trusted third-party processors (Firebase, Paystack, Stripe) who assist us in operating the Platform under strict data processing agreements.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Legal Requirements:</strong> Where disclosure is required by law, court order, regulatory authority, or to protect the rights and safety of our users or the public.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Business Transfers:</strong> If Vura AI is acquired, merged, or undergoes a business restructure, your data may transfer to the new entity, subject to the same privacy protections.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Aggregated Analytics:</strong> We may share anonymised, non-identifiable aggregate statistics (e.g., "students in Nigeria average X quiz score") with partners or the public.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>With Your Consent:</strong> Any other sharing requires your explicit, prior consent.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 9 -->
+    <div class="legal-section" id="p9">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fa-solid fa-person-circle-check"></i></div>
+        <div><div class="section-num">Section 09</div><div class="section-heading">Your Rights Under GDPR</div></div>
+      </div>
+      <div class="section-body">
+        <p>If you are located in the EEA, UK, or a jurisdiction with equivalent data rights, you have the following rights regarding your personal data:</p>
+        <div class="rights-grid">
+          <div class="right-card"><i class="fa-solid fa-eye"></i><div><strong>Right of Access</strong><p>Request a copy of all personal data we hold about you.</p></div></div>
+          <div class="right-card"><i class="fa-solid fa-pen-to-square"></i><div><strong>Right to Rectification</strong><p>Request correction of inaccurate or incomplete data.</p></div></div>
+          <div class="right-card"><i class="fa-solid fa-trash"></i><div><strong>Right to Erasure</strong><p>Request deletion of your personal data ("right to be forgotten").</p></div></div>
+          <div class="right-card"><i class="fa-solid fa-hand"></i><div><strong>Right to Object</strong><p>Object to processing based on legitimate interests or for direct marketing.</p></div></div>
+          <div class="right-card"><i class="fa-solid fa-pause"></i><div><strong>Right to Restriction</strong><p>Request we restrict processing of your data in certain circumstances.</p></div></div>
+          <div class="right-card"><i class="fa-solid fa-file-export"></i><div><strong>Right to Portability</strong><p>Receive your data in a structured, machine-readable format.</p></div></div>
+          <div class="right-card"><i class="fa-solid fa-rotate-left"></i><div><strong>Withdraw Consent</strong><p>Withdraw marketing consent at any time without affecting prior processing.</p></div></div>
+          <div class="right-card"><i class="fa-solid fa-flag"></i><div><strong>Right to Complain</strong><p>Lodge a complaint with your national data protection authority.</p></div></div>
+        </div>
+        <p style="margin-top:16px">To exercise any of these rights, contact us at <a href="mailto:support@vura-ai.com">support@vura-ai.com</a> with the subject line "Data Rights Request". We will respond within 30 days. Most requests can be fulfilled through your account settings page.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 10 -->
+    <div class="legal-section" id="p10">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-clock"></i></div>
+        <div><div class="section-num">Section 10</div><div class="section-heading">Data Retention</div></div>
+      </div>
+      <div class="section-body">
+        <p>We retain your personal data only for as long as necessary to provide our services and comply with legal obligations:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Active Account Data:</strong> Retained for as long as your account remains active.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Deleted Accounts:</strong> Personal data is deleted or anonymised within 90 days of account deletion, except where we are legally required to retain records.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Payment Records:</strong> Transaction records are retained for 7 years as required by Nigerian financial regulations.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Security Logs:</strong> IP addresses and security logs are retained for up to 12 months to protect against fraud and abuse.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Support Communications:</strong> Support tickets and correspondence are retained for 2 years for quality assurance purposes.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 11 -->
+    <div class="legal-section" id="p11">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-earth-africa"></i></div>
+        <div><div class="section-num">Section 11</div><div class="section-heading">International Data Transfers</div></div>
+      </div>
+      <div class="section-body">
+        <p>As a global platform, your data may be transferred to and stored in countries outside your country of residence, including the United States (where Google Firebase servers are located). We ensure such transfers comply with applicable data protection laws by relying on:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Standard Contractual Clauses (SCCs)</strong> approved by the European Commission for transfers to the US and other third countries.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Adequacy decisions</strong> where they exist between your country and the destination country.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Certified processors</strong> such as Google, Paystack, and Stripe who maintain appropriate international data transfer mechanisms.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 12 -->
+    <div class="legal-section" id="p12">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fa-solid fa-lock"></i></div>
+        <div><div class="section-num">Section 12</div><div class="section-heading">Security Measures</div></div>
+      </div>
+      <div class="section-body">
+        <p>We take data security seriously and implement the following measures to protect your information:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Encryption:</strong> All data in transit is encrypted using TLS/SSL. Data at rest in Firebase is encrypted by default.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Access Controls:</strong> Strict role-based access controls ensure only authorised team members can access user data, on a need-to-know basis.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Secure Authentication:</strong> We support strong password requirements and encourage the use of two-factor authentication.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Regular Security Reviews:</strong> We conduct periodic security assessments and vulnerability checks of our systems.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Incident Response:</strong> In the event of a data breach, we will notify affected users and relevant authorities within 72 hours as required by applicable law.</span></li>
+        </ul>
+        <div class="highlight-box warning-box">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p>No method of internet transmission or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee absolute security.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 13 -->
+    <div class="legal-section" id="p13">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+        <div><div class="section-num">Section 13</div><div class="section-heading">Changes to This Policy</div></div>
+      </div>
+      <div class="section-body">
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make significant changes, we will:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>Update the "Last Updated" date at the top of this page.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Send an email notification to all registered users at least 14 days before changes take effect.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Display an in-platform notice prompting you to review the updated policy.</span></li>
+        </ul>
+        <p>We encourage you to review this policy periodically. Your continued use of Vura AI after any changes constitutes your acceptance of the updated policy.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 14 -->
+    <div class="legal-section" id="p14">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fa-solid fa-envelope"></i></div>
+        <div><div class="section-num">Section 14</div><div class="section-heading">Contact &amp; Data Subject Requests</div></div>
+      </div>
+      <div class="section-body">
+        <p>For any privacy-related questions, data rights requests, or concerns, please contact our Data Protection team:</p>
+        <ul>
+          <li><i class="fa-solid fa-envelope" style="color:var(--blue)"></i><span><strong>Email:</strong> <a href="mailto:support@vura-ai.com">support@vura-ai.com</a></span></li>
+          <li><i class="fa-solid fa-envelope-open-text" style="color:var(--blue)"></i><span><strong>Subject Line:</strong> Please use "Privacy Request" or "Data Rights Request" for faster processing.</span></li>
+          <li><i class="fa-solid fa-clock" style="color:var(--blue)"></i><span><strong>Response Time:</strong> We aim to acknowledge all requests within 3 business days and resolve them within 30 days.</span></li>
+        </ul>
+        <p>EU and UK residents who are not satisfied with our response have the right to lodge a complaint with their national supervisory authority (e.g., the ICO in the UK, or the relevant EU Data Protection Authority).</p>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <h3>Privacy Questions?</h3>
+      <p>We take your privacy seriously. Reach out and we'll respond within 3 business days.</p>
+      <a href="mailto:support@vura-ai.com" class="contact-email">
+        <i class="fa-solid fa-envelope"></i> support@vura-ai.com
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">VURA AI</div>
+    <div class="footer-legal-links">
+      <a href="terms.html"><i class="fa-solid fa-file-contract" style="margin-right:5px"></i>Terms &amp; Conditions</a>
+      <a href="privacy.html" class="current"><i class="fa-solid fa-lock" style="margin-right:5px"></i>Privacy Policy</a>
+      <a href="cookies.html"><i class="fa-solid fa-cookie" style="margin-right:5px"></i>Cookie Policy</a>
+      <a href="refund.html"><i class="fa-solid fa-rotate-left" style="margin-right:5px"></i>Refund Policy</a>
+      <a href="index.html"><i class="fa-solid fa-house" style="margin-right:5px"></i>Home</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Vura AI — A Product of Michael Chibuzor Technology. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>

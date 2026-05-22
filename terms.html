@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Terms &amp; Conditions — Vura AI</title>
+<meta name="description" content="Terms and Conditions for Vura AI — the global AI study platform. Read our terms before using the platform."/>
+<link rel="icon" type="image/png" href="vura-logo.png"/>
+<link rel="apple-touch-icon" href="vura-logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:#03030b;color:#e8e8f0;line-height:1.7;font-size:16px}
+a{text-decoration:none;color:inherit}
+:root{
+  --blue:#00d2ff;--purple:#9d50bb;--gold:#ffcc33;--green:#10b981;
+  --bg:#03030b;--card-bg:rgba(13,13,40,.92);--card-border:rgba(255,255,255,.08);
+  --muted:#8888aa;--grad:linear-gradient(135deg,#00d2ff,#9d50bb);--radius:14px;
+}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#03030b}
+::-webkit-scrollbar-thumb{background:var(--purple);border-radius:3px}
+
+/* NEBULA */
+.nebula{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.nebula::before{content:'';position:absolute;width:700px;height:700px;top:-200px;left:-200px;background:radial-gradient(circle,rgba(157,80,187,.08) 0%,transparent 70%);border-radius:50%}
+.nebula::after{content:'';position:absolute;width:500px;height:500px;bottom:-100px;right:-100px;background:radial-gradient(circle,rgba(0,210,255,.07) 0%,transparent 70%);border-radius:50%}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;background:rgba(3,3,11,.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-logo{font-family:'Orbitron',sans-serif;font-size:1.3rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:2px}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:.9rem;font-weight:600;color:var(--muted);transition:.3s}
+.nav-links a:hover{color:#fff}
+.nav-links a.active{color:var(--blue)}
+.btn-nav{padding:9px 22px;border-radius:50px;background:var(--grad);color:#fff;font-family:'Nunito',sans-serif;font-size:.88rem;font-weight:700;border:none;cursor:pointer;transition:.3s}
+.btn-nav:hover{opacity:.85;transform:translateY(-1px)}
+
+/* HERO BANNER */
+.page-hero{
+  padding:140px 0 70px;
+  text-align:center;
+  position:relative;z-index:1;
+  border-bottom:1px solid rgba(255,255,255,.05);
+  background:linear-gradient(180deg,rgba(157,80,187,.04) 0%,transparent 100%);
+}
+.page-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 20px;border-radius:50px;
+  background:rgba(0,210,255,.08);border:1px solid rgba(0,210,255,.2);
+  color:var(--blue);font-size:.78rem;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;
+}
+.page-title{
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(1.8rem,4vw,3rem);font-weight:900;
+  color:#fff;margin-bottom:12px;line-height:1.2;
+}
+.page-title span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.page-meta{font-size:.9rem;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:16px}
+.page-meta span{display:flex;align-items:center;gap:6px}
+.page-meta i{color:var(--blue)}
+
+/* LAYOUT */
+.container{max-width:900px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.content{padding:60px 0 80px}
+
+/* TABLE OF CONTENTS */
+.toc{
+  background:var(--card-bg);border:1px solid var(--card-border);
+  border-radius:var(--radius);padding:28px 32px;margin-bottom:48px;
+}
+.toc-title{
+  font-family:'Orbitron',sans-serif;font-size:.85rem;font-weight:700;
+  color:var(--blue);text-transform:uppercase;letter-spacing:1.5px;
+  margin-bottom:16px;display:flex;align-items:center;gap:8px;
+}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.toc-list li{display:flex;align-items:center;gap:10px}
+.toc-list a{
+  color:var(--muted);font-size:.92rem;font-weight:600;
+  transition:.3s;display:flex;align-items:center;gap:8px;
+}
+.toc-list a:hover{color:var(--blue);transform:translateX(4px)}
+.toc-list a i{color:var(--blue);font-size:.7rem;opacity:.6}
+
+/* SECTIONS */
+.legal-section{margin-bottom:48px;scroll-margin-top:100px}
+.section-header{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:20px 24px;
+  background:linear-gradient(135deg,rgba(0,210,255,.06),rgba(157,80,187,.04));
+  border:1px solid rgba(0,210,255,.12);
+  border-radius:var(--radius) var(--radius) 0 0;
+  margin-bottom:0;
+}
+.section-icon{
+  width:44px;height:44px;border-radius:10px;flex-shrink:0;
+  background:rgba(0,210,255,.1);color:var(--blue);
+  display:flex;align-items:center;justify-content:center;font-size:1rem;
+}
+.section-num{font-size:.72rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+.section-heading{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:700;color:#fff;line-height:1.3}
+.section-body{
+  padding:28px;
+  background:var(--card-bg);
+  border:1px solid var(--card-border);border-top:none;
+  border-radius:0 0 var(--radius) var(--radius);
+}
+.section-body p{color:var(--muted);font-size:.95rem;margin-bottom:14px;line-height:1.75}
+.section-body p:last-child{margin-bottom:0}
+.section-body ul,.section-body ol{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px;margin:14px 0}
+.section-body li{
+  display:flex;align-items:flex-start;gap:10px;
+  color:var(--muted);font-size:.93rem;line-height:1.6;
+}
+.section-body li i{color:var(--blue);font-size:.75rem;margin-top:5px;flex-shrink:0}
+.section-body strong{color:#e8e8f0;font-weight:700}
+.section-body a{color:var(--blue);transition:.3s}
+.section-body a:hover{text-decoration:underline}
+
+/* HIGHLIGHT BOX */
+.highlight-box{
+  background:rgba(0,210,255,.06);border:1px solid rgba(0,210,255,.15);
+  border-radius:10px;padding:18px 20px;margin:16px 0;
+  display:flex;gap:12px;align-items:flex-start;
+}
+.highlight-box i{color:var(--blue);flex-shrink:0;margin-top:2px}
+.highlight-box p{color:#c8c8e8;font-size:.9rem;margin:0!important;line-height:1.6}
+.warning-box{background:rgba(255,204,51,.06);border-color:rgba(255,204,51,.15)}
+.warning-box i{color:var(--gold)}
+.danger-box{background:rgba(255,77,109,.06);border-color:rgba(255,77,109,.15)}
+.danger-box i{color:#ff4d6d}
+.success-box{background:rgba(16,185,129,.06);border-color:rgba(16,185,129,.15)}
+.success-box i{color:var(--green)}
+
+/* CONTACT CARD */
+.contact-card{
+  background:linear-gradient(135deg,rgba(0,210,255,.08),rgba(157,80,187,.08));
+  border:1px solid rgba(0,210,255,.2);border-radius:var(--radius);
+  padding:32px;text-align:center;margin-top:48px;
+}
+.contact-card h3{font-family:'Orbitron',sans-serif;font-size:1.1rem;color:#fff;margin-bottom:10px}
+.contact-card p{color:var(--muted);font-size:.95rem;margin-bottom:20px}
+.contact-email{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 28px;border-radius:50px;
+  background:var(--grad);color:#fff;font-weight:700;font-size:.95rem;
+}
+
+/* FOOTER */
+footer{
+  background:rgba(5,5,20,.8);border-top:1px solid rgba(255,255,255,.05);
+  padding:40px 0;text-align:center;position:relative;z-index:1;
+}
+.footer-logo{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+.footer-legal-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:16px}
+.footer-legal-links a{font-size:.85rem;color:var(--muted);transition:.3s;padding:4px 0;border-bottom:1px solid transparent}
+.footer-legal-links a:hover{color:var(--blue);border-color:var(--blue)}
+.footer-legal-links a.current{color:var(--blue)}
+.footer-copy{font-size:.82rem;color:rgba(136,136,170,.5)}
+
+@media(max-width:640px){
+  .nav-links{display:none}
+  .section-body{padding:20px}
+  .toc{padding:20px}
+  .page-hero{padding:120px 0 50px}
+}
+</style>
+</head>
+<body>
+<div class="nebula"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">VURA AI</a>
+    <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house" style="margin-right:5px"></i>Home</a>
+      <a href="terms.html" class="active">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="refund.html">Refunds</a>
+      <button class="btn-nav" onclick="location.href='index.html#pricing'">Get Started</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="page-badge"><i class="fa-solid fa-file-contract"></i> Legal Document</div>
+    <h1 class="page-title">Terms &amp; <span>Conditions</span></h1>
+    <p style="color:var(--muted);font-size:1rem;max-width:560px;margin:12px auto 0">Please read these terms carefully before using the Vura AI platform. By using our services, you agree to be bound by these terms.</p>
+    <div class="page-meta">
+      <span><i class="fa-solid fa-calendar"></i> Effective: 1 January 2025</span>
+      <span><i class="fa-solid fa-rotate"></i> Last Updated: 1 June 2025</span>
+      <span><i class="fa-solid fa-globe"></i> Applies Globally</span>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="container">
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="toc">
+      <div class="toc-title"><i class="fa-solid fa-list"></i> Table of Contents</div>
+      <ul class="toc-list">
+        <li><a href="#s1"><i class="fa-solid fa-chevron-right"></i> 1. Acceptance of Terms</a></li>
+        <li><a href="#s2"><i class="fa-solid fa-chevron-right"></i> 2. Eligibility &amp; Age Requirements</a></li>
+        <li><a href="#s3"><i class="fa-solid fa-chevron-right"></i> 3. Account Registration</a></li>
+        <li><a href="#s4"><i class="fa-solid fa-chevron-right"></i> 4. Platform Services</a></li>
+        <li><a href="#s5"><i class="fa-solid fa-chevron-right"></i> 5. VUX Virtual Currency</a></li>
+        <li><a href="#s6"><i class="fa-solid fa-chevron-right"></i> 6. Subscriptions &amp; Payments</a></li>
+        <li><a href="#s7"><i class="fa-solid fa-chevron-right"></i> 7. AI-Generated Content Disclaimer</a></li>
+        <li><a href="#s8"><i class="fa-solid fa-chevron-right"></i> 8. Exam Preparation Disclaimer</a></li>
+        <li><a href="#s9"><i class="fa-solid fa-chevron-right"></i> 9. Acceptable Use Policy</a></li>
+        <li><a href="#s10"><i class="fa-solid fa-chevron-right"></i> 10. Intellectual Property</a></li>
+        <li><a href="#s11"><i class="fa-solid fa-chevron-right"></i> 11. Termination</a></li>
+        <li><a href="#s12"><i class="fa-solid fa-chevron-right"></i> 12. Limitation of Liability</a></li>
+        <li><a href="#s13"><i class="fa-solid fa-chevron-right"></i> 13. Governing Law</a></li>
+        <li><a href="#s14"><i class="fa-solid fa-chevron-right"></i> 14. Changes to Terms</a></li>
+        <li><a href="#s15"><i class="fa-solid fa-chevron-right"></i> 15. Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="legal-section" id="s1">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-handshake"></i></div>
+        <div>
+          <div class="section-num">Section 01</div>
+          <div class="section-heading">Acceptance of Terms</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>Welcome to <strong>Vura AI</strong>, an AI-powered academic study platform operated by <strong>Michael Chibuzor Technology</strong> ("Company", "we", "us", or "our"). These Terms and Conditions ("Terms") govern your access to and use of our website, mobile applications, and all related services (collectively, the "Platform" or "Service").</p>
+        <p>By creating an account, accessing, or using Vura AI in any way, you confirm that you have read, understood, and agree to be bound by these Terms and our <a href="privacy.html">Privacy Policy</a>, <a href="cookies.html">Cookie Policy</a>, and <a href="refund.html">Refund Policy</a>, which are incorporated herein by reference.</p>
+        <div class="highlight-box danger-box">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p>If you do not agree with any part of these Terms, you must immediately stop using the Platform. Continued use constitutes acceptance of these Terms.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="legal-section" id="s2">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-user-shield"></i></div>
+        <div>
+          <div class="section-num">Section 02</div>
+          <div class="section-heading">Eligibility &amp; Age Requirements</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>Vura AI is designed for students of all ages preparing for national and international examinations. However, the following age requirements apply:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Age 18 and over:</strong> You may create and use an account independently without any parental or guardian consent.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Age 13 to 17:</strong> You may use the Platform only with the explicit consent and supervision of a parent or legal guardian. The parent or guardian must review and agree to these Terms on your behalf.</span></li>
+          <li><i class="fa-solid fa-circle-exclamation" style="color:#ff4d6d"></i><span><strong>Under 13:</strong> Children under the age of 13 are strictly prohibited from creating an account or using Vura AI. If we discover that a user is under 13, we will immediately delete their account and all associated data.</span></li>
+        </ul>
+        <div class="highlight-box warning-box">
+          <i class="fa-solid fa-shield-halved"></i>
+          <p>We are committed to protecting young users. Parents and guardians who believe their child has registered without consent should contact us immediately at <strong>support@vura-ai.com</strong> so we can remove the account.</p>
+        </div>
+        <p>By using the Platform, you represent and warrant that you meet these eligibility requirements and that all information you provide during registration is accurate, current, and complete.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="legal-section" id="s3">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-id-card"></i></div>
+        <div>
+          <div class="section-num">Section 03</div>
+          <div class="section-heading">Account Registration</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>To access most features of Vura AI, you must create a personal account. When registering, you agree to:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>Provide accurate, truthful, and complete registration information including your name, email address, and country of residence.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Maintain the security and confidentiality of your password at all times.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Notify us immediately at <a href="mailto:support@vura-ai.com">support@vura-ai.com</a> if you suspect any unauthorised access to your account.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Accept full responsibility for all activities that occur under your account.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Not share your account credentials or allow any other person to use your account.</span></li>
+        </ul>
+        <p>Each user may only maintain one (1) active account. Creating multiple accounts to circumvent restrictions, gain unfair VUX coin advantages, or exploit free trial periods is strictly prohibited and may result in permanent account termination.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="legal-section" id="s4">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div>
+          <div class="section-num">Section 04</div>
+          <div class="section-heading">Platform Services</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>Vura AI provides the following educational services to registered users:</p>
+        <ul>
+          <li><i class="fa-solid fa-robot" style="color:var(--blue)"></i><span><strong>AI Tutor:</strong> An artificial intelligence-powered tutoring assistant that provides subject explanations, answers to academic questions, and personalised study guidance across supported exam curricula.</span></li>
+          <li><i class="fa-solid fa-database" style="color:var(--purple)"></i><span><strong>Past Questions Library:</strong> A curated database of over 50,000 past examination questions with model answers and explanations for national and international exams including JAMB, WAEC, NECO, KCSE, Matric, NEET, JEE, Gaokao, SAT, A-Levels, and more.</span></li>
+          <li><i class="fa-solid fa-gamepad" style="color:#ff4d6d"></i><span><strong>Games Hub:</strong> Gamified educational games and quiz formats designed to make exam practice engaging and interactive.</span></li>
+          <li><i class="fa-solid fa-users" style="color:var(--green)"></i><span><strong>Vura Social:</strong> Study groups, discussion forums, and community features enabling collaborative learning among students globally.</span></li>
+          <li><i class="fa-solid fa-chart-line" style="color:#06b6d4"></i><span><strong>Smart Analytics:</strong> Personal performance dashboards tracking quiz scores, study streaks, weak areas, and progress toward exam readiness.</span></li>
+          <li><i class="fa-solid fa-coins" style="color:var(--gold)"></i><span><strong>VUX Rewards System:</strong> A virtual currency reward system that incentivises consistent study habits and platform engagement.</span></li>
+        </ul>
+        <p>We reserve the right to modify, suspend, or discontinue any feature or service at any time, with or without notice. We will make reasonable efforts to inform users of significant changes through email or in-platform notifications.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="legal-section" id="s5">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(255,204,51,.1);color:var(--gold)"><i class="fa-solid fa-coins"></i></div>
+        <div>
+          <div class="section-num">Section 05</div>
+          <div class="section-heading">VUX Virtual Currency</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p><strong>VUX</strong> is a virtual, non-monetary reward currency exclusive to the Vura AI platform. Users earn VUX by completing various in-platform activities and may spend VUX on premium platform features and cosmetic enhancements.</p>
+        <div class="highlight-box danger-box">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p><strong>VUX coins have no real-world monetary value.</strong> They cannot be redeemed for cash, transferred to third parties, sold, traded outside the platform, or exchanged for any real-world currency or goods. VUX is a platform reward system only.</p>
+        </div>
+        <p>You agree and acknowledge the following regarding VUX:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>VUX balances are tied to your account and are non-transferable between accounts.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>VUX has no expiry date while your account remains active, but will be forfeited upon account termination or deletion.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>We reserve the right to adjust VUX earn rates, spending values, and redemption rules at any time.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Any attempt to fraudulently earn, transfer, or exploit VUX through bots, scripts, or multi-account abuse will result in account termination and VUX forfeiture.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>VUX earned through referrals is subject to the referral programme terms, which we may modify at any time.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="legal-section" id="s6">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fa-solid fa-credit-card"></i></div>
+        <div>
+          <div class="section-num">Section 06</div>
+          <div class="section-heading">Subscriptions &amp; Payments</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>Vura AI offers the following subscription tiers in addition to the Free plan:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Pro Plan:</strong> ₦3,500 per month</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Elite Plan:</strong> ₦7,000 per month</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Ultra Plan:</strong> ₦15,000 per month</span></li>
+        </ul>
+        <p>All paid subscriptions are processed through our authorised payment processors: <strong>Paystack</strong> (for Nigerian users and African payments) and <strong>Stripe</strong> (for international users). By subscribing, you authorise us to charge your selected payment method on a recurring monthly basis.</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>Subscriptions renew automatically on the same date each month unless cancelled before the renewal date.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>You may cancel your subscription at any time through your account settings. Cancellation takes effect at the end of the current billing cycle.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Prices are displayed in Nigerian Naira (₦) for Nigerian users. International users may see equivalent pricing in their local currency at current exchange rates.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>We reserve the right to modify pricing with 30 days' advance notice to subscribers.</span></li>
+        </ul>
+        <p>Please refer to our <a href="refund.html">Refund Policy</a> for information on refund eligibility and the process for requesting a refund.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="legal-section" id="s7">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-robot"></i></div>
+        <div>
+          <div class="section-num">Section 07</div>
+          <div class="section-heading">AI-Generated Content Disclaimer</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="highlight-box warning-box">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <p>The AI Tutor on Vura AI generates responses using artificial intelligence. While we strive for accuracy, AI-generated content may occasionally contain errors, outdated information, or imprecise explanations.</p>
+        </div>
+        <p>You acknowledge and agree that:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>AI-generated explanations, answers, and guidance are provided for educational study purposes only and should be used as a supplementary learning tool, not as the sole authoritative source of academic information.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>We do not warrant that AI Tutor responses will always be accurate, complete, current, or suitable for your specific exam requirements.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>You should verify important concepts against official textbooks, exam syllabi, and authorised educational resources.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>We are not liable for any academic decisions made solely on the basis of AI-generated content on our platform.</span></li>
+        </ul>
+        <p>We continuously work to improve the accuracy and reliability of our AI systems and welcome feedback on incorrect AI responses at <a href="mailto:support@vura-ai.com">support@vura-ai.com</a>.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 8 -->
+    <div class="legal-section" id="s8">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <div class="section-num">Section 08</div>
+          <div class="section-heading">Exam Preparation Disclaimer</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="highlight-box warning-box">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p>Vura AI is an exam preparation and study support platform. We do not guarantee any specific examination scores, grades, pass rates, or admission outcomes.</p>
+        </div>
+        <p>While Vura AI is designed to significantly improve your exam readiness through structured practice, AI tutoring, and personalised analytics, actual exam results depend on many factors outside our control, including:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-dot" style="color:var(--muted)"></i><span>The individual student's effort, consistency, and commitment to studying</span></li>
+          <li><i class="fa-solid fa-circle-dot" style="color:var(--muted)"></i><span>The official examination body's question selection and marking decisions</span></li>
+          <li><i class="fa-solid fa-circle-dot" style="color:var(--muted)"></i><span>Health, environment, and personal circumstances on exam day</span></li>
+          <li><i class="fa-solid fa-circle-dot" style="color:var(--muted)"></i><span>Curriculum changes by examination bodies after content was prepared</span></li>
+        </ul>
+        <p>Any testimonials, success stories, or score statistics displayed on the platform represent individual user experiences and are not guaranteed outcomes. We are not affiliated with, endorsed by, or officially connected to JAMB, WAEC, NECO, KNEC, CBSE, College Board, Cambridge Assessment, or any other examination body.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 9 -->
+    <div class="legal-section" id="s9">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(255,77,109,.1);color:#ff4d6d"><i class="fa-solid fa-shield-halved"></i></div>
+        <div>
+          <div class="section-num">Section 09</div>
+          <div class="section-heading">Acceptable Use Policy</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>When using Vura AI, you agree to use the Platform in a lawful, respectful, and appropriate manner. You must NOT:</p>
+        <ul>
+          <li><i class="fa-solid fa-xmark" style="color:#ff4d6d"></i><span>Upload, post, or share any content that is offensive, defamatory, obscene, abusive, or violates the rights of others.</span></li>
+          <li><i class="fa-solid fa-xmark" style="color:#ff4d6d"></i><span>Engage in cheating, academic fraud, or use the Platform to assist in any form of exam malpractice.</span></li>
+          <li><i class="fa-solid fa-xmark" style="color:#ff4d6d"></i><span>Use bots, scrapers, scripts, or automated tools to extract data, generate VUX coins, or interfere with the Platform.</span></li>
+          <li><i class="fa-solid fa-xmark" style="color:#ff4d6d"></i><span>Attempt to hack, reverse-engineer, or compromise the security of Vura AI's systems, databases, or infrastructure.</span></li>
+          <li><i class="fa-solid fa-xmark" style="color:#ff4d6d"></i><span>Create fake accounts, impersonate other users, or misrepresent your identity.</span></li>
+          <li><i class="fa-solid fa-xmark" style="color:#ff4d6d"></i><span>Use the Platform for any commercial purpose, advertising, or solicitation without our written consent.</span></li>
+          <li><i class="fa-solid fa-xmark" style="color:#ff4d6d"></i><span>Harass, bully, threaten, or intimidate other users within study groups or social features.</span></li>
+        </ul>
+        <p>Violations of this policy may result in immediate suspension or permanent termination of your account, forfeiture of VUX coins, and, where applicable, referral to relevant authorities.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 10 -->
+    <div class="legal-section" id="s10">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-copyright"></i></div>
+        <div>
+          <div class="section-num">Section 10</div>
+          <div class="section-heading">Intellectual Property</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>All content on the Vura AI Platform — including but not limited to the software code, AI models, question databases, explanations, study guides, graphics, logos, user interface design, brand assets, and the "Vura AI" and "VUX" names — is the exclusive property of <strong>Michael Chibuzor Technology</strong> and is protected by Nigerian, international, and applicable intellectual property laws.</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>You are granted a limited, non-exclusive, non-transferable, revocable licence to use the Platform for your personal, non-commercial educational purposes only.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>You may not copy, redistribute, sell, reproduce, publish, or create derivative works from any Vura AI content without prior written consent.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Past examination questions may be sourced from public domain or licensed materials and remain subject to the original examination body's ownership where applicable.</span></li>
+        </ul>
+        <p>User-generated content (such as notes, posts in study groups, or feedback) remains yours, but by posting it on Vura AI you grant us a royalty-free, worldwide licence to display, store, and use that content to operate and improve our services.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 11 -->
+    <div class="legal-section" id="s11">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(255,77,109,.1);color:#ff4d6d"><i class="fa-solid fa-ban"></i></div>
+        <div>
+          <div class="section-num">Section 11</div>
+          <div class="section-heading">Termination</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>Either you or we may terminate your access to Vura AI at any time.</p>
+        <p><strong>You may terminate</strong> your account by requesting deletion through your account settings or by emailing <a href="mailto:support@vura-ai.com">support@vura-ai.com</a>. Upon deletion, your personal data will be handled in accordance with our <a href="privacy.html">Privacy Policy</a>.</p>
+        <p><strong>We may suspend or terminate</strong> your account immediately and without prior notice if we reasonably determine that you have:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>Violated any provision of these Terms or our Acceptable Use Policy.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Engaged in fraudulent, illegal, or abusive activity on the Platform.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Attempted to compromise the security or integrity of our systems.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Failed to pay any applicable subscription fees when due.</span></li>
+        </ul>
+        <p>Upon termination, your right to use the Platform immediately ceases. All VUX coins, progress data, and saved content will be forfeited. Subscription fees already paid are subject to our <a href="refund.html">Refund Policy</a>.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 12 -->
+    <div class="legal-section" id="s12">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div>
+          <div class="section-num">Section 12</div>
+          <div class="section-heading">Limitation of Liability</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>To the maximum extent permitted by applicable law, Michael Chibuzor Technology, its directors, employees, agents, and partners shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the Vura AI Platform, including but not limited to:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-dot" style="color:var(--muted)"></i><span>Loss of data or VUX coin balance due to technical failure, account termination, or force majeure events.</span></li>
+          <li><i class="fa-solid fa-circle-dot" style="color:var(--muted)"></i><span>Inaccuracies in AI-generated educational content.</span></li>
+          <li><i class="fa-solid fa-circle-dot" style="color:var(--muted)"></i><span>Disappointing exam results despite using the Platform.</span></li>
+          <li><i class="fa-solid fa-circle-dot" style="color:var(--muted)"></i><span>Service downtime, outages, or temporary unavailability of features.</span></li>
+          <li><i class="fa-solid fa-circle-dot" style="color:var(--muted)"></i><span>Unauthorised access to your account resulting from your failure to maintain password security.</span></li>
+        </ul>
+        <p>Our total aggregate liability to you for all claims shall not exceed the total amount you paid to us in subscription fees in the three (3) months preceding the claim.</p>
+        <div class="highlight-box">
+          <i class="fa-solid fa-info-circle"></i>
+          <p>Some jurisdictions do not allow the exclusion of certain warranties or limitation of liability. In such cases, our liability is limited to the fullest extent permitted by applicable local law.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 13 -->
+    <div class="legal-section" id="s13">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-landmark"></i></div>
+        <div>
+          <div class="section-num">Section 13</div>
+          <div class="section-heading">Governing Law</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>These Terms and Conditions are governed by and construed in accordance with the laws of the <strong>Federal Republic of Nigeria</strong>, without regard to its conflict of law principles. Any dispute arising from these Terms shall be subject to the exclusive jurisdiction of the courts of Nigeria.</p>
+        <p>For users outside Nigeria, we comply with applicable local consumer protection and data protection laws, including the <strong>European Union's General Data Protection Regulation (GDPR)</strong> where applicable. If you are an EU resident, you have specific rights under the GDPR as outlined in our <a href="privacy.html">Privacy Policy</a>.</p>
+        <p>We encourage users to resolve any disputes informally by contacting us at <a href="mailto:support@vura-ai.com">support@vura-ai.com</a> before initiating formal legal proceedings.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 14 -->
+    <div class="legal-section" id="s14">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+        <div>
+          <div class="section-num">Section 14</div>
+          <div class="section-heading">Changes to Terms</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>We reserve the right to update or modify these Terms at any time. When we make material changes, we will:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>Update the "Last Updated" date at the top of this page.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Send a notification to your registered email address at least 14 days before the changes take effect.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Display a prominent in-platform notice directing you to review the updated Terms.</span></li>
+        </ul>
+        <p>Your continued use of Vura AI after the effective date of any changes constitutes your acceptance of the revised Terms. If you do not agree to the updated Terms, you must stop using the Platform before the effective date.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 15 -->
+    <div class="legal-section" id="s15">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <div class="section-num">Section 15</div>
+          <div class="section-heading">Contact Us</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>If you have any questions, concerns, or requests regarding these Terms and Conditions, please contact our legal team through any of the following channels:</p>
+        <ul>
+          <li><i class="fa-solid fa-envelope" style="color:var(--blue)"></i><span><strong>Email:</strong> <a href="mailto:support@vura-ai.com">support@vura-ai.com</a></span></li>
+          <li><i class="fa-solid fa-globe" style="color:var(--blue)"></i><span><strong>Platform:</strong> <a href="index.html">www.vura-ai.com</a></span></li>
+          <li><i class="fa-solid fa-building" style="color:var(--blue)"></i><span><strong>Company:</strong> Michael Chibuzor Technology, Nigeria</span></li>
+        </ul>
+        <p>We aim to respond to all legal enquiries within 5 business days.</p>
+      </div>
+    </div>
+
+    <!-- CONTACT CARD -->
+    <div class="contact-card">
+      <h3>Questions About These Terms?</h3>
+      <p>Our support team is ready to help clarify anything in this document.</p>
+      <a href="mailto:support@vura-ai.com" class="contact-email">
+        <i class="fa-solid fa-envelope"></i> support@vura-ai.com
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">VURA AI</div>
+    <div class="footer-legal-links">
+      <a href="terms.html" class="current"><i class="fa-solid fa-file-contract" style="margin-right:5px"></i>Terms &amp; Conditions</a>
+      <a href="privacy.html"><i class="fa-solid fa-lock" style="margin-right:5px"></i>Privacy Policy</a>
+      <a href="cookies.html"><i class="fa-solid fa-cookie" style="margin-right:5px"></i>Cookie Policy</a>
+      <a href="refund.html"><i class="fa-solid fa-rotate-left" style="margin-right:5px"></i>Refund Policy</a>
+      <a href="index.html"><i class="fa-solid fa-house" style="margin-right:5px"></i>Home</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Vura AI — A Product of Michael Chibuzor Technology. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>

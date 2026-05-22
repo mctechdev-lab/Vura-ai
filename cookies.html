@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Cookie Policy — Vura AI</title>
+<meta name="description" content="Vura AI Cookie Policy — learn how we use cookies and tracking technologies on our global AI study platform."/>
+<link rel="icon" type="image/png" href="vura-logo.png"/>
+<link rel="apple-touch-icon" href="vura-logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:#03030b;color:#e8e8f0;line-height:1.7;font-size:16px}
+a{text-decoration:none;color:inherit}
+:root{--blue:#00d2ff;--purple:#9d50bb;--gold:#ffcc33;--green:#10b981;--bg:#03030b;--card-bg:rgba(13,13,40,.92);--card-border:rgba(255,255,255,.08);--muted:#8888aa;--grad:linear-gradient(135deg,#00d2ff,#9d50bb);--radius:14px}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#03030b}::-webkit-scrollbar-thumb{background:var(--purple);border-radius:3px}
+.nebula{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.nebula::before{content:'';position:absolute;width:600px;height:600px;top:-150px;left:-150px;background:radial-gradient(circle,rgba(255,204,51,.05) 0%,transparent 70%);border-radius:50%}
+.nebula::after{content:'';position:absolute;width:500px;height:500px;bottom:-100px;right:-100px;background:radial-gradient(circle,rgba(0,210,255,.07) 0%,transparent 70%);border-radius:50%}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;background:rgba(3,3,11,.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-logo{font-family:'Orbitron',sans-serif;font-size:1.3rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:2px}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:.9rem;font-weight:600;color:var(--muted);transition:.3s}
+.nav-links a:hover{color:#fff}
+.nav-links a.active{color:var(--blue)}
+.btn-nav{padding:9px 22px;border-radius:50px;background:var(--grad);color:#fff;font-family:'Nunito',sans-serif;font-size:.88rem;font-weight:700;border:none;cursor:pointer;transition:.3s}
+.btn-nav:hover{opacity:.85;transform:translateY(-1px)}
+.page-hero{padding:140px 0 70px;text-align:center;position:relative;z-index:1;border-bottom:1px solid rgba(255,255,255,.05);background:linear-gradient(180deg,rgba(255,204,51,.04) 0%,transparent 100%)}
+.page-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 20px;border-radius:50px;background:rgba(255,204,51,.08);border:1px solid rgba(255,204,51,.2);color:var(--gold);font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}
+.page-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:#fff;margin-bottom:12px;line-height:1.2}
+.page-title span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.page-meta{font-size:.9rem;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:16px}
+.page-meta span{display:flex;align-items:center;gap:6px}
+.page-meta i{color:var(--blue)}
+.container{max-width:900px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.content{padding:60px 0 80px}
+.toc{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:28px 32px;margin-bottom:48px}
+.toc-title{font-family:'Orbitron',sans-serif;font-size:.85rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.toc-list a{color:var(--muted);font-size:.92rem;font-weight:600;transition:.3s;display:flex;align-items:center;gap:8px}
+.toc-list a:hover{color:var(--blue);transform:translateX(4px)}
+.toc-list a i{color:var(--blue);font-size:.7rem;opacity:.6}
+.legal-section{margin-bottom:48px;scroll-margin-top:100px}
+.section-header{display:flex;align-items:flex-start;gap:16px;padding:20px 24px;background:linear-gradient(135deg,rgba(0,210,255,.06),rgba(157,80,187,.04));border:1px solid rgba(0,210,255,.12);border-radius:var(--radius) var(--radius) 0 0}
+.section-icon{width:44px;height:44px;border-radius:10px;flex-shrink:0;background:rgba(0,210,255,.1);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:1rem}
+.section-num{font-size:.72rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+.section-heading{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:700;color:#fff;line-height:1.3}
+.section-body{padding:28px;background:var(--card-bg);border:1px solid var(--card-border);border-top:none;border-radius:0 0 var(--radius) var(--radius)}
+.section-body p{color:var(--muted);font-size:.95rem;margin-bottom:14px;line-height:1.75}
+.section-body p:last-child{margin-bottom:0}
+.section-body ul{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px;margin:14px 0}
+.section-body li{display:flex;align-items:flex-start;gap:10px;color:var(--muted);font-size:.93rem;line-height:1.6}
+.section-body li i{color:var(--blue);font-size:.75rem;margin-top:5px;flex-shrink:0}
+.section-body strong{color:#e8e8f0;font-weight:700}
+.section-body a{color:var(--blue);transition:.3s}
+.section-body a:hover{text-decoration:underline}
+.highlight-box{background:rgba(0,210,255,.06);border:1px solid rgba(0,210,255,.15);border-radius:10px;padding:18px 20px;margin:16px 0;display:flex;gap:12px;align-items:flex-start}
+.highlight-box i{color:var(--blue);flex-shrink:0;margin-top:2px}
+.highlight-box p{color:#c8c8e8;font-size:.9rem;margin:0!important;line-height:1.6}
+.warning-box{background:rgba(255,204,51,.06);border-color:rgba(255,204,51,.15)}
+.warning-box i{color:var(--gold)}
+.success-box{background:rgba(16,185,129,.06);border-color:rgba(16,185,129,.15)}
+.success-box i{color:var(--green)}
+
+/* Cookie type cards */
+.cookie-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+.cookie-card{border-radius:12px;padding:20px;border:1px solid;position:relative;overflow:hidden}
+.cookie-card::before{content:'';position:absolute;top:0;right:0;width:80px;height:80px;border-radius:50%;opacity:.06;transform:translate(20px,-20px)}
+.cookie-card.essential{background:rgba(16,185,129,.06);border-color:rgba(16,185,129,.2)}
+.cookie-card.essential::before{background:var(--green)}
+.cookie-card.functional{background:rgba(0,210,255,.06);border-color:rgba(0,210,255,.2)}
+.cookie-card.functional::before{background:var(--blue)}
+.cookie-card.analytics{background:rgba(157,80,187,.06);border-color:rgba(157,80,187,.2)}
+.cookie-card.analytics::before{background:var(--purple)}
+.cookie-card.marketing{background:rgba(255,77,109,.06);border-color:rgba(255,77,109,.2)}
+.cookie-card.marketing::before{background:#ff4d6d}
+.cookie-card-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.cookie-card-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+.cookie-card.essential .cookie-card-icon{background:rgba(16,185,129,.15);color:var(--green)}
+.cookie-card.functional .cookie-card-icon{background:rgba(0,210,255,.15);color:var(--blue)}
+.cookie-card.analytics .cookie-card-icon{background:rgba(157,80,187,.15);color:var(--purple)}
+.cookie-card.marketing .cookie-card-icon{background:rgba(255,77,109,.15);color:#ff4d6d}
+.cookie-card-title{font-family:'Orbitron',sans-serif;font-size:.82rem;font-weight:700;color:#fff}
+.cookie-required{font-size:.68rem;font-weight:700;padding:2px 8px;border-radius:20px;margin-left:auto;flex-shrink:0}
+.cookie-card.essential .cookie-required{background:rgba(16,185,129,.15);color:var(--green)}
+.cookie-card.functional .cookie-required,.cookie-card.analytics .cookie-required,.cookie-card.marketing .cookie-required{background:rgba(255,255,255,.08);color:var(--muted)}
+.cookie-card p{font-size:.85rem;color:var(--muted);line-height:1.55;position:relative;z-index:1}
+
+/* Cookie table */
+.cookie-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.85rem}
+.cookie-table th{background:rgba(0,210,255,.08);color:var(--blue);font-weight:700;padding:11px 14px;text-align:left;border-bottom:1px solid rgba(0,210,255,.15)}
+.cookie-table td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.05);color:var(--muted);vertical-align:top}
+.cookie-table tr:last-child td{border-bottom:none}
+.cookie-table td:first-child{color:#e8e8f0;font-weight:600;font-family:'Orbitron',sans-serif;font-size:.75rem}
+.duration-badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.7rem;font-weight:700;background:rgba(255,255,255,.06);color:var(--muted);border:1px solid rgba(255,255,255,.08)}
+
+/* Consent banner preview */
+.consent-preview{
+  background:var(--card-bg);border:1px solid var(--card-border);
+  border-radius:var(--radius);padding:24px;margin:20px 0;
+  position:relative;overflow:hidden;
+}
+.consent-preview::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.consent-preview-label{font-size:.7rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
+.consent-preview-title{font-family:'Orbitron',sans-serif;font-size:.9rem;color:#fff;margin-bottom:8px}
+.consent-preview-text{font-size:.82rem;color:var(--muted);margin-bottom:16px;line-height:1.6}
+.consent-btns{display:flex;gap:10px;flex-wrap:wrap}
+.consent-btn{padding:8px 20px;border-radius:50px;font-family:'Nunito',sans-serif;font-size:.82rem;font-weight:700;border:none;cursor:pointer}
+.consent-btn-accept{background:var(--grad);color:#fff}
+.consent-btn-decline{background:rgba(255,255,255,.06);color:var(--muted);border:1px solid rgba(255,255,255,.1)}
+.consent-btn-settings{background:transparent;color:var(--blue);border:1px solid rgba(0,210,255,.2)}
+
+.contact-card{background:linear-gradient(135deg,rgba(0,210,255,.08),rgba(157,80,187,.08));border:1px solid rgba(0,210,255,.2);border-radius:var(--radius);padding:32px;text-align:center;margin-top:48px}
+.contact-card h3{font-family:'Orbitron',sans-serif;font-size:1.1rem;color:#fff;margin-bottom:10px}
+.contact-card p{color:var(--muted);font-size:.95rem;margin-bottom:20px}
+.contact-email{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:50px;background:var(--grad);color:#fff;font-weight:700;font-size:.95rem}
+footer{background:rgba(5,5,20,.8);border-top:1px solid rgba(255,255,255,.05);padding:40px 0;text-align:center;position:relative;z-index:1}
+.footer-logo{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+.footer-legal-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:16px}
+.footer-legal-links a{font-size:.85rem;color:var(--muted);transition:.3s;padding:4px 0;border-bottom:1px solid transparent}
+.footer-legal-links a:hover{color:var(--blue);border-color:var(--blue)}
+.footer-legal-links a.current{color:var(--blue)}
+.footer-copy{font-size:.82rem;color:rgba(136,136,170,.5)}
+@media(max-width:640px){.nav-links{display:none}.section-body{padding:20px}.toc{padding:20px}.page-hero{padding:120px 0 50px}.cookie-grid{grid-template-columns:1fr}.cookie-table{font-size:.76rem}.consent-btns{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="nebula"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">VURA AI</a>
+    <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house" style="margin-right:5px"></i>Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="cookies.html" class="active">Cookies</a>
+      <a href="refund.html">Refunds</a>
+      <button class="btn-nav" onclick="location.href='index.html#pricing'">Get Started</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="page-badge"><i class="fa-solid fa-cookie-bite"></i> Tracking &amp; Cookies</div>
+    <h1 class="page-title">Cookie <span>Policy</span></h1>
+    <p style="color:var(--muted);font-size:1rem;max-width:560px;margin:12px auto 0">We use cookies to make Vura AI work properly and to improve your experience. This page explains exactly which cookies we use and why — with no hidden surprises.</p>
+    <div class="page-meta">
+      <span><i class="fa-solid fa-calendar"></i> Effective: 1 January 2025</span>
+      <span><i class="fa-solid fa-rotate"></i> Last Updated: 1 June 2025</span>
+      <span><i class="fa-solid fa-shield-halved"></i> GDPR &amp; ePrivacy Compliant</span>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="container">
+
+    <div class="toc">
+      <div class="toc-title"><i class="fa-solid fa-list"></i> Table of Contents</div>
+      <ul class="toc-list">
+        <li><a href="#c1"><i class="fa-solid fa-chevron-right"></i> 1. What Are Cookies?</a></li>
+        <li><a href="#c2"><i class="fa-solid fa-chevron-right"></i> 2. Types of Cookies We Use</a></li>
+        <li><a href="#c3"><i class="fa-solid fa-chevron-right"></i> 3. Specific Cookies on Vura AI</a></li>
+        <li><a href="#c4"><i class="fa-solid fa-chevron-right"></i> 4. Third-Party Cookies</a></li>
+        <li><a href="#c5"><i class="fa-solid fa-chevron-right"></i> 5. Your Cookie Consent</a></li>
+        <li><a href="#c6"><i class="fa-solid fa-chevron-right"></i> 6. How to Manage Cookies</a></li>
+        <li><a href="#c7"><i class="fa-solid fa-chevron-right"></i> 7. Cookies &amp; Children</a></li>
+        <li><a href="#c8"><i class="fa-solid fa-chevron-right"></i> 8. Changes to This Policy</a></li>
+        <li><a href="#c9"><i class="fa-solid fa-chevron-right"></i> 9. Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="legal-section" id="c1">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-circle-question"></i></div>
+        <div><div class="section-num">Section 01</div><div class="section-heading">What Are Cookies?</div></div>
+      </div>
+      <div class="section-body">
+        <p>Cookies are small text files that are placed on your device (computer, smartphone, or tablet) when you visit a website or use a web application. They are widely used to make websites work efficiently, remember your preferences, and provide site owners with analytics information.</p>
+        <p>In addition to traditional cookies, we may also use similar technologies including:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Local Storage &amp; Session Storage:</strong> Browser-based storage used to save your session state, study progress, and settings without expiry (local storage) or only for the duration of your browser session (session storage).</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Pixels &amp; Web Beacons:</strong> Tiny transparent images embedded in pages or emails that allow us to understand whether content has been viewed or emails have been opened.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Firebase SDK Tokens:</strong> Authentication and session tokens generated by Google Firebase to securely identify your logged-in session across the Platform.</span></li>
+        </ul>
+        <div class="highlight-box">
+          <i class="fa-solid fa-info-circle"></i>
+          <p>Cookies do not contain viruses and cannot access other information on your device. Most cookies are completely safe and essential for the Platform to function correctly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="legal-section" id="c2">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div><div class="section-num">Section 02</div><div class="section-heading">Types of Cookies We Use</div></div>
+      </div>
+      <div class="section-body">
+        <p>We categorise cookies into four types based on their purpose. Essential cookies are always active; all other types require your consent:</p>
+        <div class="cookie-grid">
+          <div class="cookie-card essential">
+            <div class="cookie-card-header">
+              <div class="cookie-card-icon"><i class="fa-solid fa-lock"></i></div>
+              <div class="cookie-card-title">Essential</div>
+              <span class="cookie-required">Always On</span>
+            </div>
+            <p>These cookies are strictly necessary for the Platform to function. They enable core features like secure login, session management, account authentication, and navigation. The Platform cannot operate without them. No consent is required for these cookies.</p>
+          </div>
+          <div class="cookie-card functional">
+            <div class="cookie-card-header">
+              <div class="cookie-card-icon"><i class="fa-solid fa-sliders"></i></div>
+              <div class="cookie-card-title">Functional</div>
+              <span class="cookie-required">Optional</span>
+            </div>
+            <p>These cookies remember your preferences to enhance your experience — such as your selected exam, preferred language, theme settings, and study notifications. Without these, you may need to re-enter preferences each visit.</p>
+          </div>
+          <div class="cookie-card analytics">
+            <div class="cookie-card-header">
+              <div class="cookie-card-icon"><i class="fa-solid fa-chart-bar"></i></div>
+              <div class="cookie-card-title">Analytics</div>
+              <span class="cookie-required">Optional</span>
+            </div>
+            <p>These cookies help us understand how students use Vura AI — which features are popular, where users drop off, and how we can improve the Platform. Data is collected anonymously and in aggregate. We use Google Analytics for this purpose.</p>
+          </div>
+          <div class="cookie-card marketing">
+            <div class="cookie-card-header">
+              <div class="cookie-card-icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <div class="cookie-card-title">Marketing</div>
+              <span class="cookie-required">Optional</span>
+            </div>
+            <p>These cookies may be used to show you relevant Vura AI promotions across other websites and platforms. We do not use aggressive advertising tracking, and we never sell your browsing data to advertisers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="legal-section" id="c3">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-table-list"></i></div>
+        <div><div class="section-num">Section 03</div><div class="section-heading">Specific Cookies on Vura AI</div></div>
+      </div>
+      <div class="section-body">
+        <p>Below is a detailed list of the specific cookies and storage tokens currently used on the Vura AI Platform:</p>
+        <table class="cookie-table">
+          <thead>
+            <tr>
+              <th>Cookie Name</th>
+              <th>Category</th>
+              <th>Purpose</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>vura_session</td>
+              <td>Essential</td>
+              <td>Maintains your authenticated login session securely across page visits</td>
+              <td><span class="duration-badge">Session</span></td>
+            </tr>
+            <tr>
+              <td>vura_auth_token</td>
+              <td>Essential</td>
+              <td>Firebase authentication token used to identify your account securely</td>
+              <td><span class="duration-badge">1 hour</span></td>
+            </tr>
+            <tr>
+              <td>vura_refresh_token</td>
+              <td>Essential</td>
+              <td>Firebase refresh token used to maintain your login without repeated sign-ins</td>
+              <td><span class="duration-badge">30 days</span></td>
+            </tr>
+            <tr>
+              <td>vura_csrf_token</td>
+              <td>Essential</td>
+              <td>Cross-site request forgery prevention token to protect your account security</td>
+              <td><span class="duration-badge">Session</span></td>
+            </tr>
+            <tr>
+              <td>vura_cookie_consent</td>
+              <td>Essential</td>
+              <td>Records your cookie preferences so we don't prompt you on every visit</td>
+              <td><span class="duration-badge">12 months</span></td>
+            </tr>
+            <tr>
+              <td>vura_exam_pref</td>
+              <td>Functional</td>
+              <td>Remembers your selected exam type (e.g., JAMB, WAEC) and subject preferences</td>
+              <td><span class="duration-badge">90 days</span></td>
+            </tr>
+            <tr>
+              <td>vura_ui_settings</td>
+              <td>Functional</td>
+              <td>Stores your interface preferences such as notification settings and display options</td>
+              <td><span class="duration-badge">12 months</span></td>
+            </tr>
+            <tr>
+              <td>vura_study_progress</td>
+              <td>Functional</td>
+              <td>Saves in-progress quiz and study session state so you can resume where you left off</td>
+              <td><span class="duration-badge">7 days</span></td>
+            </tr>
+            <tr>
+              <td>_ga</td>
+              <td>Analytics</td>
+              <td>Google Analytics — distinguishes unique users for anonymous traffic analysis</td>
+              <td><span class="duration-badge">2 years</span></td>
+            </tr>
+            <tr>
+              <td>_ga_[ID]</td>
+              <td>Analytics</td>
+              <td>Google Analytics 4 — maintains session state for anonymous analytics tracking</td>
+              <td><span class="duration-badge">2 years</span></td>
+            </tr>
+            <tr>
+              <td>_gid</td>
+              <td>Analytics</td>
+              <td>Google Analytics — distinguishes users for session analytics (resets each day)</td>
+              <td><span class="duration-badge">24 hours</span></td>
+            </tr>
+            <tr>
+              <td>vura_promo_seen</td>
+              <td>Marketing</td>
+              <td>Records which promotional banners or upgrade offers you have already been shown</td>
+              <td><span class="duration-badge">30 days</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>This list is updated whenever we add new cookies. Check back periodically to see what has changed.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="legal-section" id="c4">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-plug"></i></div>
+        <div><div class="section-num">Section 04</div><div class="section-heading">Third-Party Cookies</div></div>
+      </div>
+      <div class="section-body">
+        <p>Some cookies on Vura AI are set by trusted third-party services we use to operate the Platform. We do not control these cookies directly — please review each provider's cookie policy for full details:</p>
+        <ul>
+          <li><i class="fa-brands fa-google" style="color:var(--blue)"></i><span><strong>Google Firebase:</strong> Sets authentication and session tokens essential for secure login. Firebase's use of data is governed by <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</span></li>
+          <li><i class="fa-solid fa-chart-line" style="color:var(--blue)"></i><span><strong>Google Analytics (GA4):</strong> Sets analytics cookies (_ga, _gid) to provide anonymous, aggregate usage reports. All data is anonymised — no personal data is passed to Google Analytics. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</span></li>
+          <li><i class="fa-solid fa-credit-card" style="color:var(--blue)"></i><span><strong>Paystack:</strong> May set session cookies on their secure payment pages during checkout. Paystack does not set cookies on our main pages. See <a href="https://paystack.com/ng/privacy-policy" target="_blank" rel="noopener">Paystack Privacy Policy</a>.</span></li>
+          <li><i class="fa-solid fa-credit-card" style="color:var(--blue)"></i><span><strong>Stripe:</strong> Sets fraud-prevention and session cookies on their secure payment frames. See <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe Privacy Policy</a>.</span></li>
+          <li><i class="fa-solid fa-font" style="color:var(--blue)"></i><span><strong>Google Fonts &amp; Font Awesome CDN:</strong> These services load font and icon assets and may log your IP address and browser user agent. No tracking cookies are set by these services.</span></li>
+        </ul>
+        <div class="highlight-box warning-box">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p>We regularly audit our third-party integrations to ensure they meet our privacy standards. We will update this list whenever we add or remove third-party services.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="legal-section" id="c5">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fa-solid fa-check-to-slot"></i></div>
+        <div><div class="section-num">Section 05</div><div class="section-heading">Your Cookie Consent</div></div>
+      </div>
+      <div class="section-body">
+        <p>In compliance with the EU ePrivacy Directive, GDPR, and applicable local cookie regulations, we request your consent before placing any non-essential cookies on your device. When you first visit Vura AI, you will see a cookie consent banner similar to the preview below:</p>
+
+        <div class="consent-preview">
+          <div class="consent-preview-label"><i class="fa-solid fa-cookie-bite" style="margin-right:6px"></i>Cookie Consent Banner — Preview</div>
+          <div class="consent-preview-title">We use cookies to improve your study experience</div>
+          <div class="consent-preview-text">Vura AI uses essential cookies to operate, and optional cookies for analytics and personalisation. You can accept all cookies, decline optional cookies, or customise your preferences at any time.</div>
+          <div class="consent-btns">
+            <button class="consent-btn consent-btn-accept"><i class="fa-solid fa-check" style="margin-right:6px"></i>Accept All</button>
+            <button class="consent-btn consent-btn-decline">Essential Only</button>
+            <button class="consent-btn consent-btn-settings"><i class="fa-solid fa-sliders" style="margin-right:6px"></i>Cookie Settings</button>
+          </div>
+        </div>
+
+        <p>Your consent choices are:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check" style="color:var(--green)"></i><span><strong>Accept All:</strong> You consent to essential, functional, analytics, and marketing cookies.</span></li>
+          <li><i class="fa-solid fa-circle-check" style="color:var(--blue)"></i><span><strong>Essential Only:</strong> Only strictly necessary cookies are placed. Analytics and marketing cookies are blocked.</span></li>
+          <li><i class="fa-solid fa-circle-check" style="color:var(--purple)"></i><span><strong>Cookie Settings:</strong> Opens a detailed preference panel where you can enable or disable each cookie category individually.</span></li>
+        </ul>
+        <p>Your consent is stored for 12 months. You can change your preferences at any time by clicking the cookie settings icon in the Platform footer.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="legal-section" id="c6">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-sliders"></i></div>
+        <div><div class="section-num">Section 06</div><div class="section-heading">How to Manage &amp; Delete Cookies</div></div>
+      </div>
+      <div class="section-body">
+        <p>You have full control over cookies on your device. Beyond our in-platform consent manager, you can also control cookies directly through your browser settings:</p>
+        <ul>
+          <li><i class="fa-brands fa-chrome" style="color:var(--blue)"></i><span><strong>Google Chrome:</strong> Settings &rarr; Privacy and Security &rarr; Cookies and other site data</span></li>
+          <li><i class="fa-brands fa-firefox" style="color:var(--blue)"></i><span><strong>Mozilla Firefox:</strong> Preferences &rarr; Privacy &amp; Security &rarr; Cookies and Site Data</span></li>
+          <li><i class="fa-brands fa-safari" style="color:var(--blue)"></i><span><strong>Apple Safari:</strong> Preferences &rarr; Privacy &rarr; Manage Website Data</span></li>
+          <li><i class="fa-brands fa-edge" style="color:var(--blue)"></i><span><strong>Microsoft Edge:</strong> Settings &rarr; Privacy, Search, and Services &rarr; Clear Browsing Data</span></li>
+          <li><i class="fa-solid fa-mobile-screen" style="color:var(--blue)"></i><span><strong>Mobile Browsers:</strong> Access your browser's settings menu and navigate to Privacy or Site Settings to manage cookies on mobile devices.</span></li>
+        </ul>
+        <div class="highlight-box warning-box">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p>Blocking essential cookies will prevent you from logging in and using core features of Vura AI. We recommend only blocking analytics and marketing cookies if you have privacy concerns, while keeping essential cookies enabled.</p>
+        </div>
+        <p>You may also opt out of Google Analytics tracking across all websites by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="legal-section" id="c7">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(255,204,51,.1);color:var(--gold)"><i class="fa-solid fa-child-reaching"></i></div>
+        <div><div class="section-num">Section 07</div><div class="section-heading">Cookies &amp; Children</div></div>
+      </div>
+      <div class="section-body">
+        <p>We treat users under the age of 18 with additional care when it comes to cookie usage:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>We do not use advertising or behavioural profiling cookies for users we identify as being under 18 years of age.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Analytics data collected from younger users is aggregated and anonymised — it cannot be used to identify any individual student.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>For users under 13 (who require parental consent to use the Platform), only essential session cookies are placed until parental consent has been verified.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Parents and guardians can request a full review of cookies placed during their child's sessions by contacting <a href="mailto:support@vura-ai.com">support@vura-ai.com</a>.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 8 -->
+    <div class="legal-section" id="c8">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+        <div><div class="section-num">Section 08</div><div class="section-heading">Changes to This Cookie Policy</div></div>
+      </div>
+      <div class="section-body">
+        <p>We may update this Cookie Policy from time to time to reflect changes in the cookies we use, new legal requirements, or improvements to our Platform. Whenever we make significant changes, we will:</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i><span>Update the "Last Updated" date at the top of this page.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Reset your cookie consent preferences so you can review and re-confirm your choices with the updated cookie list.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Notify registered users via email if changes significantly affect how we use your data.</span></li>
+        </ul>
+        <p>We encourage you to review this policy periodically. The most current version will always be available at this URL.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 9 -->
+    <div class="legal-section" id="c9">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fa-solid fa-envelope"></i></div>
+        <div><div class="section-num">Section 09</div><div class="section-heading">Contact Us</div></div>
+      </div>
+      <div class="section-body">
+        <p>If you have any questions about our use of cookies or want to know more about the specific data collected through cookies on Vura AI, please contact us:</p>
+        <ul>
+          <li><i class="fa-solid fa-envelope" style="color:var(--blue)"></i><span><strong>Email:</strong> <a href="mailto:support@vura-ai.com">support@vura-ai.com</a> — use subject "Cookie Policy Query"</span></li>
+          <li><i class="fa-solid fa-globe" style="color:var(--blue)"></i><span><strong>Website:</strong> <a href="index.html">www.vura-ai.com</a></span></li>
+          <li><i class="fa-solid fa-building" style="color:var(--blue)"></i><span><strong>Company:</strong> Michael Chibuzor Technology, Nigeria</span></li>
+        </ul>
+        <p>We aim to respond to all cookie-related queries within 5 business days.</p>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <h3>Cookie Questions?</h3>
+      <p>Not sure about a specific cookie or want to request data deletion? We're here to help.</p>
+      <a href="mailto:support@vura-ai.com" class="contact-email">
+        <i class="fa-solid fa-envelope"></i> support@vura-ai.com
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">VURA AI</div>
+    <div class="footer-legal-links">
+      <a href="terms.html"><i class="fa-solid fa-file-contract" style="margin-right:5px"></i>Terms &amp; Conditions</a>
+      <a href="privacy.html"><i class="fa-solid fa-lock" style="margin-right:5px"></i>Privacy Policy</a>
+      <a href="cookies.html" class="current"><i class="fa-solid fa-cookie" style="margin-right:5px"></i>Cookie Policy</a>
+      <a href="refund.html"><i class="fa-solid fa-rotate-left" style="margin-right:5px"></i>Refund Policy</a>
+      <a href="index.html"><i class="fa-solid fa-house" style="margin-right:5px"></i>Home</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Vura AI — A Product of Michael Chibuzor Technology. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
