@@ -1,332 +1,1253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6229569177818177" crossorigin="anonymous"></script>
-
-<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAHqElEQVR4nGVW+49cZRl+nvc7Z87cdro72711S7u9LFsuFSRbCxRQEKGoASWooRBCDI0/mJgYwR9M/Bs0/mA0Gk0UE+OFKCAYQBIbhUJRaLHd3ra47Xa7t3Znd2d2Z+ac73394cxst3Imk5P55v3e93nvD8EMALa+614kAAMMAhAwAKTAaDACBmufK2ACmNmailQaZgQzJEHCtGVIBGYADDQQIMDU3sefVCmhgLJlkgZDy5gF6QuGFkCYWQoQBiEFbMG19ejaT9uwpJAEMBgpJFQTgKRk1suLODM1ABDQOecU7YP1coClfhFmMFUzAJ7QtSinPgQACF5VQJrRQDKwJEmSKuDAyGUyINQbAHGkIYlj0wTwkAyda0eYTOPTsm2pB1yXVTOISGiadPf077x+uLJQmZmZXZidBizIFgBL6iug6x3YtHlg44ZC4ejxU1cql0UCVQNM4FP3zDQNe5QmvJ0fgA6gc3z669+YmZnN5LLZjd1GOfb2W/955zDA3aN7Rm/bk0Ws9SsrtYYPcr974Y9KprEiPEiatvIvkk3LLjViDGCWyxce/erjSWy//dXPgBgun+vs/vTDj1yZvmiJDmzecvjVl1dXa8uL8wgKTx34WuXy/Cuvv+atHQIYzNMMpIBCCsSBAgYEzWuUK548df748dOFzu4wt8GJfPH+O5fHTwSlno7+wRd/+YM7PnvvH57/RZTt2FAqjh07fmFqMsrlTJWtpiFSzeKCtPLNlBRvIFvVmrV42mXMGDeaW7ft+tZTz/57oOP7D39pZX4GLI7u2//3d0416iuZfLEa5jTXaXKBpMEAE3HeewBQH6glNKHQWiVNOldvJufmFpIoVPXOSam86dkfPy+d3f3d152ePDMwvHvxzKm/vPCSZLKqeqW6wqmL2kxIAWGgqgcE8GmZCsUZACNA55xXrz72q1W/1PRJnMtvKBS2jn94KBuVyrfu28nm0Jbtrxy9tJgrAVA1LC9KvALTtE9JMVjaHmYq7cY0CkUEACGm1mg0S5lQfNyx41aO7C4WSwP9fbeN7v3k6N733nx19Auf2XHnnUgSoXMN9QxclKU40gEQF4AknIECIE0AGRBQVYoQEiFMmi6IOrYODsdHDpXCzNz0xMCJY67iK/WqPzsRnD6jarG30uZt+w8eLGYLqipOxAUAKI4iIoGQ7bZ3oYvyIo6kc2FHvrxcawzfcOvOkc9NTp8/dvLdj86d+utbb3RIV9/WkYWx45Xl2Qc+/+UtPb0DN1x3uZJcmZ1hOonMTH0608woACWIAKhvJnEdpJkJmHGmHTlXyFfjk3NXzgZBlCsWT1waX6xM7OzqqfjL227f0zdyS5RBOcyNvXtcnQmdAarezGCWzUYkKC5HcaYedAaIOICZsLBzcM+CVMLtQ6HFjYnJuamJemM1kFCBA9/8NjOd40ffr87/V4qdQSN35sShxcUZcQFU1RIDCDVTQgQGUw+mA04ACiWOa9XaVDk2PzbO+dUN5YHRux686frbfH35liefmW8Gv/nRD6fOnZUNPTdv7O3UhaWlWedC84kxnfYGAKaAtoYdSaMTcarqJDCzfL6jr2+HxrWu3MbBwZF6Y7FaW5lrVC6HudVz4zc99GBnT7A9ai6ePv/Cq2+aOEBVPYl0xsEM1t4HKXASagY6SgA1F4TOZWA+HxW7OsphV2exf/Pl1XpmOXnwU7cv9cYnDh/66Oipudl5lw2hCjODmhlJMyUU5s1AcbnW/iDUe7qACChEq2SdAeYTgqVy1/5HH+spbHzx978+f+Ec4BiGYRB69WaKlmrTuA4REUnXKUWyqT/igjCMGo0mxWlchwTiAo3rDLLOBUmjAVhvf2/g3NTFSQRRe7BQEx8EQeIT+AYYDm0bujh1IWk2050vZgqYadLXt+m7z33HfKJxY2jHcLFUCsNweNeNuVxW1e+6+cZ8qbS4VLs0M5/v6BrauqW7XC4WiiTLG8tJsxplMrtu2h1F0d137yvkCzCfBiZor1iqemMANO646/4nnjhw7qOJKJPZumXw5OnxarV6w8jw0nJtampqYmLinnvuMfNJorOzs4ODm44cOfLh0X8FmfzBg8/MzMwtLFScyBqFCZDWFN3KysqRD8bEBaVy798OvdNcrRZLXT/56c/ve2C/c+7Z57732ONPrNRquVL3sbGzb77+2tD27aVSKSyU3//gw717901MXvrTS2/0bxpoNJvNOEFLL0iJSKr6KMo99MhXslE4dmLs+l0j0xcvrKw2pi9N9Q1siuPk3vvufenPL3qf7Ng5/PY/Dx148unp6UtLi5XaSj0K5fA/Xt/1idtHR0cnJyfjZvzBe2/XaksizgwUidYoTxgE4lyj2YyiSNUSn8BA0ivy+fxKtUYnIvTeR5ko/dcnzUw2b6Zxs57P5xvNhgDepwu5xWwyrSyA6QyhSKuc00IxUGg+LVkCSsJUAaYfAyQ9Uv0YAUxpi7VW5TXUqi3aQrKOca1RvPaRtcChxUfXtAMQtPnEtZSwPW3bK3z9HfwfljXtrQlhTK+rmlmQ6uI1Nq5eb/++ajv1dr2Bj9NKNQ1c6AJJkqTFMtIFepUUr/NjDVfLJ6ZhsqsCZtdgSmmzYy6bzYTh/wADLyusPXDEKwAAAABJRU5ErkJggg==">
-<!-- Vura Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIjklEQVR4nHWX228dVxXGf2vvmTPn5hPbudiO09zdpJfQUjmkNwotpU0BtVAVUNOqqlAjHpCQEC0PSPwNIB4QCAQSFAlxqaCFFrWlEhG0aVNok5I49+LEcWzHiW/n2D5nZvbiYfYc2wk9kq3Rntl7rfWtb6/1LUEKCiDtfyseEMmeFVCMf6f+nQEVFPWruuy9a+9QVZafnBkUUEWQgoqIX3Bt42IM+I2KeBPZX+7UR/1yg4IDHNJ2LHOWtkNKkD/4oLKoUFS17a1isnWR9rf5EUt4LP2WHDTelkcCRcQgAs4lPhhTuGq/YIxF1fmDDYjFWotDUXe1uZWOiEiOLuqcdyD1aCwlNwchyBZlZRQiqGawiwRokpAkdcCCRNhCAQRc6l20gigkcYy6BEjBFBBrl6XVW1GFtpM+BW04PXTOJSgGYwLUJazp7WX79QNMT00zPj7B1MRYlr9iBVCSxXkQy7q+9WzoW8OqSoXDR09wZfoyxgQ4l9FUSNtsV3V5yqM2KZeIAogFBGuFp7/2dcbHJyiUihTXrEbFcOStN/nP2wcBYdfgbgZv202RGLd4hflGkzQo8dsX/oATaacjc0AQdUtENaao+TUiv3ISgCqlcoVHv/I4Saz85pc/BWKwZUqdq/nUw49wZewCmjj6Nmzk4Ct/ZmGhwdzMJAQVntr3VaYvT/Lya6+SeiJmiVfQFPGpMIhnuLEgBiTIspU6olKV4yfOcfToSSqdqwlLq7DG8IX772TuzDGC2lo6evt58Rff547P3Mvvn/85UbGDVbUqQ0eOcn50hKhU8tGbNsKZHYMYS5BFblB1iBhS9UBItqWoMWO2gKoQN1ts2rKTbz71LP/u6+B7D3+R+clxkCqDd+3l72+foLk4T6FcpR6WcKVO1JxHxN9/FGMsaZpmpHMpgdMEUYMYQUXyMoRYy2Ir4eylKZIoxLkUaw217vU8+6PnMZ2r6V19HSdHTtE3sIuZUyf4ywsvYQpFnHNcqc8joxdwrcTXkKygOZdmV5s0v4YZFFmaxBPPkroUl8akC3XS2RZpElMqr6JS2cSZDw5QjGp033oX26XF5o1befnwRWZKNX+LFOZmMPE8eGTxRUh9XVUUVYdZuoSKGMEY4zEwqFOazRa1QohJYzq23Yrs2EW1WqOvt4fbBvfw8cE9vPvGKwx+/tNsu/NOSBKMWGzTkUqAjYqIsYhYXzOC7CZgUc+Mdv5FAgRwziHGIBgiQpKWJYg62NQ/QHzoALWwwKWxYfqOHcFOp0wv1klPDxOcPIVzSpwqtQ1b2Lt/P9ViBeccxprMOGQOmazOGJF2EUVsiI3KGGMREawN6Sh3M9doMnDDrWzf8VlGxs5x5Pg7fHj2BH9983U6TBc9m3YwNXSU6bkJHvjcl9i4dh19N1zH5emEKxPj+AygqqhLyXuNqmBAMEHkSdkiiRd9KVYMQsEqrqOErZSpx8e5dOU0QRBRqlY5dvEMM9PDbO9ay3R6mS2376Znxy1EBegOSwy9cxRnFSMZx5xLswKkSrEYIQJibEnF2Mwz/6ExWRUshBW29+9mykwTbt1MqDHN4REujQ6z2FwgMCEO2PeNbyGFTs4cfo/65H8x1U6CZolTxw4wMzOeQe8cThOPtcvSjsGgeON588kKhhFDHDeoN0bpjpV06AwyucCq7j4G736Qm66/jXRxjluefIbJVsCvf/gDRs+exqxay81r1tHpppidncDaEE0TVPIW70mvXitk7TgTGSoWYyzOOawJUFXK5Q56erbh4gZdpTX09+9gsTlDvTHPpeY0l8MSC2fPcNNDD9K5NmBr1GLm5DleeOUN1FjA4Vzqu59b6sW6TA/kUYuAUwWxiAnAKTYIsbYAmlKOqnR1dBN2dVLt3cDlhUUKcwkPfuJ2ZtfFHDt4gA8Pn+DSxCS2GIJzoIqSNR8R8dA70DTrzMaWtC0nBFyaIjZACBCTt2fXLlaaJghCrbuLvY8+xtrKGl783a84d/4sYJEwJAxCUpdmEbcNKy5eBGOyWqNeQRpTVHxlMjYgDCOazRZirN8QYGyAixeRoIi1AUmzCSjretcRWMvohREIoryZIiK4JCUIApI0gbQJErJ5y2YujJ4nabV8SgST5UVRl9DTs57vPPdtNE1wcZPN2wao1mqEYcjAzhsplYo4l7Lz5hsp12rMzDa4OD5JuaOLzZs2srq7m2qliojQvaabpFUnKhTYedMuoijik5+8i0q5ApqSo+5FadYDnEszLUCTO+6+nyee2MfZD4eJCgU2bezn+Mkz1Ot1btgxwOxcg9HRUYaHh7nnnntQTUkSx8TEBP396zl06BAfHP4XQaHM/v3PMD5+iampaawxK2R6kHWpTAHNz89z6P0hjA2oda/jbwfeprVQp1rr4sc/+Rn3PbAXay3PPvddHnv8CeYbDUq11RwZOs0br73K5q1bqdVqhJVu3nv/A/bsuYvhkYv88aXX6V3fR7PVohVn7F+mwiMVyaKPohIPPfJlilHI0LEhrt+5g7EL55lfaDJ2cZSevvXEccK9993LS396kTRN2LZ9gLf+eYB9Tz7N2NhFZmemacwvEoWGg/94jZ0fu53BwUFGRkaIWzHvv/sWjcasV94gxkSej1kqwiDAWEuz1SKKIpzTjEiakSt1UC6Xma83EGswRkjTlKgQtb9LkxaFYhlVR9xapFwu02w1MxWQ5nrQ9x/xo9mSWs1qtfhcZQVK8o6dCZc0v5biq1kmOjO5tSTzjZ+2nHMfMU2pr4Ta1mHXfLJ845Lf7bfkEyGs3J2PY23C5dPKitMybdRWw9cOWb6F6orJ8JpDrjbedmG5wRzZ/Eznlg0mHuqVh648cml1pZM5eFc78H8HOAGnjsCG2MCQJEmmBzJv/VSrVyHVNpR3seyDNjLe+PJocx5dE4TPobFCqVikEIb8DyYeOpWGlTyxAAAAAElFTkSuQmCC">
-<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
-<link rel="manifest" href="/manifest.json">
-
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Vura AI — Create Account</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Sign Up — Vura AI</title>
+<meta name="description" content="Create your free Vura AI account and get 300 VUX coins instantly. AI-powered exam prep for JAMB, WAEC, KCSE, SAT, NEET and 50+ national exams."/>
+<link rel="icon" type="image/png" href="vura-logo.png"/>
+<link rel="apple-touch-icon" href="vura-logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
-:root{--bg:#03030b;--blue:#00d2ff;--purple:#9d50bb;--gold:#ffcc33;--green:#10b981;--red:#ef4444;--border:rgba(255,255,255,0.09);--text:#e8eaf6;--muted:#8892a4}
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{width:100%;min-height:100vh;font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 0}
-.univ{position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 50% 40%,#0d0d2b 0%,#03030b 70%)}
-.nebula{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 78% 18%,rgba(0,210,255,.32) 0%,transparent 50%),radial-gradient(circle at 22% 78%,rgba(93,63,211,.42) 0%,transparent 52%),radial-gradient(circle at 60% 62%,rgba(157,80,187,.2) 0%,transparent 45%);filter:blur(72px);opacity:.8}
-#star-canvas{position:fixed;inset:0;z-index:-1;pointer-events:none}
-#confettiCanvas{position:fixed;inset:0;z-index:9998;pointer-events:none}
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;height:100%}
+body{
+  font-family:'Nunito',sans-serif;
+  background:#03030b;
+  color:#e8e8f0;
+  min-height:100vh;
+  overflow-x:hidden;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;outline:none;font-family:'Nunito',sans-serif}
+input{outline:none;font-family:'Nunito',sans-serif}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#03030b}
+::-webkit-scrollbar-thumb{background:#9d50bb;border-radius:3px}
 
-.scene{perspective:1000px;padding:20px;width:100%;display:flex;justify-content:center}
-.auth-card{width:100%;max-width:470px;padding:42px 36px;background:linear-gradient(145deg,rgba(14,14,42,.95),rgba(5,5,18,.97));backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-radius:28px;border:1px solid var(--border);box-shadow:0 0 0 1px rgba(0,210,255,.07),0 32px 72px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.06);transform-style:preserve-3d;animation:cardRise .7s cubic-bezier(.34,1.56,.64,1) both}
-@keyframes cardRise{from{opacity:0;transform:translateY(50px) scale(.93)}to{opacity:1;transform:translateY(0) scale(1)}}
+/* ============================================================
+   CSS VARIABLES
+   ============================================================ */
+:root{
+  --blue:#00d2ff;
+  --purple:#9d50bb;
+  --gold:#ffcc33;
+  --green:#10b981;
+  --red:#ff4d6d;
+  --bg:#03030b;
+  --card:#0d0d28;
+  --card-border:rgba(255,255,255,.08);
+  --muted:#8888aa;
+  --grad:linear-gradient(135deg,#00d2ff,#9d50bb);
+  --grad-gold:linear-gradient(135deg,#ffcc33,#ff9933);
+  --transition:.3s cubic-bezier(.4,0,.2,1);
+}
 
-/* LOGO */
-.logo-wrap{text-align:center;margin-bottom:20px}
-.logo{font-family:'Orbitron',monospace;font-size:1.9rem;font-weight:900;letter-spacing:3px;background:linear-gradient(90deg,#ffffff 30%,var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:inline-flex;align-items:center;gap:10px}
-.logo-dot{width:13px;height:13px;border-radius:50%;background:linear-gradient(135deg,#ffb347,var(--gold));box-shadow:0 0 18px var(--gold);animation:pulse 2s ease-in-out infinite;flex-shrink:0}
-@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 0 18px var(--gold)}50%{transform:scale(1.35);box-shadow:0 0 32px var(--gold),0 0 60px rgba(255,204,51,.3)}}
+/* ============================================================
+   STAR CANVAS
+   ============================================================ */
+#stars-canvas{
+  position:fixed;inset:0;
+  width:100%;height:100%;
+  pointer-events:none;z-index:0;
+}
 
-/* PAGE HEADER */
-.page-header{text-align:center;margin-bottom:20px}
-.page-title{font-family:'Orbitron',monospace;font-size:1.05rem;font-weight:700;background:linear-gradient(90deg,#fff,var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:5px}
-.page-sub{font-size:.82rem;color:var(--muted);font-weight:600}
+/* ============================================================
+   NEBULA GLOWS
+   ============================================================ */
+.nebula{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.nebula-1{
+  position:absolute;width:600px;height:600px;
+  top:-200px;left:-200px;
+  background:radial-gradient(circle,rgba(157,80,187,.18) 0%,transparent 65%);
+  border-radius:50%;
+  animation:nebulaFloat 18s ease-in-out infinite alternate;
+}
+.nebula-2{
+  position:absolute;width:500px;height:500px;
+  bottom:-150px;right:-100px;
+  background:radial-gradient(circle,rgba(0,210,255,.13) 0%,transparent 65%);
+  border-radius:50%;
+  animation:nebulaFloat 14s ease-in-out infinite alternate-reverse;
+}
+.nebula-3{
+  position:absolute;width:300px;height:300px;
+  top:40%;left:40%;
+  background:radial-gradient(circle,rgba(255,204,51,.06) 0%,transparent 60%);
+  border-radius:50%;
+  animation:nebulaFloat 22s ease-in-out infinite alternate;
+}
+@keyframes nebulaFloat{
+  0%{transform:translate(0,0) scale(1)}
+  100%{transform:translate(40px,30px) scale(1.1)}
+}
 
-/* REWARD BANNER */
-.reward-banner{display:flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,rgba(255,204,51,.13),rgba(255,179,71,.07));border:1px solid rgba(255,204,51,.28);border-radius:13px;padding:10px 16px;margin-bottom:18px;font-size:.82rem;font-weight:700;color:var(--gold)}
-.reward-banner i{font-size:1rem}
-.ref-banner{display:none;align-items:center;gap:8px;background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.25);border-radius:11px;padding:8px 14px;margin-bottom:14px;font-size:.78rem;font-weight:700;color:#6ee7b7}
+/* ============================================================
+   TWO-PANEL LAYOUT
+   ============================================================ */
+.page-wrapper{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  position:relative;z-index:1;
+}
 
-/* INPUTS */
-.inp-group{display:flex;flex-direction:column;gap:6px;margin-bottom:13px}
-.inp-label{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.9px;display:flex;align-items:center;gap:6px}
-.inp-label i{font-size:.7rem}
-.inp-wrap{position:relative}
-.inp-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.85rem;pointer-events:none;z-index:2;transition:.3s}
-.form-input{width:100%;padding:13px 46px 13px 44px;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:13px;color:#fff;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:600;outline:none;transition:all .3s;-webkit-appearance:none;appearance:none}
-.form-input::placeholder{color:rgba(136,146,164,.5)}
-.form-input:focus{background:rgba(0,210,255,.08);border-color:rgba(0,210,255,.55);box-shadow:0 0 0 3px rgba(0,210,255,.12)}
-.inp-wrap:focus-within .inp-icon{color:var(--blue)}
-.pw-eye{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--muted);cursor:pointer;font-size:.88rem;padding:4px;transition:.25s;z-index:3}
-.pw-eye:hover{color:var(--blue)}
+/* ============================================================
+   LEFT PANEL
+   ============================================================ */
+.left-panel{
+  padding:60px 48px;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,rgba(13,13,40,.95) 0%,rgba(3,3,11,.98) 100%);
+  border-right:1px solid rgba(255,255,255,.06);
+}
+.left-panel::before{
+  content:'';position:absolute;
+  top:0;left:0;bottom:0;width:3px;
+  background:var(--grad);
+  opacity:.6;
+}
 
-/* STRENGTH */
-.str-bars{display:flex;gap:4px;margin-top:8px}
-.str-bar{flex:1;height:3px;border-radius:999px;background:rgba(255,255,255,.07);transition:background .35s}
-.str-label{font-size:.7rem;color:var(--muted);margin-top:4px;font-weight:700;display:flex;align-items:center;gap:5px}
-.str-label i{font-size:.65rem}
+/* Logo */
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:52px}
+.brand-icon{
+  width:52px;height:52px;border-radius:14px;
+  background:linear-gradient(135deg,rgba(0,210,255,.15),rgba(157,80,187,.15));
+  border:1px solid rgba(0,210,255,.25);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;
+  position:relative;
+}
+.brand-icon::after{
+  content:'';position:absolute;inset:-3px;border-radius:17px;
+  background:var(--grad);opacity:.15;z-index:-1;
+}
+.brand-name{
+  font-family:'Orbitron',sans-serif;
+  font-size:1.5rem;font-weight:900;
+  background:var(--grad);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;letter-spacing:2px;
+}
 
-/* FIELD ERROR */
-.ferr{display:none;margin-top:5px;padding:7px 12px;background:rgba(239,68,68,.12);border-left:3px solid var(--red);border-radius:8px;font-size:.76rem;color:#fca5a5;font-weight:600;animation:errIn .3s ease}
-.ferr.show{display:flex;align-items:center;gap:7px}
-@keyframes errIn{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:translateX(0)}}
+/* Headline */
+.left-headline{
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(1.6rem,2.5vw,2.4rem);
+  font-weight:700;line-height:1.2;
+  color:#fff;margin-bottom:20px;
+}
+.left-headline span{
+  background:var(--grad);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
 
-/* TERMS */
-.terms-row{display:flex;align-items:flex-start;gap:10px;margin:14px 0 16px}
-.terms-chk{width:17px;height:17px;border-radius:4px;border:1.5px solid var(--border);background:rgba(255,255,255,.05);cursor:pointer;flex-shrink:0;margin-top:2px;accent-color:var(--blue)}
-.terms-text{font-size:.78rem;color:var(--muted);line-height:1.55}
-.terms-text a{color:var(--blue);text-decoration:none;font-weight:700}
+/* VUX Badge */
+.vux-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:12px 20px;border-radius:50px;
+  background:linear-gradient(135deg,rgba(255,204,51,.12),rgba(255,153,51,.08));
+  border:1px solid rgba(255,204,51,.3);
+  margin-bottom:40px;
+  animation:pulseBadge 2.5s ease-in-out infinite;
+  width:fit-content;
+}
+@keyframes pulseBadge{
+  0%,100%{box-shadow:0 0 0 0 rgba(255,204,51,.25)}
+  50%{box-shadow:0 0 0 10px rgba(255,204,51,0)}
+}
+.vux-badge-icon{
+  width:32px;height:32px;border-radius:50%;
+  background:var(--grad-gold);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.8rem;font-weight:900;color:#111;
+  flex-shrink:0;font-family:'Orbitron',sans-serif;
+}
+.vux-badge-text{font-weight:800;font-size:.95rem}
+.vux-badge-text span{color:var(--gold)}
+
+/* Feature list */
+.features-list{
+  display:flex;flex-direction:column;gap:20px;
+  margin-bottom:48px;
+}
+.feature-item{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:16px 18px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:14px;
+  transition:var(--transition);
+}
+.feature-item:hover{
+  background:rgba(0,210,255,.05);
+  border-color:rgba(0,210,255,.15);
+  transform:translateX(4px);
+}
+.feature-icon{
+  width:40px;height:40px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.95rem;flex-shrink:0;
+}
+.fi-blue{background:rgba(0,210,255,.12);color:var(--blue)}
+.fi-purple{background:rgba(157,80,187,.12);color:var(--purple)}
+.fi-gold{background:rgba(255,204,51,.12);color:var(--gold)}
+.fi-green{background:rgba(16,185,129,.12);color:var(--green)}
+.feature-text strong{display:block;color:#fff;font-size:.95rem;font-weight:700;margin-bottom:2px}
+.feature-text span{color:var(--muted);font-size:.83rem}
+
+/* Testimonial strip */
+.social-proof{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 18px;
+  background:rgba(16,185,129,.06);
+  border:1px solid rgba(16,185,129,.15);
+  border-radius:12px;
+}
+.proof-avatars{display:flex}
+.proof-avatar{
+  width:30px;height:30px;border-radius:50%;
+  border:2px solid var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;font-weight:800;
+  margin-left:-8px;flex-shrink:0;
+}
+.proof-avatar:first-child{margin-left:0}
+.pa1{background:linear-gradient(135deg,#00d2ff,#0099cc);color:#fff}
+.pa2{background:linear-gradient(135deg,#9d50bb,#6e30a7);color:#fff}
+.pa3{background:linear-gradient(135deg,#10b981,#059669);color:#fff}
+.pa4{background:linear-gradient(135deg,#ffcc33,#ff9933);color:#111}
+.proof-text{font-size:.82rem;color:var(--muted);line-height:1.4}
+.proof-text strong{color:var(--green)}
+
+/* ============================================================
+   RIGHT PANEL
+   ============================================================ */
+.right-panel{
+  padding:48px 48px;
+  display:flex;flex-direction:column;justify-content:center;
+  background:rgba(3,3,11,.6);
+  position:relative;
+}
+.form-container{
+  max-width:420px;width:100%;
+  margin:0 auto;
+}
+
+/* Form header */
+.form-title{
+  font-family:'Orbitron',sans-serif;
+  font-size:1.6rem;font-weight:700;
+  color:#fff;margin-bottom:6px;
+}
+.form-subtitle{
+  font-size:.9rem;color:var(--muted);margin-bottom:32px;
+}
+.form-subtitle a{
+  color:var(--blue);font-weight:700;transition:var(--transition);
+}
+.form-subtitle a:hover{text-decoration:underline}
+
+/* Google button */
+.btn-google{
+  width:100%;height:48px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  color:#fff;font-size:.95rem;font-weight:700;
+  transition:var(--transition);
+  position:relative;overflow:hidden;
+}
+.btn-google::after{
+  content:'';position:absolute;
+  inset:0;background:rgba(255,255,255,.04);
+  opacity:0;transition:var(--transition);
+}
+.btn-google:hover{
+  background:rgba(255,255,255,.09);
+  border-color:rgba(255,255,255,.2);
+  transform:translateY(-1px);
+  box-shadow:0 6px 20px rgba(0,0,0,.3);
+}
+.btn-google:hover::after{opacity:1}
+.google-icon{width:20px;height:20px;flex-shrink:0}
+
+/* Divider */
+.divider{
+  display:flex;align-items:center;gap:14px;
+  margin:22px 0;
+}
+.divider-line{flex:1;height:1px;background:rgba(255,255,255,.08)}
+.divider-text{font-size:.78rem;color:var(--muted);white-space:nowrap;font-weight:600;letter-spacing:.5px}
+
+/* Form fields */
+.form-group{margin-bottom:16px;position:relative}
+.form-label{
+  display:block;font-size:.82rem;font-weight:700;
+  color:#c8c8e0;margin-bottom:7px;letter-spacing:.3px;
+}
+.form-label .optional{
+  font-size:.72rem;color:var(--muted);font-weight:400;margin-left:6px;
+}
+.input-wrap{position:relative}
+.input-icon{
+  position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  color:var(--muted);font-size:.85rem;
+  pointer-events:none;transition:var(--transition);
+}
+.form-input{
+  width:100%;height:48px;
+  background:rgba(255,255,255,.05);
+  border:1.5px solid rgba(255,255,255,.1);
+  border-radius:12px;
+  padding:0 44px 0 42px;
+  color:#fff;font-size:.95rem;font-weight:500;
+  transition:var(--transition);
+  -webkit-appearance:none;
+}
+.form-input::placeholder{color:rgba(136,136,170,.6);font-size:.9rem}
+.form-input:focus{
+  background:rgba(0,210,255,.06);
+  border-color:rgba(0,210,255,.4);
+  box-shadow:0 0 0 3px rgba(0,210,255,.1);
+}
+.form-input:focus + .input-icon,
+.input-wrap:focus-within .input-icon{color:var(--blue)}
+.form-input.error{
+  border-color:rgba(255,77,109,.5);
+  background:rgba(255,77,109,.05);
+}
+.form-input.success{
+  border-color:rgba(16,185,129,.4);
+}
+
+/* Password eye toggle */
+.eye-btn{
+  position:absolute;right:14px;top:50%;transform:translateY(-50%);
+  background:none;border:none;color:var(--muted);
+  cursor:pointer;padding:4px;
+  transition:var(--transition);font-size:.85rem;
+  min-height:0;
+}
+.eye-btn:hover{color:var(--blue)}
+
+/* Field error message */
+.field-error{
+  font-size:.76rem;color:var(--red);
+  margin-top:5px;display:flex;align-items:center;gap:5px;
+  min-height:0;max-height:0;overflow:hidden;
+  transition:max-height .3s ease, opacity .3s ease;
+  opacity:0;
+}
+.field-error.show{max-height:30px;opacity:1}
+.field-error i{font-size:.65rem;flex-shrink:0}
+
+/* Referral note */
+.referral-note{
+  font-size:.76rem;color:var(--muted);margin-top:5px;
+  display:flex;align-items:center;gap:5px;
+}
+
+/* Submit button */
+.btn-submit{
+  width:100%;height:52px;border-radius:12px;
+  background:var(--grad);
+  color:#fff;font-size:1rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  transition:var(--transition);
+  position:relative;overflow:hidden;
+  margin-top:6px;letter-spacing:.3px;
+  box-shadow:0 0 30px rgba(0,210,255,.2);
+}
+.btn-submit::before{
+  content:'';position:absolute;
+  top:0;left:-100%;width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
+  transition:.6s;
+}
+.btn-submit:hover::before{left:100%}
+.btn-submit:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 40px rgba(0,210,255,.35);
+}
+.btn-submit:active{transform:translateY(0)}
+.btn-submit:disabled{
+  opacity:.6;cursor:not-allowed;
+  transform:none!important;
+  box-shadow:none;
+}
+
+/* Spinner inside button */
+.spinner{
+  width:20px;height:20px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.3);
+  border-top-color:#fff;
+  animation:spin .7s linear infinite;
+  flex-shrink:0;
+}
+@keyframes spin{100%{transform:rotate(360deg)}}
+
+/* Terms */
+.terms-text{
+  text-align:center;font-size:.75rem;
+  color:var(--muted);margin-top:14px;
+  line-height:1.5;
+}
+.terms-text a{color:var(--blue);transition:var(--transition)}
 .terms-text a:hover{text-decoration:underline}
 
-/* BUTTONS */
-.btn{width:100%;padding:14px;border:none;border-radius:15px;font-family:'Nunito',sans-serif;font-size:.97rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:all .3s cubic-bezier(.34,1.56,.64,1);position:relative;overflow:hidden}
-.btn i{font-size:.93rem}
-.btn::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.11) 0%,transparent 55%)}
-.btn:hover{transform:translateY(-3px)}
-.btn:active{transform:translateY(1px) scale(.98)}
-.btn:disabled{opacity:.5;cursor:not-allowed;transform:none !important}
-.btn-primary{background:linear-gradient(135deg,#00d2ff,#3a7bd5);color:#fff;box-shadow:0 8px 28px rgba(0,210,255,.32),0 2px 0 rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.14)}
-.btn-primary:hover{box-shadow:0 14px 38px rgba(0,210,255,.44)}
-.btn-google{background:#ffffff;color:#1a1a1a;box-shadow:0 6px 22px rgba(0,0,0,.32),0 2px 0 #ccc}
-.btn-google:hover{box-shadow:0 10px 28px rgba(0,0,0,.4)}
-.btn-group{display:flex;flex-direction:column;gap:11px}
-.g-icon{width:19px;height:19px;flex-shrink:0}
-.divider{display:flex;align-items:center;gap:12px;margin:16px 0}
-.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
-.divider span{font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:.5px;white-space:nowrap}
-.auth-footer{text-align:center;margin-top:18px;font-size:.83rem;color:var(--muted)}
-.auth-footer a{color:var(--blue);font-weight:700;text-decoration:none}
-.auth-footer a:hover{text-decoration:underline}
-.spinner{width:17px;height:17px;border:2.5px solid rgba(255,255,255,.22);border-top-color:#fff;border-radius:50%;animation:spin .65s linear infinite;flex-shrink:0}
-@keyframes spin{to{transform:rotate(360deg)}}
+/* ============================================================
+   GLOBAL ERROR / SUCCESS TOAST
+   ============================================================ */
+.toast{
+  position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-80px);
+  z-index:9999;
+  min-width:300px;max-width:500px;
+  padding:14px 20px;border-radius:14px;
+  display:flex;align-items:center;gap:12px;
+  font-size:.9rem;font-weight:600;
+  transition:transform .4s cubic-bezier(.34,1.56,.64,1),opacity .4s ease;
+  opacity:0;backdrop-filter:blur(20px);
+  box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.toast.error-toast{
+  background:rgba(255,77,109,.15);
+  border:1px solid rgba(255,77,109,.3);
+  color:#ff8fa3;
+}
+.toast.success-toast{
+  background:rgba(16,185,129,.15);
+  border:1px solid rgba(16,185,129,.3);
+  color:#6ee7b7;
+}
+.toast i{font-size:1.1rem;flex-shrink:0}
+.toast-close{
+  margin-left:auto;background:none;border:none;
+  color:inherit;opacity:.6;cursor:pointer;
+  font-size:.85rem;padding:2px;
+}
 
-/* SUCCESS OVERLAY */
-#successOverlay{position:fixed;inset:0;z-index:9999;background:rgba(3,3,11,.94);display:none;flex-direction:column;align-items:center;justify-content:center;gap:18px;animation:fadeOv .35s ease}
-@keyframes fadeOv{from{opacity:0}to{opacity:1}}
-.success-circle{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,#10b981,#059669);display:flex;align-items:center;justify-content:center;box-shadow:0 0 60px rgba(16,185,129,.5),0 0 120px rgba(16,185,129,.25);animation:scIn .5s cubic-bezier(.34,1.56,.64,1) both}
-@keyframes scIn{from{transform:scale(0)}to{transform:scale(1)}}
-.success-circle i{font-size:2.8rem;color:#fff;animation:ckIn .4s .3s ease both}
-@keyframes ckIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
-.suc-title{font-family:'Orbitron',monospace;font-size:1.5rem;font-weight:900;color:#fff;text-align:center;animation:fuP .5s .4s ease both}
-.suc-sub{font-size:.92rem;color:rgba(255,255,255,.6);text-align:center;animation:fuP .5s .5s ease both}
-.bar-wrap{width:240px;height:4px;background:rgba(255,255,255,.1);border-radius:999px;overflow:hidden;animation:fuP .5s .6s ease both}
-.bar-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:999px;width:0%;transition:width 2.1s linear}
-@keyframes fuP{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+/* ============================================================
+   SUCCESS OVERLAY
+   ============================================================ */
+.success-overlay{
+  position:fixed;inset:0;z-index:10000;
+  background:rgba(3,3,11,.97);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;padding:40px;
+  opacity:0;pointer-events:none;
+  transition:opacity .5s ease;
+  backdrop-filter:blur(10px);
+}
+.success-overlay.show{opacity:1;pointer-events:all}
+.success-circle{
+  width:100px;height:100px;border-radius:50%;
+  background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(0,210,255,.15));
+  border:2px solid rgba(16,185,129,.4);
+  display:flex;align-items:center;justify-content:center;
+  font-size:2.5rem;color:var(--green);
+  margin-bottom:28px;
+  animation:popIn .5s cubic-bezier(.34,1.56,.64,1) .2s both;
+}
+@keyframes popIn{
+  0%{transform:scale(0);opacity:0}
+  100%{transform:scale(1);opacity:1}
+}
+.success-title{
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(1.4rem,3vw,2rem);
+  font-weight:700;color:#fff;margin-bottom:10px;
+  animation:fadeUp .4s ease .5s both;
+}
+.success-sub{
+  color:var(--muted);font-size:1rem;margin-bottom:24px;
+  animation:fadeUp .4s ease .6s both;
+}
+.success-vux{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:10px 24px;border-radius:50px;
+  background:rgba(255,204,51,.12);
+  border:1px solid rgba(255,204,51,.25);
+  color:var(--gold);font-weight:800;font-size:1rem;
+  margin-bottom:32px;
+  animation:fadeUp .4s ease .7s both;
+}
+.redirect-bar-wrap{
+  width:260px;height:4px;background:rgba(255,255,255,.08);
+  border-radius:2px;overflow:hidden;
+  animation:fadeUp .4s ease .8s both;
+}
+.redirect-bar{
+  height:100%;width:0%;background:var(--grad);
+  border-radius:2px;
+  transition:width 2s linear;
+}
+.redirect-text{
+  font-size:.82rem;color:var(--muted);margin-top:12px;
+  animation:fadeUp .4s ease .9s both;
+}
+@keyframes fadeUp{
+  0%{opacity:0;transform:translateY(16px)}
+  100%{opacity:1;transform:translateY(0)}
+}
 
-/* MASCOT */
-.mascot{position:fixed;bottom:26px;right:26px;width:68px;height:68px;background:linear-gradient(135deg,#667eea,#764ba2);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 36px rgba(102,126,234,.48);animation:mF 3.2s ease-in-out infinite;z-index:300;cursor:pointer;border:2px solid rgba(255,255,255,.14)}
-.mascot i{font-size:1.9rem;color:#fff}
-@keyframes mF{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
-.mbubble{position:fixed;bottom:108px;right:26px;background:rgba(8,8,30,.97);border:1px solid rgba(0,210,255,.25);border-radius:14px;padding:10px 14px;font-size:.76rem;font-weight:700;color:#fff;max-width:178px;line-height:1.55;z-index:300;box-shadow:0 8px 28px rgba(0,0,0,.45)}
-.mbubble::after{content:'';position:absolute;bottom:-7px;right:26px;border:7px solid transparent;border-top-color:rgba(8,8,30,.97)}
+/* Confetti canvas */
+#confetti-canvas{
+  position:fixed;inset:0;z-index:9999;
+  pointer-events:none;
+  width:100%;height:100%;
+}
 
-/* TOASTS */
-#toasts{position:fixed;top:18px;right:18px;z-index:10000;display:flex;flex-direction:column;gap:9px;max-width:320px}
-.toast{padding:12px 16px;border-radius:13px;font-size:.83rem;font-weight:700;display:flex;align-items:center;gap:9px;backdrop-filter:blur(16px);border:1px solid;animation:tIn .4s cubic-bezier(.34,1.56,.64,1)}
-.toast i{font-size:1rem;flex-shrink:0}.toast span{flex:1}
-.toast.success{background:rgba(16,185,129,.16);border-color:rgba(16,185,129,.32);color:#6ee7b7}
-.toast.error{background:rgba(239,68,68,.16);border-color:rgba(239,68,68,.32);color:#fca5a5}
-.toast.removing{animation:tOut .35s ease forwards}
-@keyframes tIn{from{opacity:0;transform:translateX(42px)}to{opacity:1;transform:translateX(0)}}
-@keyframes tOut{to{opacity:0;transform:translateX(42px)}}
-.t-close{margin-left:auto;cursor:pointer;opacity:.55;font-size:.9rem;background:none;border:none;color:inherit;padding:0 0 0 6px}
+/* Progress redirect bar */
+.redirect-progress{
+  width:100%;height:3px;
+  background:var(--grad);
+  position:fixed;top:0;left:0;z-index:10001;
+  transform:scaleX(0);transform-origin:left;
+  transition:transform 2s linear;
+}
+.redirect-progress.active{transform:scaleX(1)}
 
-@media(max-width:500px){.auth-card{padding:28px 18px;margin:10px}.logo{font-size:1.65rem}}
+/* ============================================================
+   MOBILE RESPONSIVE
+   ============================================================ */
+@media(max-width:900px){
+  .page-wrapper{grid-template-columns:1fr}
+  .left-panel{
+    padding:40px 24px 32px;
+    border-right:none;
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+  .left-panel::before{
+    top:auto;bottom:0;left:0;right:0;
+    width:100%;height:3px;
+  }
+  .brand{margin-bottom:28px}
+  .features-list{gap:12px}
+  .feature-item{padding:12px 14px}
+  .social-proof{display:none}
+  .right-panel{padding:32px 24px 48px}
+}
+@media(max-width:480px){
+  .left-panel{padding:32px 20px 28px}
+  .right-panel{padding:28px 20px 40px}
+  .form-title{font-size:1.4rem}
+  .btn-google,.btn-submit{height:50px}
+}
 </style>
 </head>
 <body>
-<div class="univ"></div><div class="nebula"></div>
-<canvas id="star-canvas"></canvas>
-<canvas id="confettiCanvas"></canvas>
-<div id="toasts"></div>
 
-<!-- SUCCESS OVERLAY -->
-<div id="successOverlay">
-  <div class="success-circle"><i class="fas fa-check"></i></div>
-  <div class="suc-title">Account Created!</div>
-  <div class="suc-sub">Welcome to Vura AI — 300 VUX added! 🎁</div>
-  <div class="bar-wrap"><div class="bar-fill" id="barFill"></div></div>
-  <div style="font-size:.78rem;color:rgba(255,255,255,.35)">Taking you inside...</div>
+<!-- Stars canvas -->
+<canvas id="stars-canvas"></canvas>
+
+<!-- Nebula -->
+<div class="nebula">
+  <div class="nebula-1"></div>
+  <div class="nebula-2"></div>
+  <div class="nebula-3"></div>
 </div>
 
-<!-- MASCOT -->
-<div class="mascot" id="mascot" onclick="toggleBubble()"><i class="fas fa-robot"></i></div>
-<div class="mbubble" id="mbubble" style="display:none">🚀 Join free and get 300 VUX coins instantly!</div>
+<!-- Confetti canvas -->
+<canvas id="confetti-canvas"></canvas>
 
-<div class="scene">
-<div class="auth-card" id="authCard">
+<!-- Redirect progress bar -->
+<div class="redirect-progress" id="redirectProgress"></div>
 
-  <div class="logo-wrap"><div class="logo"><div class="logo-dot"></div>VURA</div></div>
-
-  <div class="page-header">
-    <div class="page-title">Create Your Account</div>
-    <div class="page-sub">Join the AI-powered learning universe today</div>
-  </div>
-
-  <div class="reward-banner">
-    <i class="fas fa-coins"></i>
-    Sign up now &amp; get <strong style="color:var(--gold);margin:0 4px">300 VUX Coins FREE</strong>
-    <i class="fas fa-gift"></i>
-  </div>
-
-  <div class="ref-banner" id="refBanner">
-    <i class="fas fa-link"></i>
-    <span id="refText">Joining via referral</span>
-  </div>
-
-  <div class="inp-group">
-    <label class="inp-label"><i class="fas fa-user"></i> Full Name</label>
-    <div class="inp-wrap">
-      <i class="fas fa-user inp-icon"></i>
-      <input class="form-input" type="text" id="signupName" placeholder="Your full name" autocomplete="name">
-    </div>
-    <div class="ferr" id="nameError"><i class="fas fa-circle-exclamation"></i><span></span></div>
-  </div>
-
-  <div class="inp-group">
-    <label class="inp-label"><i class="fas fa-envelope"></i> Email Address</label>
-    <div class="inp-wrap">
-      <i class="fas fa-at inp-icon"></i>
-      <input class="form-input" type="email" id="signupEmail" placeholder="your@email.com" autocomplete="email">
-    </div>
-    <div class="ferr" id="emailError"><i class="fas fa-circle-exclamation"></i><span></span></div>
-  </div>
-
-  <div class="inp-group">
-    <label class="inp-label"><i class="fas fa-lock"></i> Password</label>
-    <div class="inp-wrap">
-      <i class="fas fa-lock inp-icon"></i>
-      <input class="form-input" type="password" id="signupPassword" placeholder="Min. 6 characters" autocomplete="new-password" oninput="checkStrength(this.value)">
-      <button class="pw-eye" type="button" id="togglePw"><i class="fas fa-eye"></i></button>
-    </div>
-    <div class="str-bars"><div class="str-bar" id="sb1"></div><div class="str-bar" id="sb2"></div><div class="str-bar" id="sb3"></div><div class="str-bar" id="sb4"></div></div>
-    <div class="str-label" id="strLabel"></div>
-    <div class="ferr" id="passwordError"><i class="fas fa-circle-exclamation"></i><span></span></div>
-  </div>
-
-  <div class="inp-group">
-    <label class="inp-label"><i class="fas fa-link"></i> Referral Code <span style="font-size:.68rem;text-transform:none;letter-spacing:0;margin-left:4px;font-weight:600;opacity:.6">(optional)</span></label>
-    <div class="inp-wrap">
-      <i class="fas fa-hashtag inp-icon"></i>
-      <input class="form-input" type="text" id="refCode" placeholder="VUX-XXXXXX" style="text-transform:uppercase;letter-spacing:1px;padding-left:44px">
-    </div>
-  </div>
-
-  <div class="terms-row">
-    <input type="checkbox" class="terms-chk" id="termsChk">
-    <div class="terms-text">
-      I agree to Lenovox's <a href="terms" target="_blank">Terms of Service</a> and <a href="privacy" target="_blank">Privacy Policy</a>
-    </div>
-  </div>
-
-  <div class="btn-group">
-    <button class="btn btn-primary" id="btnSignup">
-      <i class="fas fa-rocket"></i> <span>Create Account — Free</span>
-    </button>
-  </div>
-
-  <div class="divider"><span>OR SIGN UP WITH</span></div>
-
-  <button class="btn btn-google" id="btnGoogle">
-    <img class="g-icon" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
-    Continue with Google
-  </button>
-
-  <div class="auth-footer">
-    Already have an account? <a href="login">Sign In</a>
-  </div>
-
-</div>
+<!-- Toast notification -->
+<div class="toast" id="toast">
+  <i class="fa-solid fa-circle-exclamation" id="toastIcon"></i>
+  <span id="toastMsg">Error message here</span>
+  <button class="toast-close" onclick="hideToast()"><i class="fa-solid fa-xmark"></i></button>
 </div>
 
+<!-- Success Overlay -->
+<div class="success-overlay" id="successOverlay">
+  <div class="success-circle"><i class="fa-solid fa-check"></i></div>
+  <div class="success-title">Welcome to Vura AI!</div>
+  <div class="success-sub">Your account has been created successfully.</div>
+  <div class="success-vux">
+    <i class="fa-solid fa-coins"></i>
+    <span>+300 VUX Coins added to your wallet</span>
+  </div>
+  <div class="redirect-bar-wrap">
+    <div class="redirect-bar" id="redirectBar"></div>
+  </div>
+  <div class="redirect-text">Taking you to onboarding...</div>
+</div>
+
+<!-- ===== TWO-PANEL LAYOUT ===== -->
+<div class="page-wrapper">
+
+  <!-- ===== LEFT PANEL ===== -->
+  <div class="left-panel">
+    <!-- Brand -->
+    <div class="brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-brain" style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text"></i>
+      </div>
+      <span class="brand-name">VURA AI</span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="left-headline">
+      Join Vura AI<br><span>Today</span>
+    </h1>
+
+    <!-- VUX Badge -->
+    <div class="vux-badge">
+      <div class="vux-badge-icon">VUX</div>
+      <div class="vux-badge-text">
+        <span>300 VUX Coins</span> FREE on signup
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features-list">
+      <div class="feature-item">
+        <div class="feature-icon fi-blue">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <div class="feature-text">
+          <strong>AI Tutor — 24/7 Exam Help</strong>
+          <span>Get instant, personalised explanations for any subject, any exam, any time</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon fi-purple">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <div class="feature-text">
+          <strong>50,000+ Past Questions</strong>
+          <span>Curated past papers for JAMB, WAEC, KCSE, SAT, NEET and 50+ national exams</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon fi-gold">
+          <i class="fa-solid fa-coins"></i>
+        </div>
+        <div class="feature-text">
+          <strong>Earn VUX Every Day</strong>
+          <span>Get rewarded for studying — earn coins on quizzes, games, logins, and referrals</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon fi-green">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div class="feature-text">
+          <strong>Study With Friends Globally</strong>
+          <span>Join study groups, compete on leaderboards, and grow together worldwide</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social proof -->
+    <div class="social-proof">
+      <div class="proof-avatars">
+        <div class="proof-avatar pa1">AO</div>
+        <div class="proof-avatar pa2">KM</div>
+        <div class="proof-avatar pa3">PS</div>
+        <div class="proof-avatar pa4">JT</div>
+      </div>
+      <div class="proof-text">
+        <strong>200,000+ students</strong> from 50+ countries are already studying smarter with Vura AI
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RIGHT PANEL ===== -->
+  <div class="right-panel">
+    <div class="form-container">
+
+      <!-- Form header -->
+      <h2 class="form-title">Create Account</h2>
+      <p class="form-subtitle">
+        Already have an account?
+        <a href="login.html">Log in</a>
+      </p>
+
+      <!-- Google Sign-in -->
+      <button class="btn-google" id="btnGoogle" type="button">
+        <svg class="google-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        </svg>
+        Continue with Google
+      </button>
+
+      <!-- Divider -->
+      <div class="divider">
+        <div class="divider-line"></div>
+        <span class="divider-text">or sign up with email</span>
+        <div class="divider-line"></div>
+      </div>
+
+      <!-- Signup Form -->
+      <form id="signupForm" novalidate>
+
+        <!-- Full Name -->
+        <div class="form-group">
+          <label class="form-label" for="fullName">Full Name</label>
+          <div class="input-wrap">
+            <input
+              type="text" id="fullName" name="fullName"
+              class="form-input" placeholder="e.g. Adaeze Okonkwo"
+              autocomplete="name" required
+            />
+            <i class="fa-solid fa-user input-icon"></i>
+          </div>
+          <div class="field-error" id="nameError">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span id="nameErrorMsg"></span>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <div class="input-wrap">
+            <input
+              type="email" id="email" name="email"
+              class="form-input" placeholder="you@example.com"
+              autocomplete="email" required
+            />
+            <i class="fa-solid fa-envelope input-icon"></i>
+          </div>
+          <div class="field-error" id="emailError">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span id="emailErrorMsg"></span>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <div class="input-wrap">
+            <input
+              type="password" id="password" name="password"
+              class="form-input" placeholder="Minimum 6 characters"
+              autocomplete="new-password" required minlength="6"
+            />
+            <i class="fa-solid fa-lock input-icon"></i>
+            <button type="button" class="eye-btn" id="eyeBtn" aria-label="Toggle password visibility">
+              <i class="fa-solid fa-eye" id="eyeIcon"></i>
+            </button>
+          </div>
+          <div class="field-error" id="passError">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span id="passErrorMsg"></span>
+          </div>
+        </div>
+
+        <!-- Referral Code (Optional) -->
+        <div class="form-group">
+          <label class="form-label" for="referral">
+            Referral Code
+            <span class="optional">(optional)</span>
+          </label>
+          <div class="input-wrap">
+            <input
+              type="text" id="referral" name="referral"
+              class="form-input" placeholder="e.g. VUX-A3B2C1"
+              autocomplete="off"
+              style="text-transform:uppercase;letter-spacing:1px"
+            />
+            <i class="fa-solid fa-gift input-icon"></i>
+          </div>
+          <div class="referral-note">
+            <i class="fa-solid fa-circle-info" style="color:var(--blue);font-size:.7rem"></i>
+            Enter a friend's referral code for bonus VUX rewards
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-submit" id="btnSubmit">
+          <span id="submitContent">
+            <i class="fa-solid fa-rocket"></i>
+            Create Account — Free
+          </span>
+        </button>
+
+      </form>
+
+      <!-- Terms -->
+      <p class="terms-text">
+        By signing up, you agree to our
+        <a href="terms.html">Terms of Service</a>
+        and
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+   FIREBASE SDK — Modular via CDN (v10 compat)
+   ============================================================ -->
 <script type="module">
-import { signUpUser, googleLoginUser } from './auth.js';
+// ── Firebase SDKs ──────────────────────────────────────────────
+import { initializeApp }           from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithPopup,
+  GoogleAuthProvider,
+  updateProfile
+} from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
+import {
+  getFirestore,
+  doc,
+  setDoc,
+  getDoc,
+  collection,
+  addDoc,
+  serverTimestamp
+} from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
-// URL referral
-const p=new URLSearchParams(location.search),ref=p.get('ref');
-if(ref){document.getElementById('refCode').value=ref.toUpperCase();const b=document.getElementById('refBanner');b.style.display='flex';document.getElementById('refText').textContent=`Referred by: ${ref.toUpperCase()}`;}
-
-// STARS
-const sc=document.getElementById('star-canvas'),sx=sc.getContext('2d');let stars=[];
-function initS(){sc.width=innerWidth;sc.height=innerHeight;stars=Array.from({length:150},()=>({x:Math.random()*sc.width,y:Math.random()*sc.height,s:Math.random()*1.9,o:Math.random()*.75+.2,sp:Math.random()*.04+.008}));}
-function drawS(){sx.clearRect(0,0,sc.width,sc.height);stars.forEach(s=>{sx.fillStyle=`rgba(255,255,255,${s.o})`;sx.beginPath();sx.arc(s.x,s.y,s.s,0,Math.PI*2);sx.fill();s.y-=s.sp;if(s.y<0){s.y=sc.height;s.x=Math.random()*sc.width;}});requestAnimationFrame(drawS);}
-window.onresize=initS;initS();drawS();
-
-// 3D TILT
-const card=document.getElementById('authCard');
-document.querySelector('.scene').addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`rotateY(${x*11}deg) rotateX(${-y*9}deg)`;});
-document.querySelector('.scene').addEventListener('mouseleave',()=>{card.style.transform='';});
-
-// CONFETTI
-const cc=document.getElementById('confettiCanvas'),cx=cc.getContext('2d');
-const COLS=['#ff3d70','#00d2ff','#ffcc33','#10b981','#9d50bb','#ff9500','#00ff88','#ff6b6b','#4ecdc4','#fff'];
-let particles=[];
-function launchConfetti(){
-  cc.width=innerWidth;cc.height=innerHeight;particles=[];
-  for(let i=0;i<240;i++){particles.push({x:Math.random()*cc.width,y:Math.random()*cc.height*.3-60,vx:(Math.random()-.5)*9,vy:Math.random()*6+3,color:COLS[Math.floor(Math.random()*COLS.length)],w:Math.random()*11+4,h:Math.random()*5+3,rot:Math.random()*360,rv:(Math.random()-.5)*8,alpha:1,life:0,maxLife:120+Math.random()*80,shape:Math.random()>.5?'rect':'circle'});}
-  animC();
-}
-function animC(){
-  cx.clearRect(0,0,cc.width,cc.height);let alive=false;
-  particles.forEach(p=>{p.life++;p.vy+=.12;p.vx*=.99;p.x+=p.vx;p.y+=p.vy;p.rot+=p.rv;p.alpha=Math.max(0,1-p.life/p.maxLife);if(p.alpha>0)alive=true;cx.save();cx.globalAlpha=p.alpha;cx.fillStyle=p.color;cx.translate(p.x,p.y);cx.rotate(p.rot*Math.PI/180);if(p.shape==='circle'){cx.beginPath();cx.arc(0,0,p.w/2,0,Math.PI*2);cx.fill();}else cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);cx.restore();});
-  if(alive)requestAnimationFrame(animC);else cx.clearRect(0,0,cc.width,cc.height);
-}
-
-// SUCCESS OVERLAY
-function showSuccess(name){
-  document.getElementById('successOverlay').style.display='flex';
-  launchConfetti();
-  setTimeout(()=>{document.getElementById('barFill').style.width='100%';},120);
-  setTimeout(()=>{window.location.href='onboarding';},2600);
-}
-
-// TOAST
-function toast(msg,type='success'){const el=document.createElement('div');el.className=`toast ${type}`;const ic=type==='success'?'fas fa-circle-check':'fas fa-circle-exclamation';el.innerHTML=`<i class="${ic}"></i><span>${msg}</span><button class="t-close" onclick="this.parentElement.classList.add('removing');setTimeout(()=>this.parentElement.remove(),350)"><i class="fas fa-xmark"></i></button>`;document.getElementById('toasts').appendChild(el);setTimeout(()=>{if(el.parentElement){el.classList.add('removing');setTimeout(()=>el.remove(),350);}},5000);}
-
-// MASCOT
-const bubs=["Get 300 FREE VUX coins on signup! 🪙","Use Google for instant sign-up ⚡","Have a referral code? Use it for bonus! 🎁","Join 50,000+ students worldwide 🌍"];let bi=0;
-window.toggleBubble=()=>{const b=document.getElementById('mbubble');if(b.style.display==='none'){b.innerHTML=`<i class="fas fa-comment-dots" style="color:var(--blue);margin-right:5px"></i>${bubs[bi%bubs.length]}`;bi++;b.style.display='block';}else b.style.display='none';};
-
-// PASSWORD STRENGTH
-const sCols=['#ef4444','#f97316','#eab308','#10b981'];
-const sLabels=[['fas fa-face-tired','Weak'],['fas fa-face-meh','Fair'],['fas fa-face-smile','Good'],['fas fa-face-grin-stars','Strong']];
-window.checkStrength=v=>{
-  let s=0;if(v.length>=6)s++;if(/[A-Z]/.test(v))s++;if(/[0-9]/.test(v))s++;if(/[^A-Za-z0-9]/.test(v))s++;
-  [1,2,3,4].forEach(i=>{document.getElementById('sb'+i).style.background=i<=s?sCols[s-1]:'rgba(255,255,255,.07)';});
-  const lbl=document.getElementById('strLabel');
-  if(v.length&&s>0){lbl.innerHTML=`<i class="${sLabels[s-1][0]}" style="color:${sCols[s-1]}"></i><span style="color:${sCols[s-1]}">${sLabels[s-1][1]}</span>`;}
-  else lbl.innerHTML='';
+// ── Firebase Config ────────────────────────────────────────────
+const firebaseConfig = {
+  apiKey:            "AIzaSyAmk0Nyxfk4u9q_Ma2esj4ch8XMW6e49o4",
+  authDomain:        "vura-ai2026.firebaseapp.com",
+  projectId:         "vura-ai2026",
+  storageBucket:     "vura-ai2026.firebasestorage.app",
+  messagingSenderId: "973528287420",
+  appId:             "1:973528287420:web:bceffa7ce783add77528b9"
 };
 
-document.getElementById('togglePw').onclick=()=>{const i=document.getElementById('signupPassword'),ic=document.querySelector('#togglePw i');i.type=i.type==='password'?'text':'password';ic.className=i.type==='password'?'fas fa-eye':'fas fa-eye-slash';};
+// ── Init ───────────────────────────────────────────────────────
+const app  = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db   = getFirestore(app);
 
-function setLoad(id,on){const b=document.getElementById(id);if(!b)return;if(on){b._o=b.innerHTML;b.innerHTML='<div class="spinner"></div><span>Creating...</span>';b.disabled=true;}else{b.innerHTML=b._o;b.disabled=false;}}
-function fErr(id,msg){const e=document.getElementById(id+'Error');if(!e)return;e.querySelector('span').textContent=msg;e.classList.add('show');}
-function clrErr(){document.querySelectorAll('.ferr').forEach(e=>e.classList.remove('show'));}
+// ── Helpers ────────────────────────────────────────────────────
+function genReferralCode(uid) {
+  return 'VUX-' + uid.substring(0, 6).toUpperCase();
+}
 
-// SIGNUP
-document.getElementById('btnSignup').onclick=async()=>{
-  clrErr();
-  const name=document.getElementById('signupName').value.trim();
-  const email=document.getElementById('signupEmail').value.trim();
-  const password=document.getElementById('signupPassword').value;
-  const referredBy=document.getElementById('refCode').value.trim()||null;
-  const terms=document.getElementById('termsChk').checked;
-  if(!name){fErr('name','Please enter your full name.');return;}
-  if(!email){fErr('email','Please enter your email address.');return;}
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){fErr('email','Please enter a valid email format.');return;}
-  if(password.length<6){fErr('password','Password must be at least 6 characters.');return;}
-  if(!terms){toast('Please accept the Terms of Service.','error');return;}
-  setLoad('btnSignup',true);
-  const r=await signUpUser({email,password,name,referredBy});
-  setLoad('btnSignup',false);
-  if(r.success){showSuccess(name);}
-  else{toast(r.error,'error');if(r.error.toLowerCase().includes('email'))fErr('email',r.error);}
+/**
+ * Create the full user profile in Firestore:
+ *   users/{uid}
+ *   wallets/{uid}
+ *   wallets/{uid}/transactions/{auto-id}
+ */
+async function createUserProfile(uid, name, email, referredBy = '') {
+  const referralCode = genReferralCode(uid);
+  const now          = serverTimestamp();
+
+  // 1. users/{uid}
+  await setDoc(doc(db, 'users', uid), {
+    uid,
+    name:         name || 'Vura Student',
+    email,
+    phone:        '',
+    plan:         'free',
+    vuxBalance:   300,
+    referralCode,
+    referredBy:   referredBy.trim().toUpperCase() || '',
+    onboarded:    false,
+    createdAt:    now,
+    lastLogin:    now,
+    examSelected: '',
+    country:      '',
+    avatar:       '',
+    streak:       0,
+    totalQuizzes: 0,
+    totalCorrect: 0,
+  });
+
+  // 2. wallets/{uid}
+  await setDoc(doc(db, 'wallets', uid), {
+    uid,
+    balance:      300,
+    totalEarned:  300,
+    totalSpent:   0,
+    createdAt:    now,
+    updatedAt:    now,
+  });
+
+  // 3. wallets/{uid}/transactions/{auto-id}
+  await addDoc(collection(db, 'wallets', uid, 'transactions'), {
+    type:        'Welcome Bonus',
+    description: 'Free VUX coins awarded on account creation',
+    amount:      300,
+    balance:     300,
+    timestamp:   now,
+    status:      'completed',
+  });
+}
+
+// ── Field Validation ───────────────────────────────────────────
+function validateForm() {
+  let valid = true;
+
+  const name     = document.getElementById('fullName').value.trim();
+  const email    = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value;
+
+  // Name
+  if (!name) {
+    showFieldError('nameError', 'nameErrorMsg', 'fullName', 'Please enter your full name');
+    valid = false;
+  } else if (name.length < 2) {
+    showFieldError('nameError', 'nameErrorMsg', 'fullName', 'Name must be at least 2 characters');
+    valid = false;
+  } else {
+    clearFieldError('nameError', 'fullName');
+  }
+
+  // Email
+  const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email) {
+    showFieldError('emailError', 'emailErrorMsg', 'email', 'Please enter your email address');
+    valid = false;
+  } else if (!emailReg.test(email)) {
+    showFieldError('emailError', 'emailErrorMsg', 'email', 'Please enter a valid email address');
+    valid = false;
+  } else {
+    clearFieldError('emailError', 'email');
+  }
+
+  // Password
+  if (!password) {
+    showFieldError('passError', 'passErrorMsg', 'password', 'Please create a password');
+    valid = false;
+  } else if (password.length < 6) {
+    showFieldError('passError', 'passErrorMsg', 'password', 'Password must be at least 6 characters');
+    valid = false;
+  } else {
+    clearFieldError('passError', 'password');
+  }
+
+  return valid;
+}
+
+function showFieldError(errId, msgId, inputId, msg) {
+  const errEl  = document.getElementById(errId);
+  const msgEl  = document.getElementById(msgId);
+  const input  = document.getElementById(inputId);
+  msgEl.textContent = msg;
+  errEl.classList.add('show');
+  input.classList.add('error');
+  input.classList.remove('success');
+}
+
+function clearFieldError(errId, inputId) {
+  const errEl = document.getElementById(errId);
+  const input = document.getElementById(inputId);
+  errEl.classList.remove('show');
+  input.classList.remove('error');
+  input.classList.add('success');
+}
+
+// ── Firebase Error → Friendly Message ─────────────────────────
+function friendlyError(code) {
+  const map = {
+    'auth/email-already-in-use':       'An account with this email already exists. Try logging in instead.',
+    'auth/invalid-email':              'That email address doesn\'t look right. Please check and try again.',
+    'auth/operation-not-allowed':      'Email sign-up is currently disabled. Please try Google sign-in.',
+    'auth/weak-password':              'Your password is too weak. Please use at least 6 characters.',
+    'auth/network-request-failed':     'Network error. Please check your internet connection and try again.',
+    'auth/too-many-requests':          'Too many sign-up attempts. Please wait a few minutes and try again.',
+    'auth/popup-closed-by-user':       'Google sign-in was cancelled. Please try again.',
+    'auth/popup-blocked':              'Pop-up was blocked. Please allow pop-ups for this site and try again.',
+    'auth/cancelled-popup-request':    'Sign-in cancelled. Please try again.',
+    'auth/internal-error':             'An unexpected error occurred. Please try again.',
+    'auth/user-disabled':              'This account has been disabled. Please contact support.',
+  };
+  return map[code] || `Sign-up failed (${code}). Please try again or contact support@vura-ai.com`;
+}
+
+// ── Loading State ──────────────────────────────────────────────
+function setLoading(isLoading, btnId = 'btnSubmit') {
+  const btn     = document.getElementById(btnId);
+  const content = document.getElementById('submitContent');
+  btn.disabled  = isLoading;
+
+  if (isLoading) {
+    btn.innerHTML = '<div class="spinner"></div><span>Creating account...</span>';
+  } else {
+    btn.innerHTML = '<span id="submitContent"><i class="fa-solid fa-rocket"></i> Create Account — Free</span>';
+  }
+}
+
+function setGoogleLoading(isLoading) {
+  const btn = document.getElementById('btnGoogle');
+  btn.disabled = isLoading;
+  if (isLoading) {
+    btn.innerHTML = '<div class="spinner" style="width:20px;height:20px"></div><span>Connecting to Google...</span>';
+  } else {
+    btn.innerHTML = `<svg class="google-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+    </svg>Continue with Google`;
+  }
+}
+
+// ── Success Flow ───────────────────────────────────────────────
+function triggerSuccess() {
+  // Show overlay
+  const overlay = document.getElementById('successOverlay');
+  overlay.classList.add('show');
+
+  // Confetti
+  startConfetti();
+
+  // Redirect bar
+  setTimeout(() => {
+    document.getElementById('redirectBar').style.width = '100%';
+    document.getElementById('redirectProgress').classList.add('active');
+  }, 100);
+
+  // Redirect after 2.5 seconds
+  setTimeout(() => {
+    window.location.href = 'onboarding.html';
+  }, 2600);
+}
+
+// ── Email/Password Signup ──────────────────────────────────────
+document.getElementById('signupForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  if (!validateForm()) return;
+
+  const name      = document.getElementById('fullName').value.trim();
+  const email     = document.getElementById('email').value.trim();
+  const password  = document.getElementById('password').value;
+  const referral  = document.getElementById('referral').value.trim().toUpperCase();
+
+  setLoading(true);
+
+  try {
+    // Create Firebase auth account
+    const cred = await createUserWithEmailAndPassword(auth, email, password);
+    const user = cred.user;
+
+    // Update display name
+    await updateProfile(user, { displayName: name });
+
+    // Create Firestore documents
+    await createUserProfile(user.uid, name, email, referral);
+
+    // Success!
+    triggerSuccess();
+
+  } catch (err) {
+    setLoading(false);
+    const msg = friendlyError(err.code);
+
+    // Map auth errors to specific fields when possible
+    if (err.code === 'auth/email-already-in-use' || err.code === 'auth/invalid-email') {
+      showFieldError('emailError', 'emailErrorMsg', 'email', msg);
+    } else if (err.code === 'auth/weak-password') {
+      showFieldError('passError', 'passErrorMsg', 'password', msg);
+    } else {
+      showToast(msg, 'error');
+    }
+  }
+});
+
+// ── Google Sign-in ─────────────────────────────────────────────
+document.getElementById('btnGoogle').addEventListener('click', async () => {
+  const provider = new GoogleAuthProvider();
+  setGoogleLoading(true);
+
+  try {
+    const result = await signInWithPopup(auth, provider);
+    const user   = result.user;
+
+    // Check if user already exists in Firestore
+    const userDoc = await getDoc(doc(db, 'users', user.uid));
+
+    if (!userDoc.exists()) {
+      // New user — create profile
+      const referral = document.getElementById('referral').value.trim().toUpperCase();
+      await createUserProfile(user.uid, user.displayName || 'Vura Student', user.email, referral);
+      triggerSuccess();
+    } else {
+      // Existing user — redirect to dashboard
+      window.location.href = 'dashboard.html';
+    }
+
+  } catch (err) {
+    setGoogleLoading(false);
+    if (err.code !== 'auth/popup-closed-by-user' && err.code !== 'auth/cancelled-popup-request') {
+      showToast(friendlyError(err.code), 'error');
+    }
+  }
+});
+
+// ── Password toggle ────────────────────────────────────────────
+document.getElementById('eyeBtn').addEventListener('click', () => {
+  const input   = document.getElementById('password');
+  const icon    = document.getElementById('eyeIcon');
+  const isPass  = input.type === 'password';
+  input.type    = isPass ? 'text' : 'password';
+  icon.className = isPass ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye';
+});
+
+// ── Referral code auto-uppercase ───────────────────────────────
+document.getElementById('referral').addEventListener('input', function() {
+  this.value = this.value.toUpperCase();
+});
+
+// ── Clear errors on input ──────────────────────────────────────
+['fullName','email','password'].forEach(id => {
+  document.getElementById(id).addEventListener('input', () => {
+    const errMap = { fullName: 'nameError', email: 'emailError', password: 'passError' };
+    document.getElementById(errMap[id]).classList.remove('show');
+    document.getElementById(id).classList.remove('error');
+  });
+});
+
+// ── Toast Functions (exposed globally) ─────────────────────────
+window.showToast = function(msg, type = 'error') {
+  const toast   = document.getElementById('toast');
+  const msgEl   = document.getElementById('toastMsg');
+  const iconEl  = document.getElementById('toastIcon');
+
+  msgEl.textContent = msg;
+  toast.className   = `toast ${type === 'error' ? 'error-toast' : 'success-toast'}`;
+  iconEl.className  = type === 'error'
+    ? 'fa-solid fa-circle-exclamation'
+    : 'fa-solid fa-circle-check';
+
+  toast.classList.add('show');
+
+  if (window._toastTimer) clearTimeout(window._toastTimer);
+  window._toastTimer = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 5000);
 };
 
-// GOOGLE
-document.getElementById('btnGoogle').onclick=async()=>{
-  const r=await googleLoginUser();
-  if(r.success){showSuccess(r.user?.displayName||'friend');}
-  else toast(r.error,'error');
+window.hideToast = function() {
+  document.getElementById('toast').classList.remove('show');
 };
+
 </script>
+
+<!-- ============================================================
+   NON-FIREBASE SCRIPTS (Stars, Confetti) — classic script
+   ============================================================ -->
+<script>
+/* ── Starfield ─────────────────────────────────────────────── */
+(function() {
+  const canvas = document.getElementById('stars-canvas');
+  const ctx    = canvas.getContext('2d');
+  let W, H, stars = [];
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  class Star {
+    constructor() { this.reset(); }
+    reset() {
+      this.x     = Math.random() * W;
+      this.y     = Math.random() * H;
+      this.r     = Math.random() * 1.4 + 0.2;
+      this.alpha = Math.random() * 0.6 + 0.1;
+      this.speed = Math.random() * 0.003 + 0.001;
+      this.phase = Math.random() * Math.PI * 2;
+    }
+    draw(t) {
+      const a = this.alpha * (0.5 + 0.5 * Math.sin(t * this.speed * 60 + this.phase));
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255,255,255,${a})`;
+      ctx.fill();
+    }
+  }
+
+  for (let i = 0; i < 180; i++) stars.push(new Star());
+
+  let t = 0;
+  function animate() {
+    ctx.clearRect(0, 0, W, H);
+    t++;
+    stars.forEach(s => s.draw(t));
+    requestAnimationFrame(animate);
+  }
+  animate();
+})();
+
+/* ── Confetti ──────────────────────────────────────────────── */
+function startConfetti() {
+  const canvas = document.getElementById('confetti-canvas');
+  const ctx    = canvas.getContext('2d');
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const pieces = [];
+  const colors = ['#00d2ff','#9d50bb','#ffcc33','#10b981','#ff4d6d','#fff'];
+  const count  = 160;
+
+  for (let i = 0; i < count; i++) {
+    pieces.push({
+      x:    Math.random() * canvas.width,
+      y:    Math.random() * canvas.height * 0.3 - canvas.height * 0.3,
+      w:    Math.random() * 10 + 4,
+      h:    Math.random() * 6 + 3,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      rot:  Math.random() * 360,
+      vx:   (Math.random() - 0.5) * 5,
+      vy:   Math.random() * 4 + 2,
+      vr:   (Math.random() - 0.5) * 8,
+      alpha: 1,
+    });
+  }
+
+  let frame;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    let alive = false;
+    pieces.forEach(p => {
+      p.x   += p.vx;
+      p.y   += p.vy;
+      p.vy  += 0.12;
+      p.rot += p.vr;
+      if (p.y > canvas.height * 0.7) { p.alpha -= 0.03; }
+      if (p.alpha > 0) {
+        alive = true;
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rot * Math.PI / 180);
+        ctx.globalAlpha = Math.max(0, p.alpha);
+        ctx.fillStyle = p.color;
+        ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+        ctx.restore();
+      }
+    });
+    if (alive) { frame = requestAnimationFrame(draw); }
+    else { ctx.clearRect(0, 0, canvas.width, canvas.height); }
+  }
+  draw();
+
+  // Stop after 3 seconds
+  setTimeout(() => {
+    cancelAnimationFrame(frame);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }, 3000);
+}
+</script>
+
 </body>
 </html>
