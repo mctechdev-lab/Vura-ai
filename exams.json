@@ -1,0 +1,1352 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "last_updated": "2025-06-01",
+    "total_exams": 21,
+    "description": "Vura AI Global Exams Database — Subjects, Scoring, and Details",
+    "maintainer": "Michael Chibuzor Technology"
+  },
+  "exams": [
+    {
+      "exam_code": "JAMB",
+      "exam_name": "JAMB UTME",
+      "exam_full_name": "Joint Admissions and Matriculation Board Unified Tertiary Matriculation Examination",
+      "country_code": "NG",
+      "country_name": "Nigeria",
+      "exam_body": "Joint Admissions and Matriculation Board (JAMB)",
+      "exam_type": "University Entrance",
+      "exam_level": "Post-Secondary",
+      "exam_format": "Computer-Based Test (CBT)",
+      "students_per_year": "2000000+",
+      "exam_duration_minutes": 120,
+      "total_questions": 180,
+      "max_score": 400,
+      "passing_score": 140,
+      "competitive_score": 200,
+      "excellent_score": 280,
+      "subjects": {
+        "mandatory": ["Use of English"],
+        "science_track": ["Mathematics", "Physics", "Chemistry", "Biology", "Agricultural Science", "Geography"],
+        "arts_track": ["Literature in English", "Government", "CRK (Christian Religious Knowledge)", "IRK (Islamic Religious Knowledge)", "History", "Visual Arts"],
+        "commercial_track": ["Economics", "Commerce", "Accounting", "Business Studies"],
+        "social_science_track": ["Government", "Economics", "Geography", "Sociology", "French"],
+        "all_optional": ["Mathematics", "Physics", "Chemistry", "Biology", "Agricultural Science", "Geography", "Literature in English", "Government", "CRK", "IRK", "History", "Economics", "Commerce", "Accounting", "Visual Arts", "Music", "French", "Hausa", "Igbo", "Yoruba"]
+      },
+      "subject_count": 4,
+      "subject_note": "1 mandatory (English) + 3 optional based on course of study",
+      "score_per_subject": 100,
+      "marking_scheme": {
+        "correct": "+2 or +4 (varies by year)",
+        "wrong": "-1",
+        "unanswered": "0"
+      },
+      "score_ranges": [
+        { "label": "140–159", "grade": "Minimum Pass", "description": "Barely qualifies for some state universities" },
+        { "label": "160–199", "grade": "Below Average", "description": "Eligible for polytechnics and some lower-tier universities" },
+        { "label": "200–249", "grade": "Average", "description": "Eligible for most universities; competitive for some courses" },
+        { "label": "250–279", "grade": "Good", "description": "Competitive for popular courses at reputable universities" },
+        { "label": "280–320", "grade": "Excellent", "description": "Strong chance at top federal universities (UNILAG, UI, OAU)" },
+        { "label": "320–400", "grade": "Outstanding", "description": "Top 1% — eligible for Medicine, Law, Engineering at any university" }
+      ],
+      "exam_dates": {
+        "registration_opens": "January",
+        "exam_window": "March–April",
+        "results": "May"
+      },
+      "official_website": "https://www.jamb.gov.ng",
+      "vura_question_bank": 18000,
+      "vura_subjects_covered": ["Use of English", "Mathematics", "Physics", "Chemistry", "Biology", "Economics", "Government", "Literature in English", "CRK", "Geography", "Commerce", "Agricultural Science"],
+      "tips": [
+        "English is mandatory — strong vocabulary and comprehension are essential",
+        "Practice past questions from 2000 to present",
+        "Time management: 120 minutes for 180 questions = 40 seconds per question",
+        "CBT format — practice on a computer before exam day"
+      ]
+    },
+    {
+      "exam_code": "WAEC",
+      "exam_name": "WAEC SSCE",
+      "exam_full_name": "West African Examinations Council Senior School Certificate Examination",
+      "country_code": "NG",
+      "country_name": "Nigeria / West Africa",
+      "exam_body": "West African Examinations Council (WAEC)",
+      "exam_type": "Secondary School Leaving Certificate",
+      "exam_level": "Secondary (O-Level)",
+      "exam_format": "Written (Theory + Objective + Practical)",
+      "students_per_year": "1500000+",
+      "exam_duration_minutes": "Varies per subject (2.5–3 hours each)",
+      "total_questions": "Varies per subject",
+      "max_score": "A1 (Highest) — F9 (Fail)",
+      "passing_score": "C6",
+      "competitive_score": "B3",
+      "excellent_score": "A1",
+      "subjects": {
+        "core_subjects": ["English Language", "Mathematics"],
+        "sciences": ["Physics", "Chemistry", "Biology", "Agricultural Science", "Physical Education", "Health Science", "Computer Science"],
+        "arts_humanities": ["Literature in English", "History", "Government", "Christian Religious Studies", "Islamic Studies", "Music", "Fine Art", "Visual Art"],
+        "commercial": ["Economics", "Commerce", "Financial Accounting", "Business Studies", "Marketing", "Office Practice"],
+        "social_sciences": ["Geography", "Civic Education", "French", "Hausa", "Igbo", "Yoruba", "Arabic"]
+      },
+      "subject_count": "Minimum 8, Maximum 9",
+      "subject_note": "English and Maths are compulsory; remaining subjects are electives based on track",
+      "grading_system": {
+        "A1": { "score_range": "75–100", "classification": "Distinction", "points": 1 },
+        "B2": { "score_range": "70–74", "classification": "Very Good", "points": 2 },
+        "B3": { "score_range": "65–69", "classification": "Good", "points": 3 },
+        "C4": { "score_range": "60–64", "classification": "Credit", "points": 4 },
+        "C5": { "score_range": "55–59", "classification": "Credit", "points": 5 },
+        "C6": { "score_range": "50–54", "classification": "Credit (Minimum Pass)", "points": 6 },
+        "D7": { "score_range": "45–49", "classification": "Pass", "points": 7 },
+        "E8": { "score_range": "40–44", "classification": "Pass", "points": 8 },
+        "F9": { "score_range": "0–39", "classification": "Fail", "points": 9 }
+      },
+      "score_ranges": [
+        { "label": "A1 (75–100%)", "grade": "Distinction", "description": "Exceptional — top universities worldwide will accept this" },
+        { "label": "B2-B3 (65–74%)", "grade": "Very Good", "description": "Strong performance — qualifies for competitive university courses" },
+        { "label": "C4-C6 (50–64%)", "grade": "Credit", "description": "Minimum university entry standard; 5 credits including English & Maths required" },
+        { "label": "D7-E8 (40–49%)", "grade": "Pass", "description": "Does not meet credit standard; resit recommended for university entry" },
+        { "label": "F9 (0–39%)", "grade": "Fail", "description": "Must resit — this grade is unacceptable for further education" }
+      ],
+      "exam_dates": {
+        "registration_opens": "October",
+        "exam_window": "May–June",
+        "results": "July–August"
+      },
+      "university_requirement": "Minimum 5 credits including English Language and Mathematics",
+      "official_website": "https://www.waecnigeria.org",
+      "vura_question_bank": 22000,
+      "vura_subjects_covered": ["English Language", "Mathematics", "Physics", "Chemistry", "Biology", "Economics", "Government", "Literature in English", "Geography", "Commerce", "Agricultural Science", "Financial Accounting", "CRS", "History"],
+      "tips": [
+        "WAEC requires both objective and theory sections — practice both thoroughly",
+        "5 credits minimum (including English + Maths) required for university admission",
+        "Biology, Chemistry, Physics practicals are separately graded",
+        "Past questions from 1990 onwards are available on Vura AI"
+      ]
+    },
+    {
+      "exam_code": "NECO",
+      "exam_name": "NECO SSCE",
+      "exam_full_name": "National Examinations Council Senior School Certificate Examination",
+      "country_code": "NG",
+      "country_name": "Nigeria",
+      "exam_body": "National Examinations Council (NECO)",
+      "exam_type": "Secondary School Leaving Certificate",
+      "exam_level": "Secondary (O-Level)",
+      "exam_format": "Written (Theory + Objective + Practical)",
+      "students_per_year": "800000+",
+      "exam_duration_minutes": "Varies per subject (2–3 hours each)",
+      "total_questions": "Varies per subject",
+      "max_score": "A1 (Highest) — F9 (Fail)",
+      "passing_score": "C6",
+      "competitive_score": "B2",
+      "excellent_score": "A1",
+      "subjects": {
+        "core_subjects": ["English Language", "Mathematics"],
+        "sciences": ["Physics", "Chemistry", "Biology", "Agricultural Science", "Computer Studies", "Health Education"],
+        "arts_humanities": ["Literature in English", "History", "Government", "Christian Religious Studies", "Islamic Studies", "Fine Art", "Music"],
+        "commercial": ["Economics", "Commerce", "Book-Keeping & Accounts", "Business Studies", "Office Practice"],
+        "social_sciences": ["Geography", "Civic Education", "French", "Hausa", "Igbo", "Yoruba", "Physical Education"]
+      },
+      "subject_count": "Minimum 8, Maximum 9",
+      "subject_note": "English and Maths are compulsory; NECO is conducted only in Nigeria (unlike WAEC which covers West Africa)",
+      "grading_system": {
+        "A1": { "score_range": "75–100", "classification": "Distinction" },
+        "B2": { "score_range": "70–74", "classification": "Very Good" },
+        "B3": { "score_range": "65–69", "classification": "Good" },
+        "C4": { "score_range": "60–64", "classification": "Credit" },
+        "C5": { "score_range": "55–59", "classification": "Credit" },
+        "C6": { "score_range": "50–54", "classification": "Credit (Minimum Pass)" },
+        "D7": { "score_range": "45–49", "classification": "Pass" },
+        "E8": { "score_range": "40–44", "classification": "Pass" },
+        "F9": { "score_range": "0–39", "classification": "Fail" }
+      },
+      "score_ranges": [
+        { "label": "A1 (75–100%)", "grade": "Distinction", "description": "Outstanding — accepted by all Nigerian universities" },
+        { "label": "B2-B3 (65–74%)", "grade": "Very Good", "description": "Strong result — qualifies for competitive programmes" },
+        { "label": "C4-C6 (50–64%)", "grade": "Credit", "description": "Meets university admission requirement when combined with other credits" },
+        { "label": "D7-E8 (40–49%)", "grade": "Pass", "description": "Below credit standard — resit needed for university" },
+        { "label": "F9 (0–39%)", "grade": "Fail", "description": "Must resit — fails to meet any tertiary admission standard" }
+      ],
+      "exam_dates": {
+        "registration_opens": "January",
+        "exam_window": "June–July",
+        "results": "September"
+      },
+      "university_requirement": "Minimum 5 credits including English Language and Mathematics",
+      "official_website": "https://www.neco.gov.ng",
+      "vura_question_bank": 12000,
+      "vura_subjects_covered": ["English Language", "Mathematics", "Physics", "Chemistry", "Biology", "Economics", "Government", "Literature in English", "Geography", "Commerce", "Agricultural Science", "CRS", "Financial Accounting"],
+      "tips": [
+        "NECO questions are often more theoretical than WAEC — master definitions and explanations",
+        "NECO and WAEC results are equally accepted by Nigerian universities",
+        "Use Vura AI to practice both WAEC and NECO past questions interchangeably",
+        "NECO internal (school-based) and external (national) exams are different — this covers the national exam"
+      ]
+    },
+    {
+      "exam_code": "WASSCE",
+      "exam_name": "WASSCE",
+      "exam_full_name": "West African Senior School Certificate Examination (Ghana)",
+      "country_code": "GH",
+      "country_name": "Ghana",
+      "exam_body": "West African Examinations Council (WAEC Ghana)",
+      "exam_type": "Secondary School Leaving Certificate",
+      "exam_level": "Secondary (O-Level equivalent)",
+      "exam_format": "Written (Objective + Essay + Practical)",
+      "students_per_year": "400000+",
+      "exam_duration_minutes": "Varies per subject",
+      "total_questions": "Varies per subject",
+      "max_score": "A1",
+      "passing_score": "C6",
+      "competitive_score": "B2",
+      "excellent_score": "A1",
+      "subjects": {
+        "core_subjects": ["English Language", "Mathematics (Core)", "Integrated Science", "Social Studies"],
+        "elective_sciences": ["Physics", "Chemistry", "Biology", "Elective Mathematics", "Agricultural Science", "Computer Science"],
+        "elective_arts": ["Literature in English", "History", "Government", "Christian Religious Studies", "Islamic Studies", "French", "Visual Arts", "Music"],
+        "elective_business": ["Economics", "Business Management", "Financial Accounting", "Cost Accounting", "Business Studies"],
+        "vocational": ["Technical Drawing", "Wood Work", "Metal Work", "Auto Mechanics", "Carpentry & Joinery"]
+      },
+      "subject_count": "4 core + 3 electives (minimum)",
+      "subject_note": "Ghana WASSCE has 4 mandatory core subjects unlike Nigeria WAEC which has 2 core subjects",
+      "grading_system": {
+        "A1": { "score_range": "80–100", "classification": "Excellent" },
+        "B2": { "score_range": "70–79", "classification": "Very Good" },
+        "B3": { "score_range": "60–69", "classification": "Good" },
+        "C4": { "score_range": "55–59", "classification": "Credit" },
+        "C5": { "score_range": "50–54", "classification": "Credit" },
+        "C6": { "score_range": "45–49", "classification": "Credit (Minimum)" },
+        "D7": { "score_range": "40–44", "classification": "Pass" },
+        "E8": { "score_range": "35–39", "classification": "Pass" },
+        "F9": { "score_range": "0–34", "classification": "Fail" }
+      },
+      "score_ranges": [
+        { "label": "A1 (80–100%)", "grade": "Excellent", "description": "Top performance — qualifies for all Ghanaian universities" },
+        { "label": "B2-B3 (60–79%)", "grade": "Very Good / Good", "description": "Strong — eligible for competitive programmes at UG, KNUST, UCC" },
+        { "label": "C4-C6 (45–59%)", "grade": "Credit", "description": "Minimum for university — 6 credits including core subjects required" },
+        { "label": "D7-E8 (35–44%)", "grade": "Pass", "description": "Below credit standard — resit needed for higher education" },
+        { "label": "F9 (0–34%)", "grade": "Fail", "description": "Must resit — does not qualify for tertiary admission" }
+      ],
+      "exam_dates": {
+        "registration_opens": "November",
+        "exam_window": "May–June",
+        "results": "August"
+      },
+      "official_website": "https://www.waecgh.org",
+      "vura_question_bank": 6000,
+      "vura_subjects_covered": ["English Language", "Mathematics Core", "Integrated Science", "Social Studies", "Physics", "Chemistry", "Biology", "Elective Mathematics", "Economics", "Government"],
+      "tips": [
+        "Core subjects (English, Maths, Integrated Science, Social Studies) are mandatory for all students",
+        "Elective Mathematics is different from Core Mathematics — it's more advanced",
+        "KNUST and UG require specific elective combinations for Science/Business programmes",
+        "Practice WASSCE past questions from 2005 onwards on Vura AI"
+      ]
+    },
+    {
+      "exam_code": "KCSE",
+      "exam_name": "KCSE",
+      "exam_full_name": "Kenya Certificate of Secondary Education",
+      "country_code": "KE",
+      "country_name": "Kenya",
+      "exam_body": "Kenya National Examinations Council (KNEC)",
+      "exam_type": "Secondary School Leaving Certificate",
+      "exam_level": "Secondary (Form 4)",
+      "exam_format": "Written (Theory + Practical)",
+      "students_per_year": "900000+",
+      "exam_duration_minutes": "Varies per subject (2–3 hours each)",
+      "total_questions": "Varies per subject",
+      "max_score": 84,
+      "passing_score": 28,
+      "competitive_score": 50,
+      "excellent_score": 70,
+      "mean_grade_system": {
+        "A": { "points": "12", "score_range": "81–100", "classification": "Distinction" },
+        "A-": { "points": "11", "score_range": "74–80", "classification": "Distinction" },
+        "B+": { "points": "10", "score_range": "67–73", "classification": "Very Good" },
+        "B": { "points": "9", "score_range": "60–66", "classification": "Good" },
+        "B-": { "points": "8", "score_range": "53–59", "classification": "Good" },
+        "C+": { "points": "7", "score_range": "46–52", "classification": "Average" },
+        "C": { "points": "6", "score_range": "40–45", "classification": "Average" },
+        "C-": { "points": "5", "score_range": "33–39", "classification": "Below Average" },
+        "D+": { "points": "4", "score_range": "26–32", "classification": "Pass" },
+        "D": { "points": "3", "score_range": "19–25", "classification": "Pass" },
+        "D-": { "points": "2", "score_range": "12–18", "classification": "Poor" },
+        "E": { "points": "1", "score_range": "0–11", "classification": "Fail" }
+      },
+      "subjects": {
+        "group_1_languages": ["English", "Kiswahili", "Kenyan Sign Language"],
+        "group_2_humanities": ["History & Government", "Geography", "Christian Religious Education", "Islamic Religious Education", "Hindu Religious Education"],
+        "group_3_sciences": ["Mathematics", "Biology", "Physics", "Chemistry"],
+        "group_4_technical": ["Agriculture", "Computer Studies", "Home Science", "Building Construction", "Woodwork", "Metalwork", "Power Mechanics", "Electrical Installation"],
+        "group_5_applied": ["Art & Design", "Music", "Aviation Technology", "French", "German", "Arabic", "Mandarin"],
+        "group_6_business": ["Business Studies", "Economics"]
+      },
+      "subject_count": "Minimum 7 subjects (must span multiple groups)",
+      "subject_note": "English and Kiswahili are mandatory; students select remaining subjects across groups",
+      "score_ranges": [
+        { "label": "A / A- (Mean 10–12)", "grade": "Distinction", "description": "Top performance — qualifies for Medicine, Engineering, Law at University of Nairobi, Strathmore" },
+        { "label": "B+ / B / B- (Mean 7–9)", "grade": "Good to Very Good", "description": "Strong result — eligible for most degree programmes at Kenyan public universities" },
+        { "label": "C+ / C (Mean 5–6)", "grade": "Average", "description": "Minimum for government-sponsored degree placement; qualifies for diploma/certificate if C+" },
+        { "label": "C- / D+ (Mean 3–4)", "grade": "Below Standard", "description": "Qualifies for certificate and diploma programmes; artisan courses" },
+        { "label": "D / D- / E (Mean 1–2)", "grade": "Fail", "description": "Does not qualify for certificate or diploma programmes" }
+      ],
+      "university_requirement": "Minimum grade C+ (Mean Grade 7+) for government-sponsored degree placement",
+      "exam_dates": {
+        "registration_opens": "January",
+        "exam_window": "October–November",
+        "results": "January (following year)"
+      },
+      "official_website": "https://www.knec.ac.ke",
+      "vura_question_bank": 8000,
+      "vura_subjects_covered": ["English", "Kiswahili", "Mathematics", "Biology", "Physics", "Chemistry", "History & Government", "Geography", "CRE", "Business Studies", "Economics", "Computer Studies", "Agriculture"],
+      "tips": [
+        "Mean grade is calculated across all subjects — a strong performance in all subjects matters",
+        "C+ is the critical threshold for degree programme placement in Kenya",
+        "Mathematics and Sciences are heavily weighted for Science/Technology courses",
+        "Use Vura AI's past KCSE questions from 2010 to 2024 for intensive practice"
+      ]
+    },
+    {
+      "exam_code": "MATRIC_NSC",
+      "exam_name": "Matric / NSC",
+      "exam_full_name": "National Senior Certificate (South African Matriculation Examination)",
+      "country_code": "ZA",
+      "country_name": "South Africa",
+      "exam_body": "Department of Basic Education (DBE) / Umalusi",
+      "exam_type": "School Leaving Certificate",
+      "exam_level": "Grade 12 (Secondary)",
+      "exam_format": "Written (Theory + Practical for some subjects)",
+      "students_per_year": "750000+",
+      "exam_duration_minutes": "Varies per subject (2–3 hours each)",
+      "total_questions": "Varies per subject",
+      "max_score": 100,
+      "passing_score": 30,
+      "bachelor_pass_score": 70,
+      "subjects": {
+        "home_languages": ["English Home Language", "Afrikaans Home Language", "Zulu Home Language", "Xhosa Home Language", "Sotho Home Language", "Tsonga Home Language"],
+        "first_additional_languages": ["English First Additional Language", "Afrikaans First Additional Language"],
+        "mathematics": ["Mathematics", "Mathematical Literacy"],
+        "life_orientation": ["Life Orientation"],
+        "sciences": ["Physical Sciences", "Life Sciences", "Agricultural Sciences", "Marine Sciences"],
+        "technology": ["Information Technology", "Computer Applications Technology", "Engineering Graphics & Design"],
+        "humanities": ["History", "Geography", "Religion Studies"],
+        "business": ["Business Studies", "Economics", "Accounting"],
+        "arts": ["Visual Arts", "Dramatic Arts", "Music", "Dance Studies"]
+      },
+      "subject_count": "Minimum 6 subjects (must include Home Language, one additional language, and Life Orientation)",
+      "subject_note": "Life Orientation and two language subjects are compulsory; Mathematics OR Mathematical Literacy is required",
+      "grading_system": {
+        "7": { "score_range": "80–100", "classification": "Outstanding Achievement" },
+        "6": { "score_range": "70–79", "classification": "Meritorious Achievement" },
+        "5": { "score_range": "60–69", "classification": "Substantial Achievement" },
+        "4": { "score_range": "50–59", "classification": "Adequate Achievement" },
+        "3": { "score_range": "40–49", "classification": "Moderate Achievement" },
+        "2": { "score_range": "30–39", "classification": "Elementary Achievement" },
+        "1": { "score_range": "0–29", "classification": "Not Achieved" }
+      },
+      "pass_levels": {
+        "higher_certificate_pass": "40% in 3 subjects + 30% in 3 others (including Home Language)",
+        "diploma_pass": "40% in 4 subjects + 30% in 2 others",
+        "bachelor_pass": "50% in Home Language + 50% in 4 designated subjects + 30% in other subjects"
+      },
+      "score_ranges": [
+        { "label": "Level 7 (80–100%)", "grade": "Outstanding", "description": "Top tier — qualifies for Medicine, Engineering, Law at UCT, Wits, Stellenbosch" },
+        { "label": "Level 6 (70–79%)", "grade": "Meritorious", "description": "Excellent — Bachelor's degree admission at most South African universities" },
+        { "label": "Level 5 (60–69%)", "grade": "Substantial", "description": "Good — Qualifies for Bachelor's degree; competitive for popular courses" },
+        { "label": "Level 4 (50–59%)", "grade": "Adequate", "description": "Meets Bachelor's pass requirement in most subjects" },
+        { "label": "Level 3 (40–49%)", "grade": "Moderate", "description": "Meets Diploma pass; does not qualify for Bachelor's degree entry" },
+        { "label": "Level 2 (30–39%)", "grade": "Elementary", "description": "Higher Certificate pass only; limited tertiary options" },
+        { "label": "Level 1 (0–29%)", "grade": "Not Achieved", "description": "Failed — must repeat or supplement the subject" }
+      ],
+      "exam_dates": {
+        "registration_opens": "June",
+        "exam_window": "October–November",
+        "results": "January (following year)"
+      },
+      "official_website": "https://www.education.gov.za",
+      "vura_question_bank": 7000,
+      "vura_subjects_covered": ["Mathematics", "Physical Sciences", "Life Sciences", "Economics", "Accounting", "Business Studies", "History", "Geography", "English Home Language", "Afrikaans", "Information Technology"],
+      "tips": [
+        "Bachelor's pass requires 50% in 4 designated subjects — focus on these",
+        "Mathematics is critical for university admission to Science, Engineering, and Commerce",
+        "Mathematical Literacy is easier but limits your university course options",
+        "School-Based Assessment (SBA) contributes 25% to your final mark — do not neglect class work"
+      ]
+    },
+    {
+      "exam_code": "NEET",
+      "exam_name": "NEET",
+      "exam_full_name": "National Eligibility cum Entrance Test (Undergraduate) — Medical",
+      "country_code": "IN",
+      "country_name": "India",
+      "exam_body": "National Testing Agency (NTA)",
+      "exam_type": "Medical University Entrance",
+      "exam_level": "Post-Secondary (After Class 12)",
+      "exam_format": "Pen and Paper / OMR (Objective MCQ)",
+      "students_per_year": "2200000+",
+      "exam_duration_minutes": 200,
+      "total_questions": 200,
+      "attempted_questions": 180,
+      "max_score": 720,
+      "passing_score": 138,
+      "competitive_score": 550,
+      "excellent_score": 650,
+      "subjects": {
+        "mandatory": ["Physics", "Chemistry", "Biology (Botany + Zoology)"],
+        "breakdown": {
+          "Physics": { "questions": 45, "max_marks": 180 },
+          "Chemistry": { "questions": 45, "max_marks": 180 },
+          "Biology_Botany": { "questions": 45, "max_marks": 180 },
+          "Biology_Zoology": { "questions": 45, "max_marks": 180 }
+        }
+      },
+      "subject_count": 3,
+      "marking_scheme": {
+        "correct": "+4",
+        "wrong": "-1",
+        "unanswered": "0"
+      },
+      "score_ranges": [
+        { "label": "650–720", "grade": "Top 1%", "description": "AIIMS Delhi, JIPMER — top government medical colleges assured" },
+        { "label": "550–649", "grade": "Excellent", "description": "Strong government medical college in top states (Maharashtra, Karnataka, UP)" },
+        { "label": "450–549", "grade": "Good", "description": "Government medical college in smaller states; private medical college options" },
+        { "label": "350–449", "grade": "Average", "description": "Private medical colleges (management quota); some state colleges" },
+        { "label": "200–349", "grade": "Below Average", "description": "Deemed universities; very limited government options" },
+        { "label": "138–199", "grade": "Minimum Pass", "description": "Qualifies for admission but seats very limited; consider repeating" },
+        { "label": "Below 138", "grade": "Fail", "description": "Does not qualify for MBBS/BDS admission — must retake" }
+      ],
+      "eligibility": {
+        "age_minimum": 17,
+        "age_maximum": "No upper limit (from 2021)",
+        "class_12_requirement": "PCB (Physics, Chemistry, Biology) with minimum 50% aggregate",
+        "attempts": "Unlimited (from 2021)"
+      },
+      "exam_dates": {
+        "registration_opens": "December",
+        "exam_date": "May",
+        "results": "June"
+      },
+      "official_website": "https://neet.nta.nic.in",
+      "vura_question_bank": 10000,
+      "vura_subjects_covered": ["Physics", "Chemistry", "Biology (Botany)", "Biology (Zoology)"],
+      "tips": [
+        "NCERT textbooks are the bible for NEET — master every line",
+        "Biology carries 360/720 marks — top priority subject",
+        "Negative marking (-1 per wrong answer) — do not guess blindly",
+        "Solve at least 10 years of past NEET papers before the exam"
+      ]
+    },
+    {
+      "exam_code": "JEE_MAIN",
+      "exam_name": "JEE Main",
+      "exam_full_name": "Joint Entrance Examination Main — Engineering",
+      "country_code": "IN",
+      "country_name": "India",
+      "exam_body": "National Testing Agency (NTA)",
+      "exam_type": "Engineering University Entrance",
+      "exam_level": "Post-Secondary (After Class 12)",
+      "exam_format": "Computer-Based Test (CBT)",
+      "students_per_year": "1200000+",
+      "exam_duration_minutes": 180,
+      "total_questions": 90,
+      "max_score": 300,
+      "passing_score": 89,
+      "competitive_score": 200,
+      "excellent_score": 250,
+      "subjects": {
+        "mandatory": ["Mathematics", "Physics", "Chemistry"],
+        "breakdown": {
+          "Mathematics": { "questions": 30, "max_marks": 100 },
+          "Physics": { "questions": 30, "max_marks": 100 },
+          "Chemistry": { "questions": 30, "max_marks": 100 }
+        },
+        "question_types": ["Multiple Choice (MCQ) — 20 per subject", "Numerical Answer Type (NAT) — 10 per subject (5 to attempt)"]
+      },
+      "subject_count": 3,
+      "marking_scheme": {
+        "MCQ_correct": "+4",
+        "MCQ_wrong": "-1",
+        "NAT_correct": "+4",
+        "NAT_wrong": "0 (no negative marking for NAT)",
+        "unanswered": "0"
+      },
+      "score_ranges": [
+        { "label": "250–300 (Percentile 99.9+)", "grade": "Top Rank", "description": "Top NITs (Trichy, Warangal, Surathkal) — Core Engineering branches" },
+        { "label": "200–249 (Percentile 99–99.9)", "grade": "Excellent", "description": "Good NITs, IIITs, and top state universities" },
+        { "label": "150–199 (Percentile 95–99)", "grade": "Good", "description": "Mid-tier NITs and IIITs; qualifies for JEE Advanced" },
+        { "label": "100–149 (Percentile 85–95)", "grade": "Average", "description": "State government engineering colleges; some private top-tier colleges" },
+        { "label": "Below 89", "grade": "Does Not Qualify", "description": "Below cut-off for NITs; state colleges only based on board results" }
+      ],
+      "eligibility": {
+        "age_minimum": "No minimum",
+        "class_12_requirement": "PCM (Physics, Chemistry, Mathematics) — passing required; 75% for NITs/IIITs/GFTIs",
+        "attempts": "3 (within 3 consecutive years after Class 12)",
+        "sessions_per_year": "2 (January and April)"
+      },
+      "exam_dates": {
+        "session_1": "January",
+        "session_2": "April",
+        "results": "February (S1) / May (S2)"
+      },
+      "official_website": "https://jeemain.nta.nic.in",
+      "vura_question_bank": 8000,
+      "vura_subjects_covered": ["Mathematics", "Physics", "Chemistry"],
+      "tips": [
+        "JEE Main qualifies you for NITs, IIITs, and GFTIs — and is the gateway to JEE Advanced (IITs)",
+        "Top 2.5 lakh students in JEE Main are eligible to appear for JEE Advanced",
+        "Take both January and April sessions to improve your best percentile",
+        "Focus on NCERT for Chemistry; use HC Verma for Physics; RD Sharma or Cengage for Maths"
+      ]
+    },
+    {
+      "exam_code": "JEE_ADVANCED",
+      "exam_name": "JEE Advanced",
+      "exam_full_name": "Joint Entrance Examination Advanced — IIT Entrance",
+      "country_code": "IN",
+      "country_name": "India",
+      "exam_body": "IITs (Rotating Organiser — IIT Bombay, Delhi, Madras, etc.)",
+      "exam_type": "IIT Engineering Entrance",
+      "exam_level": "Post-Secondary — Most Competitive Engineering Exam in India",
+      "exam_format": "Computer-Based Test (CBT) — 2 Papers",
+      "students_per_year": "250000+",
+      "exam_duration_minutes": 180,
+      "total_papers": 2,
+      "max_score": 360,
+      "passing_score": "Subject to category cut-offs (approx. 35%)",
+      "competitive_score": 250,
+      "excellent_score": 300,
+      "subjects": {
+        "mandatory": ["Mathematics", "Physics", "Chemistry"],
+        "paper_1": {
+          "Mathematics": { "questions": "Various types", "max_marks": 60 },
+          "Physics": { "questions": "Various types", "max_marks": 60 },
+          "Chemistry": { "questions": "Various types", "max_marks": 60 }
+        },
+        "paper_2": {
+          "Mathematics": { "questions": "Various types", "max_marks": 60 },
+          "Physics": { "questions": "Various types", "max_marks": 60 },
+          "Chemistry": { "questions": "Various types", "max_marks": 60 }
+        },
+        "question_types": ["Single Correct MCQ", "Multiple Correct MCQ", "Numerical Answer", "Matrix Match", "Paragraph Based"]
+      },
+      "subject_count": 3,
+      "marking_scheme": "Varies by question type — partial marking exists for Multiple Correct MCQs; full negative marking applies",
+      "score_ranges": [
+        { "label": "300–360", "grade": "AIR Top 100", "description": "IIT Bombay / Delhi / Madras — CS, EE, Mechanical top branches assured" },
+        { "label": "250–299", "grade": "AIR 100–1000", "description": "Old IITs (Kanpur, Kharagpur, Roorkee) — core branches" },
+        { "label": "180–249", "grade": "AIR 1000–5000", "description": "New IITs — most branches available" },
+        { "label": "130–179", "grade": "AIR 5000–15000", "description": "Newer IITs — less popular branches" },
+        { "label": "Below qualifying cut-off", "grade": "Not Ranked", "description": "Does not qualify for IIT admission; JoSAA counselling not available" }
+      ],
+      "eligibility": {
+        "jee_main_requirement": "Must be in top 2.5 lakh qualifiers of JEE Main",
+        "class_12_requirement": "Must have appeared in Class 12 in the same or previous year",
+        "attempts": "Maximum 2 attempts in consecutive years"
+      },
+      "exam_dates": {
+        "registration_opens": "April (after JEE Main results)",
+        "exam_date": "Late May / June",
+        "results": "June"
+      },
+      "official_website": "https://jeeadv.ac.in",
+      "vura_question_bank": 5000,
+      "vura_subjects_covered": ["Mathematics", "Physics", "Chemistry"],
+      "tips": [
+        "JEE Advanced is the only gateway to 23 IITs in India",
+        "Conceptual depth is more important than memorisation",
+        "Practice papers from 2000–2024 extensively — question patterns repeat themes",
+        "Manage both papers on exam day — Paper 1 and Paper 2 are held on the same day"
+      ]
+    },
+    {
+      "exam_code": "GAOKAO",
+      "exam_name": "Gaokao",
+      "exam_full_name": "National College Entrance Examination (全国统一高考)",
+      "country_code": "CN",
+      "country_name": "China",
+      "exam_body": "Ministry of Education (MOE) — Provincial Education Departments",
+      "exam_type": "University Entrance",
+      "exam_level": "Post-Secondary (After Senior High School)",
+      "exam_format": "Written — 2 days",
+      "students_per_year": "13000000+",
+      "exam_duration_minutes": "Varies per subject (120–150 mins each)",
+      "total_questions": "Varies by province and subject",
+      "max_score": 750,
+      "passing_score": "Varies by province (approx. 400)",
+      "competitive_score": 600,
+      "excellent_score": 680,
+      "subjects": {
+        "mandatory": ["Chinese (语文)", "Mathematics (数学)", "Foreign Language (外语 — English/Japanese/Russian/French/German/Spanish)"],
+        "traditional_track": {
+          "science_track_理科": ["Physics", "Chemistry", "Biology"],
+          "arts_track_文科": ["History", "Geography", "Politics (政治)"]
+        },
+        "new_gaokao_reform_3_plus_3": {
+          "mandatory": ["Chinese", "Mathematics", "Foreign Language"],
+          "selected_3_from": ["Physics", "Chemistry", "Biology", "History", "Geography", "Politics", "Information Technology (some provinces)"]
+        }
+      },
+      "subject_count": "3 mandatory + 3 selected (under reform provinces)",
+      "subject_note": "Gaokao format varies by province — some provinces use traditional Science/Arts track, others use 3+3 or 3+1+2 reform systems",
+      "score_ranges": [
+        { "label": "680–750", "grade": "Top Tier", "description": "Peking University (北大), Tsinghua University (清华) — any major" },
+        { "label": "620–679", "grade": "Excellent", "description": "985 Project Universities (Fudan, Zhejiang, SJTU, USTC)" },
+        { "label": "550–619", "grade": "Good", "description": "211 Project Universities — strong departments" },
+        { "label": "470–549", "grade": "Average", "description": "First-tier provincial universities (本科一批)" },
+        { "label": "400–469", "grade": "Below Average", "description": "Second-tier universities (本科二批)" },
+        { "label": "Below 400", "grade": "Vocational", "description": "Vocational colleges (专科/高职) — university admission very limited" }
+      ],
+      "exam_dates": {
+        "exam_date": "June 7–8 (nationally fixed)",
+        "results": "June 23–25 (approximately)"
+      },
+      "official_website": "https://www.moe.gov.cn",
+      "vura_question_bank": 10000,
+      "vura_subjects_covered": ["Chinese", "Mathematics", "English (Foreign Language)", "Physics", "Chemistry", "Biology", "History", "Geography", "Politics"],
+      "tips": [
+        "The Gaokao is held on the exact same date nationwide (June 7–8) — a national event",
+        "Your province's cut-off scores differ — research your specific province's 分数线",
+        "English listening test is usually conducted before the main exam in some provinces",
+        "Start serious preparation in Grade 10 — three years of consistent study is standard"
+      ]
+    },
+    {
+      "exam_code": "CSAT",
+      "exam_name": "CSAT / Suneung",
+      "exam_full_name": "College Scholastic Ability Test (대학수학능력시험 / Suneung)",
+      "country_code": "KR",
+      "country_name": "South Korea",
+      "exam_body": "Korea Institute for Curriculum and Evaluation (KICE)",
+      "exam_type": "University Entrance",
+      "exam_level": "Post-Secondary (After High School)",
+      "exam_format": "Written — 1 day (8 hours+)",
+      "students_per_year": "500000+",
+      "exam_duration_minutes": 480,
+      "total_questions": "Varies per subject",
+      "max_score": "Raw scores converted to 9-grade percentile (등급)",
+      "passing_score": "Grade 4",
+      "competitive_score": "Grade 2",
+      "excellent_score": "Grade 1",
+      "subjects": {
+        "mandatory": ["Korean Language (국어)", "Mathematics (수학)", "English (영어)", "Korean History (한국사)"],
+        "elective_social_science": ["Ethics & Thought", "Korean Geography", "World Geography", "East Asian History", "World History", "Economics", "Political Science & Law", "Sociology & Culture"],
+        "elective_sciences": ["Physics I & II", "Chemistry I & II", "Life Science I & II", "Earth Science I & II"],
+        "vocational": ["Agriculture", "Industry", "Business & Finance", "Marine", "Home Economics"],
+        "second_foreign_language": ["German", "French", "Spanish", "Chinese", "Japanese", "Russian", "Arabic", "Vietnamese"]
+      },
+      "subject_count": "4 mandatory + 2 from Social/Science/Vocational + optional 2nd Foreign Language",
+      "grading_system": {
+        "Grade 1": { "percentile": "Top 4%", "description": "Exceptional — Seoul National University (SNU), Yonsei, Korea University (SKY)" },
+        "Grade 2": { "percentile": "Top 4–11%", "description": "Very Good — Top 10 universities" },
+        "Grade 3": { "percentile": "Top 11–23%", "description": "Good — Top 20 universities" },
+        "Grade 4": { "percentile": "Top 23–40%", "description": "Average — Most universities" },
+        "Grade 5": { "percentile": "Top 40–60%", "description": "Below Average" },
+        "Grade 6–9": { "percentile": "Bottom 40%", "description": "Low — limited university options" }
+      },
+      "score_ranges": [
+        { "label": "Grade 1 (Top 4%)", "grade": "SKY Level", "description": "Seoul National, Yonsei, Korea University — all departments available" },
+        { "label": "Grade 2 (4–11%)", "grade": "Excellent", "description": "Top 10 universities — Medicine, Engineering, Business at top schools" },
+        { "label": "Grade 3 (11–23%)", "grade": "Good", "description": "Top 20 universities — broad range of competitive programmes" },
+        { "label": "Grade 4–5 (23–60%)", "grade": "Average", "description": "Regional universities and colleges" },
+        { "label": "Grade 6–9 (Bottom 40%)", "grade": "Needs Improvement", "description": "Community colleges; resit recommended" }
+      ],
+      "exam_dates": {
+        "exam_date": "3rd Thursday of November (fixed annually)",
+        "results": "December"
+      },
+      "official_website": "https://www.suneung.re.kr",
+      "vura_question_bank": 6000,
+      "vura_subjects_covered": ["Korean Language", "Mathematics", "English", "Korean History", "Physics I/II", "Chemistry I/II", "Life Science I/II", "Earth Science I/II", "Economics", "World History"],
+      "tips": [
+        "Suneung is held on one day only — extreme stress and preparation across Korea",
+        "EBS (국가교육방송) past papers are directly linked to Gaokao questions — study them thoroughly",
+        "Entire country goes quiet on exam day — planes are grounded, businesses open late",
+        "English Grade 1 requires near-perfect score — practise with native-level materials"
+      ]
+    },
+    {
+      "exam_code": "COMMON_TEST",
+      "exam_name": "Common Test",
+      "exam_full_name": "Common Test for University Admissions (大学入学共通テスト / Daigaku Nyūgaku Kyōtsū Test)",
+      "country_code": "JP",
+      "country_name": "Japan",
+      "exam_body": "National Center for University Entrance Examinations (NCUEE / 大学入試センター)",
+      "exam_type": "University Entrance",
+      "exam_level": "Post-Secondary (After High School)",
+      "exam_format": "Written + CBT pilot — 2 days",
+      "students_per_year": "550000+",
+      "exam_duration_minutes": "Varies per subject",
+      "total_questions": "Varies per subject",
+      "max_score": 900,
+      "passing_score": "University-dependent (varies greatly)",
+      "competitive_score": 700,
+      "excellent_score": 820,
+      "subjects": {
+        "group_1_languages_literacy": ["Japanese Language & Literature (国語)", "Reading Comprehension", "Modern Language"],
+        "group_2_foreign_language": ["English (Reading + Listening)", "German", "French", "Chinese", "Korean"],
+        "group_3_mathematics": ["Mathematics I / Mathematics I & A", "Mathematics II / Mathematics II & B / Mathematics C"],
+        "group_4_sciences": ["Physics", "Chemistry", "Biology", "Earth Science"],
+        "group_5_social_studies": ["History of Japan", "World History", "Geography", "Civics", "Politics & Economics", "Ethics", "Modern Society"],
+        "group_6_information": ["Information I (情報 — newly added from 2025)"]
+      },
+      "subject_count": "5–8 subjects depending on university requirements",
+      "subject_note": "Most national universities require 5 subjects minimum; top universities require 7–8; private universities may require fewer",
+      "score_ranges": [
+        { "label": "820–900", "grade": "Top National Universities", "description": "University of Tokyo (東大), Kyoto University (京大) — all faculties" },
+        { "label": "720–819", "grade": "Excellent", "description": "Osaka, Tohoku, Nagoya, Hokkaido — top national universities" },
+        { "label": "620–719", "grade": "Good", "description": "Strong national and public universities" },
+        { "label": "500–619", "grade": "Average", "description": "Regional national universities; private universities" },
+        { "label": "Below 500", "grade": "Needs Improvement", "description": "Private university with lower cut-offs; junior colleges" }
+      ],
+      "exam_dates": {
+        "exam_date": "2nd Saturday & Sunday of January (fixed)",
+        "results": "February"
+      },
+      "official_website": "https://www.dnc.ac.jp",
+      "vura_question_bank": 5000,
+      "vura_subjects_covered": ["Japanese", "English (Reading)", "English (Listening)", "Mathematics I", "Mathematics II", "Physics", "Chemistry", "Biology", "World History", "Japanese History", "Geography"],
+      "tips": [
+        "The Common Test replaced the Centre Test (センター試験) in 2021 — focus on new format",
+        "English now has no grammar-only questions — all reading and listening comprehension",
+        "Most top universities (Tokyo, Kyoto) require the Common Test PLUS their own secondary exam",
+        "Information (情報) became mandatory in 2025 — do not skip this subject"
+      ]
+    },
+    {
+      "exam_code": "GST",
+      "exam_name": "GST Admission Test",
+      "exam_full_name": "Group-based Standardised Test for Public University Admission (Bangladesh)",
+      "country_code": "BD",
+      "country_name": "Bangladesh",
+      "exam_body": "GST Cluster Admission Committee (Public Universities)",
+      "exam_type": "University Entrance",
+      "exam_level": "Post-Secondary (After HSC)",
+      "exam_format": "Written (MCQ) — Unit-based",
+      "students_per_year": "1200000+",
+      "exam_duration_minutes": 60,
+      "total_questions": 100,
+      "max_score": 100,
+      "passing_score": 40,
+      "competitive_score": 70,
+      "excellent_score": 85,
+      "subjects": {
+        "unit_a_science": ["Physics", "Chemistry", "Mathematics", "Biology"],
+        "unit_b_humanities": ["Bangla", "English", "History", "Civics", "Economics", "Geography", "Social Welfare", "Logic"],
+        "unit_c_commerce": ["Bangla", "English", "Accounting", "Business Studies", "Finance & Banking", "Economics"],
+        "unit_d_general_combined": ["Bangla", "English", "General Knowledge", "ICT"],
+        "all_units_mandatory": ["Bangla", "English", "ICT / General Knowledge"]
+      },
+      "subject_count": "Varies by unit (4–6 subjects per unit)",
+      "subject_note": "Students apply for a specific unit based on their HSC track (Science, Arts, Commerce); some universities conduct their own separate tests",
+      "marking_scheme": {
+        "correct": "+1",
+        "wrong": "-0.25",
+        "unanswered": "0"
+      },
+      "score_ranges": [
+        { "label": "85–100", "grade": "Excellent", "description": "Dhaka University, BUET, RUET — top programmes" },
+        { "label": "70–84", "grade": "Good", "description": "Rajshahi University, Chittagong University — competitive programmes" },
+        { "label": "55–69", "grade": "Average", "description": "Regional public universities — most programmes available" },
+        { "label": "40–54", "grade": "Minimum Pass", "description": "Qualifies for some public universities; limited programme options" },
+        { "label": "Below 40", "grade": "Fail", "description": "Does not qualify for public university admission" }
+      ],
+      "exam_dates": {
+        "registration_opens": "October",
+        "exam_window": "November–December",
+        "results": "December–January"
+      },
+      "official_website": "https://gstadmission.ac.bd",
+      "vura_question_bank": 4000,
+      "vura_subjects_covered": ["Physics", "Chemistry", "Mathematics", "Biology", "Bangla", "English", "Accounting", "Economics", "ICT"],
+      "tips": [
+        "HSC results contribute to the final merit score — high grades help significantly",
+        "BUET (Bangladesh Engineering) has its own separate admission test — prepare specifically",
+        "Medical admission (MBBS) in Bangladesh uses a separate test — not covered under GST",
+        "Negative marking (-0.25) — avoid random guessing"
+      ]
+    },
+    {
+      "exam_code": "YKS",
+      "exam_name": "YKS",
+      "exam_full_name": "Yükseköğretim Kurumları Sınavı (Higher Education Institutions Examination)",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "exam_body": "Student Selection and Placement Centre (ÖSYM — Ölçme, Seçme ve Yerleştirme Merkezi)",
+      "exam_type": "University Entrance",
+      "exam_level": "Post-Secondary (After Lise / High School)",
+      "exam_format": "Written (MCQ) — 2 sessions in 1 day",
+      "students_per_year": "2800000+",
+      "exam_duration_minutes": 195,
+      "total_questions": 160,
+      "max_score": "Score Type-dependent (AYT max approx. 500 per section)",
+      "sessions": {
+        "TYT_session": {
+          "name": "Temel Yeterlilik Testi (TYT) — Basic Proficiency Test",
+          "duration_minutes": 135,
+          "questions": 120,
+          "subjects": ["Turkish Language & Expression (Turkish)", "Social Sciences (History, Geography, Civics)", "Basic Mathematics", "Science (Physics, Chemistry, Biology)"],
+          "min_score_for_AYT": "TYT score ≥ 150 points required to take AYT"
+        },
+        "AYT_session": {
+          "name": "Alan Yeterlilik Testi (AYT) — Field Proficiency Test",
+          "duration_minutes": 180,
+          "questions": 80,
+          "tracks": {
+            "science_track": ["Mathematics", "Physics", "Chemistry", "Biology"],
+            "social_sciences_track": ["Literature/Turkish Language", "History I & II", "Geography I & II"],
+            "language_track": ["Foreign Language (English, German, French, etc.)"]
+          }
+        }
+      },
+      "subject_count": "TYT: 4 groups; AYT: chosen track (Science/Social/Language)",
+      "score_ranges": [
+        { "label": "480–500 (SAY)", "grade": "Top Universities", "description": "Boğaziçi University, ODTÜ (METU), İTÜ — Engineering, Medicine, Law" },
+        { "label": "420–479", "grade": "Excellent", "description": "Top 5 Turkish universities — competitive programmes" },
+        { "label": "350–419", "grade": "Good", "description": "Top 20 universities — most departments available" },
+        { "label": "250–349", "grade": "Average", "description": "State universities in major cities — many departments" },
+        { "label": "150–249", "grade": "Below Average", "description": "Regional state universities; foundation universities (vakıf üniversitesi)" },
+        { "label": "Below 150 TYT", "grade": "Disqualified from AYT", "description": "Does not qualify to take AYT; cannot place into 4-year programmes" }
+      ],
+      "exam_dates": {
+        "exam_date": "June (TYT + AYT on consecutive days)",
+        "results": "July"
+      },
+      "official_website": "https://www.osym.gov.tr",
+      "vura_question_bank": 5000,
+      "vura_subjects_covered": ["Turkish Language", "Mathematics", "Physics", "Chemistry", "Biology", "History", "Geography", "English"],
+      "tips": [
+        "TYT is the prerequisite — score ≥150 to qualify for AYT and university placement",
+        "Boğaziçi and ODTÜ require near-perfect AYT scores in Science track",
+        "English language track (Dil) gives access to English-medium universities",
+        "Previous YGS/LYS exam papers are still useful for practice as question styles are similar"
+      ]
+    },
+    {
+      "exam_code": "MDCAT",
+      "exam_name": "MDCAT",
+      "exam_full_name": "Medical and Dental College Admission Test (Pakistan)",
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "exam_body": "Pakistan Medical & Dental Council (PMDC) / National Testing Service (NTS) / Provincial PMCs",
+      "exam_type": "Medical University Entrance",
+      "exam_level": "Post-Secondary (After FSc Pre-Medical)",
+      "exam_format": "Written (MCQ — Computer Based)",
+      "students_per_year": "200000+",
+      "exam_duration_minutes": 150,
+      "total_questions": 200,
+      "max_score": 200,
+      "passing_score": 110,
+      "competitive_score": 160,
+      "excellent_score": 185,
+      "subjects": {
+        "breakdown": {
+          "Biology": { "questions": 68, "weightage": "34%" },
+          "Chemistry": { "questions": 56, "weightage": "28%" },
+          "Physics": { "questions": 44, "weightage": "22%" },
+          "English": { "questions": 18, "weightage": "9%" },
+          "Logical_Reasoning": { "questions": 14, "weightage": "7%" }
+        }
+      },
+      "subject_count": 5,
+      "marking_scheme": {
+        "correct": "+1",
+        "wrong": "-0.25",
+        "unanswered": "0"
+      },
+      "merit_formula": {
+        "Matric_10th": "10%",
+        "FSc_Intermediate": "40%",
+        "MDCAT": "50%",
+        "note": "Final merit = weighted combination of Matric, FSc, and MDCAT marks"
+      },
+      "score_ranges": [
+        { "label": "185–200", "grade": "Outstanding", "description": "King Edward Medical University (KEMU), Allama Iqbal Medical College, Dow Medical" },
+        { "label": "165–184", "grade": "Excellent", "description": "Top provincial government medical colleges" },
+        { "label": "140–164", "grade": "Good", "description": "Government medical colleges — depends on province and merit list" },
+        { "label": "110–139", "grade": "Average", "description": "Borderline government colleges; private medical colleges" },
+        { "label": "Below 110", "grade": "Fail", "description": "Does not meet minimum threshold for medical admission" }
+      ],
+      "eligibility": {
+        "education": "FSc Pre-Medical (Biology, Chemistry, Physics) with minimum 60% marks",
+        "age": "17 years minimum on 31st December of admission year"
+      },
+      "exam_dates": {
+        "registration_opens": "July",
+        "exam_date": "September",
+        "results": "October"
+      },
+      "official_website": "https://www.pmdc.org.pk",
+      "vura_question_bank": 4000,
+      "vura_subjects_covered": ["Biology", "Chemistry", "Physics", "English", "Logical Reasoning"],
+      "tips": [
+        "Biology is the highest-weightage subject (34%) — master it thoroughly",
+        "FSc marks contribute 40% to your final merit — do not neglect board exams",
+        "Negative marking (-0.25) applies — strategic answering is important",
+        "KEMU (King Edward) is the most prestigious — requires MDCAT 190+"
+      ]
+    },
+    {
+      "exam_code": "ECAT",
+      "exam_name": "ECAT",
+      "exam_full_name": "Engineering College Admission Test (Pakistan)",
+      "country_code": "PK",
+      "country_name": "Pakistan",
+      "exam_body": "University of Engineering & Technology (UET) — Provincial Engineering Universities",
+      "exam_type": "Engineering University Entrance",
+      "exam_level": "Post-Secondary (After FSc Pre-Engineering)",
+      "exam_format": "Written (MCQ)",
+      "students_per_year": "150000+",
+      "exam_duration_minutes": 120,
+      "total_questions": 100,
+      "max_score": 400,
+      "passing_score": 40,
+      "competitive_score": 300,
+      "excellent_score": 350,
+      "subjects": {
+        "breakdown": {
+          "Mathematics": { "questions": 30, "marks_per_question": 4, "total_marks": 120 },
+          "Physics": { "questions": 30, "marks_per_question": 4, "total_marks": 120 },
+          "Chemistry": { "questions": 20, "marks_per_question": 4, "total_marks": 80 },
+          "English": { "questions": 20, "marks_per_question": 4, "total_marks": 80 }
+        }
+      },
+      "subject_count": 4,
+      "marking_scheme": {
+        "correct": "+4",
+        "wrong": "-1",
+        "unanswered": "0"
+      },
+      "merit_formula": {
+        "Matric_10th": "10%",
+        "FSc_Intermediate": "40%",
+        "ECAT": "50%"
+      },
+      "score_ranges": [
+        { "label": "350–400", "grade": "Outstanding", "description": "UET Lahore — Civil, Electrical, Mechanical (top departments)" },
+        { "label": "300–349", "grade": "Excellent", "description": "UET Taxila, NUST — strong departments" },
+        { "label": "240–299", "grade": "Good", "description": "NED University, MUET — competitive departments" },
+        { "label": "160–239", "grade": "Average", "description": "Regional engineering universities; private colleges" },
+        { "label": "Below 160", "grade": "Below Threshold", "description": "Private engineering colleges only; government options very limited" }
+      ],
+      "exam_dates": {
+        "registration_opens": "July",
+        "exam_date": "August–September",
+        "results": "September–October"
+      },
+      "official_website": "https://www.uet.edu.pk",
+      "vura_question_bank": 4000,
+      "vura_subjects_covered": ["Mathematics", "Physics", "Chemistry", "English"],
+      "tips": [
+        "Mathematics and Physics together carry 60% of marks — prioritise them",
+        "UET Lahore is the most competitive — requires ECAT 350+ for top departments",
+        "FSc marks carry 40% weight in merit — high intermediate grades are crucial",
+        "Negative marking applies — do not randomly guess on unknown questions"
+      ]
+    },
+    {
+      "exam_code": "SPM",
+      "exam_name": "SPM",
+      "exam_full_name": "Sijil Pelajaran Malaysia (Malaysian Certificate of Education)",
+      "country_code": "MY",
+      "country_name": "Malaysia",
+      "exam_body": "Malaysian Examinations Syndicate (Lembaga Peperiksaan Malaysia / LPM)",
+      "exam_type": "Secondary School Leaving Certificate",
+      "exam_level": "Secondary (Form 5 / Grade 11 equivalent)",
+      "exam_format": "Written (Objective + Essay + Practical for science subjects)",
+      "students_per_year": "450000+",
+      "exam_duration_minutes": "Varies per subject (1.5–2.5 hours each)",
+      "total_questions": "Varies per subject",
+      "max_score": "A+ (Highest) — G (Fail)",
+      "passing_score": "C",
+      "competitive_score": "A",
+      "excellent_score": "A+",
+      "subjects": {
+        "core_compulsory": ["Bahasa Melayu (Malay Language)", "English", "History", "Islamic Education (for Muslims) / Moral Education (for non-Muslims)"],
+        "core_elective": ["Mathematics"],
+        "elective_sciences": ["Additional Mathematics", "Physics", "Chemistry", "Biology", "Science"],
+        "elective_humanities": ["Sejarah (History)", "Geography", "Bahasa Cina (Chinese)", "Bahasa Tamil (Tamil)", "Literature"],
+        "elective_business": ["Accounting", "Economics", "Business Studies", "Entrepreneurship"],
+        "elective_technical": ["Design & Technology", "Engineering Drawing", "ICT", "Electronic Engineering", "Building Construction"],
+        "elective_arts": ["Visual Arts", "Music", "Sports Science"]
+      },
+      "subject_count": "Minimum 8, Maximum 10",
+      "subject_note": "Bahasa Melayu is mandatory and must be passed; a credit in BM is required for public university admission",
+      "grading_system": {
+        "A+": { "score_range": "90–100", "classification": "Excellent" },
+        "A": { "score_range": "80–89", "classification": "Excellent" },
+        "A-": { "score_range": "70–79", "classification": "Very Good" },
+        "B+": { "score_range": "65–69", "classification": "Good" },
+        "B": { "score_range": "60–64", "classification": "Good" },
+        "C+": { "score_range": "55–59", "classification": "Satisfactory" },
+        "C": { "score_range": "50–54", "classification": "Satisfactory" },
+        "D": { "score_range": "40–49", "classification": "Pass" },
+        "E": { "score_range": "35–39", "classification": "Weak Pass" },
+        "G": { "score_range": "0–34", "classification": "Fail" }
+      },
+      "score_ranges": [
+        { "label": "A+ / A (80–100%)", "grade": "Excellent", "description": "Universiti Malaya (UM), USM, UKM — competitive programmes" },
+        { "label": "A- / B+ (65–79%)", "grade": "Good", "description": "Public universities (UITM, UPM) — most programmes" },
+        { "label": "B / C+ (55–64%)", "grade": "Satisfactory", "description": "Matriculation/Foundation programmes; private universities" },
+        { "label": "C / D (40–54%)", "grade": "Pass", "description": "Certificate programmes; some private colleges" },
+        { "label": "E / G (Below 40%)", "grade": "Fail / Weak", "description": "Must resit; does not qualify for tertiary admission in that subject" }
+      ],
+      "exam_dates": {
+        "registration_opens": "July",
+        "exam_window": "October–November",
+        "results": "March (following year)"
+      },
+      "official_website": "https://www.moe.gov.my",
+      "vura_question_bank": 5000,
+      "vura_subjects_covered": ["Bahasa Melayu", "English", "Mathematics", "Additional Mathematics", "Physics", "Chemistry", "Biology", "History", "Accounting", "Economics"],
+      "tips": [
+        "Credit in Bahasa Melayu is mandatory for public university admission — never neglect it",
+        "Additional Mathematics (Add Maths) is critical for Science/Engineering university entry",
+        "SPM results are released approximately 4 months after exams — March the following year",
+        "5 As is a strong benchmark for scholarship applications to government bodies like JPA, MARA"
+      ]
+    },
+    {
+      "exam_code": "STPM",
+      "exam_name": "STPM",
+      "exam_full_name": "Sijil Tinggi Persekolahan Malaysia (Malaysian Higher School Certificate)",
+      "country_code": "MY",
+      "country_name": "Malaysia",
+      "exam_body": "Malaysian Examinations Council (Majlis Peperiksaan Malaysia / MPM)",
+      "exam_type": "Pre-University / A-Level Equivalent",
+      "exam_level": "Form 6 (Pre-University — 18 months)",
+      "exam_format": "Written + Coursework (School-Based Assessment)",
+      "students_per_year": "50000+",
+      "exam_duration_minutes": "Varies per subject (2–3 hours each)",
+      "total_questions": "Varies per subject",
+      "max_score": "A (4.0 CGPA equivalent)",
+      "passing_score": "E (Grade Point 1.0)",
+      "competitive_score": "B+ (3.33)",
+      "excellent_score": "A (4.00)",
+      "subjects": {
+        "general_studies_compulsory": ["Pengajian Am (General Studies)"],
+        "science_stream": ["Mathematics T", "Mathematics S", "Physics", "Chemistry", "Biology", "Computing"],
+        "arts_stream": ["History", "Geography", "Economics", "Accounting", "Business Studies", "Malay Literature"],
+        "language": ["English Language", "Bahasa Melayu Kertas Lanjutan"],
+        "elective": ["Art", "Music", "Chinese Studies", "Tamil Studies"]
+      },
+      "subject_count": "Pengajian Am (compulsory) + 3 electives",
+      "grading_system": {
+        "A": { "grade_point": "4.00", "score_range": "90–100", "classification": "Distinction" },
+        "A-": { "grade_point": "3.67", "score_range": "80–89", "classification": "Distinction" },
+        "B+": { "grade_point": "3.33", "score_range": "75–79", "classification": "Very Good" },
+        "B": { "grade_point": "3.00", "score_range": "70–74", "classification": "Good" },
+        "B-": { "grade_point": "2.67", "score_range": "65–69", "classification": "Good" },
+        "C+": { "grade_point": "2.33", "score_range": "60–64", "classification": "Satisfactory" },
+        "C": { "grade_point": "2.00", "score_range": "55–59", "classification": "Satisfactory" },
+        "C-": { "grade_point": "1.67", "score_range": "50–54", "classification": "Pass" },
+        "D": { "grade_point": "1.33", "score_range": "45–49", "classification": "Pass" },
+        "D-": { "grade_point": "1.00", "score_range": "40–44", "classification": "Minimum Pass" },
+        "E": { "grade_point": "0", "score_range": "Below 40", "classification": "Fail" }
+      },
+      "score_ranges": [
+        { "label": "CGPA 3.67–4.00 (A- to A)", "grade": "Distinction", "description": "Universiti Malaya (UM), USM, UKM — Medicine, Engineering, Law" },
+        { "label": "CGPA 3.00–3.67 (B to B+)", "grade": "Very Good", "description": "Public universities — most competitive programmes" },
+        { "label": "CGPA 2.00–3.00 (C to B-)", "grade": "Good", "description": "Public universities — less competitive programmes; private universities" },
+        { "label": "CGPA 1.00–2.00 (D- to C-)", "grade": "Pass", "description": "Private universities and colleges; some foundation programmes" },
+        { "label": "CGPA Below 1.00", "grade": "Fail", "description": "Must repeat; does not qualify for degree admission" }
+      ],
+      "exam_dates": {
+        "term_1_exam": "March–April",
+        "term_2_exam": "July–August",
+        "term_3_exam": "October–November",
+        "final_results": "December"
+      },
+      "official_website": "https://www.mpm.edu.my",
+      "vura_question_bank": 3000,
+      "vura_subjects_covered": ["Mathematics T", "Physics", "Chemistry", "Biology", "Economics", "Accounting", "Pengajian Am"],
+      "tips": [
+        "STPM is equivalent to UK A-Levels — one of the hardest pre-university exams in Asia",
+        "3 terms of School-Based Assessment (SBA) contribute to the final grade",
+        "Pengajian Am (General Studies) is compulsory for all STPM students",
+        "STPM A grades are highly competitive for UM, USM scholarships"
+      ]
+    },
+    {
+      "exam_code": "GCSE",
+      "exam_name": "GCSE",
+      "exam_full_name": "General Certificate of Secondary Education",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "exam_body": "AQA / Edexcel (Pearson) / OCR / WJEC / CCEA",
+      "exam_type": "Secondary School Qualification",
+      "exam_level": "Secondary (Year 11 — age 15–16)",
+      "exam_format": "Written (Theory + Coursework for some subjects)",
+      "students_per_year": "700000+",
+      "exam_duration_minutes": "Varies per subject (1.5–2.5 hours per paper)",
+      "total_questions": "Varies per subject",
+      "max_score": "9 (Highest)",
+      "passing_score": "4 (Standard Pass)",
+      "competitive_score": "7",
+      "excellent_score": "9",
+      "subjects": {
+        "english_baccalaureate_ebacc": ["English Language", "English Literature", "Mathematics", "Science (Combined or Triple)", "History OR Geography", "Modern Foreign Language (French/Spanish/German/etc.)"],
+        "sciences": ["Biology", "Chemistry", "Physics", "Combined Science (Double Award)"],
+        "humanities": ["History", "Geography", "Religious Studies", "Psychology", "Sociology"],
+        "languages": ["French", "Spanish", "German", "Mandarin Chinese", "Arabic", "Polish"],
+        "arts_technology": ["Art & Design", "Drama", "Music", "Design & Technology", "Food Technology", "Computer Science", "ICT", "Media Studies"],
+        "business": ["Business Studies", "Economics"],
+        "vocational": ["Physical Education", "Health & Social Care", "Engineering"]
+      },
+      "subject_count": "Minimum 5–10 GCSEs (schools vary; 9 is typical)",
+      "subject_note": "English Language, English Literature, and Maths are almost universally required; Science is compulsory",
+      "grading_system": {
+        "9": { "description": "Top Grade — above A* (awarded to top ~3% in each subject)", "equivalent": "Above A*" },
+        "8": { "description": "Strong A*", "equivalent": "A*" },
+        "7": { "description": "A Grade", "equivalent": "A" },
+        "6": { "description": "High B", "equivalent": "B+" },
+        "5": { "description": "Strong C / Low B — Strong Pass", "equivalent": "B/C" },
+        "4": { "description": "Standard Pass — equivalent to old grade C", "equivalent": "C" },
+        "3": { "description": "D Grade", "equivalent": "D" },
+        "2": { "description": "E Grade", "equivalent": "E" },
+        "1": { "description": "F/G Grade", "equivalent": "F/G" },
+        "U": { "description": "Ungraded — Fail", "equivalent": "U" }
+      },
+      "score_ranges": [
+        { "label": "Grade 9 (Top ~3%)", "grade": "Outstanding", "description": "Top-performing students — Oxbridge, Russell Group universities assured with A-Levels" },
+        { "label": "Grade 7–8 (A/A*)", "grade": "Excellent", "description": "Strong foundation for A-Levels; needed for competitive sixth forms" },
+        { "label": "Grade 5–6 (Strong Pass)", "grade": "Good", "description": "Accepted by most sixth forms and colleges for A-Level study" },
+        { "label": "Grade 4 (Standard Pass)", "grade": "Pass", "description": "Minimum for most employment and further education; retake English/Maths if below 4" },
+        { "label": "Grade 1–3", "grade": "Below Standard", "description": "Below employer and FE college threshold — retake advised" },
+        { "label": "Grade U", "grade": "Fail", "description": "Must resit — no qualification awarded" }
+      ],
+      "english_maths_requirement": "Grade 4 in English Language and Mathematics must be retaken if not achieved by age 16",
+      "exam_dates": {
+        "registration_deadline": "February",
+        "exam_window": "May–June",
+        "results": "August (Results Day — last Thursday of August)"
+      },
+      "official_website": "https://www.gov.uk/government/collections/gcse-subject-content",
+      "vura_question_bank": 8000,
+      "vura_subjects_covered": ["English Language", "English Literature", "Mathematics", "Biology", "Chemistry", "Physics", "Combined Science", "History", "Geography", "Economics", "Business Studies", "French", "Spanish", "Computer Science"],
+      "tips": [
+        "Focus on English Language, English Literature, and Mathematics — these are gateways to everything",
+        "Grade 4 is the minimum; grade 5 is the 'strong pass' employers and universities prefer",
+        "EBacc subjects (English, Maths, Science, Language, History/Geography) significantly improve university prospects",
+        "Past papers from each exam board (AQA, Edexcel, OCR) differ — practise specifically for your board"
+      ]
+    },
+    {
+      "exam_code": "A_LEVELS",
+      "exam_name": "A-Levels",
+      "exam_full_name": "General Certificate of Education Advanced Level",
+      "country_code": "GB",
+      "country_name": "United Kingdom (and International)",
+      "exam_body": "AQA / Edexcel (Pearson) / OCR / Cambridge International (CIE) / WJEC",
+      "exam_type": "University Entrance Qualification",
+      "exam_level": "Sixth Form (Year 12–13 — age 16–18) / Post-Secondary",
+      "exam_format": "Written (Theory + Coursework/Practical for some subjects)",
+      "students_per_year": "750000+",
+      "exam_duration_minutes": "Varies per subject (1.5–3 hours per paper)",
+      "total_questions": "Varies per subject and paper",
+      "max_score": "A* (Highest)",
+      "passing_score": "E",
+      "competitive_score": "BBB",
+      "excellent_score": "A*A*A*",
+      "subjects": {
+        "sciences": ["Mathematics", "Further Mathematics", "Physics", "Chemistry", "Biology", "Computer Science", "Statistics", "Environmental Science"],
+        "humanities_social": ["History", "Geography", "Religious Studies", "Philosophy", "Politics", "Sociology", "Psychology", "Economics"],
+        "languages": ["English Language", "English Literature", "French", "Spanish", "German", "Mandarin", "Latin", "Classical Greek"],
+        "arts": ["Art & Design", "Drama & Theatre", "Music", "Film Studies", "Media Studies"],
+        "business": ["Business", "Economics", "Accounting", "Law"],
+        "vocational_btec_equivalents": ["Health & Social Care", "Engineering", "Sport", "Travel & Tourism", "IT"]
+      },
+      "subject_count": "Typically 3 A-Levels (4 possible in Year 12 — AS Level)",
+      "subject_note": "Students choose 3 A-Level subjects; subject choice determines university course eligibility (e.g., Medicine requires Chemistry + Biology)",
+      "grading_system": {
+        "A*": { "ucas_points": 56, "description": "Outstanding — above 90% UMS overall with 90%+ in A2 units" },
+        "A": { "ucas_points": 48, "description": "Excellent — 80%+ UMS overall" },
+        "B": { "ucas_points": 40, "description": "Good — 70%+ UMS overall" },
+        "C": { "ucas_points": 32, "description": "Satisfactory — 60%+ UMS overall" },
+        "D": { "ucas_points": 24, "description": "Pass — 50%+ UMS overall" },
+        "E": { "ucas_points": 16, "description": "Minimum Pass — 40%+ UMS overall" },
+        "U": { "ucas_points": 0, "description": "Ungraded — Fail" }
+      },
+      "ucas_tariff": {
+        "A*": 56,
+        "A": 48,
+        "B": 40,
+        "C": 32,
+        "D": 24,
+        "E": 16
+      },
+      "university_requirements_examples": {
+        "Oxbridge (Oxford/Cambridge)": "A*A*A or A*AA (depending on course)",
+        "Medicine (most universities)": "AAA including Chemistry + Biology",
+        "Law (Russell Group)": "AAB–AAA",
+        "Engineering (top universities)": "A*AA including Maths + Physics",
+        "Economics (LSE)": "A*AA including Mathematics"
+      },
+      "score_ranges": [
+        { "label": "A*A*A* (168 UCAS points)", "grade": "Outstanding", "description": "Oxford, Cambridge, Imperial — Medicine, Law, Mathematics, Computer Science" },
+        { "label": "A*AA / AAA (152–160 points)", "grade": "Excellent", "description": "Top Russell Group (UCL, Edinburgh, LSE, King's College)" },
+        { "label": "AAB / ABB (136–144 points)", "grade": "Very Good", "description": "Strong Russell Group and redbrick universities" },
+        { "label": "BBB / BBC (112–120 points)", "grade": "Good", "description": "Most UK universities — broad programme access" },
+        { "label": "BCC / CCC (96–104 points)", "grade": "Satisfactory", "description": "Post-92 universities; some less competitive programmes" },
+        { "label": "DDE / EEE (48–72 points)", "grade": "Minimum", "description": "Foundation programmes; some colleges — limited options" },
+        { "label": "U (0 points)", "grade": "Fail", "description": "No UCAS points; does not qualify for university admission" }
+      ],
+      "exam_dates": {
+        "AS_Level_exams": "May–June (Year 12)",
+        "A2_Level_exams": "May–June (Year 13)",
+        "results": "Mid-August (Results Day — 2 days before GCSE results)"
+      },
+      "official_website": "https://www.a-levels.co.uk",
+      "vura_question_bank": 9000,
+      "vura_subjects_covered": ["Mathematics", "Further Mathematics", "Physics", "Chemistry", "Biology", "Economics", "History", "Geography", "English Literature", "Psychology", "Computer Science", "Business", "Law", "Sociology"],
+      "tips": [
+        "Choose A-Level subjects aligned to your university course — Medicine needs Chemistry, Law benefits from History/English",
+        "A* in Mathematics and Further Mathematics is the benchmark for top Engineering and CS programmes",
+        "Past papers from your specific exam board (AQA vs Edexcel vs OCR) — questions and mark schemes differ",
+        "Cambridge A-Levels (CIE) are recognised internationally in 160+ countries — the global gold standard"
+      ]
+    },
+    {
+      "exam_code": "SAT",
+      "exam_name": "SAT",
+      "exam_full_name": "Scholastic Assessment Test",
+      "country_code": "US",
+      "country_name": "United States (and International)",
+      "exam_body": "College Board",
+      "exam_type": "University Entrance / Standardised Test",
+      "exam_level": "High School (Grades 11–12 — age 16–18)",
+      "exam_format": "Digital Computer-Based Test (CBT) — from 2024",
+      "students_per_year": "2200000+",
+      "exam_duration_minutes": 134,
+      "total_questions": 98,
+      "max_score": 1600,
+      "passing_score": "800 (school-dependent)",
+      "competitive_score": 1200,
+      "excellent_score": 1400,
+      "subjects": {
+        "sections": {
+          "Reading_and_Writing": {
+            "questions": 54,
+            "time_minutes": 64,
+            "max_score": 800,
+            "content": ["Information & Ideas", "Craft & Structure", "Expression of Ideas", "Standard English Conventions"]
+          },
+          "Mathematics": {
+            "questions": 44,
+            "time_minutes": 70,
+            "max_score": 800,
+            "content": ["Algebra", "Advanced Math (Quadratics, Polynomials)", "Problem-Solving & Data Analysis", "Geometry & Trigonometry"],
+            "calculator_note": "Calculator allowed throughout Math section"
+          }
+        }
+      },
+      "subject_count": 2,
+      "subject_note": "Digital SAT (from 2024) replaced the paper SAT; adaptive testing — second module difficulty adjusts based on first module performance",
+      "score_ranges": [
+        { "label": "1500–1600", "grade": "Top 1%", "description": "Harvard, MIT, Stanford, Ivy League — all schools within reach" },
+        { "label": "1400–1490", "grade": "Excellent (Top 5%)", "description": "Elite universities — strong candidate for highly selective schools" },
+        { "label": "1300–1390", "grade": "Very Good (Top 15%)", "description": "Selective universities — UC Berkeley, UCLA, Carnegie Mellon" },
+        { "label": "1100–1290", "grade": "Good (Top 30%)", "description": "Many strong universities — broad acceptance range" },
+        { "label": "900–1090", "grade": "Average", "description": "Regional universities and state schools" },
+        { "label": "Below 900", "grade": "Below Average", "description": "Community colleges; retake highly recommended for 4-year universities" }
+      ],
+      "test_dates": {
+        "sessions": "6 times per year (March, May, June, August, October, November)",
+        "international_dates": "5 times per year (March, May, August, October, December)"
+      },
+      "official_website": "https://www.collegeboard.org",
+      "vura_question_bank": 8000,
+      "vura_subjects_covered": ["Reading & Writing", "Mathematics (Algebra)", "Mathematics (Advanced)", "Mathematics (Data Analysis)", "Mathematics (Geometry & Trig)"],
+      "tips": [
+        "Digital SAT (2024+) is adaptive — perform well in Module 1 to get harder (higher-scoring) Module 2",
+        "Most colleges are now test-optional but a strong SAT score (1400+) still strengthens applications",
+        "Reading & Writing tests reading comprehension — practice reading academic passages daily",
+        "Desmos graphing calculator is built into the digital SAT — learn to use it efficiently"
+      ]
+    },
+    {
+      "exam_code": "ACT",
+      "exam_name": "ACT",
+      "exam_full_name": "American College Testing",
+      "country_code": "US",
+      "country_name": "United States (and International)",
+      "exam_body": "ACT Inc.",
+      "exam_type": "University Entrance / Standardised Test",
+      "exam_level": "High School (Grades 11–12 — age 16–18)",
+      "exam_format": "Written (Paper) / Digital (Pilot) — Multiple Choice + Optional Essay",
+      "students_per_year": "1400000+",
+      "exam_duration_minutes": 175,
+      "total_questions": 215,
+      "max_score": 36,
+      "passing_score": "17 (national average equivalent)",
+      "competitive_score": 28,
+      "excellent_score": 33,
+      "subjects": {
+        "sections": {
+          "English": {
+            "questions": 75,
+            "time_minutes": 45,
+            "max_score": 36,
+            "content": ["Usage & Mechanics (Punctuation, Grammar, Sentence Structure)", "Rhetorical Skills (Strategy, Organization, Style)"]
+          },
+          "Mathematics": {
+            "questions": 60,
+            "time_minutes": 60,
+            "max_score": 36,
+            "content": ["Pre-Algebra", "Algebra I & II", "Geometry", "Trigonometry", "Statistics"],
+            "calculator_note": "Scientific or graphing calculator permitted throughout"
+          },
+          "Reading": {
+            "questions": 40,
+            "time_minutes": 35,
+            "max_score": 36,
+            "content": ["Literary Narrative/Prose Fiction", "Social Sciences", "Humanities", "Natural Sciences"]
+          },
+          "Science": {
+            "questions": 40,
+            "time_minutes": 35,
+            "max_score": 36,
+            "content": ["Data Representation (graphs, tables, charts)", "Research Summaries", "Conflicting Viewpoints"],
+            "note": "Science is NOT biology/chemistry — it tests scientific reasoning from data"
+          },
+          "Writing_optional": {
+            "time_minutes": 40,
+            "max_score": 12,
+            "content": ["One argumentative essay prompt — analyse multiple perspectives on a contemporary issue"]
+          }
+        }
+      },
+      "subject_count": "4 mandatory + 1 optional (Writing/Essay)",
+      "composite_score_calculation": "Average of English + Mathematics + Reading + Science scores",
+      "score_ranges": [
+        { "label": "34–36", "grade": "Top 1%", "description": "All Ivy League and elite universities; exceptional candidate" },
+        { "label": "30–33", "grade": "Excellent (Top 5%)", "description": "Highly selective universities — Stanford, MIT, Johns Hopkins" },
+        { "label": "27–29", "grade": "Very Good (Top 15%)", "description": "Selective universities — strong application component" },
+        { "label": "23–26", "grade": "Above Average", "description": "Many reputable universities — within average for competitive programmes" },
+        { "label": "18–22", "grade": "Average", "description": "Regional and state universities — acceptable range" },
+        { "label": "Below 17", "grade": "Below Average", "description": "Community colleges; strongly consider retaking for 4-year universities" }
+      ],
+      "sat_to_act_concordance": {
+        "ACT_36": "SAT_1600",
+        "ACT_34": "SAT_1500",
+        "ACT_30": "SAT_1360",
+        "ACT_27": "SAT_1280",
+        "ACT_24": "SAT_1160",
+        "ACT_20": "SAT_1040",
+        "ACT_17": "SAT_920"
+      },
+      "test_dates": {
+        "sessions": "7 times per year (February, April, June, July, September, October, December)"
+      },
+      "official_website": "https://www.act.org",
+      "vura_question_bank": 7000,
+      "vura_subjects_covered": ["English (Grammar & Rhetoric)", "Mathematics (Pre-Algebra)", "Mathematics (Algebra)", "Mathematics (Geometry)", "Mathematics (Trigonometry)", "Reading Comprehension", "Science Reasoning"],
+      "tips": [
+        "ACT Science is NOT memorised science — it is data interpretation. Practice reading graphs and experimental setups",
+        "ACT Math includes trigonometry (unlike SAT) — ensure you cover all trig topics",
+        "Take both SAT and ACT to see which fits your strengths — submit the better score",
+        "30+ ACT or 1360+ SAT is the benchmark for selective university admissions",
+        "The optional Writing essay is recommended if applying to highly selective colleges"
+      ]
+    }
+  ]
+}
