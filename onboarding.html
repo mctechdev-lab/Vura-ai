@@ -1,313 +1,1625 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<!-- Vura Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
-<link rel="manifest" href="/manifest.json">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>Welcome to Vura AI</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Getting Started — Vura AI</title>
+<meta name="description" content="Set up your personalised Vura AI study plan in 5 quick steps."/>
+<link rel="icon" type="image/png" href="vura-logo.png"/>
+<link rel="apple-touch-icon" href="vura-logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
-:root{--bg:#03030b;--card:rgba(11,11,30,.97);--purple:#8b5cf6;--blue:#00d2ff;--green:#10b981;--gold:#ffcc33;--border:rgba(255,255,255,.07);--text:#e8eaf6;--muted:#8892a4}
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
-.shell{display:flex;flex-direction:column;height:100vh;max-width:480px;margin:0 auto;padding:0 20px}
-/* Progress dots */
-.dots{display:flex;justify-content:center;gap:8px;padding:16px 0;flex-shrink:0}
-.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.15);transition:all .35s cubic-bezier(.34,1.56,.64,1)}
-.dot.active{background:linear-gradient(90deg,var(--purple),var(--blue));width:28px;border-radius:4px;box-shadow:0 0 10px rgba(139,92,246,.5)}
-.dot.done{background:rgba(139,92,246,.5)}
-/* Step */
-.step{display:none;flex-direction:column;flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:20px}
-.step.active{display:flex}
-.step-icon{width:80px;height:80px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:20px auto 0;flex-shrink:0}
-.step-title{font-family:'Orbitron',monospace;font-size:1.2rem;font-weight:900;text-align:center;margin:16px 0 8px;line-height:1.3}
-.step-sub{font-size:.84rem;color:var(--muted);text-align:center;line-height:1.7;margin-bottom:20px}
-/* Options grid */
-.opt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;overflow-y:auto;padding-bottom:80px;scrollbar-width:none;max-height:calc(100vh - 280px)}
-.opt-grid::-webkit-scrollbar{display:none}
-.opt-card{
-  background:var(--card);border:1.5px solid var(--border);border-radius:16px;
-  padding:16px 10px;text-align:center;cursor:pointer;
-  transition:all .22s cubic-bezier(.34,1.56,.64,1);
-  display:flex;flex-direction:column;align-items:center;gap:8px;
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;height:100%;scroll-behavior:smooth}
+body{
+  font-family:'Nunito',sans-serif;
+  background:#03030b;color:#e8e8f0;
+  min-height:100vh;overflow-x:hidden;line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;outline:none;font-family:'Nunito',sans-serif}
+input,select{outline:none;font-family:'Nunito',sans-serif}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#03030b}
+::-webkit-scrollbar-thumb{background:#9d50bb;border-radius:3px}
+
+/* ============================================================
+   VARIABLES
+   ============================================================ */
+:root{
+  --blue:#00d2ff;--purple:#9d50bb;--gold:#ffcc33;--green:#10b981;--red:#ff4d6d;
+  --bg:#03030b;--card:rgba(13,13,40,.95);--border:rgba(255,255,255,.08);
+  --muted:#8888aa;--grad:linear-gradient(135deg,#00d2ff,#9d50bb);
+  --grad-gold:linear-gradient(135deg,#ffcc33,#ff9933);
+  --radius:16px;--radius-sm:12px;--transition:.3s cubic-bezier(.4,0,.2,1);
+}
+
+/* ============================================================
+   CANVAS & NEBULA
+   ============================================================ */
+#stars-canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.nebula{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.nb1{position:absolute;width:700px;height:700px;top:-250px;left:-200px;
+  background:radial-gradient(circle,rgba(157,80,187,.16) 0%,transparent 65%);border-radius:50%;
+  animation:nbFloat 20s ease-in-out infinite alternate}
+.nb2{position:absolute;width:500px;height:500px;bottom:-150px;right:-100px;
+  background:radial-gradient(circle,rgba(0,210,255,.12) 0%,transparent 65%);border-radius:50%;
+  animation:nbFloat 15s ease-in-out infinite alternate-reverse}
+@keyframes nbFloat{0%{transform:translate(0,0) scale(1)}100%{transform:translate(40px,30px) scale(1.08)}}
+
+/* ============================================================
+   PAGE LAYOUT
+   ============================================================ */
+.page{
+  min-height:100vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:flex-start;
+  padding:24px 16px 48px;position:relative;z-index:1;
+}
+
+/* ============================================================
+   TOP BAR
+   ============================================================ */
+.top-bar{
+  width:100%;max-width:640px;
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:28px;
+}
+.topbar-logo{
+  font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;
+  background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  letter-spacing:2px;
+}
+.topbar-step{
+  font-size:.8rem;font-weight:700;color:var(--muted);
+  letter-spacing:.5px;
+}
+.topbar-step span{color:var(--blue)}
+
+/* ============================================================
+   PROGRESS BAR
+   ============================================================ */
+.progress-wrap{width:100%;max-width:640px;margin-bottom:28px}
+.progress-labels{display:flex;justify-content:space-between;margin-bottom:8px}
+.progress-label{
+  font-size:.65rem;font-weight:700;text-transform:uppercase;
+  letter-spacing:.8px;color:var(--muted);transition:var(--transition);
+}
+.progress-label.active{color:var(--blue)}
+.progress-label.done{color:var(--green)}
+.progress-track{
+  width:100%;height:5px;background:rgba(255,255,255,.07);
+  border-radius:3px;overflow:visible;position:relative;
+}
+.progress-fill{
+  height:100%;border-radius:3px;
+  background:var(--grad);
+  transition:width .5s cubic-bezier(.4,0,.2,1);
+  position:relative;
+}
+.progress-fill::after{
+  content:'';position:absolute;right:-1px;top:50%;
+  transform:translateY(-50%);
+  width:12px;height:12px;border-radius:50%;
+  background:#fff;border:3px solid var(--blue);
+  box-shadow:0 0 10px var(--blue);
+  transition:var(--transition);
+}
+.progress-dots{
+  display:flex;justify-content:space-between;
+  margin-top:-2px;padding:0 0;
+}
+.progress-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:rgba(255,255,255,.15);
+  border:2px solid rgba(255,255,255,.1);
+  transition:var(--transition);position:relative;
+}
+.progress-dot.done{background:var(--green);border-color:var(--green)}
+.progress-dot.active{background:var(--blue);border-color:var(--blue);box-shadow:0 0 8px var(--blue)}
+
+/* ============================================================
+   CARD
+   ============================================================ */
+.card{
+  width:100%;max-width:640px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:40px 36px;
   position:relative;overflow:hidden;
+  box-shadow:0 40px 80px rgba(0,0,0,.5),0 0 60px rgba(0,210,255,.04);
 }
-.opt-card::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 50% 0%,rgba(139,92,246,.12),transparent 70%);
-  opacity:0;transition:opacity .22s;
+.card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--grad);
 }
-.opt-card:hover::before,.opt-card.sel::before{opacity:1}
-.opt-card:hover{border-color:rgba(139,92,246,.4);transform:translateY(-3px);box-shadow:0 8px 20px rgba(139,92,246,.15)}
-.opt-card.sel{border-color:rgba(139,92,246,.7);background:rgba(139,92,246,.15);transform:translateY(-3px);box-shadow:0 8px 24px rgba(139,92,246,.25)}
-.opt-card:active{transform:scale(.96)}
-.opt-card:hover{border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.05)}
-.opt-card.sel{border-color:rgba(139,92,246,.6);background:rgba(139,92,246,.12)}
-.opt-card:active{transform:scale(.97)}
-.oc-icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;margin:0 auto;transition:transform .22s}
-.oc-name{font-size:.78rem;font-weight:800;color:var(--text);line-height:1.3}
-.oc-desc{font-size:.62rem;color:var(--muted)}
-/* Name input step */
-.name-inp{width:100%;background:var(--card);border:1.5px solid var(--border);border-radius:13px;padding:14px 16px;color:var(--text);font-family:'Nunito',sans-serif;font-size:1rem;font-weight:700;outline:none;text-align:center;margin-bottom:12px;transition:border-color .18s}
-.name-inp:focus{border-color:rgba(139,92,246,.5)}
-.name-inp::placeholder{color:var(--muted)}
-/* Welcome step */
-.welcome-coins{display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(255,204,51,.1);border:1px solid rgba(255,204,51,.2);border-radius:13px;padding:14px;margin:12px 0;font-size:.9rem;font-weight:800;color:var(--gold)}
-.feature-list{display:flex;flex-direction:column;gap:8px;flex:1}
-.feat-item{display:flex;align-items:center;gap:10px;padding:10px 13px;background:var(--card);border:1px solid var(--border);border-radius:11px}
-.feat-ic{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.84rem;flex-shrink:0}
-.feat-name{font-size:.82rem;font-weight:800;color:var(--text)}
-.feat-sub{font-size:.65rem;color:var(--muted)}
-/* Buttons */
+
+/* ============================================================
+   STEP PANELS (slide transitions)
+   ============================================================ */
+.step{display:none;animation-duration:.4s;animation-fill-mode:both}
+.step.active{display:block}
+.step.slide-in-right{animation-name:slideInRight}
+.step.slide-in-left{animation-name:slideInLeft}
+.step.slide-out-left{animation-name:slideOutLeft}
+.step.slide-out-right{animation-name:slideOutRight}
+
+@keyframes slideInRight{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideOutLeft{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-40px)}}
+@keyframes slideOutRight{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(40px)}}
+
+/* ============================================================
+   STEP HEADER
+   ============================================================ */
+.step-icon{
+  width:64px;height:64px;border-radius:18px;
+  background:linear-gradient(135deg,rgba(0,210,255,.12),rgba(157,80,187,.1));
+  border:1px solid rgba(0,210,255,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.6rem;margin-bottom:20px;
+}
+.step-title{
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(1.2rem,3vw,1.6rem);font-weight:700;
+  color:#fff;margin-bottom:8px;line-height:1.3;
+}
+.step-sub{font-size:.92rem;color:var(--muted);margin-bottom:28px;line-height:1.6}
+
+/* ============================================================
+   STEP 1 — WELCOME
+   ============================================================ */
+.welcome-anim{
+  width:110px;height:110px;border-radius:50%;
+  background:linear-gradient(135deg,rgba(0,210,255,.1),rgba(157,80,187,.12));
+  border:2px solid rgba(0,210,255,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:2.8rem;margin:0 auto 28px;
+  animation:welcomePulse 2s ease-in-out infinite;
+  position:relative;
+}
+.welcome-anim::before{
+  content:'';position:absolute;inset:-8px;border-radius:50%;
+  border:1px dashed rgba(0,210,255,.2);
+  animation:spin 8s linear infinite;
+}
+@keyframes spin{100%{transform:rotate(360deg)}}
+@keyframes welcomePulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(0,210,255,.2),0 20px 60px rgba(0,210,255,.1)}
+  50%{box-shadow:0 0 0 16px rgba(0,210,255,0),0 20px 60px rgba(0,210,255,.15)}
+}
+.welcome-name{
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;
+  text-align:center;color:#fff;margin-bottom:12px;
+}
+.welcome-name span{
+  background:var(--grad);-webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;background-clip:text;
+}
+.welcome-sub{text-align:center;color:var(--muted);font-size:.95rem;margin-bottom:32px;line-height:1.7}
+.welcome-features{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px;
+}
+.wf-item{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 14px;
+  background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);
+  border-radius:10px;font-size:.84rem;color:var(--muted);font-weight:600;
+}
+.wf-icon{
+  width:32px;height:32px;border-radius:8px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:.8rem;
+}
+.wfi-blue{background:rgba(0,210,255,.12);color:var(--blue)}
+.wfi-purple{background:rgba(157,80,187,.12);color:var(--purple)}
+.wfi-gold{background:rgba(255,204,51,.12);color:var(--gold)}
+.wfi-green{background:rgba(16,185,129,.12);color:var(--green)}
+.vux-welcome{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:12px 20px;border-radius:50px;
+  background:rgba(255,204,51,.08);border:1px solid rgba(255,204,51,.2);
+  color:var(--gold);font-weight:800;font-size:.9rem;margin-bottom:28px;
+  animation:pulseGold 2.5s ease-in-out infinite;
+}
+@keyframes pulseGold{
+  0%,100%{box-shadow:0 0 0 0 rgba(255,204,51,.2)}
+  50%{box-shadow:0 0 0 8px rgba(255,204,51,0)}
+}
+
+/* ============================================================
+   SEARCH INPUT
+   ============================================================ */
+.search-wrap{position:relative;margin-bottom:20px}
+.search-icon{
+  position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  color:var(--muted);font-size:.9rem;pointer-events:none;
+}
+.search-input{
+  width:100%;height:46px;
+  background:rgba(255,255,255,.05);
+  border:1.5px solid rgba(255,255,255,.1);
+  border-radius:12px;padding:0 40px;
+  color:#fff;font-size:.92rem;font-weight:500;
+  transition:var(--transition);
+}
+.search-input::placeholder{color:rgba(136,136,170,.6)}
+.search-input:focus{
+  background:rgba(0,210,255,.05);border-color:rgba(0,210,255,.35);
+  box-shadow:0 0 0 3px rgba(0,210,255,.08);
+}
+
+/* ============================================================
+   COUNTRY GRID
+   ============================================================ */
+.country-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  max-height:340px;overflow-y:auto;padding-right:2px;
+}
+.country-grid::-webkit-scrollbar{width:4px}
+.country-grid::-webkit-scrollbar-track{background:transparent}
+.country-grid::-webkit-scrollbar-thumb{background:rgba(157,80,187,.4);border-radius:2px}
+.country-card{
+  padding:14px 10px;border-radius:12px;
+  background:rgba(255,255,255,.04);
+  border:1.5px solid rgba(255,255,255,.07);
+  cursor:pointer;text-align:center;
+  transition:var(--transition);
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+}
+.country-card:hover{
+  background:rgba(0,210,255,.06);border-color:rgba(0,210,255,.2);
+  transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,210,255,.08);
+}
+.country-card.selected{
+  background:rgba(0,210,255,.1);border-color:var(--blue);
+  box-shadow:0 0 0 1px var(--blue), 0 8px 30px rgba(0,210,255,.15);
+}
+.country-flag{font-size:1.8rem;line-height:1}
+.country-name{font-size:.75rem;font-weight:700;color:#fff;line-height:1.2}
+.country-exams{
+  font-size:.65rem;color:var(--muted);
+  background:rgba(255,255,255,.06);
+  padding:2px 8px;border-radius:20px;
+}
+.country-card.selected .country-exams{
+  background:rgba(0,210,255,.12);color:var(--blue);
+}
+.country-card.hidden{display:none}
+.no-results{
+  grid-column:1/-1;text-align:center;padding:40px 20px;
+  color:var(--muted);font-size:.9rem;
+}
+
+/* ============================================================
+   EXAM CARDS
+   ============================================================ */
+.exam-list{
+  display:flex;flex-direction:column;gap:10px;
+  max-height:380px;overflow-y:auto;padding-right:2px;
+}
+.exam-list::-webkit-scrollbar{width:4px}
+.exam-list::-webkit-scrollbar-track{background:transparent}
+.exam-list::-webkit-scrollbar-thumb{background:rgba(157,80,187,.4);border-radius:2px}
+.exam-card{
+  padding:16px 18px;border-radius:12px;
+  background:rgba(255,255,255,.04);
+  border:1.5px solid rgba(255,255,255,.07);
+  cursor:pointer;
+  display:flex;align-items:center;gap:16px;
+  transition:var(--transition);
+}
+.exam-card:hover{
+  background:rgba(0,210,255,.05);border-color:rgba(0,210,255,.2);
+  transform:translateX(4px);
+}
+.exam-card.selected{
+  background:rgba(0,210,255,.1);border-color:var(--blue);
+  box-shadow:0 0 0 1px var(--blue),0 8px 30px rgba(0,210,255,.1);
+}
+.exam-card-icon{
+  width:48px;height:48px;border-radius:12px;flex-shrink:0;
+  background:linear-gradient(135deg,rgba(0,210,255,.1),rgba(157,80,187,.1));
+  border:1px solid rgba(0,210,255,.15);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;color:var(--blue);
+}
+.exam-card.selected .exam-card-icon{
+  background:rgba(0,210,255,.15);color:#fff;
+}
+.exam-card-info{flex:1;min-width:0}
+.exam-card-name{
+  font-family:'Orbitron',sans-serif;font-size:.85rem;font-weight:700;
+  color:#fff;margin-bottom:3px;
+}
+.exam-card-full{
+  font-size:.74rem;color:var(--muted);line-height:1.4;margin-bottom:5px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.exam-card-meta{display:flex;align-items:center;gap:8px}
+.exam-meta-pill{
+  display:inline-flex;align-items:center;gap:4px;
+  padding:2px 9px;border-radius:20px;font-size:.67rem;font-weight:700;
+  background:rgba(255,255,255,.06);color:var(--muted);
+  border:1px solid rgba(255,255,255,.07);
+}
+.exam-card.selected .exam-meta-pill{background:rgba(0,210,255,.1);color:var(--blue);border-color:rgba(0,210,255,.2)}
+.exam-check{
+  width:24px;height:24px;border-radius:50%;flex-shrink:0;
+  border:2px solid rgba(255,255,255,.15);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.65rem;color:transparent;transition:var(--transition);
+}
+.exam-card.selected .exam-check{
+  background:var(--blue);border-color:var(--blue);color:#fff;
+}
+
+/* ============================================================
+   SUBJECTS
+   ============================================================ */
+.subjects-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:16px;flex-wrap:wrap;gap:8px;
+}
+.subjects-counter{
+  font-size:.82rem;font-weight:700;color:var(--muted);
+}
+.subjects-counter.met{color:var(--green)}
+.subjects-counter.over{color:var(--red)}
+.subjects-info{
+  padding:10px 14px;border-radius:10px;
+  background:rgba(0,210,255,.06);border:1px solid rgba(0,210,255,.12);
+  font-size:.8rem;color:var(--blue);margin-bottom:16px;
+  display:flex;align-items:center;gap:8px;
+}
+.subjects-list{
+  display:flex;flex-direction:column;gap:8px;
+  max-height:320px;overflow-y:auto;padding-right:4px;
+}
+.subjects-list::-webkit-scrollbar{width:4px}
+.subjects-list::-webkit-scrollbar-track{background:transparent}
+.subjects-list::-webkit-scrollbar-thumb{background:rgba(157,80,187,.4);border-radius:2px}
+.subject-item{
+  display:flex;align-items:center;gap:14px;
+  padding:13px 16px;border-radius:10px;
+  background:rgba(255,255,255,.04);
+  border:1.5px solid rgba(255,255,255,.07);
+  cursor:pointer;transition:var(--transition);
+  user-select:none;
+}
+.subject-item.mandatory{
+  background:rgba(16,185,129,.06);border-color:rgba(16,185,129,.2);
+  cursor:default;
+}
+.subject-item.optional:hover{
+  background:rgba(0,210,255,.05);border-color:rgba(0,210,255,.2);
+}
+.subject-item.optional.checked{
+  background:rgba(0,210,255,.08);border-color:var(--blue);
+}
+.subject-checkbox{
+  width:22px;height:22px;border-radius:6px;flex-shrink:0;
+  border:2px solid rgba(255,255,255,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;color:transparent;transition:var(--transition);
+}
+.subject-item.mandatory .subject-checkbox{
+  background:var(--green);border-color:var(--green);color:#fff;
+}
+.subject-item.optional.checked .subject-checkbox{
+  background:var(--blue);border-color:var(--blue);color:#fff;
+}
+.subject-label{flex:1;font-size:.9rem;font-weight:600;color:#fff}
+.subject-item.mandatory .subject-label{color:#e8e8f0}
+.req-badge{
+  font-size:.66rem;font-weight:700;padding:2px 9px;border-radius:20px;
+  background:rgba(16,185,129,.12);color:var(--green);
+  border:1px solid rgba(16,185,129,.2);flex-shrink:0;
+}
+
+/* ============================================================
+   GOAL STEP
+   ============================================================ */
+.score-ranges{
+  display:flex;flex-direction:column;gap:10px;margin-bottom:20px;
+}
+.score-option{
+  padding:16px 18px;border-radius:12px;
+  background:rgba(255,255,255,.04);
+  border:1.5px solid rgba(255,255,255,.07);
+  cursor:pointer;transition:var(--transition);
+  display:flex;align-items:center;gap:14px;
+}
+.score-option:hover{
+  background:rgba(0,210,255,.05);border-color:rgba(0,210,255,.2);
+}
+.score-option.selected{
+  background:rgba(157,80,187,.08);border-color:var(--purple);
+  box-shadow:0 0 0 1px var(--purple),0 8px 30px rgba(157,80,187,.1);
+}
+.score-radio{
+  width:22px;height:22px;border-radius:50%;flex-shrink:0;
+  border:2px solid rgba(255,255,255,.2);
+  display:flex;align-items:center;justify-content:center;
+  transition:var(--transition);
+}
+.score-option.selected .score-radio{
+  background:var(--purple);border-color:var(--purple);
+}
+.score-radio-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:#fff;opacity:0;transition:var(--transition);
+}
+.score-option.selected .score-radio-dot{opacity:1}
+.score-label{
+  font-size:.95rem;font-weight:700;color:#fff;flex:1;
+}
+.score-grade{
+  font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:20px;
+  background:rgba(255,255,255,.06);color:var(--muted);
+}
+.score-option.selected .score-grade{
+  background:rgba(157,80,187,.15);color:var(--purple);
+}
+.motivation-box{
+  padding:16px 18px;border-radius:12px;
+  border:1px solid;
+  display:flex;align-items:flex-start;gap:12px;
+  margin-top:4px;
+  transition:var(--transition);opacity:0;transform:translateY(8px);
+}
+.motivation-box.show{opacity:1;transform:translateY(0)}
+.motivation-box.fire{
+  background:rgba(255,77,109,.06);border-color:rgba(255,77,109,.2);
+}
+.motivation-box.strong{
+  background:rgba(0,210,255,.06);border-color:rgba(0,210,255,.2);
+}
+.motivation-box.good{
+  background:rgba(16,185,129,.06);border-color:rgba(16,185,129,.2);
+}
+.motivation-box.start{
+  background:rgba(255,204,51,.06);border-color:rgba(255,204,51,.2);
+}
+.motivation-icon{font-size:1.3rem;flex-shrink:0;margin-top:1px}
+.motivation-text{font-size:.88rem;color:#c8c8e0;line-height:1.6}
+.motivation-text strong{color:#fff}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn-row{
+  display:flex;align-items:center;gap:12px;margin-top:28px;
+}
+.btn-back{
+  height:48px;padding:0 22px;border-radius:12px;
+  background:rgba(255,255,255,.05);
+  border:1.5px solid rgba(255,255,255,.1);
+  color:var(--muted);font-size:.9rem;font-weight:700;
+  transition:var(--transition);display:flex;align-items:center;gap:8px;
+  flex-shrink:0;
+}
+.btn-back:hover{
+  background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.18);
+  color:#fff;
+}
 .btn-next{
-  position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
-  width:calc(100% - 40px);max-width:440px;
-  padding:15px;border:none;border-radius:14px;
-  background:linear-gradient(135deg,var(--purple),#6d28d9);
-  color:#fff;font-family:'Nunito',sans-serif;font-size:.96rem;font-weight:800;
-  cursor:pointer;z-index:100;
-  box-shadow:0 5px 24px rgba(139,92,246,.5);
-  transition:.2s;display:flex;align-items:center;justify-content:center;gap:8px;
+  flex:1;height:50px;border-radius:12px;
+  background:var(--grad);color:#fff;
+  font-size:.95rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  transition:var(--transition);position:relative;overflow:hidden;
+  box-shadow:0 0 30px rgba(0,210,255,.2);letter-spacing:.3px;
 }
-.btn-next:hover{transform:translateY(-2px)}
-.btn-next:disabled{opacity:.5;cursor:not-allowed;transform:none}
-.skip-btn{text-align:center;padding:10px;font-size:.76rem;color:var(--muted);cursor:pointer;margin-top:6px;padding-bottom:90px}
-.skip-btn:hover{color:var(--text)}
-/* Confetti animation */
-.confetti-wrap{position:fixed;inset:0;pointer-events:none;z-index:999;overflow:hidden}
-.conf{position:absolute;width:8px;height:8px;border-radius:2px;animation:confFall linear forwards}
-@keyframes confFall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-.step.active{animation:fadeInUp .3s ease}
-.step::-webkit-scrollbar{display:none}
+.btn-next::before{
+  content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
+  transition:.6s;
+}
+.btn-next:hover::before{left:100%}
+.btn-next:hover{transform:translateY(-2px);box-shadow:0 10px 40px rgba(0,210,255,.3)}
+.btn-next:disabled{
+  opacity:.45;cursor:not-allowed;transform:none!important;
+  box-shadow:none;
+}
+.btn-next.gold-btn{
+  background:var(--grad-gold);color:#111;
+  box-shadow:0 0 30px rgba(255,204,51,.2);
+}
+.btn-next.gold-btn:hover{box-shadow:0 10px 40px rgba(255,204,51,.35)}
+.spinner{
+  width:20px;height:20px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.3);
+  border-top-color:#fff;animation:spin .7s linear infinite;flex-shrink:0;
+}
+.spinner-dark{border:2px solid rgba(0,0,0,.2);border-top-color:#111}
+
+/* ============================================================
+   STEP VALIDATION ERROR
+   ============================================================ */
+.step-error{
+  display:flex;align-items:center;gap:8px;
+  padding:10px 14px;border-radius:10px;
+  background:rgba(255,77,109,.08);border:1px solid rgba(255,77,109,.2);
+  color:#ff8fa3;font-size:.82rem;font-weight:600;
+  margin-top:14px;
+  max-height:0;overflow:hidden;opacity:0;
+  transition:max-height .35s ease, opacity .35s ease, padding .35s ease;
+}
+.step-error.show{max-height:60px;opacity:1}
+
+/* ============================================================
+   SUCCESS OVERLAY
+   ============================================================ */
+.success-overlay{
+  position:fixed;inset:0;z-index:10000;
+  background:rgba(3,3,11,.97);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:40px;
+  opacity:0;pointer-events:none;transition:opacity .5s ease;
+  backdrop-filter:blur(12px);
+}
+.success-overlay.show{opacity:1;pointer-events:all}
+.success-ring{
+  width:110px;height:110px;border-radius:50%;
+  background:linear-gradient(135deg,rgba(16,185,129,.15),rgba(0,210,255,.12));
+  border:2px solid rgba(16,185,129,.35);
+  display:flex;align-items:center;justify-content:center;
+  font-size:2.8rem;color:var(--green);margin-bottom:28px;
+  animation:popIn .5s cubic-bezier(.34,1.56,.64,1) .15s both;
+  position:relative;
+}
+.success-ring::before{
+  content:'';position:absolute;inset:-10px;border-radius:50%;
+  border:1px dashed rgba(16,185,129,.25);
+  animation:spin 6s linear infinite;
+}
+@keyframes popIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.success-title{
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(1.4rem,3vw,2.2rem);font-weight:700;color:#fff;
+  margin-bottom:10px;animation:fadeUp .4s ease .4s both;
+}
+.success-sub{color:var(--muted);font-size:1rem;margin-bottom:24px;animation:fadeUp .4s ease .5s both}
+.success-summary{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  max-width:420px;width:100%;margin-bottom:28px;
+  animation:fadeUp .4s ease .6s both;
+}
+.sum-item{
+  padding:12px;border-radius:12px;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);
+  text-align:center;
+}
+.sum-label{font-size:.7rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.sum-val{font-size:.88rem;color:#fff;font-weight:700}
+.redirect-bar-wrap{
+  width:280px;height:4px;background:rgba(255,255,255,.08);
+  border-radius:2px;overflow:hidden;animation:fadeUp .4s ease .8s both;
+}
+.redirect-bar{height:100%;width:0%;background:var(--grad);border-radius:2px;transition:width 2s linear}
+.redirect-txt{font-size:.8rem;color:var(--muted);margin-top:12px;animation:fadeUp .4s ease .9s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* Redirect top bar */
+.redirect-progress{
+  width:100%;height:3px;background:var(--grad);
+  position:fixed;top:0;left:0;z-index:10001;
+  transform:scaleX(0);transform-origin:left;transition:transform 2s linear;
+}
+.redirect-progress.go{transform:scaleX(1)}
+
+/* Confetti */
+#confetti-canvas{position:fixed;inset:0;z-index:9999;pointer-events:none;width:100%;height:100%}
+
+/* ============================================================
+   AUTH LOADER (initial)
+   ============================================================ */
+.auth-loader{
+  position:fixed;inset:0;z-index:9000;
+  background:#03030b;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;
+  transition:opacity .5s ease;
+}
+.auth-loader.hide{opacity:0;pointer-events:none}
+.auth-loader-logo{
+  font-family:'Orbitron',sans-serif;font-size:1.8rem;font-weight:900;
+  background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.auth-loader-spin{
+  width:36px;height:36px;border-radius:50%;
+  border:3px solid rgba(0,210,255,.2);border-top-color:var(--blue);
+  animation:spin .8s linear infinite;
+}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+@media(max-width:600px){
+  .page{padding:16px 12px 40px}
+  .card{padding:28px 18px}
+  .country-grid{grid-template-columns:repeat(2,1fr)}
+  .welcome-features{grid-template-columns:1fr}
+  .success-summary{grid-template-columns:1fr}
+  .btn-row{flex-wrap:wrap}
+  .btn-back{width:100%;justify-content:center}
+  .progress-labels{display:none}
+}
+@media(max-width:380px){
+  .country-grid{grid-template-columns:1fr}
+  .top-bar{flex-direction:column;gap:8px;align-items:flex-start}
+}
 </style>
 </head>
 <body>
-<div class="shell">
-  <div class="dots" id="dots">
-    <div class="dot active" data-d="0"></div>
-    <div class="dot" data-d="1"></div>
-    <div class="dot" data-d="2"></div>
-    <div class="dot" data-d="3"></div>
-  </div>
 
-  <!-- STEP 0: Name -->
-  <div class="step active" id="step0">
-    <div class="step-icon" style="background:linear-gradient(135deg,rgba(139,92,246,.2),rgba(109,40,217,.1));border:1px solid rgba(139,92,246,.3);animation:fadeInUp .4s ease">
-      <i class="fas fa-hand-wave" style="color:var(--purple)"></i>
-    </div>
-    <div class="step-title">Welcome to<br><span style="background:linear-gradient(90deg,var(--purple),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Vura AI</span></div>
-    <div class="step-sub">What should we call you? This is how you will appear to other students.</div>
-    <input class="name-inp" id="nameInp" placeholder="Enter your full name..." maxlength="30" autocomplete="off" style="margin-bottom:80px">
-    <button class="btn-next" id="step0Btn" disabled>
-      <i class="fas fa-arrow-right"></i> Continue
-    </button>
-  </div>
-
-  <!-- STEP 1: Exam type -->
-  <div class="step" id="step1">
-    <div class="step-title">What are you<br>preparing for?</div>
-    <div class="step-sub">We will personalise your experience based on your exam.</div>
-    <div class="opt-grid" id="examGrid"></div>
-    <button class="btn-next" id="step1Btn" disabled>
-      <i class="fas fa-arrow-right"></i> Continue
-    </button>
-    <div class="skip-btn" onclick="skipStep(1)">Skip for now</div>
-  </div>
-
-  <!-- STEP 2: Subjects -->
-  <div class="step" id="step2">
-    <div class="step-title">Choose your<br>subjects</div>
-    <div class="step-sub">Pick up to 5 subjects you want to focus on.</div>
-    <div class="opt-grid" id="subjGrid"></div>
-    <button class="btn-next" id="step2Btn" disabled>
-      <i class="fas fa-arrow-right"></i> Continue
-    </button>
-    <div class="skip-btn" onclick="skipStep(2)">Skip for now</div>
-  </div>
-
-  <!-- STEP 3: Welcome + VUX bonus -->
-  <div class="step" id="step3">
-    <div class="step-icon" style="background:rgba(255,204,51,.12);border:1px solid rgba(255,204,51,.2)">
-      <i class="fas fa-trophy" style="color:var(--gold)"></i>
-    </div>
-    <div class="step-title">You are all set,<br><span id="welcomeName" style="color:var(--purple)">—</span>!</div>
-    <div class="welcome-coins">
-      <i class="fas fa-coins"></i> 300 VUX coins added to your wallet!
-    </div>
-    <div class="feature-list">
-      <div class="feat-item"><div class="feat-ic" style="background:rgba(0,210,255,.1)"><i class="fas fa-robot" style="color:var(--blue)"></i></div><div><div class="feat-name">AI Chat</div><div class="feat-sub">Ask any question, get instant answers</div></div></div>
-      <div class="feat-item"><div class="feat-ic" style="background:rgba(139,92,246,.1)"><i class="fas fa-chalkboard-user" style="color:var(--purple)"></i></div><div><div class="feat-name">Classroom</div><div class="feat-sub">Study notes for every Nigerian exam</div></div></div>
-      <div class="feat-item"><div class="feat-ic" style="background:rgba(255,204,51,.1)"><i class="fas fa-graduation-cap" style="color:var(--gold)"></i></div><div><div class="feat-name">Smart Quiz</div><div class="feat-sub">Practice WAEC, JAMB past questions</div></div></div>
-      <div class="feat-item"><div class="feat-ic" style="background:rgba(16,185,129,.1)"><i class="fas fa-coins" style="color:var(--green)"></i></div><div><div class="feat-name">Earn VUX</div><div class="feat-sub">Study, answer questions, earn coins</div></div></div>
-    </div>
-    <button class="btn-next" id="step3Btn">
-      <i class="fas fa-rocket"></i> Start Learning
-    </button>
-  </div>
+<!-- Auth loader -->
+<div class="auth-loader" id="authLoader">
+  <div class="auth-loader-logo">VURA AI</div>
+  <div class="auth-loader-spin"></div>
 </div>
 
+<!-- Stars -->
+<canvas id="stars-canvas"></canvas>
+<!-- Nebula -->
+<div class="nebula"><div class="nb1"></div><div class="nb2"></div></div>
+<!-- Confetti -->
+<canvas id="confetti-canvas"></canvas>
+<!-- Redirect bar -->
+<div class="redirect-progress" id="redirectProgress"></div>
+
+<!-- Success overlay -->
+<div class="success-overlay" id="successOverlay">
+  <div class="success-ring"><i class="fa-solid fa-check"></i></div>
+  <div class="success-title">You're All Set!</div>
+  <div class="success-sub">Your personalised study plan is ready.</div>
+  <div class="success-summary" id="successSummary"></div>
+  <div class="redirect-bar-wrap">
+    <div class="redirect-bar" id="redirectBar"></div>
+  </div>
+  <div class="redirect-txt">Taking you to your dashboard...</div>
+</div>
+
+<!-- ===== MAIN PAGE ===== -->
+<div class="page" id="mainPage" style="opacity:0;transition:opacity .4s ease">
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="topbar-logo">VURA AI</div>
+    <div class="topbar-step">Step <span id="stepNumLabel">1</span> of 5</div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-wrap">
+    <div class="progress-labels">
+      <span class="progress-label" id="pl1">Welcome</span>
+      <span class="progress-label" id="pl2">Country</span>
+      <span class="progress-label" id="pl3">Exam</span>
+      <span class="progress-label" id="pl4">Subjects</span>
+      <span class="progress-label" id="pl5">Goal</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill" style="width:10%"></div>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="card">
+
+    <!-- ===================== STEP 1: WELCOME ===================== -->
+    <div class="step active" id="step1">
+      <div class="welcome-anim">
+        <i class="fa-solid fa-rocket" style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text"></i>
+      </div>
+      <div class="welcome-name">Welcome to Vura AI,<br><span id="welcomeName">Student</span>!</div>
+      <div class="welcome-sub">Let's personalise your study plan in 5 quick steps.<br>It only takes about 60 seconds.</div>
+      <div class="vux-welcome">
+        <i class="fa-solid fa-coins"></i>
+        <span>300 VUX Coins are in your wallet — ready to grow!</span>
+      </div>
+      <div class="welcome-features">
+        <div class="wf-item"><div class="wf-icon wfi-blue"><i class="fa-solid fa-robot"></i></div>AI Tutor</div>
+        <div class="wf-item"><div class="wf-icon wfi-purple"><i class="fa-solid fa-database"></i></div>50K+ Questions</div>
+        <div class="wf-item"><div class="wf-icon wfi-gold"><i class="fa-solid fa-coins"></i></div>VUX Rewards</div>
+        <div class="wf-item"><div class="wf-icon wfi-green"><i class="fa-solid fa-users"></i></div>Study Groups</div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-next" id="step1Next" onclick="goNext()">
+          <i class="fa-solid fa-rocket"></i> Let's Get Started
+        </button>
+      </div>
+    </div>
+
+    <!-- ===================== STEP 2: COUNTRY ===================== -->
+    <div class="step" id="step2">
+      <div class="step-icon" style="color:var(--blue)"><i class="fa-solid fa-globe"></i></div>
+      <div class="step-title">Where are you studying?</div>
+      <div class="step-sub">Pick your country so we can show the right exams and past questions for you.</div>
+
+      <div class="search-wrap">
+        <i class="fa-solid fa-search search-icon"></i>
+        <input type="text" class="search-input" id="countrySearch" placeholder="Search country..." oninput="filterCountries(this.value)" autocomplete="off"/>
+      </div>
+
+      <div class="country-grid" id="countryGrid">
+        <!-- Populated by JS -->
+        <div class="no-results" id="countryNoResults" style="display:none">
+          <i class="fa-solid fa-magnifying-glass" style="font-size:1.5rem;color:var(--muted);display:block;margin-bottom:10px"></i>
+          No countries found for "<span id="countrySearchTerm"></span>"
+        </div>
+      </div>
+
+      <div class="step-error" id="step2Error">
+        <i class="fa-solid fa-circle-exclamation"></i> Please select a country to continue.
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-next" id="step2Next" onclick="goNext()" disabled>
+          Next <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===================== STEP 3: EXAM ===================== -->
+    <div class="step" id="step3">
+      <div class="step-icon" style="color:var(--purple)"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="step-title">Which exam are you preparing for?</div>
+      <div class="step-sub" id="step3Sub">Select the exam you want to ace.</div>
+
+      <div class="exam-list" id="examList">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="step-error" id="step3Error">
+        <i class="fa-solid fa-circle-exclamation"></i> Please select an exam to continue.
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-back" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i> Back</button>
+        <button class="btn-next" id="step3Next" onclick="goNext()" disabled>
+          Next <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===================== STEP 4: SUBJECTS ===================== -->
+    <div class="step" id="step4">
+      <div class="step-icon" style="color:var(--gold)"><i class="fa-solid fa-book-open"></i></div>
+      <div class="step-title">Select your subjects</div>
+      <div class="step-sub" id="step4Sub">Choose the subjects you'll be studying.</div>
+
+      <div class="subjects-header">
+        <div class="subjects-info" id="subjectsInfo">
+          <i class="fa-solid fa-circle-info"></i>
+          <span id="subjectsInfoText">Loading subjects...</span>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:flex-end;margin-bottom:10px">
+        <div class="subjects-counter" id="subjectsCounter">0 selected</div>
+      </div>
+
+      <div class="subjects-list" id="subjectsList">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="step-error" id="step4Error">
+        <i class="fa-solid fa-circle-exclamation"></i> <span id="step4ErrorMsg">Please select the required number of subjects.</span>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-back" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i> Back</button>
+        <button class="btn-next" id="step4Next" onclick="goNext()" disabled>
+          Next <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===================== STEP 5: GOAL ===================== -->
+    <div class="step" id="step5">
+      <div class="step-icon" style="color:var(--green)"><i class="fa-solid fa-bullseye"></i></div>
+      <div class="step-title">What's your target score?</div>
+      <div class="step-sub" id="step5Sub">Set your goal so we can focus your preparation in the right direction.</div>
+
+      <div class="score-ranges" id="scoreRanges">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="motivation-box" id="motivationBox">
+        <span class="motivation-icon" id="motivationIcon"></span>
+        <div class="motivation-text" id="motivationText"></div>
+      </div>
+
+      <div class="step-error" id="step5Error">
+        <i class="fa-solid fa-circle-exclamation"></i> Please select a target score to continue.
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-back" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i> Back</button>
+        <button class="btn-next gold-btn" id="step5Next" onclick="completeOnboarding()" disabled>
+          <i class="fa-solid fa-check-circle"></i> Complete Setup
+        </button>
+      </div>
+    </div>
+
+  </div><!-- /.card -->
+</div><!-- /.page -->
+
+<!-- ============================================================
+   FIREBASE MODULE SCRIPT
+   ============================================================ -->
 <script type="module">
-import { watchAuth, db } from './auth.js';
-import { doc, updateDoc, addDoc, collection, serverTimestamp, increment }
-  from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+import { initializeApp }       from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+import { getAuth, onAuthStateChanged }
+                               from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
+import { getFirestore, doc, getDoc, updateDoc, serverTimestamp }
+                               from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
-const EXAMS = [
-  {id:'jamb',name:'JAMB UTME',icon:'fas fa-university',color:'rgba(0,210,255,.12)',ic:'var(--blue)'},
-  {id:'waec',name:'WAEC / SSCE',icon:'fas fa-certificate',color:'rgba(16,185,129,.12)',ic:'var(--green)'},
-  {id:'neco',name:'NECO',icon:'fas fa-scroll',color:'rgba(245,158,11,.12)',ic:'var(--gold)'},
-  {id:'nabteb',name:'NABTEB',icon:'fas fa-wrench',color:'rgba(249,115,22,.12)',ic:'var(--orange)'},
-  {id:'common',name:'Common Entrance',icon:'fas fa-child',color:'rgba(139,92,246,.12)',ic:'var(--purple)'},
-  {id:'postutme',name:'Post UTME',icon:'fas fa-building-columns',color:'rgba(255,61,112,.12)',ic:'var(--pink)'},
-  {id:'gce',name:'GCE / IGCSE',icon:'fas fa-globe',color:'rgba(99,102,241,.12)',ic:'#6366f1'},
-  {id:'university',name:'University',icon:'fas fa-graduation-cap',color:'rgba(255,204,51,.12)',ic:'var(--gold)'},
-];
-
-const SUBJECTS = [
-  {id:'math',name:'Mathematics',icon:'fas fa-square-root-variable',color:'rgba(245,158,11,.12)',ic:'var(--gold)'},
-  {id:'english',name:'English',icon:'fas fa-pen-nib',color:'rgba(0,210,255,.1)',ic:'var(--blue)'},
-  {id:'biology',name:'Biology',icon:'fas fa-dna',color:'rgba(16,185,129,.1)',ic:'var(--green)'},
-  {id:'chemistry',name:'Chemistry',icon:'fas fa-flask',color:'rgba(139,92,246,.1)',ic:'var(--purple)'},
-  {id:'physics',name:'Physics',icon:'fas fa-atom',color:'rgba(255,61,112,.1)',ic:'var(--pink)'},
-  {id:'economics',name:'Economics',icon:'fas fa-chart-line',color:'rgba(249,115,22,.1)',ic:'var(--orange)'},
-  {id:'government',name:'Government',icon:'fas fa-landmark',color:'rgba(99,102,241,.1)',ic:'#6366f1'},
-  {id:'literature',name:'Literature',icon:'fas fa-book',color:'rgba(234,179,8,.1)',ic:'#eab308'},
-  {id:'computer',name:'Computer',icon:'fas fa-laptop-code',color:'rgba(0,210,255,.1)',ic:'var(--blue)'},
-  {id:'commerce',name:'Commerce',icon:'fas fa-handshake',color:'rgba(16,185,129,.1)',ic:'var(--green)'},
-];
-
-let _uid = null, _step = 0, _name = '', _exam = '', _subjects = [];
-
-function goTo(step){
-  document.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));
-  document.getElementById('step'+step).classList.add('active');
-  document.querySelectorAll('.dot').forEach((d,i)=>{
-    d.classList.toggle('active',i===step);
-    d.classList.toggle('done',i<step);
-  });
-  _step=step;
-}
-
-window.skipStep = step => {
-  if(step===1){_exam='';goTo(2);renderSubjects();}
-  else if(step===2){_subjects=[];goTo(3);}
+const firebaseConfig = {
+  apiKey:            "AIzaSyAmk0Nyxfk4u9q_Ma2esj4ch8XMW6e49o4",
+  authDomain:        "vura-ai2026.firebaseapp.com",
+  projectId:         "vura-ai2026",
+  storageBucket:     "vura-ai2026.firebasestorage.app",
+  messagingSenderId: "973528287420",
+  appId:             "1:973528287420:web:bceffa7ce783add77528b9"
 };
 
-// Step 0 — Name
-const nameInp = document.getElementById('nameInp');
-nameInp.addEventListener('input',()=>{
-  _name=nameInp.value.trim();
-  document.getElementById('step0Btn').disabled=!_name;
-});
-document.getElementById('step0Btn').addEventListener('click',()=>{
-  if(!_name)return;
-  document.getElementById('welcomeName').textContent=_name.split(' ')[0];
-  renderExams();goTo(1);
-});
+const app  = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db   = getFirestore(app);
 
-// Step 1 — Exams
-function renderExams(){
-  document.getElementById('examGrid').innerHTML=EXAMS.map(e=>`
-    <div class="opt-card" data-exam="${e.id}" onclick="selectExam('${e.id}',this)">
-      <div class="oc-icon" style="background:${e.color};border:1px solid ${e.color.replace('.12','.25')}"><i class="${e.icon}" style="color:${e.ic}"></i></div>
-      <div class="oc-name">${e.name}</div>
-    </div>`).join('');
-}
-
-window.selectExam=(id,el)=>{
-  document.querySelectorAll('#examGrid .opt-card').forEach(c=>c.classList.remove('sel'));
-  el.classList.add('sel');_exam=id;
-  document.getElementById('step1Btn').disabled=false;
-};
-
-document.getElementById('step1Btn').addEventListener('click',()=>{renderSubjects();goTo(2);});
-
-// Step 2 — Subjects
-function renderSubjects(){
-  document.getElementById('subjGrid').innerHTML=SUBJECTS.map(s=>`
-    <div class="opt-card" data-subj="${s.id}" onclick="toggleSubject('${s.id}',this)">
-      <div class="oc-icon" style="background:${s.color};border:1px solid ${s.color.replace('.1','.2')}"><i class="${s.icon}" style="color:${s.ic}"></i></div>
-      <div class="oc-name">${s.name}</div>
-    </div>`).join('');
-}
-
-window.toggleSubject=(id,el)=>{
-  if(el.classList.contains('sel')){
-    el.classList.remove('sel');_subjects=_subjects.filter(s=>s!==id);
-  }else{
-    if(_subjects.length>=5){return;}
-    el.classList.add('sel');_subjects.push(id);
+// ── Auth guard ─────────────────────────────────────────────────
+onAuthStateChanged(auth, async (user) => {
+  if (!user) {
+    window.location.href = 'login.html';
+    return;
   }
-  document.getElementById('step2Btn').disabled=!_subjects.length;
-};
 
-document.getElementById('step2Btn').addEventListener('click',()=>goTo(3));
-
-// Step 3 — Done
-document.getElementById('step3Btn').addEventListener('click',async()=>{
-  const btn=document.getElementById('step3Btn');
-  btn.disabled=true;btn.innerHTML='<div style="width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .6s linear infinite"></div>';
-  try{
-    // Save preferences to Firestore
-    await updateDoc(doc(db,'users',_uid),{
-      name:_name,
-      examFocus:_exam||null,
-      subjects:_subjects,
-      onboarded:true,
-      lastUpdated:serverTimestamp()
-    });
-    // Credit 300 VUX welcome bonus
-    await updateDoc(doc(db,'wallets',_uid),{
-      balance:increment(300),totalEarned:increment(300)
-    }).catch(()=>{});
-    await updateDoc(doc(db,'users',_uid),{vuxBalance:increment(300)}).catch(()=>{});
-    await addDoc(collection(db,'wallets',_uid,'transactions'),{
-      type:'Welcome Bonus',amount:300,timestamp:serverTimestamp(),date:new Date().toLocaleString()
-    }).catch(()=>{});
-    // Confetti!
-    launchConfetti();
-    setTimeout(()=>window.location.replace('appskeleton'),1500);
-  }catch(e){
-    btn.disabled=false;
-    btn.innerHTML='<i class="fas fa-rocket"></i> Start Learning';
-    window.location.replace('appskeleton');
-  }
-});
-
-function launchConfetti(){
-  const wrap=document.createElement('div');wrap.className='confetti-wrap';document.body.appendChild(wrap);
-  const colors=['#8b5cf6','#ffcc33','#00d2ff','#ff3d70','#10b981','#ff9500'];
-  for(let i=0;i<60;i++){
-    const c=document.createElement('div');c.className='conf';
-    c.style.cssText=`left:${Math.random()*100}%;top:-10px;background:${colors[i%colors.length]};animation-duration:${1+Math.random()*2}s;animation-delay:${Math.random()*.5}s;transform:rotate(${Math.random()*360}deg)`;
-    wrap.appendChild(c);
-  }
-  setTimeout(()=>wrap.remove(),3000);
-}
-
-watchAuth(async user=>{
-  if(!user){window.location.replace('login');return;}
-  _uid=user.uid;
   // Check if already onboarded
-  const snap=await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js')
-    .then(({getDoc})=>getDoc(doc(db,'users',_uid))).catch(()=>null);
-  if(snap?.data()?.onboarded){window.location.replace('appskeleton');return;}
-  // Pre-fill name if available
-  const existingName=snap?.data()?.name||user.displayName||'';
-  if(existingName){
-    nameInp.value=existingName;_name=existingName;
-    document.getElementById('step0Btn').disabled=false;
-    document.getElementById('welcomeName').textContent=existingName.split(' ')[0];
-  }
+  try {
+    const snap = await getDoc(doc(db, 'users', user.uid));
+    if (snap.exists() && snap.data().onboarded === true) {
+      window.location.href = 'appskeleton.html';
+      return;
+    }
+  } catch(e) { /* proceed */ }
+
+  // Set welcome name
+  const firstName = (user.displayName || 'Student').split(' ')[0];
+  document.getElementById('welcomeName').textContent = firstName;
+
+  // Expose save function globally
+  window._saveOnboarding = async (payload) => {
+    await updateDoc(doc(db, 'users', user.uid), {
+      ...payload,
+      onboarded:    true,
+      onboardedAt:  serverTimestamp(),
+    });
+  };
+
+  // Show page
+  document.getElementById('authLoader').classList.add('hide');
+  document.getElementById('mainPage').style.opacity = '1';
+
+  // Init data
+  window.initOnboarding();
 });
 </script>
-<style>@keyframes spin{to{transform:rotate(360deg)}}@keyframes orange{to{color:var(--orange)}}</style>
+
+<!-- ============================================================
+   ONBOARDING LOGIC (classic script — no module needed)
+   ============================================================ -->
+<script>
+/* ── State ────────────────────────────────────────────────── */
+let currentStep      = 1;
+let allCountries     = [];
+let allExams         = [];
+let selectedCountry  = null;
+let selectedExam     = null;
+let selectedSubjects = [];  // includes mandatory + chosen optional
+let mandatorySubjects= [];
+let optionalSelected = [];
+let requiredTotal    = 4;   // default
+let selectedGoal     = null;
+
+/* ── Init (called after auth) ─────────────────────────────── */
+window.initOnboarding = async function() {
+  try {
+    const [cRes, eRes] = await Promise.all([
+      fetch('countries.json'),
+      fetch('exams.json'),
+    ]);
+    const cData = await cRes.json();
+    const eData = await eRes.json();
+    allCountries = cData.countries  || [];
+    allExams     = eData.exams      || [];
+  } catch(err) {
+    // Fallback inline data if JSON not found
+    allCountries = getFallbackCountries();
+    allExams     = getFallbackExams();
+  }
+  renderCountries(allCountries);
+  updateProgress(1);
+};
+
+/* ── Progress & Step Logic ────────────────────────────────── */
+const progressPct = [10, 28, 50, 72, 92];
+const labels      = ['pl1','pl2','pl3','pl4','pl5'];
+
+function updateProgress(step) {
+  document.getElementById('progressFill').style.width = progressPct[step-1] + '%';
+  document.getElementById('stepNumLabel').textContent  = step;
+  labels.forEach((id,i) => {
+    const el = document.getElementById(id);
+    el.className = 'progress-label';
+    if (i+1 < step)  el.classList.add('done');
+    if (i+1 === step) el.classList.add('active');
+  });
+}
+
+function showStep(n, direction) {
+  const cur = document.getElementById('step' + currentStep);
+  const nxt = document.getElementById('step' + n);
+  cur.classList.remove('active','slide-in-left','slide-in-right');
+  cur.style.display = 'none';
+  nxt.style.display = 'block';
+  nxt.className = 'step active ' + (direction === 'forward' ? 'slide-in-right' : 'slide-in-left');
+  currentStep = n;
+  updateProgress(n);
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+window.goNext = function() {
+  if (!validateStep(currentStep)) return;
+  if (currentStep === 2) buildExamStep();
+  if (currentStep === 3) buildSubjectStep();
+  if (currentStep === 4) buildGoalStep();
+  showStep(currentStep + 1, 'forward');
+};
+
+window.goBack = function() {
+  hideStepError(currentStep);
+  showStep(currentStep - 1, 'backward');
+};
+
+function validateStep(step) {
+  hideStepError(step);
+  if (step === 1) return true;
+  if (step === 2) {
+    if (!selectedCountry) { showStepError(2); return false; }
+    return true;
+  }
+  if (step === 3) {
+    if (!selectedExam) { showStepError(3); return false; }
+    return true;
+  }
+  if (step === 4) {
+    const total = mandatorySubjects.length + optionalSelected.length;
+    if (total < requiredTotal) {
+      const need = requiredTotal - mandatorySubjects.length;
+      document.getElementById('step4ErrorMsg').textContent =
+        `Please select ${need - optionalSelected.length} more subject${need - optionalSelected.length > 1 ? 's' : ''} to continue.`;
+      showStepError(4); return false;
+    }
+    if (total > requiredTotal) {
+      document.getElementById('step4ErrorMsg').textContent =
+        `Too many subjects selected. Please remove ${total - requiredTotal}.`;
+      showStepError(4); return false;
+    }
+    return true;
+  }
+  if (step === 5) {
+    if (!selectedGoal) { showStepError(5); return false; }
+    return true;
+  }
+  return true;
+}
+
+function showStepError(step) {
+  document.getElementById('step' + step + 'Error').classList.add('show');
+}
+function hideStepError(step) {
+  const el = document.getElementById('step' + step + 'Error');
+  if (el) el.classList.remove('show');
+}
+
+/* ── STEP 2: Countries ────────────────────────────────────── */
+function renderCountries(list) {
+  const grid    = document.getElementById('countryGrid');
+  const noRes   = document.getElementById('countryNoResults');
+  const visible = list.filter(c => !c._hidden);
+
+  // Clear existing cards (keep noResults div)
+  Array.from(grid.querySelectorAll('.country-card')).forEach(el => el.remove());
+
+  if (visible.length === 0) {
+    noRes.style.display = 'block';
+    return;
+  }
+  noRes.style.display = 'none';
+
+  visible.forEach(country => {
+    const card = document.createElement('div');
+    card.className = 'country-card' + (selectedCountry?.country_code === country.country_code ? ' selected' : '');
+    card.dataset.code = country.country_code;
+    card.innerHTML = `
+      <span class="country-flag">${country.flag}</span>
+      <div class="country-name">${country.country_name}</div>
+      <div class="country-exams">${country.exams.length} exam${country.exams.length !== 1 ? 's' : ''}</div>
+    `;
+    card.addEventListener('click', () => selectCountry(country, card));
+    grid.appendChild(card);
+  });
+}
+
+window.filterCountries = function(val) {
+  const q    = val.trim().toLowerCase();
+  document.getElementById('countrySearchTerm').textContent = val;
+  const filtered = allCountries.filter(c =>
+    !q || c.country_name.toLowerCase().includes(q) || c.country_code.toLowerCase().includes(q)
+  );
+  renderCountries(filtered);
+};
+
+function selectCountry(country, cardEl) {
+  selectedCountry = country;
+  selectedExam    = null;
+  selectedSubjects= [];
+  optionalSelected= [];
+
+  document.querySelectorAll('.country-card').forEach(c => c.classList.remove('selected'));
+  cardEl.classList.add('selected');
+  document.getElementById('step2Next').disabled = false;
+  hideStepError(2);
+}
+
+/* ── STEP 3: Exams ────────────────────────────────────────── */
+function buildExamStep() {
+  const exams  = allExams.filter(e => e.country_code === selectedCountry.country_code);
+  const list   = document.getElementById('examList');
+  list.innerHTML = '';
+
+  const flag = selectedCountry.flag || '';
+  document.getElementById('step3Sub').textContent =
+    `Showing exams available in ${flag} ${selectedCountry.country_name}.`;
+
+  if (!exams.length) {
+    list.innerHTML = `<div style="text-align:center;padding:40px;color:var(--muted)">
+      <i class="fa-solid fa-circle-xmark" style="font-size:2rem;margin-bottom:12px;display:block"></i>
+      No exams found for ${selectedCountry.country_name} yet. More coming soon!
+    </div>`;
+    return;
+  }
+
+  exams.forEach(exam => {
+    const card = document.createElement('div');
+    card.className = 'exam-card';
+    card.dataset.code = exam.exam_code;
+    const maxScore = exam.max_score !== undefined ? `Max: ${exam.max_score}` : '';
+    card.innerHTML = `
+      <div class="exam-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="exam-card-info">
+        <div class="exam-card-name">${exam.exam_name}</div>
+        <div class="exam-card-full">${exam.exam_full_name || ''}</div>
+        <div class="exam-card-meta">
+          <span class="exam-meta-pill"><i class="fa-solid fa-users" style="font-size:.6rem"></i>${exam.students_per_year || 'N/A'}</span>
+          ${maxScore ? `<span class="exam-meta-pill"><i class="fa-solid fa-star" style="font-size:.6rem"></i>${maxScore}</span>` : ''}
+        </div>
+      </div>
+      <div class="exam-check"><i class="fa-solid fa-check"></i></div>
+    `;
+    card.addEventListener('click', () => selectExam(exam, card));
+    list.appendChild(card);
+  });
+}
+
+function selectExam(exam, cardEl) {
+  selectedExam     = exam;
+  selectedSubjects = [];
+  optionalSelected = [];
+
+  document.querySelectorAll('.exam-card').forEach(c => c.classList.remove('selected'));
+  cardEl.classList.add('selected');
+  document.getElementById('step3Next').disabled = false;
+  hideStepError(3);
+}
+
+/* ── STEP 4: Subjects ─────────────────────────────────────── */
+function buildSubjectStep() {
+  if (!selectedExam) return;
+  const exam    = selectedExam;
+  const subs    = exam.subjects || {};
+  mandatorySubjects = [];
+  optionalSelected  = [];
+
+  // Determine mandatory
+  if (subs.mandatory && subs.mandatory.length) {
+    mandatorySubjects = [...subs.mandatory];
+  } else if (subs.core_subjects) {
+    mandatorySubjects = [...subs.core_subjects];
+  } else if (subs.mandatory_sections) {
+    mandatorySubjects = [...subs.mandatory_sections];
+  }
+
+  // Determine optional pool
+  let optionalPool = [];
+  if (subs.optional && subs.optional.length)            optionalPool = [...subs.optional];
+  else if (subs.all_optional)                           optionalPool = [...subs.all_optional];
+  else if (subs.science_track || subs.arts_track) {
+    const merged = [];
+    Object.keys(subs).forEach(k => {
+      if (k !== 'mandatory' && k !== 'mandatory_sections' && k !== 'core_subjects' && Array.isArray(subs[k])) {
+        subs[k].forEach(s => { if (!merged.includes(s)) merged.push(s); });
+      }
+    });
+    optionalPool = merged.filter(s => !mandatorySubjects.includes(s));
+  } else {
+    // Flatten all arrays
+    Object.keys(subs).forEach(k => {
+      if (Array.isArray(subs[k])) {
+        subs[k].forEach(s => {
+          if (!mandatorySubjects.includes(s) && !optionalPool.includes(s)) optionalPool.push(s);
+        });
+      }
+    });
+  }
+
+  // Required count
+  const sc = exam.subject_count;
+  requiredTotal = typeof sc === 'number' ? sc :
+                  (typeof sc === 'string' ? (parseInt(sc.match(/\d+/)?.[0]) || 4) : 4);
+  if (requiredTotal < mandatorySubjects.length) requiredTotal = mandatorySubjects.length;
+  const needOptional = Math.max(0, requiredTotal - mandatorySubjects.length);
+
+  // Info text
+  document.getElementById('subjectsInfoText').textContent =
+    needOptional > 0
+      ? `${exam.exam_name} requires ${needOptional} optional subject${needOptional !== 1 ? 's' : ''} in addition to ${mandatorySubjects.length} mandatory subject${mandatorySubjects.length !== 1 ? 's' : ''}.`
+      : `All ${mandatorySubjects.length} subject${mandatorySubjects.length !== 1 ? 's' : ''} for ${exam.exam_name} are mandatory.`;
+
+  document.getElementById('step4Sub').textContent = exam.subject_note || `Choose subjects for ${exam.exam_name}.`;
+
+  // Render
+  const list = document.getElementById('subjectsList');
+  list.innerHTML = '';
+
+  // Mandatory
+  mandatorySubjects.forEach(sub => {
+    const item = document.createElement('div');
+    item.className = 'subject-item mandatory';
+    item.innerHTML = `
+      <div class="subject-checkbox"><i class="fa-solid fa-check"></i></div>
+      <div class="subject-label">${sub}</div>
+      <span class="req-badge">Required</span>
+    `;
+    list.appendChild(item);
+  });
+
+  // Optional (only show unique, non-mandatory subjects)
+  const shownOptional = optionalPool.filter(s => !mandatorySubjects.includes(s));
+  shownOptional.forEach(sub => {
+    const item = document.createElement('div');
+    item.className = 'subject-item optional';
+    item.innerHTML = `
+      <div class="subject-checkbox"><i class="fa-solid fa-check"></i></div>
+      <div class="subject-label">${sub}</div>
+    `;
+    item.addEventListener('click', () => toggleSubject(sub, item, needOptional));
+    list.appendChild(item);
+  });
+
+  updateSubjectCounter(needOptional);
+  document.getElementById('step4Next').disabled = (needOptional > 0);
+}
+
+function toggleSubject(sub, item, needOptional) {
+  const idx = optionalSelected.indexOf(sub);
+  if (idx > -1) {
+    // Deselect
+    optionalSelected.splice(idx, 1);
+    item.classList.remove('checked');
+    item.querySelector('.subject-checkbox').innerHTML = '<i class="fa-solid fa-check"></i>';
+  } else {
+    // Can't add more than needed
+    if (needOptional > 0 && optionalSelected.length >= needOptional) {
+      // Flash the counter
+      const counter = document.getElementById('subjectsCounter');
+      counter.classList.add('over');
+      setTimeout(() => counter.classList.remove('over'), 800);
+      return;
+    }
+    optionalSelected.push(sub);
+    item.classList.add('checked');
+    item.querySelector('.subject-checkbox').innerHTML = '<i class="fa-solid fa-check"></i>';
+  }
+  updateSubjectCounter(needOptional);
+  const total = mandatorySubjects.length + optionalSelected.length;
+  document.getElementById('step4Next').disabled = (total !== requiredTotal);
+  hideStepError(4);
+}
+
+function updateSubjectCounter(needOptional) {
+  const counter  = document.getElementById('subjectsCounter');
+  const selected = optionalSelected.length;
+  if (needOptional <= 0) {
+    counter.textContent = 'All subjects selected';
+    counter.className   = 'subjects-counter met';
+    return;
+  }
+  const remaining = needOptional - selected;
+  if (remaining > 0) {
+    counter.textContent = `Pick ${remaining} more subject${remaining !== 1 ? 's' : ''}`;
+    counter.className   = 'subjects-counter';
+  } else {
+    counter.textContent = `${needOptional} subjects selected`;
+    counter.className   = 'subjects-counter met';
+  }
+}
+
+/* ── STEP 5: Goal ─────────────────────────────────────────── */
+function buildGoalStep() {
+  if (!selectedExam) return;
+  const ranges = selectedExam.score_ranges || [];
+  const cont   = document.getElementById('scoreRanges');
+  cont.innerHTML = '';
+
+  if (!ranges.length) {
+    cont.innerHTML = `<div style="text-align:center;padding:30px;color:var(--muted)">
+      Score range info not available for this exam. Please skip to continue.
+    </div>`;
+    document.getElementById('step5Next').disabled = false;
+    selectedGoal = 'Not specified';
+    return;
+  }
+
+  document.getElementById('step5Sub').textContent =
+    `Set your target score for ${selectedExam.exam_name}. We'll build your plan around it.`;
+
+  ranges.forEach((range, i) => {
+    const opt = document.createElement('div');
+    opt.className = 'score-option';
+    opt.dataset.val = range.label || range.value || `Option ${i+1}`;
+    opt.innerHTML = `
+      <div class="score-radio"><div class="score-radio-dot"></div></div>
+      <div class="score-label">${range.label || range.value}</div>
+      <div class="score-grade">${range.grade || ''}</div>
+    `;
+    opt.addEventListener('click', () => selectGoal(range, opt));
+    cont.appendChild(opt);
+  });
+}
+
+const motivations = [
+  { match: /300\+|A\*A\*|Grade 9|650|1500|820|34|36|A1|Top|Outstanding|AIR Top|SKY|Peking|Tokyo/i,
+    icon:'🔥', cls:'fire',
+    text:'<strong>Aiming for excellence!</strong> That\'s the spirit. Vura AI will push you to the very top with intensive practice and AI coaching.' },
+  { match: /250|280|A\*A|AAA|1400|700|Grade 8|30|33|2\.0|Excellent|Distinction/i,
+    icon:'💪', cls:'strong',
+    text:'<strong>Great target!</strong> This score puts you among the top performers. Stay consistent and we\'ll help you get there.' },
+  { match: /200|180|BBB|1200|550|Grade 7|27|Good|Merit|CGPA 3/i,
+    icon:'🌟', cls:'good',
+    text:'<strong>Solid goal!</strong> With daily practice on Vura AI, this target is very achievable. Let\'s build your confidence step by step.' },
+  { match: /.*/,
+    icon:'🚀', cls:'start',
+    text:'<strong>Every journey starts somewhere.</strong> Set your baseline today and watch your score rise with Vura AI\'s personalised study plan.' },
+];
+
+function selectGoal(range, optEl) {
+  selectedGoal = range.label || range.value;
+  document.querySelectorAll('.score-option').forEach(o => o.classList.remove('selected'));
+  optEl.classList.add('selected');
+  document.getElementById('step5Next').disabled = false;
+  hideStepError(5);
+
+  // Motivation message
+  const box  = document.getElementById('motivationBox');
+  const mot  = motivations.find(m => m.match.test(selectedGoal)) || motivations[motivations.length-1];
+  box.className = `motivation-box show ${mot.cls}`;
+  document.getElementById('motivationIcon').textContent = mot.icon;
+  document.getElementById('motivationText').innerHTML   = mot.text;
+}
+
+/* ── STEP 6: Save & Complete ──────────────────────────────── */
+window.completeOnboarding = async function() {
+  if (!validateStep(5)) return;
+
+  const btn = document.getElementById('step5Next');
+  btn.disabled  = true;
+  btn.innerHTML = '<div class="spinner spinner-dark"></div> Saving...';
+
+  const allSelected = [...mandatorySubjects, ...optionalSelected];
+
+  const payload = {
+    country_code:   selectedCountry.country_code,
+    country_name:   selectedCountry.country_name,
+    currency:       selectedCountry.currency_symbol || '',
+    exam_code:      selectedExam.exam_code,
+    exam_name:      selectedExam.exam_name,
+    exam_full_name: selectedExam.exam_full_name || selectedExam.exam_name,
+    subjects:       allSelected,
+    study_goal:     selectedGoal,
+  };
+
+  try {
+    await window._saveOnboarding(payload);
+    triggerSuccess(payload);
+  } catch(err) {
+    btn.disabled  = false;
+    btn.innerHTML = '<i class="fa-solid fa-check-circle"></i> Complete Setup';
+    showGlobalError('Failed to save your profile: ' + err.message + '. Please try again.');
+  }
+};
+
+function triggerSuccess(payload) {
+  // Build summary
+  const sumHTML = `
+    <div class="sum-item">
+      <div class="sum-label">Country</div>
+      <div class="sum-val">${selectedCountry.flag} ${selectedCountry.country_name}</div>
+    </div>
+    <div class="sum-item">
+      <div class="sum-label">Exam</div>
+      <div class="sum-val">${selectedExam.exam_name}</div>
+    </div>
+    <div class="sum-item">
+      <div class="sum-label">Subjects</div>
+      <div class="sum-val">${payload.subjects.length} selected</div>
+    </div>
+    <div class="sum-item">
+      <div class="sum-label">Target</div>
+      <div class="sum-val">${payload.study_goal}</div>
+    </div>
+  `;
+  document.getElementById('successSummary').innerHTML = sumHTML;
+
+  // Show overlay
+  document.getElementById('successOverlay').classList.add('show');
+  startConfetti();
+
+  // Progress bar
+  setTimeout(() => {
+    document.getElementById('redirectBar').style.width = '100%';
+    document.getElementById('redirectProgress').classList.add('go');
+  }, 200);
+
+  // Redirect
+  setTimeout(() => {
+    window.location.href = 'appskeleton.html';
+  }, 2600);
+}
+
+function showGlobalError(msg) {
+  // Simple alert fallback
+  alert(msg);
+}
+
+/* ── Fallback data (if JSON files not present) ────────────── */
+function getFallbackCountries() {
+  return [
+    { country_code:'NG', country_name:'Nigeria',      flag:'🇳🇬', currency_symbol:'₦', exams:['JAMB','WAEC','NECO'] },
+    { country_code:'KE', country_name:'Kenya',        flag:'🇰🇪', currency_symbol:'KSh', exams:['KCSE'] },
+    { country_code:'ZA', country_name:'South Africa', flag:'🇿🇦', currency_symbol:'R',  exams:['MATRIC_NSC'] },
+    { country_code:'GH', country_name:'Ghana',        flag:'🇬🇭', currency_symbol:'₵',  exams:['WASSCE'] },
+    { country_code:'IN', country_name:'India',        flag:'🇮🇳', currency_symbol:'₹',  exams:['NEET','JEE_MAIN','JEE_ADVANCED'] },
+    { country_code:'CN', country_name:'China',        flag:'🇨🇳', currency_symbol:'¥',  exams:['GAOKAO'] },
+    { country_code:'KR', country_name:'South Korea',  flag:'🇰🇷', currency_symbol:'₩',  exams:['CSAT'] },
+    { country_code:'JP', country_name:'Japan',        flag:'🇯🇵', currency_symbol:'¥',  exams:['COMMON_TEST'] },
+    { country_code:'GB', country_name:'United Kingdom',flag:'🇬🇧', currency_symbol:'£', exams:['GCSE','A_LEVELS'] },
+    { country_code:'US', country_name:'United States', flag:'🇺🇸', currency_symbol:'$', exams:['SAT','ACT'] },
+    { country_code:'PK', country_name:'Pakistan',     flag:'🇵🇰', currency_symbol:'₨', exams:['MDCAT','ECAT'] },
+    { country_code:'MY', country_name:'Malaysia',     flag:'🇲🇾', currency_symbol:'RM', exams:['SPM','STPM'] },
+    { country_code:'BD', country_name:'Bangladesh',   flag:'🇧🇩', currency_symbol:'৳', exams:['GST'] },
+    { country_code:'TR', country_name:'Turkey',       flag:'🇹🇷', currency_symbol:'₺', exams:['YKS'] },
+  ];
+}
+
+function getFallbackExams() {
+  return [
+    {
+      exam_code:'JAMB', exam_name:'JAMB UTME', exam_full_name:'Joint Admissions and Matriculation Board UTME',
+      country_code:'NG', students_per_year:'2M+', max_score:400, subject_count:4,
+      subjects:{ mandatory:['Use of English'], all_optional:['Mathematics','Physics','Chemistry','Biology','Economics','Government','Literature in English','CRK','Geography','Commerce','Agricultural Science'] },
+      score_ranges:[{label:'140–159',grade:'Minimum Pass'},{label:'160–199',grade:'Below Average'},{label:'200–249',grade:'Average'},{label:'250–279',grade:'Good'},{label:'280–320',grade:'Excellent'},{label:'320–400',grade:'Outstanding'}]
+    },
+    {
+      exam_code:'WAEC', exam_name:'WAEC SSCE', exam_full_name:'West African Examinations Council SSCE',
+      country_code:'NG', students_per_year:'1.5M+', max_score:'A1', subject_count:9,
+      subjects:{ core_subjects:['English Language','Mathematics'], all_optional:['Physics','Chemistry','Biology','Economics','Government','Literature in English','Geography','Commerce','Agricultural Science','Financial Accounting','CRS','History'] },
+      score_ranges:[{label:'A1 (75–100%)',grade:'Distinction'},{label:'B2-B3 (65–74%)',grade:'Very Good'},{label:'C4-C6 (50–64%)',grade:'Credit'},{label:'D7-E8 (40–49%)',grade:'Pass'},{label:'F9 (0–39%)',grade:'Fail'}]
+    },
+    {
+      exam_code:'NECO', exam_name:'NECO SSCE', exam_full_name:'National Examinations Council SSCE',
+      country_code:'NG', students_per_year:'800K+', max_score:'A1', subject_count:9,
+      subjects:{ core_subjects:['English Language','Mathematics'], all_optional:['Physics','Chemistry','Biology','Economics','Government','Literature in English','Geography','Commerce','Agricultural Science','CRS','History'] },
+      score_ranges:[{label:'A1',grade:'Distinction'},{label:'B2-B3',grade:'Very Good'},{label:'C4-C6',grade:'Credit'},{label:'D7-F9',grade:'Pass/Fail'}]
+    },
+    {
+      exam_code:'KCSE', exam_name:'KCSE', exam_full_name:'Kenya Certificate of Secondary Education',
+      country_code:'KE', students_per_year:'900K+', max_score:84, subject_count:7,
+      subjects:{ mandatory:['English','Kiswahili'], all_optional:['Mathematics','Biology','Physics','Chemistry','History & Government','Geography','CRE','Business Studies','Economics','Computer Studies','Agriculture'] },
+      score_ranges:[{label:'A / A- (Mean 10–12)',grade:'Distinction'},{label:'B+ / B / B- (Mean 7–9)',grade:'Good'},{label:'C+ / C (Mean 5–6)',grade:'Average'},{label:'C- / D+ (Mean 3–4)',grade:'Below Standard'},{label:'D / E (Mean 1–2)',grade:'Fail'}]
+    },
+    {
+      exam_code:'MATRIC_NSC', exam_name:'Matric / NSC', exam_full_name:'National Senior Certificate',
+      country_code:'ZA', students_per_year:'750K+', max_score:100, subject_count:6,
+      subjects:{ mandatory:['Home Language','Life Orientation'], all_optional:['Mathematics','Mathematical Literacy','Physical Sciences','Life Sciences','Economics','Accounting','Business Studies','History','Geography','Information Technology'] },
+      score_ranges:[{label:'Level 7 (80–100%)',grade:'Outstanding'},{label:'Level 6 (70–79%)',grade:'Meritorious'},{label:'Level 5 (60–69%)',grade:'Substantial'},{label:'Level 4 (50–59%)',grade:'Adequate'},{label:'Level 3 (40–49%)',grade:'Moderate'},{label:'Level 1–2',grade:'Below Standard'}]
+    },
+    {
+      exam_code:'WASSCE', exam_name:'WASSCE', exam_full_name:'West African Senior School Certificate Examination',
+      country_code:'GH', students_per_year:'400K+', max_score:'A1', subject_count:7,
+      subjects:{ core_subjects:['English Language','Mathematics Core','Integrated Science','Social Studies'], all_optional:['Physics','Chemistry','Biology','Elective Mathematics','Economics','Government','Financial Accounting','French'] },
+      score_ranges:[{label:'A1 (80–100%)',grade:'Excellent'},{label:'B2-B3 (60–79%)',grade:'Very Good'},{label:'C4-C6 (45–59%)',grade:'Credit'},{label:'D7-F9',grade:'Pass/Fail'}]
+    },
+    {
+      exam_code:'NEET', exam_name:'NEET', exam_full_name:'National Eligibility cum Entrance Test (Medical)',
+      country_code:'IN', students_per_year:'2.2M+', max_score:720, subject_count:3,
+      subjects:{ mandatory:['Physics','Chemistry','Biology (Botany + Zoology)'] },
+      score_ranges:[{label:'650–720',grade:'Top 1%'},{label:'550–649',grade:'Excellent'},{label:'450–549',grade:'Good'},{label:'350–449',grade:'Average'},{label:'138–349',grade:'Minimum Pass'},{label:'Below 138',grade:'Fail'}]
+    },
+    {
+      exam_code:'JEE_MAIN', exam_name:'JEE Main', exam_full_name:'Joint Entrance Examination Main',
+      country_code:'IN', students_per_year:'1.2M+', max_score:300, subject_count:3,
+      subjects:{ mandatory:['Mathematics','Physics','Chemistry'] },
+      score_ranges:[{label:'250–300 (Percentile 99.9+)',grade:'Top Rank'},{label:'200–249 (Percentile 99–99.9)',grade:'Excellent'},{label:'150–199 (Percentile 95–99)',grade:'Good'},{label:'100–149',grade:'Average'},{label:'Below 89',grade:'Below Cut-off'}]
+    },
+    {
+      exam_code:'JEE_ADVANCED', exam_name:'JEE Advanced', exam_full_name:'Joint Entrance Examination Advanced (IIT)',
+      country_code:'IN', students_per_year:'250K+', max_score:360, subject_count:3,
+      subjects:{ mandatory:['Mathematics','Physics','Chemistry'] },
+      score_ranges:[{label:'300–360',grade:'AIR Top 100'},{label:'250–299',grade:'AIR 100–1000'},{label:'180–249',grade:'AIR 1000–5000'},{label:'Below qualifying',grade:'Not Ranked'}]
+    },
+    {
+      exam_code:'GAOKAO', exam_name:'Gaokao', exam_full_name:'National College Entrance Examination (全国统一高考)',
+      country_code:'CN', students_per_year:'13M+', max_score:750, subject_count:6,
+      subjects:{ mandatory:['Chinese (语文)','Mathematics (数学)','Foreign Language (English)'], all_optional:['Physics','Chemistry','Biology','History','Geography','Politics'] },
+      score_ranges:[{label:'680–750',grade:'Top Tier (Peking/Tsinghua)'},{label:'620–679',grade:'Excellent (985 Universities)'},{label:'550–619',grade:'Good (211 Universities)'},{label:'470–549',grade:'Average'},{label:'Below 400',grade:'Vocational'}]
+    },
+    {
+      exam_code:'CSAT', exam_name:'CSAT / Suneung', exam_full_name:'College Scholastic Ability Test',
+      country_code:'KR', students_per_year:'500K+', max_score:'Grade 1', subject_count:4,
+      subjects:{ mandatory:['Korean Language','Mathematics','English','Korean History'], all_optional:['Physics I/II','Chemistry I/II','Life Science I/II','Earth Science I/II','Economics','World History'] },
+      score_ranges:[{label:'Grade 1 (Top 4%)',grade:'SKY Level'},{label:'Grade 2 (4–11%)',grade:'Excellent'},{label:'Grade 3 (11–23%)',grade:'Good'},{label:'Grade 4–5',grade:'Average'},{label:'Grade 6–9',grade:'Needs Improvement'}]
+    },
+    {
+      exam_code:'COMMON_TEST', exam_name:'Common Test', exam_full_name:'Common Test for University Admissions (大学入学共通テスト)',
+      country_code:'JP', students_per_year:'550K+', max_score:900, subject_count:5,
+      subjects:{ mandatory:['Japanese Language','English (Reading)','English (Listening)'], all_optional:['Mathematics I','Mathematics II','Physics','Chemistry','Biology','World History','Japanese History','Geography'] },
+      score_ranges:[{label:'820–900',grade:'University of Tokyo/Kyoto'},{label:'720–819',grade:'Excellent'},{label:'620–719',grade:'Good'},{label:'500–619',grade:'Average'},{label:'Below 500',grade:'Needs Improvement'}]
+    },
+    {
+      exam_code:'GCSE', exam_name:'GCSE', exam_full_name:'General Certificate of Secondary Education',
+      country_code:'GB', students_per_year:'700K+', max_score:'9', subject_count:9,
+      subjects:{ mandatory:['English Language','Mathematics'], all_optional:['English Literature','Biology','Chemistry','Physics','Combined Science','History','Geography','French','Spanish','Computer Science','Business Studies','Economics','Drama','Art & Design'] },
+      score_ranges:[{label:'Grade 9 (Top ~3%)',grade:'Outstanding'},{label:'Grade 7–8 (A/A*)',grade:'Excellent'},{label:'Grade 5–6 (Strong Pass)',grade:'Good'},{label:'Grade 4 (Standard Pass)',grade:'Pass'},{label:'Grade 1–3',grade:'Below Standard'}]
+    },
+    {
+      exam_code:'A_LEVELS', exam_name:'A-Levels', exam_full_name:'General Certificate of Education Advanced Level',
+      country_code:'GB', students_per_year:'750K+', max_score:'A*', subject_count:3,
+      subjects:{ all_optional:['Mathematics','Further Mathematics','Physics','Chemistry','Biology','Economics','History','Geography','English Literature','Psychology','Computer Science','Business','Law','Sociology','French','Spanish','Art & Design','Drama'] },
+      score_ranges:[{label:'A*A*A* (168 UCAS points)',grade:'Outstanding (Oxbridge)'},{label:'A*AA / AAA',grade:'Excellent (Russell Group)'},{label:'AAB / ABB',grade:'Very Good'},{label:'BBB / BBC',grade:'Good'},{label:'DDE / EEE',grade:'Minimum'}]
+    },
+    {
+      exam_code:'SAT', exam_name:'SAT', exam_full_name:'Scholastic Assessment Test',
+      country_code:'US', students_per_year:'2.2M+', max_score:1600, subject_count:2,
+      subjects:{ mandatory:['Reading & Writing','Mathematics'] },
+      score_ranges:[{label:'1500–1600',grade:'Top 1%'},{label:'1400–1490',grade:'Excellent (Top 5%)'},{label:'1300–1390',grade:'Very Good (Top 15%)'},{label:'1100–1290',grade:'Good (Top 30%)'},{label:'900–1090',grade:'Average'},{label:'Below 900',grade:'Below Average'}]
+    },
+    {
+      exam_code:'ACT', exam_name:'ACT', exam_full_name:'American College Testing',
+      country_code:'US', students_per_year:'1.4M+', max_score:36, subject_count:4,
+      subjects:{ mandatory:['English','Mathematics','Reading','Science'], all_optional:['Writing (Essay)'] },
+      score_ranges:[{label:'34–36',grade:'Top 1%'},{label:'30–33',grade:'Excellent (Top 5%)'},{label:'27–29',grade:'Very Good (Top 15%)'},{label:'23–26',grade:'Above Average'},{label:'18–22',grade:'Average'},{label:'Below 17',grade:'Below Average'}]
+    },
+    {
+      exam_code:'MDCAT', exam_name:'MDCAT', exam_full_name:'Medical and Dental College Admission Test',
+      country_code:'PK', students_per_year:'200K+', max_score:200, subject_count:5,
+      subjects:{ mandatory:['Biology','Chemistry','Physics','English','Logical Reasoning'] },
+      score_ranges:[{label:'185–200',grade:'Outstanding'},{label:'165–184',grade:'Excellent'},{label:'140–164',grade:'Good'},{label:'110–139',grade:'Average'},{label:'Below 110',grade:'Fail'}]
+    },
+    {
+      exam_code:'ECAT', exam_name:'ECAT', exam_full_name:'Engineering College Admission Test',
+      country_code:'PK', students_per_year:'150K+', max_score:400, subject_count:4,
+      subjects:{ mandatory:['Mathematics','Physics','Chemistry','English'] },
+      score_ranges:[{label:'350–400',grade:'Outstanding'},{label:'300–349',grade:'Excellent'},{label:'240–299',grade:'Good'},{label:'160–239',grade:'Average'},{label:'Below 160',grade:'Below Threshold'}]
+    },
+    {
+      exam_code:'SPM', exam_name:'SPM', exam_full_name:'Sijil Pelajaran Malaysia',
+      country_code:'MY', students_per_year:'450K+', max_score:'A+', subject_count:8,
+      subjects:{ mandatory:['Bahasa Melayu','History','Moral Education / Islamic Education'], all_optional:['Mathematics','English','Additional Mathematics','Physics','Chemistry','Biology','Science','Accounting','Economics','Computer Science'] },
+      score_ranges:[{label:'A+ / A (80–100%)',grade:'Excellent'},{label:'A- / B+ (65–79%)',grade:'Good'},{label:'B / C+ (55–64%)',grade:'Satisfactory'},{label:'C / D (40–54%)',grade:'Pass'},{label:'E / G',grade:'Fail'}]
+    },
+    {
+      exam_code:'STPM', exam_name:'STPM', exam_full_name:'Sijil Tinggi Persekolahan Malaysia',
+      country_code:'MY', students_per_year:'50K+', max_score:'A (4.00 CGPA)', subject_count:4,
+      subjects:{ mandatory:['Pengajian Am (General Studies)'], all_optional:['Mathematics T','Physics','Chemistry','Biology','Economics','Accounting','Business Studies'] },
+      score_ranges:[{label:'CGPA 3.67–4.00',grade:'Distinction'},{label:'CGPA 3.00–3.67',grade:'Very Good'},{label:'CGPA 2.00–3.00',grade:'Good'},{label:'CGPA 1.00–2.00',grade:'Pass'},{label:'Below CGPA 1.00',grade:'Fail'}]
+    },
+    {
+      exam_code:'GST', exam_name:'GST Admission Test', exam_full_name:'Group-based Standardised Test for University Admission',
+      country_code:'BD', students_per_year:'1.2M+', max_score:100, subject_count:5,
+      subjects:{ mandatory:['Bangla','English'], all_optional:['Physics','Chemistry','Mathematics','Biology','Accounting','Economics','ICT'] },
+      score_ranges:[{label:'85–100',grade:'Excellent'},{label:'70–84',grade:'Good'},{label:'55–69',grade:'Average'},{label:'40–54',grade:'Minimum Pass'},{label:'Below 40',grade:'Fail'}]
+    },
+    {
+      exam_code:'YKS', exam_name:'YKS', exam_full_name:'Yükseköğretim Kurumları Sınavı',
+      country_code:'TR', students_per_year:'2.8M+', max_score:'500 (per AYT section)', subject_count:5,
+      subjects:{ mandatory:['Turkish Language','Basic Mathematics','Social Sciences','Science'], all_optional:['Advanced Mathematics','Physics','Chemistry','Biology','History I & II','Geography I & II','English'] },
+      score_ranges:[{label:'480–500 (SAY)',grade:'Top Universities (Boğaziçi, ODTÜ)'},{label:'420–479',grade:'Excellent'},{label:'350–419',grade:'Good'},{label:'250–349',grade:'Average'},{label:'Below 150 TYT',grade:'Disqualified from AYT'}]
+    },
+  ];
+}
+
+/* ── Stars Animation ──────────────────────────────────────── */
+(function() {
+  const canvas = document.getElementById('stars-canvas');
+  const ctx    = canvas.getContext('2d');
+  let W, H, stars = [];
+  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+  class Star {
+    constructor() { this.reset(); }
+    reset() {
+      this.x = Math.random() * W; this.y = Math.random() * H;
+      this.r = Math.random() * 1.3 + 0.2;
+      this.a = Math.random() * 0.6 + 0.1;
+      this.speed = Math.random() * 0.003 + 0.001;
+      this.phase = Math.random() * Math.PI * 2;
+    }
+    draw(t) {
+      const a = this.a * (0.5 + 0.5 * Math.sin(t * this.speed * 60 + this.phase));
+      ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255,255,255,${a})`; ctx.fill();
+    }
+  }
+  for (let i = 0; i < 160; i++) stars.push(new Star());
+  let t = 0;
+  function animate() { ctx.clearRect(0,0,W,H); t++; stars.forEach(s=>s.draw(t)); requestAnimationFrame(animate); }
+  animate();
+})();
+
+/* ── Confetti ─────────────────────────────────────────────── */
+function startConfetti() {
+  const canvas = document.getElementById('confetti-canvas');
+  const ctx    = canvas.getContext('2d');
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+  const colors  = ['#00d2ff','#9d50bb','#ffcc33','#10b981','#ff4d6d','#fff'];
+  const pieces  = Array.from({length:140}, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height * 0.3 - canvas.height * 0.3,
+    w: Math.random() * 10 + 4, h: Math.random() * 6 + 3,
+    color: colors[Math.floor(Math.random() * colors.length)],
+    rot: Math.random() * 360,
+    vx: (Math.random() - 0.5) * 5, vy: Math.random() * 4 + 2,
+    vr: (Math.random() - 0.5) * 8, alpha: 1,
+  }));
+  let frame;
+  function draw() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    let alive = false;
+    pieces.forEach(p => {
+      p.x+=p.vx; p.y+=p.vy; p.vy+=0.1; p.rot+=p.vr;
+      if(p.y>canvas.height*0.7) p.alpha-=0.025;
+      if(p.alpha>0){
+        alive=true; ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.rot*Math.PI/180);
+        ctx.globalAlpha=Math.max(0,p.alpha); ctx.fillStyle=p.color;
+        ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h); ctx.restore();
+      }
+    });
+    if(alive) frame=requestAnimationFrame(draw);
+    else ctx.clearRect(0,0,canvas.width,canvas.height);
+  }
+  draw();
+  setTimeout(()=>{ cancelAnimationFrame(frame); ctx.clearRect(0,0,canvas.width,canvas.height); },3200);
+}
+</script>
 </body>
 </html>
