@@ -1,569 +1,1100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6229569177818177" crossorigin="anonymous"></script>
-
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<!-- Vura Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
-<link rel="manifest" href="/manifest.json">
-
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Vura AI — Welcome Back</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Sign In — Vura AI</title>
+<meta name="description" content="Sign in to Vura AI — the global AI study platform for JAMB, WAEC, KCSE, SAT, NEET and 50+ national exams."/>
+<link rel="icon" type="image/png" href="vura-logo.png"/>
+<link rel="apple-touch-icon" href="vura-logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
-:root{--bg:#03030b;--blue:#00d2ff;--purple:#9d50bb;--gold:#ffcc33;--green:#10b981;--red:#ef4444;--glass:rgba(255,255,255,0.05);--border:rgba(255,255,255,0.09);--text:#e8eaf6;--muted:#8892a4}
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{width:100%;min-height:100vh;font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center}
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;height:100%}
+body{
+  font-family:'Nunito',sans-serif;background:#03030b;
+  color:#e8e8f0;min-height:100vh;overflow-x:hidden;line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;outline:none;font-family:'Nunito',sans-serif}
+input{outline:none;font-family:'Nunito',sans-serif}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#03030b}
+::-webkit-scrollbar-thumb{background:#9d50bb;border-radius:3px}
 
-/* ── BACKGROUND ── */
-.univ{position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 50% 40%,#0d0d2b 0%,#03030b 70%)}
-.nebula{position:fixed;inset:0;z-index:-2;
-  background:radial-gradient(circle at 18% 28%,rgba(93,63,211,.5) 0%,transparent 52%),
-             radial-gradient(circle at 82% 68%,rgba(0,210,255,.32) 0%,transparent 52%),
-             radial-gradient(circle at 52% 85%,rgba(157,80,187,.22) 0%,transparent 45%);
-  filter:blur(72px);opacity:.8}
-#star-canvas{position:fixed;inset:0;z-index:-1;pointer-events:none}
+/* ============================================================
+   VARIABLES
+   ============================================================ */
+:root{
+  --blue:#00d2ff;--purple:#9d50bb;--gold:#ffcc33;--green:#10b981;--red:#ff4d6d;
+  --bg:#03030b;--card:rgba(13,13,40,.95);--border:rgba(255,255,255,.08);
+  --muted:#8888aa;--grad:linear-gradient(135deg,#00d2ff,#9d50bb);
+  --grad-gold:linear-gradient(135deg,#ffcc33,#ff9933);
+  --radius:16px;--transition:.3s cubic-bezier(.4,0,.2,1);
+}
 
-/* ── SCENE / CARD ── */
-.scene{perspective:1000px;padding:20px;width:100%;display:flex;justify-content:center}
-.auth-card{
-  width:100%;max-width:460px;padding:46px 38px;
-  background:linear-gradient(145deg,rgba(14,14,42,.95),rgba(5,5,18,.97));
-  backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);
-  border-radius:28px;border:1px solid var(--border);
-  box-shadow:0 0 0 1px rgba(0,210,255,.07),0 32px 72px rgba(0,0,0,.7),
-             inset 0 1px 0 rgba(255,255,255,.06);
-  transform-style:preserve-3d;will-change:transform;
-  animation:cardRise .7s cubic-bezier(.34,1.56,.64,1) both}
-@keyframes cardRise{from{opacity:0;transform:translateY(50px) scale(.93)}to{opacity:1;transform:translateY(0) scale(1)}}
+/* ============================================================
+   STARS & NEBULA
+   ============================================================ */
+#stars-canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.nebula{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.nb1{position:absolute;width:650px;height:650px;top:-200px;right:-180px;
+  background:radial-gradient(circle,rgba(0,210,255,.13) 0%,transparent 65%);border-radius:50%;
+  animation:nbf 18s ease-in-out infinite alternate}
+.nb2{position:absolute;width:550px;height:550px;bottom:-180px;left:-150px;
+  background:radial-gradient(circle,rgba(157,80,187,.14) 0%,transparent 65%);border-radius:50%;
+  animation:nbf 14s ease-in-out infinite alternate-reverse}
+.nb3{position:absolute;width:300px;height:300px;top:50%;left:50%;
+  background:radial-gradient(circle,rgba(255,204,51,.05) 0%,transparent 60%);border-radius:50%;
+  transform:translate(-50%,-50%);animation:nbf 22s ease-in-out infinite alternate}
+@keyframes nbf{0%{transform:translate(0,0) scale(1)}100%{transform:translate(40px,30px) scale(1.08)}}
 
-/* ── LOGO ── */
-.logo-wrap{text-align:center;margin-bottom:26px}
-.logo{font-family:'Orbitron',monospace;font-size:2.1rem;font-weight:900;letter-spacing:3px;
-  background:linear-gradient(90deg,#ffffff 30%,var(--blue));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  display:inline-flex;align-items:center;gap:10px}
-.logo-dot{width:13px;height:13px;border-radius:50%;
-  background:linear-gradient(135deg,#ffb347,var(--gold));
-  box-shadow:0 0 18px var(--gold);animation:pulse 2s ease-in-out infinite;flex-shrink:0}
-@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 0 18px var(--gold)}50%{transform:scale(1.35);box-shadow:0 0 32px var(--gold),0 0 60px rgba(255,204,51,.3)}}
-.typing-text{font-size:.92rem;color:var(--muted);min-height:21px;margin-top:9px;font-weight:600}
+/* ============================================================
+   PAGE LAYOUT — 2 panels
+   ============================================================ */
+.page-wrapper{
+  min-height:100vh;display:grid;grid-template-columns:1fr 1fr;
+  position:relative;z-index:1;
+}
 
-/* ── TABS ── */
-.method-tabs{display:flex;gap:5px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:13px;padding:4px;margin-bottom:20px}
-.mtab{flex:1;padding:9px 0;border:none;border-radius:9px;background:transparent;color:var(--muted);font-family:'Nunito',sans-serif;font-size:.82rem;font-weight:700;cursor:pointer;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:7px}
-.mtab i{font-size:.85rem}
-.mtab.active{background:linear-gradient(135deg,rgba(0,210,255,.2),rgba(157,80,187,.15));color:#fff;border:1px solid rgba(0,210,255,.28);box-shadow:0 4px 16px rgba(0,210,255,.14)}
+/* ============================================================
+   LEFT PANEL
+   ============================================================ */
+.left-panel{
+  padding:60px 48px;
+  display:flex;flex-direction:column;justify-content:center;
+  background:linear-gradient(160deg,rgba(13,13,40,.96) 0%,rgba(3,3,11,.99) 100%);
+  border-right:1px solid rgba(255,255,255,.06);
+  position:relative;overflow:hidden;
+}
+.left-panel::before{
+  content:'';position:absolute;top:0;left:0;bottom:0;width:3px;
+  background:var(--grad);opacity:.55;
+}
+/* decorative grid lines */
+.left-panel::after{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 60px,rgba(255,255,255,.015) 60px,rgba(255,255,255,.015) 61px),
+             repeating-linear-gradient(90deg,transparent,transparent 60px,rgba(255,255,255,.015) 60px,rgba(255,255,255,.015) 61px);
+  pointer-events:none;
+}
 
-/* ── INPUTS ── */
-.inp-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
-.inp-label{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.9px;display:flex;align-items:center;gap:6px}
-.inp-label i{font-size:.7rem}
-.inp-wrap{position:relative}
-.inp-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.85rem;pointer-events:none;z-index:2;transition:.3s}
-.form-input{width:100%;padding:14px 46px 14px 44px;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:13px;color:#fff;font-family:'Nunito',sans-serif;font-size:.92rem;font-weight:600;outline:none;transition:all .3s;-webkit-appearance:none;appearance:none}
-.form-input::placeholder{color:rgba(136,146,164,.5)}
-.form-input:focus{background:rgba(0,210,255,.08);border-color:rgba(0,210,255,.55);box-shadow:0 0 0 3px rgba(0,210,255,.12),0 0 22px rgba(0,210,255,.1)}
-.inp-wrap:focus-within .inp-icon{color:var(--blue)}
-.pw-eye{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--muted);cursor:pointer;font-size:.9rem;padding:4px;transition:.25s;z-index:3}
-.pw-eye:hover{color:var(--blue)}
+/* brand */
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:52px;position:relative;z-index:1}
+.brand-icon{
+  width:52px;height:52px;border-radius:14px;
+  background:linear-gradient(135deg,rgba(0,210,255,.14),rgba(157,80,187,.12));
+  border:1px solid rgba(0,210,255,.22);
+  display:flex;align-items:center;justify-content:center;font-size:1.35rem;
+}
+.brand-name{
+  font-family:'Orbitron',sans-serif;font-size:1.45rem;font-weight:900;
+  background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;letter-spacing:2px;
+}
 
-/* ── PHONE ROW ── */
-.phone-row{display:flex;gap:8px}
-.cc-input{width:82px;flex-shrink:0;padding:14px 8px;text-align:center;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:13px;color:#fff;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:700;outline:none}
+/* headline */
+.left-headline{
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(1.5rem,2.3vw,2.2rem);font-weight:700;
+  color:#fff;margin-bottom:14px;line-height:1.25;position:relative;z-index:1;
+}
+.left-headline span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.left-sub{font-size:.95rem;color:var(--muted);margin-bottom:44px;position:relative;z-index:1}
 
-/* ── OTP ── */
-.otp-row{display:flex;gap:7px;margin:6px 0}
-.otp-box{flex:1;padding:16px 0;text-align:center;background:rgba(255,255,255,.05);border:1.5px solid var(--border);border-radius:12px;color:#fff;font-family:'Orbitron',monospace;font-size:1.3rem;font-weight:700;outline:none;transition:all .25s;-webkit-appearance:none}
-.otp-box:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,210,255,.12);background:rgba(0,210,255,.07)}
+/* features */
+.features{display:flex;flex-direction:column;gap:16px;margin-bottom:44px;position:relative;z-index:1}
+.feat{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:16px 18px;
+  background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05);
+  border-radius:14px;transition:var(--transition);
+}
+.feat:hover{background:rgba(0,210,255,.05);border-color:rgba(0,210,255,.12);transform:translateX(4px)}
+.feat-icon{
+  width:40px;height:40px;border-radius:10px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:.9rem;
+}
+.fi-b{background:rgba(0,210,255,.12);color:var(--blue)}
+.fi-p{background:rgba(157,80,187,.12);color:var(--purple)}
+.fi-g{background:rgba(255,204,51,.12);color:var(--gold)}
+.fi-gr{background:rgba(16,185,129,.12);color:var(--green)}
+.feat-text strong{display:block;color:#fff;font-size:.9rem;font-weight:700;margin-bottom:2px}
+.feat-text span{color:var(--muted);font-size:.8rem}
 
-/* ── FIELD ERROR ── */
-.ferr{display:none;margin-top:5px;padding:7px 12px;background:rgba(239,68,68,.12);border-left:3px solid var(--red);border-radius:8px;font-size:.76rem;color:#fca5a5;font-weight:600;animation:errIn .3s ease}
-.ferr.show{display:flex;align-items:center;gap:7px}
-@keyframes errIn{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:translateX(0)}}
-
-/* ── BUTTONS ── */
-.btn{width:100%;padding:14px;border:none;border-radius:15px;font-family:'Nunito',sans-serif;font-size:.98rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:all .3s cubic-bezier(.34,1.56,.64,1);position:relative;overflow:hidden}
-.btn i{font-size:.95rem;transition:.3s}
-.btn::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.11) 0%,transparent 55%)}
-.btn:hover{transform:translateY(-3px)}
-.btn:active{transform:translateY(1px) scale(.98)}
-.btn:disabled{opacity:.5;cursor:not-allowed;transform:none !important}
-.btn-primary{background:linear-gradient(135deg,#00d2ff,#3a7bd5);color:#fff;box-shadow:0 8px 28px rgba(0,210,255,.32),0 2px 0 rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.14)}
-.btn-primary:hover{box-shadow:0 14px 38px rgba(0,210,255,.44)}
-.btn-google{background:#ffffff;color:#1a1a1a;box-shadow:0 6px 22px rgba(0,0,0,.32),0 2px 0 #ccc}
-.btn-google:hover{box-shadow:0 10px 28px rgba(0,0,0,.4)}
-.btn-group{display:flex;flex-direction:column;gap:11px;margin-top:4px}
-.btn-ghost{background:rgba(255,255,255,.06);border:1.5px solid var(--border);color:var(--text)}
-
-/* ── DIVIDER ── */
-.divider{display:flex;align-items:center;gap:12px;margin:16px 0}
-.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
-.divider span{font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:.5px;white-space:nowrap}
-
-/* ── LINKS ── */
-.links-row{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
-.lnk{font-size:.82rem;color:var(--muted);font-weight:700;cursor:pointer;background:none;border:none;font-family:'Nunito',sans-serif;display:flex;align-items:center;gap:5px;transition:.2s;text-decoration:none}
-.lnk:hover{color:var(--blue)}
-.lnk i{font-size:.8rem}
-.lnk a{color:var(--blue);text-decoration:none}
-.lnk a:hover{text-decoration:underline}
-.forgot-row{display:flex;justify-content:flex-end;margin:-8px 0 12px}
-.resend-row{text-align:center;margin-top:12px;font-size:.81rem;color:var(--muted)}
-.resend-btn{background:none;border:none;color:var(--blue);font-weight:700;cursor:pointer;font-family:'Nunito',sans-serif;font-size:.81rem}
-.resend-btn:disabled{color:var(--muted);cursor:default}
-.back-btn{background:none;border:none;color:var(--blue);font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:7px;margin-bottom:18px;padding:0;transition:.2s}
-.back-btn:hover{gap:10px}
-.back-btn i{transition:transform .2s}
-.back-btn:hover i{transform:translateX(-3px)}
-
-/* ── SPINNER ── */
-.spinner{width:17px;height:17px;border:2.5px solid rgba(255,255,255,.22);border-top-color:#fff;border-radius:50%;animation:spin .65s linear infinite;flex-shrink:0}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-/* ── VIEWS ── */
-.view{display:none}.view.active{display:block}
-.view-title{text-align:center;margin-bottom:20px}
-.view-icon{font-size:2.8rem;color:var(--blue);margin-bottom:10px;display:block}
-.view-title h3{font-family:'Orbitron',monospace;font-size:1.05rem;font-weight:700;margin-bottom:5px}
-.view-title p{font-size:.83rem;color:var(--muted)}
-
-/* ── MASCOT ── */
-.mascot{position:fixed;bottom:26px;right:26px;width:70px;height:70px;
-  background:linear-gradient(135deg,#667eea,#764ba2);border-radius:50%;
+/* social proof */
+.proof{
+  display:flex;align-items:center;gap:14px;
+  padding:13px 17px;
+  background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.14);
+  border-radius:12px;position:relative;z-index:1;
+}
+.proof-avs{display:flex}
+.pav{
+  width:30px;height:30px;border-radius:50%;border:2px solid var(--bg);
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 10px 36px rgba(102,126,234,.48);
-  animation:mFloat 3.2s ease-in-out infinite;z-index:300;cursor:pointer;
-  border:2px solid rgba(255,255,255,.14);transition:transform .3s}
-.mascot i{font-size:2rem;color:#fff}
-.mascot:hover{transform:scale(1.12) translateY(-4px) !important}
-@keyframes mFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
-.mbubble{position:fixed;bottom:110px;right:26px;background:rgba(8,8,30,.97);border:1px solid rgba(0,210,255,.25);border-radius:14px;padding:10px 14px;font-size:.76rem;font-weight:700;color:#fff;max-width:178px;line-height:1.55;z-index:300;box-shadow:0 8px 28px rgba(0,0,0,.45);animation:bPop .3s cubic-bezier(.34,1.56,.64,1)}
-@keyframes bPop{from{opacity:0;transform:scale(.65) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
-.mbubble::after{content:'';position:absolute;bottom:-7px;right:26px;border:7px solid transparent;border-top-color:rgba(8,8,30,.97)}
+  font-size:.68rem;font-weight:800;margin-left:-8px;flex-shrink:0;
+}
+.pav:first-child{margin-left:0}
+.av1{background:linear-gradient(135deg,#00d2ff,#0099cc);color:#fff}
+.av2{background:linear-gradient(135deg,#9d50bb,#6e30a7);color:#fff}
+.av3{background:linear-gradient(135deg,#10b981,#059669);color:#fff}
+.av4{background:linear-gradient(135deg,#ffcc33,#ff9933);color:#111}
+.proof-txt{font-size:.8rem;color:var(--muted);line-height:1.4}
+.proof-txt strong{color:var(--green)}
 
-/* ── SUCCESS OVERLAY ── */
-#successOverlay{
-  position:fixed;inset:0;z-index:9999;
-  background:rgba(3,3,11,.94);
-  display:none;flex-direction:column;align-items:center;justify-content:center;
-  gap:18px;animation:fadeOverlay .35s ease}
-@keyframes fadeOverlay{from{opacity:0}to{opacity:1}}
-.success-circle{
-  width:100px;height:100px;border-radius:50%;
-  background:linear-gradient(135deg,#10b981,#059669);
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 0 60px rgba(16,185,129,.5),0 0 120px rgba(16,185,129,.25);
-  animation:scaleIn .5s cubic-bezier(.34,1.56,.64,1) both}
-@keyframes scaleIn{from{transform:scale(0)}to{transform:scale(1)}}
-.success-circle i{font-size:2.8rem;color:#fff;animation:checkIn .4s .3s ease both}
-@keyframes checkIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
-.success-title{font-family:'Orbitron',monospace;font-size:1.5rem;font-weight:900;color:#fff;text-align:center;animation:fadeUp .5s .4s ease both}
-.success-sub{font-size:.92rem;color:rgba(255,255,255,.6);text-align:center;animation:fadeUp .5s .5s ease both}
-.redirect-bar-wrap{width:240px;height:4px;background:rgba(255,255,255,.1);border-radius:999px;overflow:hidden;animation:fadeUp .5s .6s ease both}
-.redirect-bar{height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:999px;width:0%;transition:width 2s linear}
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+/* ============================================================
+   RIGHT PANEL
+   ============================================================ */
+.right-panel{
+  padding:52px 48px;display:flex;flex-direction:column;justify-content:center;
+  background:rgba(3,3,11,.55);
+}
+.form-container{max-width:420px;width:100%;margin:0 auto}
 
-/* ── CONFETTI CANVAS ── */
-#confettiCanvas{position:fixed;inset:0;z-index:9998;pointer-events:none}
+/* form header */
+.form-title{
+  font-family:'Orbitron',sans-serif;font-size:1.6rem;font-weight:700;
+  color:#fff;margin-bottom:6px;
+}
+.form-sub{font-size:.9rem;color:var(--muted);margin-bottom:32px}
+.form-sub a{color:var(--blue);font-weight:700;transition:var(--transition)}
+.form-sub a:hover{text-decoration:underline}
 
-/* ── TOAST ── */
-#toasts{position:fixed;top:18px;right:18px;z-index:10000;display:flex;flex-direction:column;gap:9px;max-width:320px}
-.toast{padding:12px 16px;border-radius:13px;font-size:.83rem;font-weight:700;display:flex;align-items:center;gap:9px;backdrop-filter:blur(16px);border:1px solid;animation:tIn .4s cubic-bezier(.34,1.56,.64,1)}
+/* Google button */
+.btn-google{
+  width:100%;height:48px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  color:#fff;font-size:.95rem;font-weight:700;
+  transition:var(--transition);position:relative;overflow:hidden;
+}
+.btn-google:hover{
+  background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);
+  transform:translateY(-1px);box-shadow:0 6px 24px rgba(0,0,0,.3);
+}
+.btn-google:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.g-icon{width:20px;height:20px;flex-shrink:0}
+
+/* divider */
+.divider{display:flex;align-items:center;gap:14px;margin:22px 0}
+.div-line{flex:1;height:1px;background:rgba(255,255,255,.07)}
+.div-txt{font-size:.76rem;color:var(--muted);white-space:nowrap;font-weight:600;letter-spacing:.5px}
+
+/* form groups */
+.fg{margin-bottom:16px;position:relative}
+.flabel{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:7px;
+}
+.flabel-text{font-size:.82rem;font-weight:700;color:#c8c8e0;letter-spacing:.3px}
+.forgot-link{
+  font-size:.78rem;color:var(--blue);font-weight:600;
+  transition:var(--transition);cursor:pointer;background:none;border:none;padding:0;
+}
+.forgot-link:hover{text-decoration:underline;color:#33dbff}
+.iwrap{position:relative}
+.iico{
+  position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  color:var(--muted);font-size:.85rem;pointer-events:none;transition:var(--transition);
+}
+.finput{
+  width:100%;height:48px;
+  background:rgba(255,255,255,.05);
+  border:1.5px solid rgba(255,255,255,.1);
+  border-radius:12px;padding:0 44px 0 42px;
+  color:#fff;font-size:.95rem;font-weight:500;
+  transition:var(--transition);-webkit-appearance:none;
+}
+.finput::placeholder{color:rgba(136,136,170,.55);font-size:.9rem}
+.finput:focus{
+  background:rgba(0,210,255,.06);border-color:rgba(0,210,255,.4);
+  box-shadow:0 0 0 3px rgba(0,210,255,.09);
+}
+.iwrap:focus-within .iico{color:var(--blue)}
+.finput.err{border-color:rgba(255,77,109,.5);background:rgba(255,77,109,.05)}
+.finput.ok{border-color:rgba(16,185,129,.35)}
+.eye-btn{
+  position:absolute;right:13px;top:50%;transform:translateY(-50%);
+  background:none;border:none;color:var(--muted);cursor:pointer;
+  padding:4px;font-size:.85rem;transition:var(--transition);
+}
+.eye-btn:hover{color:var(--blue)}
+.ferr{
+  font-size:.76rem;color:var(--red);
+  display:flex;align-items:center;gap:5px;margin-top:5px;
+  max-height:0;overflow:hidden;opacity:0;
+  transition:max-height .3s ease,opacity .3s ease;
+}
+.ferr.show{max-height:30px;opacity:1}
+.ferr i{font-size:.65rem;flex-shrink:0}
+
+/* submit button */
+.btn-submit{
+  width:100%;height:52px;border-radius:12px;
+  background:var(--grad);color:#fff;
+  font-size:1rem;font-weight:800;letter-spacing:.3px;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  transition:var(--transition);position:relative;overflow:hidden;
+  margin-top:6px;box-shadow:0 0 28px rgba(0,210,255,.18);
+}
+.btn-submit::before{
+  content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent);
+  transition:.6s;
+}
+.btn-submit:hover::before{left:100%}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 10px 36px rgba(0,210,255,.32)}
+.btn-submit:active{transform:translateY(0)}
+.btn-submit:disabled{opacity:.55;cursor:not-allowed;transform:none!important;box-shadow:none}
+
+/* guest link */
+.guest-wrap{text-align:center;margin-top:20px}
+.guest-link{
+  font-size:.82rem;color:var(--muted);background:none;border:none;
+  cursor:pointer;transition:var(--transition);
+  display:inline-flex;align-items:center;gap:5px;
+  padding:8px 12px;border-radius:8px;
+}
+.guest-link:hover{color:var(--blue);background:rgba(0,210,255,.06)}
+
+/* terms */
+.terms-txt{text-align:center;font-size:.74rem;color:var(--muted);margin-top:14px;line-height:1.5}
+.terms-txt a{color:var(--blue);transition:var(--transition)}
+.terms-txt a:hover{text-decoration:underline}
+
+/* spinner */
+.spinner{
+  width:20px;height:20px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.3);border-top-color:#fff;
+  animation:spin .7s linear infinite;flex-shrink:0;
+}
+@keyframes spin{100%{transform:rotate(360deg)}}
+
+/* ============================================================
+   TOAST
+   ============================================================ */
+.toast{
+  position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-90px);
+  z-index:9999;min-width:300px;max-width:500px;
+  padding:14px 20px;border-radius:14px;
+  display:flex;align-items:center;gap:12px;
+  font-size:.88rem;font-weight:600;
+  transition:transform .4s cubic-bezier(.34,1.56,.64,1),opacity .4s ease;
+  opacity:0;backdrop-filter:blur(20px);box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.toast.terror{background:rgba(255,77,109,.14);border:1px solid rgba(255,77,109,.28);color:#ff8fa3}
+.toast.tsuccess{background:rgba(16,185,129,.14);border:1px solid rgba(16,185,129,.28);color:#6ee7b7}
+.toast.tinfo{background:rgba(0,210,255,.1);border:1px solid rgba(0,210,255,.22);color:#7de8ff}
 .toast i{font-size:1rem;flex-shrink:0}
-.toast span{flex:1}
-.toast.success{background:rgba(16,185,129,.16);border-color:rgba(16,185,129,.32);color:#6ee7b7}
-.toast.error{background:rgba(239,68,68,.16);border-color:rgba(239,68,68,.32);color:#fca5a5}
-.toast.removing{animation:tOut .35s ease forwards}
-@keyframes tIn{from{opacity:0;transform:translateX(42px)}to{opacity:1;transform:translateX(0)}}
-@keyframes tOut{to{opacity:0;transform:translateX(42px)}}
-.t-close{margin-left:auto;cursor:pointer;opacity:.55;font-size:.9rem;background:none;border:none;color:inherit;padding:0 0 0 6px}
-.t-close:hover{opacity:1}
+.toast-x{margin-left:auto;background:none;border:none;color:inherit;opacity:.6;cursor:pointer;font-size:.82rem;padding:2px}
 
-/* ── GOOGLE ICON IMG ── */
-.g-icon{width:19px;height:19px;flex-shrink:0}
+/* ============================================================
+   FORGOT PASSWORD MODAL
+   ============================================================ */
+.modal-overlay{
+  position:fixed;inset:0;z-index:8000;
+  background:rgba(3,3,11,.85);backdrop-filter:blur(12px);
+  display:flex;align-items:center;justify-content:center;padding:20px;
+  opacity:0;pointer-events:none;transition:opacity .35s ease;
+}
+.modal-overlay.open{opacity:1;pointer-events:all}
+.modal-box{
+  background:rgba(13,13,40,.98);border:1px solid rgba(255,255,255,.1);
+  border-radius:20px;padding:36px 32px;width:100%;max-width:420px;
+  position:relative;
+  transform:translateY(20px) scale(.97);
+  transition:transform .35s cubic-bezier(.34,1.56,.64,1);
+  box-shadow:0 40px 80px rgba(0,0,0,.6);
+}
+.modal-overlay.open .modal-box{transform:translateY(0) scale(1)}
+.modal-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);border-radius:20px 20px 0 0}
+.modal-close{
+  position:absolute;top:16px;right:16px;
+  width:32px;height:32px;border-radius:8px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);
+  color:var(--muted);font-size:.8rem;
+  display:flex;align-items:center;justify-content:center;
+  transition:var(--transition);
+}
+.modal-close:hover{background:rgba(255,77,109,.1);color:var(--red);border-color:rgba(255,77,109,.2)}
+.modal-icon{
+  width:56px;height:56px;border-radius:14px;
+  background:rgba(0,210,255,.1);border:1px solid rgba(0,210,255,.18);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;color:var(--blue);margin-bottom:18px;
+}
+.modal-title{font-family:'Orbitron',sans-serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:8px}
+.modal-sub{font-size:.88rem;color:var(--muted);margin-bottom:24px;line-height:1.6}
+.modal-finput{
+  width:100%;height:48px;
+  background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);
+  border-radius:12px;padding:0 16px;
+  color:#fff;font-size:.95rem;font-weight:500;
+  transition:var(--transition);margin-bottom:16px;
+}
+.modal-finput::placeholder{color:rgba(136,136,170,.55)}
+.modal-finput:focus{background:rgba(0,210,255,.06);border-color:rgba(0,210,255,.4);box-shadow:0 0 0 3px rgba(0,210,255,.09)}
+.modal-finput.merr{border-color:rgba(255,77,109,.4);background:rgba(255,77,109,.04)}
+.modal-btn{
+  width:100%;height:48px;border-radius:12px;
+  background:var(--grad);color:#fff;
+  font-size:.95rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  transition:var(--transition);
+}
+.modal-btn:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(0,210,255,.25)}
+.modal-btn:disabled{opacity:.55;cursor:not-allowed;transform:none}
+.modal-success{
+  display:none;text-align:center;padding:12px 0;
+}
+.modal-success.show{display:block}
+.modal-success-icon{font-size:2.4rem;color:var(--green);margin-bottom:12px}
+.modal-success-msg{font-size:.9rem;color:var(--muted);line-height:1.6}
+.modal-success-msg strong{color:#fff}
 
-@media(max-width:500px){.auth-card{padding:30px 20px;margin:12px}.logo{font-size:1.75rem}}
+/* ============================================================
+   SUCCESS OVERLAY
+   ============================================================ */
+.success-overlay{
+  position:fixed;inset:0;z-index:10000;background:rgba(3,3,11,.97);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:40px;
+  opacity:0;pointer-events:none;transition:opacity .5s ease;backdrop-filter:blur(12px);
+}
+.success-overlay.show{opacity:1;pointer-events:all}
+.suc-ring{
+  width:100px;height:100px;border-radius:50%;
+  background:linear-gradient(135deg,rgba(16,185,129,.15),rgba(0,210,255,.12));
+  border:2px solid rgba(16,185,129,.35);
+  display:flex;align-items:center;justify-content:center;
+  font-size:2.4rem;color:var(--green);margin-bottom:26px;
+  animation:popIn .5s cubic-bezier(.34,1.56,.64,1) .15s both;
+  position:relative;
+}
+.suc-ring::before{
+  content:'';position:absolute;inset:-9px;border-radius:50%;
+  border:1px dashed rgba(16,185,129,.22);animation:spin 6s linear infinite;
+}
+@keyframes popIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.suc-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:700;color:#fff;margin-bottom:8px;animation:fadeUp .4s ease .4s both}
+.suc-name{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.suc-sub{color:var(--muted);font-size:.95rem;margin-bottom:28px;animation:fadeUp .4s ease .5s both}
+.suc-dest{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 20px;border-radius:50px;
+  background:rgba(0,210,255,.08);border:1px solid rgba(0,210,255,.18);
+  color:var(--blue);font-size:.82rem;font-weight:700;
+  margin-bottom:28px;animation:fadeUp .4s ease .6s both;
+}
+.redir-bar-wrap{width:260px;height:4px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden;animation:fadeUp .4s ease .7s both}
+.redir-bar{height:100%;width:0%;background:var(--grad);border-radius:2px;transition:width 1.8s linear}
+.redir-txt{font-size:.78rem;color:var(--muted);margin-top:10px;animation:fadeUp .4s ease .8s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.redir-prog{width:100%;height:3px;background:var(--grad);position:fixed;top:0;left:0;z-index:10001;transform:scaleX(0);transform-origin:left;transition:transform 1.8s linear}
+.redir-prog.go{transform:scaleX(1)}
+
+/* ============================================================
+   AUTH LOADER
+   ============================================================ */
+.auth-loader{
+  position:fixed;inset:0;z-index:9500;background:#03030b;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+  transition:opacity .4s ease;
+}
+.auth-loader.hide{opacity:0;pointer-events:none}
+.al-logo{font-family:'Orbitron',sans-serif;font-size:1.6rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.al-spin{width:32px;height:32px;border-radius:50%;border:3px solid rgba(0,210,255,.18);border-top-color:var(--blue);animation:spin .8s linear infinite}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+@media(max-width:900px){
+  .page-wrapper{grid-template-columns:1fr}
+  .left-panel{padding:36px 24px 28px;border-right:none;border-bottom:1px solid rgba(255,255,255,.06)}
+  .left-panel::before{top:auto;bottom:0;left:0;right:0;width:100%;height:3px}
+  .brand{margin-bottom:24px}
+  .features{gap:10px}
+  .feat{padding:12px 14px}
+  .proof{display:none}
+  .right-panel{padding:32px 24px 48px}
+}
+@media(max-width:480px){
+  .left-panel{padding:28px 18px 24px}
+  .right-panel{padding:28px 18px 40px}
+  .form-title{font-size:1.35rem}
+  .btn-google,.btn-submit{height:50px}
+  .modal-box{padding:28px 20px}
+}
 </style>
 </head>
 <body>
 
-<div class="univ"></div>
-<div class="nebula"></div>
-<canvas id="star-canvas"></canvas>
-<canvas id="confettiCanvas"></canvas>
-<div id="toasts"></div>
-
-<!-- SUCCESS OVERLAY -->
-<div id="successOverlay">
-  <div class="success-circle"><i class="fas fa-check"></i></div>
-  <div class="success-title">Login Successful!</div>
-  <div class="success-sub" id="successName">Welcome back to Vura AI 🚀</div>
-  <div class="redirect-bar-wrap"><div class="redirect-bar" id="redirectBar"></div></div>
-  <div style="font-size:.78rem;color:rgba(255,255,255,.35);margin-top:-8px">Redirecting you now...</div>
+<!-- Auth check loader -->
+<div class="auth-loader" id="authLoader">
+  <div class="al-logo">VURA AI</div>
+  <div class="al-spin"></div>
 </div>
 
-<!-- MASCOT -->
-<div class="mascot" id="mascot" onclick="toggleBubble()">
-  <i class="fas fa-robot"></i>
+<!-- Canvas & Nebula -->
+<canvas id="stars-canvas"></canvas>
+<div class="nebula"><div class="nb1"></div><div class="nb2"></div><div class="nb3"></div></div>
+
+<!-- Top redirect bar -->
+<div class="redir-prog" id="redirProg"></div>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="alert">
+  <i id="toastIcon" class="fa-solid fa-circle-exclamation"></i>
+  <span id="toastMsg"></span>
+  <button class="toast-x" onclick="hideToast()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
 </div>
-<div class="mbubble" id="mbubble" style="display:none">👋 Need help signing in? Try Google — it's the fastest!</div>
 
-<div class="scene">
-<div class="auth-card" id="authCard">
+<!-- Success overlay -->
+<div class="success-overlay" id="successOverlay">
+  <div class="suc-ring"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="suc-title">Welcome back, <span class="suc-name" id="sucName">Star</span>!</div>
+  <div class="suc-sub">Sign-in successful. Taking you to your dashboard.</div>
+  <div class="suc-dest" id="sucDest"><i class="fa-solid fa-arrow-right"></i> Loading dashboard...</div>
+  <div class="redir-bar-wrap"><div class="redir-bar" id="redirBar"></div></div>
+  <div class="redir-txt">Redirecting in a moment...</div>
+</div>
 
-  <div class="logo-wrap">
-    <div class="logo"><div class="logo-dot"></div>VURA</div>
-    <div class="typing-text" id="typingText"></div>
-  </div>
+<!-- Forgot Password Modal -->
+<div class="modal-overlay" id="forgotModal" role="dialog" aria-modal="true" aria-label="Reset Password">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeForgot()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
 
-  <!-- ══ VIEW: MAIN ══ -->
-  <div class="view active" id="viewMain">
-
-    <div class="method-tabs">
-      <button class="mtab active" id="tabEmail" onclick="setMethod('email')">
-        <i class="fas fa-envelope"></i> Email
-      </button>
-      <button class="mtab" id="tabPhone" onclick="setMethod('phone')">
-        <i class="fas fa-mobile-screen-button"></i> Phone
+    <!-- Form view -->
+    <div id="forgotForm">
+      <div class="modal-icon"><i class="fa-solid fa-key"></i></div>
+      <div class="modal-title">Forgot Password?</div>
+      <div class="modal-sub">Enter your registered email address and we'll send you a link to reset your password.</div>
+      <input type="email" id="forgotEmail" class="modal-finput"
+        placeholder="your@email.com" autocomplete="email"/>
+      <div class="ferr" id="forgotErr" style="margin-bottom:12px">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <span id="forgotErrMsg"></span>
+      </div>
+      <button class="modal-btn" id="forgotBtn" onclick="sendReset()">
+        <i class="fa-solid fa-paper-plane"></i> Send Reset Link
       </button>
     </div>
 
-    <!-- EMAIL FORM -->
-    <div id="emailForm">
-      <div class="inp-group">
-        <label class="inp-label"><i class="fas fa-envelope"></i> Email Address</label>
-        <div class="inp-wrap">
-          <i class="fas fa-at inp-icon"></i>
-          <input class="form-input" type="email" id="loginEmail" placeholder="your@email.com" autocomplete="email">
-        </div>
-        <div class="ferr" id="emailError"><i class="fas fa-circle-exclamation"></i><span></span></div>
+    <!-- Success view -->
+    <div class="modal-success" id="forgotSuccess">
+      <div class="modal-success-icon"><i class="fa-solid fa-envelope-circle-check"></i></div>
+      <div class="modal-success-msg">
+        Reset link sent to<br>
+        <strong id="forgotSentEmail"></strong><br><br>
+        Check your inbox (and spam folder). The link expires in 1 hour.
       </div>
-      <div class="inp-group">
-        <label class="inp-label"><i class="fas fa-lock"></i> Password</label>
-        <div class="inp-wrap">
-          <i class="fas fa-lock inp-icon"></i>
-          <input class="form-input" type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password">
-          <button class="pw-eye" type="button" id="togglePw"><i class="fas fa-eye"></i></button>
-        </div>
-        <div class="ferr" id="passwordError"><i class="fas fa-circle-exclamation"></i><span></span></div>
+      <button class="modal-btn" style="margin-top:20px" onclick="closeForgot()">
+        <i class="fa-solid fa-arrow-left"></i> Back to Sign In
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+   TWO-PANEL LAYOUT
+   ============================================================ -->
+<div class="page-wrapper" id="mainPage" style="opacity:0;transition:opacity .35s ease">
+
+  <!-- ===== LEFT PANEL ===== -->
+  <div class="left-panel">
+    <!-- Brand -->
+    <div class="brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-brain" style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text"></i>
       </div>
-      <div class="forgot-row">
-        <button class="lnk" onclick="showView('viewForgot')">
-          <i class="fas fa-key"></i> Forgot Password?
+      <span class="brand-name">VURA AI</span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="left-headline">Welcome Back,<br><span>Star Student</span></h1>
+    <p class="left-sub">Continue your journey to exam success — your AI tutor and study tools are waiting.</p>
+
+    <!-- Features -->
+    <div class="features">
+      <div class="feat">
+        <div class="feat-icon fi-b"><i class="fa-solid fa-robot"></i></div>
+        <div class="feat-text">
+          <strong>AI Tutor — Ask Anything</strong>
+          <span>Instant explanations for every topic, any exam, 24 hours a day</span>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon fi-p"><i class="fa-solid fa-database"></i></div>
+        <div class="feat-text">
+          <strong>50,000+ Past Questions</strong>
+          <span>The largest curated exam question bank covering 50+ national exams</span>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon fi-g"><i class="fa-solid fa-coins"></i></div>
+        <div class="feat-text">
+          <strong>Earn VUX Every Day</strong>
+          <span>Your VUX coins grow with every quiz, game, login, and study session</span>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon fi-gr"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="feat-text">
+          <strong>Track Your Progress</strong>
+          <span>Smart analytics show exactly how you're improving toward your target score</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social proof -->
+    <div class="proof">
+      <div class="proof-avs">
+        <div class="pav av1">AO</div>
+        <div class="pav av2">KM</div>
+        <div class="pav av3">PS</div>
+        <div class="pav av4">JT</div>
+      </div>
+      <div class="proof-txt">
+        <strong>200,000+ students</strong> across 50+ countries already studying smarter with Vura AI
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RIGHT PANEL ===== -->
+  <div class="right-panel">
+    <div class="form-container">
+
+      <h2 class="form-title">Sign In</h2>
+      <p class="form-sub">
+        New here? <a href="signup.html">Create a free account</a>
+      </p>
+
+      <!-- Google -->
+      <button class="btn-google" id="btnGoogle" type="button">
+        <svg class="g-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        </svg>
+        Continue with Google
+      </button>
+
+      <!-- Divider -->
+      <div class="divider">
+        <div class="div-line"></div>
+        <span class="div-txt">or sign in with email</span>
+        <div class="div-line"></div>
+      </div>
+
+      <!-- Login form -->
+      <form id="loginForm" novalidate>
+
+        <!-- Email -->
+        <div class="fg">
+          <div class="flabel">
+            <span class="flabel-text">Email Address</span>
+          </div>
+          <div class="iwrap">
+            <input type="email" id="email" class="finput"
+              placeholder="you@example.com" autocomplete="email" required/>
+            <i class="fa-solid fa-envelope iico"></i>
+          </div>
+          <div class="ferr" id="emailErr">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span id="emailErrMsg"></span>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="fg">
+          <div class="flabel">
+            <span class="flabel-text">Password</span>
+            <button type="button" class="forgot-link" onclick="openForgot()" id="forgotTrigger">
+              Forgot password?
+            </button>
+          </div>
+          <div class="iwrap">
+            <input type="password" id="password" class="finput"
+              placeholder="Enter your password" autocomplete="current-password" required/>
+            <i class="fa-solid fa-lock iico"></i>
+            <button type="button" class="eye-btn" id="eyeBtn" aria-label="Toggle password">
+              <i class="fa-solid fa-eye" id="eyeIcon"></i>
+            </button>
+          </div>
+          <div class="ferr" id="passErr">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span id="passErrMsg"></span>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-submit" id="btnSubmit">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          Sign in to Vura AI
+        </button>
+
+      </form>
+
+      <!-- Guest mode -->
+      <div class="guest-wrap">
+        <button class="guest-link" id="btnGuest" type="button">
+          <i class="fa-solid fa-user-secret"></i>
+          Continue as Guest
+          <i class="fa-solid fa-arrow-right" style="font-size:.7rem"></i>
         </button>
       </div>
-      <div class="btn-group">
-        <button class="btn btn-primary" id="btnLogin">
-          <i class="fas fa-right-to-bracket"></i> <span>Sign In</span>
-        </button>
-      </div>
-    </div>
 
-    <!-- PHONE FORM -->
-    <div id="phoneForm" style="display:none">
-      <div class="inp-group">
-        <label class="inp-label"><i class="fas fa-mobile-screen-button"></i> Phone Number</label>
-        <div class="phone-row">
-          <input class="cc-input" id="countryCode" value="+234" maxlength="5">
-          <input class="form-input" type="tel" id="phoneNum" placeholder="8012345678" autocomplete="tel" style="padding-left:14px">
-        </div>
-        <div class="ferr" id="phoneError"><i class="fas fa-circle-exclamation"></i><span></span></div>
-      </div>
-      <div id="recaptcha-container"></div>
-      <div class="btn-group">
-        <button class="btn btn-primary" id="btnSendOTP">
-          <i class="fas fa-paper-plane"></i> <span>Send OTP Code</span>
-        </button>
-      </div>
-    </div>
+      <!-- Terms -->
+      <p class="terms-txt">
+        By signing in, you agree to our
+        <a href="terms.html">Terms of Service</a>
+        and
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
 
-    <div class="divider"><span>OR CONTINUE WITH</span></div>
-
-    <button class="btn btn-google" id="btnGoogle">
-      <img class="g-icon" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
-      Continue with Google
-    </button>
-
-    <div class="divider"><span>PREVIEW MODE</span></div>
-
-    <button class="btn btn-ghost" id="btnGuest">
-      <i class="fas fa-eye"></i>
-      <span>Continue as Guest</span>
-    </button>
-
-    <div class="links-row">
-      <button class="lnk" onclick="showView('viewForgot')"><i class="fas fa-key"></i> Forgot?</button>
-      <span class="lnk"><i class="fas fa-user-plus"></i><a href="signup">Create Account</a></span>
     </div>
   </div>
+</div>
 
-  <!-- ══ VIEW: OTP ══ -->
-  <div class="view" id="viewOTP">
-    <button class="back-btn" onclick="showView('viewMain')"><i class="fas fa-arrow-left"></i> Back</button>
-    <div class="view-title">
-      <i class="fas fa-mobile-screen-button view-icon"></i>
-      <h3>Enter OTP Code</h3>
-      <p>Sent to <strong id="otpPhone" style="color:var(--blue)"></strong></p>
-    </div>
-    <div class="otp-row">
-      <input class="otp-box" maxlength="1" id="o1" inputmode="numeric">
-      <input class="otp-box" maxlength="1" id="o2" inputmode="numeric">
-      <input class="otp-box" maxlength="1" id="o3" inputmode="numeric">
-      <input class="otp-box" maxlength="1" id="o4" inputmode="numeric">
-      <input class="otp-box" maxlength="1" id="o5" inputmode="numeric">
-      <input class="otp-box" maxlength="1" id="o6" inputmode="numeric">
-    </div>
-    <div class="btn-group" style="margin-top:18px">
-      <button class="btn btn-primary" id="btnVerify">
-        <i class="fas fa-shield-check"></i> <span>Verify & Sign In</span>
-      </button>
-    </div>
-    <div class="resend-row">
-      Didn't receive it?
-      <button class="resend-btn" id="resendBtn" onclick="handleResend()">Resend</button>
-      <span id="resendTimer"></span>
-    </div>
-  </div>
-
-  <!-- ══ VIEW: FORGOT ══ -->
-  <div class="view" id="viewForgot">
-    <button class="back-btn" onclick="showView('viewMain')"><i class="fas fa-arrow-left"></i> Back</button>
-    <div class="view-title">
-      <i class="fas fa-key view-icon"></i>
-      <h3>Reset Password</h3>
-      <p>We'll send a reset link to your email</p>
-    </div>
-    <div class="inp-group" style="margin-top:6px">
-      <label class="inp-label"><i class="fas fa-envelope"></i> Email Address</label>
-      <div class="inp-wrap">
-        <i class="fas fa-at inp-icon"></i>
-        <input class="form-input" type="email" id="resetEmail" placeholder="your@email.com">
-      </div>
-    </div>
-    <div class="btn-group" style="margin-top:4px">
-      <button class="btn btn-primary" id="btnReset">
-        <i class="fas fa-paper-plane"></i> <span>Send Reset Link</span>
-      </button>
-    </div>
-  </div>
-
-</div><!-- /auth-card -->
-</div><!-- /scene -->
-
+<!-- ============================================================
+   FIREBASE MODULE
+   ============================================================ -->
 <script type="module">
-import { loginUser, googleLoginUser, sendPhoneOTP, verifyPhoneOTP, resetPassword } from './auth.js';
+import { initializeApp }      from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+import {
+  getAuth,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  GoogleAuthProvider,
+  sendPasswordResetEmail
+} from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
+import {
+  getFirestore,
+  doc, getDoc, setDoc, updateDoc,
+  collection, addDoc,
+  serverTimestamp
+} from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
-// ═══════════════════════════════
-// STARS
-// ═══════════════════════════════
-const sc=document.getElementById('star-canvas'),sx=sc.getContext('2d');let stars=[];
-function initStars(){sc.width=innerWidth;sc.height=innerHeight;stars=Array.from({length:150},()=>({x:Math.random()*sc.width,y:Math.random()*sc.height,s:Math.random()*1.9,o:Math.random()*.75+.2,sp:Math.random()*.04+.008}));}
-function drawStars(){sx.clearRect(0,0,sc.width,sc.height);stars.forEach(s=>{sx.fillStyle=`rgba(255,255,255,${s.o})`;sx.beginPath();sx.arc(s.x,s.y,s.s,0,Math.PI*2);sx.fill();s.y-=s.sp;if(s.y<0){s.y=sc.height;s.x=Math.random()*sc.width;}});requestAnimationFrame(drawStars);}
-window.onresize=initStars;initStars();drawStars();
+/* ── Config ────────────────────────────────────────────────── */
+const firebaseConfig = {
+  apiKey:            "AIzaSyAmk0Nyxfk4u9q_Ma2esj4ch8XMW6e49o4",
+  authDomain:        "vura-ai2026.firebaseapp.com",
+  projectId:         "vura-ai2026",
+  storageBucket:     "vura-ai2026.firebasestorage.app",
+  messagingSenderId: "973528287420",
+  appId:             "1:973528287420:web:bceffa7ce783add77528b9"
+};
 
-// ═══════════════════════════════
-// TYPING EFFECT
-// ═══════════════════════════════
-const words=["Welcome back! 👋","Ready to learn? Let's go!","Your universe awaits...","Earn VUX. Level up. Repeat."];
-let wi=0,ci=0,del=false;
-function type(){const w=words[wi],el=document.getElementById('typingText');if(!del){el.textContent=w.slice(0,ci++);if(ci>w.length){del=true;setTimeout(type,1700);return;}}else{el.textContent=w.slice(0,ci--);if(ci<0){del=false;wi=(wi+1)%words.length;}}setTimeout(type,del?42:72);}
-type();
+const app  = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db   = getFirestore(app);
 
-// ═══════════════════════════════
-// 3D TILT
-// ═══════════════════════════════
-const card=document.getElementById('authCard');
-document.querySelector('.scene').addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`rotateY(${x*11}deg) rotateX(${-y*9}deg)`;});
-document.querySelector('.scene').addEventListener('mouseleave',()=>{card.style.transform='rotateY(0deg) rotateX(0deg)';});
-
-// ═══════════════════════════════
-// CONFETTI ENGINE
-// ═══════════════════════════════
-const cc=document.getElementById('confettiCanvas'),cx=cc.getContext('2d');
-const COLORS=['#ff3d70','#00d2ff','#ffcc33','#10b981','#9d50bb','#ff9500','#00ff88','#ff6b6b','#4ecdc4','#45b7d1'];
-let particles=[];
-function launchConfetti(){
-  cc.width=innerWidth;cc.height=innerHeight;
-  particles=[];
-  for(let i=0;i<220;i++){
-    particles.push({
-      x:Math.random()*cc.width,y:Math.random()*cc.height*.3-50,
-      vx:(Math.random()-0.5)*9,vy:Math.random()*6+3,
-      color:COLORS[Math.floor(Math.random()*COLORS.length)],
-      w:Math.random()*10+5,h:Math.random()*5+3,
-      rot:Math.random()*360,rv:(Math.random()-0.5)*8,
-      alpha:1,life:0,maxLife:120+Math.random()*80,
-      shape:Math.random()>.5?'rect':'circle'
-    });
+/* ── Auth guard on load ────────────────────────────────────── */
+onAuthStateChanged(auth, async (user) => {
+  if (user) {
+    // Already logged in → check onboarding status then redirect
+    try {
+      const snap = await getDoc(doc(db, 'users', user.uid));
+      if (snap.exists() && snap.data().onboarded === true) {
+        window.location.replace('appskeleton.html');
+      } else {
+        window.location.replace('onboarding.html');
+      }
+    } catch {
+      window.location.replace('onboarding.html');
+    }
+    return;
   }
-  animConfetti();
-}
-function animConfetti(){
-  cx.clearRect(0,0,cc.width,cc.height);
-  let alive=false;
-  particles.forEach(p=>{
-    p.life++;p.vy+=.12;p.vx*=.99;p.x+=p.vx;p.y+=p.vy;p.rot+=p.rv;
-    p.alpha=Math.max(0,1-p.life/p.maxLife);
-    if(p.alpha>0){alive=true;}
-    cx.save();cx.globalAlpha=p.alpha;cx.fillStyle=p.color;
-    cx.translate(p.x,p.y);cx.rotate(p.rot*Math.PI/180);
-    if(p.shape==='circle'){cx.beginPath();cx.arc(0,0,p.w/2,0,Math.PI*2);cx.fill();}
-    else{cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);}
-    cx.restore();
-  });
-  if(alive)requestAnimationFrame(animConfetti);
-  else cx.clearRect(0,0,cc.width,cc.height);
-}
-
-// ═══════════════════════════════
-// SUCCESS OVERLAY
-// ═══════════════════════════════
-function showSuccess(name){
-  document.getElementById('successName').textContent=`Welcome back, ${name || 'friend'}! 🚀`;
-  const overlay=document.getElementById('successOverlay');
-  overlay.style.display='flex';
-  launchConfetti();
-  setTimeout(()=>{
-    const bar=document.getElementById('redirectBar');
-    bar.style.width='100%';
-  },100);
-  setTimeout(()=>{window.location.href='appskeleton';},2400);
-}
-
-// ═══════════════════════════════
-// TOAST
-// ═══════════════════════════════
-function toast(msg,type='success'){
-  const el=document.createElement('div');el.className=`toast ${type}`;
-  const icon=type==='success'?'fas fa-circle-check':'fas fa-circle-exclamation';
-  el.innerHTML=`<i class="${icon}"></i><span>${msg}</span><button class="t-close" onclick="this.parentElement.classList.add('removing');setTimeout(()=>this.parentElement.remove(),350)"><i class="fas fa-xmark"></i></button>`;
-  document.getElementById('toasts').appendChild(el);
-  setTimeout(()=>{if(el.parentElement){el.classList.add('removing');setTimeout(()=>el.remove(),350);}},5000);
-}
-
-// ═══════════════════════════════
-// MASCOT
-// ═══════════════════════════════
-const bubs=["Hi there! Sign in to earn LNX coins 🪙","Use Google for the fastest sign-in ⚡","Forgot password? Tap the key icon 🔑","Over 50,000 students are already inside! 🌍"];let bi=0;
-window.toggleBubble=()=>{const b=document.getElementById('mbubble');if(b.style.display==='none'){b.innerHTML=`<i class="fas fa-comment-dots" style="color:var(--blue);margin-right:5px"></i>${bubs[bi%bubs.length]}`;bi++;b.style.display='block';}else b.style.display='none';};
-
-// ═══════════════════════════════
-// HELPERS
-// ═══════════════════════════════
-window.showView=id=>{document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');};
-window.setMethod=m=>{
-  document.getElementById('emailForm').style.display=m==='email'?'block':'none';
-  document.getElementById('phoneForm').style.display=m==='phone'?'block':'none';
-  document.getElementById('tabEmail').classList.toggle('active',m==='email');
-  document.getElementById('tabPhone').classList.toggle('active',m==='phone');
-};
-document.getElementById('togglePw').onclick=()=>{
-  const i=document.getElementById('loginPassword'),ic=document.querySelector('#togglePw i');
-  i.type=i.type==='password'?'text':'password';
-  ic.className=i.type==='password'?'fas fa-eye':'fas fa-eye-slash';
-};
-function setLoad(id,on){const b=document.getElementById(id);if(!b)return;if(on){b._o=b.innerHTML;b.innerHTML='<div class="spinner"></div><span>Loading...</span>';b.disabled=true;}else{b.innerHTML=b._o;b.disabled=false;}}
-function fErr(id,msg){const e=document.getElementById(id+'Error');if(!e)return;e.querySelector('span').textContent=msg;e.classList.add('show');}
-function clrErr(){document.querySelectorAll('.ferr').forEach(e=>e.classList.remove('show'));}
-
-// ═══════════════════════════════
-// EMAIL LOGIN
-// ═══════════════════════════════
-document.getElementById('btnLogin').onclick=async()=>{
-  clrErr();
-  const email=document.getElementById('loginEmail').value.trim();
-  const pw=document.getElementById('loginPassword').value;
-  if(!email){fErr('email','Please enter your email address.');return;}
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){fErr('email','Please enter a valid email format.');return;}
-  if(!pw){fErr('password','Please enter your password.');return;}
-  setLoad('btnLogin',true);
-  const r=await loginUser({email,password:pw});
-  setLoad('btnLogin',false);
-  if(r.success){showSuccess(r.user?.displayName||email.split('@')[0]);}
-  else{toast(r.error,'error');if(r.error.toLowerCase().includes('email')||r.error.includes('found'))fErr('email',r.error);else fErr('password',r.error);}
-};
-
-// ═══════════════════════════════
-// GOOGLE LOGIN
-// ═══════════════════════════════
-document.getElementById('btnGoogle').onclick=async()=>{
-  const r=await googleLoginUser();
-  if(r.success){showSuccess(r.user?.displayName||'friend');}
-  else{toast(r.error,'error');}
-};
-
-// ═══════════════════════════════
-// GUEST LOGIN
-// ═══════════════════════════════
-document.getElementById('btnGuest').onclick=()=>{
-  // Create guest session
-  const guestUser = {
-    uid: 'guest_' + Date.now(),
-    email: 'guest@vura.ai',
-    displayName: 'Guest User',
-    photoURL: '',
-    isGuest: true
-  };
-  
-  // Store guest session in localStorage
-  localStorage.setItem('guestMode', 'true');
-  localStorage.setItem('guestUser', JSON.stringify(guestUser));
-  
-  // Show success and redirect
-  showSuccess('Guest');
-};
-
-// ═══════════════════════════════
-// PHONE OTP
-// ═══════════════════════════════
-document.getElementById('btnSendOTP').onclick=async()=>{
-  const code=document.getElementById('countryCode').value.trim();
-  const num=document.getElementById('phoneNum').value.trim();
-  if(!num){fErr('phone','Enter your phone number.');return;}
-  const full=code+num;document.getElementById('otpPhone').textContent=full;
-  setLoad('btnSendOTP',true);
-  const r=await sendPhoneOTP(full,'recaptcha-container');
-  setLoad('btnSendOTP',false);
-  if(r.success){showView('viewOTP');startResendTimer();}
-  else toast(r.error,'error');
-};
-document.getElementById('btnVerify').onclick=async()=>{
-  const code=['o1','o2','o3','o4','o5','o6'].map(id=>document.getElementById(id).value).join('');
-  if(code.length<6){toast('Enter all 6 digits.','error');return;}
-  setLoad('btnVerify',true);
-  const r=await verifyPhoneOTP(code);
-  setLoad('btnVerify',false);
-  if(r.success){showSuccess(r.user?.displayName||'friend');}
-  else toast(r.error,'error');
-};
-['o1','o2','o3','o4','o5','o6'].forEach((id,i,arr)=>{
-  const el=document.getElementById(id);
-  el.addEventListener('input',()=>{if(el.value&&arr[i+1])document.getElementById(arr[i+1]).focus();});
-  el.addEventListener('keydown',e=>{if(e.key==='Backspace'&&!el.value&&arr[i-1])document.getElementById(arr[i-1]).focus();});
+  // Not logged in — show page
+  document.getElementById('authLoader').classList.add('hide');
+  document.getElementById('mainPage').style.opacity = '1';
 });
-window.handleResend=async()=>{window.recaptchaVerifier=null;const c=document.getElementById('countryCode').value.trim(),n=document.getElementById('phoneNum').value.trim();await sendPhoneOTP(c+n,'recaptcha-container');startResendTimer();};
-function startResendTimer(){const btn=document.getElementById('resendBtn'),t=document.getElementById('resendTimer');btn.disabled=true;let s=60;t.textContent=` (${s}s)`;const iv=setInterval(()=>{s--;t.textContent=s>0?` (${s}s)`:'';if(s<=0){clearInterval(iv);btn.disabled=false;}},1000);}
 
-// ═══════════════════════════════
-// RESET PASSWORD
-// ═══════════════════════════════
-document.getElementById('btnReset').onclick=async()=>{
-  const email=document.getElementById('resetEmail').value.trim();
-  if(!email){toast('Enter your email address.','error');return;}
-  setLoad('btnReset',true);
-  const r=await resetPassword(email);
-  setLoad('btnReset',false);
-  if(r.success){toast('Reset link sent! Check your inbox.','success');}
-  else toast(r.error,'error');
+/* ── Helpers ───────────────────────────────────────────────── */
+function genReferralCode(uid) {
+  return 'VUX-' + uid.substring(0, 6).toUpperCase();
+}
+
+async function createNewUserProfile(uid, name, email) {
+  const now = serverTimestamp();
+  const referralCode = genReferralCode(uid);
+  await setDoc(doc(db, 'users', uid), {
+    uid, name: name || 'Vura Student', email,
+    phone: '', plan: 'free', vuxBalance: 300,
+    referralCode, referredBy: '', onboarded: false,
+    createdAt: now, lastLogin: now, lastActive: now,
+    examSelected: '', country: '', avatar: '',
+    streak: 0, totalQuizzes: 0, totalCorrect: 0,
+  });
+  await setDoc(doc(db, 'wallets', uid), {
+    uid, balance: 300, totalEarned: 300, totalSpent: 0,
+    createdAt: now, updatedAt: now,
+  });
+  await addDoc(collection(db, 'wallets', uid, 'transactions'), {
+    type: 'Welcome Bonus',
+    description: 'Free VUX coins on account creation',
+    amount: 300, balance: 300,
+    timestamp: now, status: 'completed',
+  });
+}
+
+async function updateLastLogin(uid) {
+  try {
+    await updateDoc(doc(db, 'users', uid), {
+      lastLogin:  serverTimestamp(),
+      lastActive: serverTimestamp(),
+    });
+  } catch { /* silent — don't block redirect */ }
+}
+
+async function getOnboardedStatus(uid) {
+  try {
+    const snap = await getDoc(doc(db, 'users', uid));
+    if (snap.exists()) return snap.data().onboarded === true;
+    return false;
+  } catch { return false; }
+}
+
+function friendlyError(code) {
+  const map = {
+    'auth/user-not-found':          'No account found with this email. Please check or create a new account.',
+    'auth/wrong-password':          'Incorrect password. Please try again or use "Forgot password?"',
+    'auth/invalid-credential':      'Email or password is incorrect. Please try again.',
+    'auth/invalid-email':           'That email address doesn\'t look right. Please check and try again.',
+    'auth/user-disabled':           'This account has been disabled. Please contact support@vura-ai.com.',
+    'auth/too-many-requests':       'Too many failed attempts. Please wait a few minutes before trying again.',
+    'auth/network-request-failed':  'Network error. Please check your internet connection and try again.',
+    'auth/popup-closed-by-user':    'Google sign-in was cancelled. Please try again.',
+    'auth/popup-blocked':           'Pop-ups are blocked. Please allow pop-ups for this site and retry.',
+    'auth/cancelled-popup-request': 'Sign-in cancelled. Please try again.',
+    'auth/account-exists-with-different-credential': 'An account already exists with this email using a different sign-in method.',
+    'auth/internal-error':          'An unexpected error occurred. Please try again or contact support.',
+  };
+  return map[code] || `Sign-in failed (${code}). Please try again or contact support@vura-ai.com`;
+}
+
+/* ── Success redirect flow ─────────────────────────────────── */
+function triggerSuccess(displayName, destination) {
+  const firstName = (displayName || 'Star').split(' ')[0];
+  document.getElementById('sucName').textContent = firstName;
+
+  const destLabel = destination === 'onboarding.html'
+    ? '<i class="fa-solid fa-compass"></i> Setting up your profile...'
+    : '<i class="fa-solid fa-rocket"></i> Opening your dashboard...';
+  document.getElementById('sucDest').innerHTML = destLabel;
+
+  document.getElementById('successOverlay').classList.add('show');
+
+  setTimeout(() => {
+    document.getElementById('redirBar').style.width = '100%';
+    document.getElementById('redirProg').classList.add('go');
+  }, 150);
+
+  setTimeout(() => {
+    window.location.href = destination;
+  }, 2100);
+}
+
+/* ── Loading states ─────────────────────────────────────────── */
+function setSubmitLoading(on) {
+  const btn = document.getElementById('btnSubmit');
+  btn.disabled = on;
+  btn.innerHTML = on
+    ? '<div class="spinner"></div> Signing in...'
+    : '<i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in to Vura AI';
+}
+function setGoogleLoading(on) {
+  const btn = document.getElementById('btnGoogle');
+  btn.disabled = on;
+  btn.innerHTML = on
+    ? '<div class="spinner"></div> Connecting to Google...'
+    : `<svg class="g-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+      </svg>Continue with Google`;
+}
+
+/* ── Field helpers ─────────────────────────────────────────── */
+function showFieldErr(errId, msgId, inputId, msg) {
+  document.getElementById(msgId).textContent = msg;
+  document.getElementById(errId).classList.add('show');
+  document.getElementById(inputId).classList.add('err');
+  document.getElementById(inputId).classList.remove('ok');
+}
+function clearFieldErr(errId, inputId) {
+  document.getElementById(errId).classList.remove('show');
+  document.getElementById(inputId).classList.remove('err');
+}
+
+function validateLogin() {
+  let ok = true;
+  const email = document.getElementById('email').value.trim();
+  const pass  = document.getElementById('password').value;
+  const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!email) {
+    showFieldErr('emailErr','emailErrMsg','email','Please enter your email address'); ok=false;
+  } else if (!emailReg.test(email)) {
+    showFieldErr('emailErr','emailErrMsg','email','Please enter a valid email address'); ok=false;
+  } else { clearFieldErr('emailErr','email'); }
+
+  if (!pass) {
+    showFieldErr('passErr','passErrMsg','password','Please enter your password'); ok=false;
+  } else { clearFieldErr('passErr','password'); }
+
+  return ok;
+}
+
+/* ── Email/Password Login ──────────────────────────────────── */
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  if (!validateLogin()) return;
+  setSubmitLoading(true);
+
+  const email    = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value;
+
+  try {
+    const cred = await signInWithEmailAndPassword(auth, email, password);
+    const user = cred.user;
+    await updateLastLogin(user.uid);
+    const onboarded = await getOnboardedStatus(user.uid);
+    triggerSuccess(user.displayName || email.split('@')[0], onboarded ? 'appskeleton.html' : 'onboarding.html');
+  } catch (err) {
+    setSubmitLoading(false);
+    const msg = friendlyError(err.code);
+    if (err.code === 'auth/user-not-found' || err.code === 'auth/invalid-email') {
+      showFieldErr('emailErr','emailErrMsg','email', msg);
+    } else if (err.code === 'auth/wrong-password' || err.code === 'auth/invalid-credential') {
+      showFieldErr('passErr','passErrMsg','password', msg);
+    } else {
+      showToast(msg, 'error');
+    }
+  }
+});
+
+/* ── Google Sign-in ────────────────────────────────────────── */
+document.getElementById('btnGoogle').addEventListener('click', async () => {
+  setGoogleLoading(true);
+  const provider = new GoogleAuthProvider();
+  try {
+    const result = await signInWithPopup(auth, provider);
+    const user   = result.user;
+    const snap   = await getDoc(doc(db, 'users', user.uid));
+
+    if (!snap.exists()) {
+      // Brand new user via Google
+      await createNewUserProfile(user.uid, user.displayName, user.email);
+      triggerSuccess(user.displayName, 'onboarding.html');
+    } else {
+      // Returning user
+      await updateLastLogin(user.uid);
+      const onboarded = snap.data().onboarded === true;
+      triggerSuccess(user.displayName || snap.data().name, onboarded ? 'appskeleton.html' : 'onboarding.html');
+    }
+  } catch (err) {
+    setGoogleLoading(false);
+    if (err.code !== 'auth/popup-closed-by-user' && err.code !== 'auth/cancelled-popup-request') {
+      showToast(friendlyError(err.code), 'error');
+    }
+  }
+});
+
+/* ── Forgot Password ───────────────────────────────────────── */
+window.sendReset = async function() {
+  const emailVal = document.getElementById('forgotEmail').value.trim();
+  const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailVal) {
+    document.getElementById('forgotEmail').classList.add('merr');
+    document.getElementById('forgotErrMsg').textContent = 'Please enter your email address';
+    document.getElementById('forgotErr').classList.add('show');
+    return;
+  }
+  if (!emailReg.test(emailVal)) {
+    document.getElementById('forgotEmail').classList.add('merr');
+    document.getElementById('forgotErrMsg').textContent = 'Please enter a valid email address';
+    document.getElementById('forgotErr').classList.add('show');
+    return;
+  }
+
+  document.getElementById('forgotEmail').classList.remove('merr');
+  document.getElementById('forgotErr').classList.remove('show');
+
+  const btn = document.getElementById('forgotBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<div class="spinner" style="border-top-color:#fff"></div> Sending...';
+
+  try {
+    await sendPasswordResetEmail(auth, emailVal);
+    document.getElementById('forgotSentEmail').textContent = emailVal;
+    document.getElementById('forgotForm').style.display    = 'none';
+    document.getElementById('forgotSuccess').classList.add('show');
+  } catch (err) {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Reset Link';
+    const errMessages = {
+      'auth/user-not-found': 'No account found with this email address.',
+      'auth/invalid-email':  'Please enter a valid email address.',
+      'auth/too-many-requests': 'Too many requests. Please wait before trying again.',
+    };
+    document.getElementById('forgotErrMsg').textContent = errMessages[err.code] || 'Failed to send reset email. Please try again.';
+    document.getElementById('forgotEmail').classList.add('merr');
+    document.getElementById('forgotErr').classList.add('show');
+  }
 };
 
-document.getElementById('loginPassword').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('btnLogin').click();});
+/* ── Toast exposed globally ────────────────────────────────── */
+window.showToast = function(msg, type='error') {
+  const toast  = document.getElementById('toast');
+  const icon   = document.getElementById('toastIcon');
+  const msgEl  = document.getElementById('toastMsg');
+  const typeMap = {
+    error:   { cls:'terror',   icon:'fa-solid fa-circle-exclamation' },
+    success: { cls:'tsuccess', icon:'fa-solid fa-circle-check' },
+    info:    { cls:'tinfo',    icon:'fa-solid fa-circle-info' },
+  };
+  const t = typeMap[type] || typeMap.error;
+  toast.className = `toast show ${t.cls}`;
+  icon.className  = t.icon;
+  msgEl.textContent = msg;
+  if (window._toastTimer) clearTimeout(window._toastTimer);
+  window._toastTimer = setTimeout(() => toast.classList.remove('show'), 5500);
+};
+window.hideToast = function() { document.getElementById('toast').classList.remove('show'); };
+
+</script>
+
+<!-- ============================================================
+   NON-MODULE SCRIPTS
+   ============================================================ -->
+<script>
+/* ── Password show/hide ──────────────────────────────────── */
+document.getElementById('eyeBtn').addEventListener('click', () => {
+  const inp  = document.getElementById('password');
+  const icon = document.getElementById('eyeIcon');
+  const show = inp.type === 'password';
+  inp.type   = show ? 'text' : 'password';
+  icon.className = show ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye';
+});
+
+/* ── Clear errors on typing ──────────────────────────────── */
+document.getElementById('email').addEventListener('input', () => {
+  document.getElementById('emailErr').classList.remove('show');
+  document.getElementById('email').classList.remove('err');
+});
+document.getElementById('password').addEventListener('input', () => {
+  document.getElementById('passErr').classList.remove('show');
+  document.getElementById('password').classList.remove('err');
+});
+
+/* ── Forgot modal ─────────────────────────────────────────── */
+window.openForgot = function() {
+  document.getElementById('forgotModal').classList.add('open');
+  // Reset state
+  document.getElementById('forgotEmail').value = '';
+  document.getElementById('forgotEmail').className = 'modal-finput';
+  document.getElementById('forgotErr').classList.remove('show');
+  document.getElementById('forgotForm').style.display    = 'block';
+  document.getElementById('forgotSuccess').classList.remove('show');
+  const btn = document.getElementById('forgotBtn');
+  btn.disabled = false;
+  btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Reset Link';
+  setTimeout(() => document.getElementById('forgotEmail').focus(), 300);
+};
+window.closeForgot = function() {
+  document.getElementById('forgotModal').classList.remove('open');
+};
+
+// Close modal on overlay click
+document.getElementById('forgotModal').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('forgotModal')) closeForgot();
+});
+
+// Close modal on Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeForgot();
+});
+
+// Forgot email field — remove error on input
+document.getElementById('forgotEmail').addEventListener('input', function() {
+  this.classList.remove('merr');
+  document.getElementById('forgotErr').classList.remove('show');
+});
+
+// Submit reset on Enter in forgot email field
+document.getElementById('forgotEmail').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') { e.preventDefault(); window.sendReset(); }
+});
+
+/* ── Guest Mode ───────────────────────────────────────────── */
+document.getElementById('btnGuest').addEventListener('click', () => {
+  const guest = {
+    uid:         'guest_' + Date.now(),
+    displayName: 'Guest',
+    email:       '',
+    isGuest:     true,
+    vuxBalance:  0,
+    plan:        'free',
+    limits: {
+      quizzes:    5,
+      aiMessages: 3,
+      games:      3,
+    },
+    createdAt: new Date().toISOString(),
+  };
+  try {
+    localStorage.setItem('vura_guest_mode', 'true');
+    localStorage.setItem('vura_guest_user', JSON.stringify(guest));
+  } catch { /* localStorage may be blocked */ }
+
+  // Show brief info toast then redirect
+  window.showToast('Continuing as Guest — sign up to save your progress!', 'info');
+  setTimeout(() => { window.location.href = 'appskeleton.html'; }, 1400);
+});
+
+/* ── Stars animation ─────────────────────────────────────── */
+(function() {
+  const canvas = document.getElementById('stars-canvas');
+  const ctx    = canvas.getContext('2d');
+  let W, H, stars = [];
+  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  resize(); window.addEventListener('resize', resize);
+  class Star {
+    constructor() { this.reset(); }
+    reset() {
+      this.x = Math.random() * W; this.y = Math.random() * H;
+      this.r = Math.random() * 1.4 + 0.2;
+      this.a = Math.random() * 0.65 + 0.1;
+      this.sp = Math.random() * 0.003 + 0.001;
+      this.ph = Math.random() * Math.PI * 2;
+    }
+    draw(t) {
+      const a = this.a * (0.5 + 0.5 * Math.sin(t * this.sp * 60 + this.ph));
+      ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255,255,255,${a})`; ctx.fill();
+    }
+  }
+  for (let i = 0; i < 170; i++) stars.push(new Star());
+  let t = 0;
+  (function animate() {
+    ctx.clearRect(0,0,W,H); t++;
+    stars.forEach(s => s.draw(t));
+    requestAnimationFrame(animate);
+  })();
+})();
 </script>
 </body>
 </html>
