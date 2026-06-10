@@ -905,12 +905,25 @@ function renderArticles(data) {
   document.getElementById('articleCount').textContent = data.length;
 
   if (!data.length) {
-    grid.innerHTML = `
-      <div class="no-results">
-        <div class="no-results-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-        <h3>No articles found</h3>
-        <p>Try a different search term or category filter.</p>
-      </div>`;
+    if (typeof VuraError !== 'undefined') {
+      // Use a wrapper div so VuraError.showInline works inside the grid
+      const emptyWrap = document.createElement('div');
+      emptyWrap.style.cssText = 'grid-column:1/-1';
+      grid.appendChild(emptyWrap);
+      VuraError.showInline(emptyWrap, 'empty', {
+        headline: 'No Articles Found',
+        message:  'Try a different search term or select another category.',
+        btnLabel: 'Clear Search',
+        onRetry:  function() { window.clearSearch(); }
+      });
+    } else {
+      grid.innerHTML = `
+        <div class="no-results">
+          <div class="no-results-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <h3>No articles found</h3>
+          <p>Try a different search term or category filter.</p>
+        </div>`;
+    }
     return;
   }
 
@@ -1227,6 +1240,22 @@ document.addEventListener('DOMContentLoaded', () => {
   applyFilters();
   renderRelated();
   observeReveal();
+});
+</script>
+
+<!-- ===== VURA ERROR STATES SYSTEM ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script src="error-states.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof VuraError !== 'undefined') {
+    VuraError.watchNetwork({
+      onReconnect: function() {
+        VuraError.showLoading('Back online! Reloading articles...');
+        setTimeout(function() { location.reload(); }, 1200);
+      }
+    });
+  }
 });
 </script>
 </body>

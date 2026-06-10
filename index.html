@@ -1917,5 +1917,22 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 </script>
+
+<!-- ===== VURA ERROR STATES SYSTEM ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script src="error-states.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Global network monitor — fires on every page visit
+  if (typeof VuraError !== 'undefined') {
+    VuraError.watchNetwork({
+      onReconnect: function() {
+        VuraError.showLoading('Reconnected! Refreshing...');
+        setTimeout(function() { location.reload(); }, 1200);
+      }
+    });
+  }
+});
+</script>
 </body>
 </html>

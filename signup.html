@@ -1033,6 +1033,11 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
 
   setLoading(true);
 
+  // Show loading state via VuraError
+  if (typeof VuraError !== 'undefined') {
+    VuraError.showLoading('Creating your account...');
+  }
+
   try {
     // Create Firebase auth account
     const cred = await createUserWithEmailAndPassword(auth, email, password);
@@ -1044,12 +1049,20 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
     // Create Firestore documents
     await createUserProfile(user.uid, name, email, referral);
 
-    // Success!
+    // Dismiss loading, show success
+    if (typeof VuraError !== 'undefined') VuraError.dismiss();
     triggerSuccess();
 
   } catch (err) {
+    if (typeof VuraError !== 'undefined') VuraError.dismiss();
     setLoading(false);
     const msg = friendlyError(err.code);
+
+    // Network error — show VuraError overlay
+    if (err.code === 'auth/network-request-failed' && typeof VuraError !== 'undefined') {
+      VuraError.showNoInternet({ onRetry: () => location.reload() });
+      return;
+    }
 
     // Map auth errors to specific fields when possible
     if (err.code === 'auth/email-already-in-use' || err.code === 'auth/invalid-email') {
@@ -1078,6 +1091,7 @@ document.getElementById('btnGoogle').addEventListener('click', async () => {
       // New user — create profile
       const referral = document.getElementById('referral').value.trim().toUpperCase();
       await createUserProfile(user.uid, user.displayName || 'Vura Student', user.email, referral);
+      if (typeof VuraError !== 'undefined') VuraError.dismiss();
       triggerSuccess();
     } else {
       // Existing user — redirect to dashboard
@@ -1086,7 +1100,9 @@ document.getElementById('btnGoogle').addEventListener('click', async () => {
 
   } catch (err) {
     setGoogleLoading(false);
-    if (err.code !== 'auth/popup-closed-by-user' && err.code !== 'auth/cancelled-popup-request') {
+    if (err.code === 'auth/network-request-failed' && typeof VuraError !== 'undefined') {
+      VuraError.showNoInternet({ onRetry: () => location.reload() });
+    } else if (err.code !== 'auth/popup-closed-by-user' && err.code !== 'auth/cancelled-popup-request') {
       showToast(friendlyError(err.code), 'error');
     }
   }
@@ -1247,6 +1263,22 @@ function startConfetti() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   }, 3000);
 }
+</script>
+
+<!-- ===== VURA ERROR STATES SYSTEM ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script src="error-states.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof VuraError !== 'undefined') {
+    VuraError.watchNetwork({
+      onReconnect: function() {
+        VuraError.showLoading('Back online! Resuming...');
+        setTimeout(function() { location.reload(); }, 1200);
+      }
+    });
+  }
+});
 </script>
 
 </body>

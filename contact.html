@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact Us — Vura AI</title>
+<meta name="description" content="Get in touch with the Vura AI team. We're here to help with any questions about our AI-powered exam preparation platform."/>
+<link rel="icon" type="image/png" href="vura-logo.png"/>
+<link rel="apple-touch-icon" href="vura-logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Nunito',sans-serif;background:#03030b;color:#e8e8f0;overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;outline:none;font-family:'Nunito',sans-serif}
+input,select,textarea{outline:none;font-family:'Nunito',sans-serif}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#03030b}
+::-webkit-scrollbar-thumb{background:#9d50bb;border-radius:3px}
+
+/* ============================================================
+   VARIABLES
+   ============================================================ */
+:root{
+  --blue:#00d2ff;--purple:#9d50bb;--gold:#ffcc33;--green:#10b981;--red:#ff4d6d;
+  --bg:#03030b;--card:rgba(13,13,40,.92);--border:rgba(255,255,255,.08);
+  --muted:#8888aa;--grad:linear-gradient(135deg,#00d2ff,#9d50bb);
+  --radius:16px;--radius-sm:10px;--transition:.3s cubic-bezier(.4,0,.2,1);
+}
+
+/* ============================================================
+   CANVAS & NEBULA
+   ============================================================ */
+#stars-canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.nebula{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.nb1{position:absolute;width:700px;height:700px;top:-250px;left:-200px;
+  background:radial-gradient(circle,rgba(157,80,187,.12) 0%,transparent 65%);border-radius:50%;
+  animation:nbf 20s ease-in-out infinite alternate}
+.nb2{position:absolute;width:550px;height:550px;bottom:-180px;right:-150px;
+  background:radial-gradient(circle,rgba(0,210,255,.1) 0%,transparent 65%);border-radius:50%;
+  animation:nbf 16s ease-in-out infinite alternate-reverse}
+@keyframes nbf{0%{transform:translate(0,0) scale(1)}100%{transform:translate(40px,28px) scale(1.08)}}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:var(--transition)}
+nav.scrolled{background:rgba(3,3,11,.93);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06);box-shadow:0 4px 30px rgba(0,0,0,.4)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-logo{font-family:'Orbitron',sans-serif;font-size:1.3rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:2px}
+.nav-menu{display:flex;align-items:center;list-style:none;gap:28px}
+.nav-menu a{font-size:.9rem;font-weight:600;color:var(--muted);transition:var(--transition);position:relative}
+.nav-menu a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--grad);transition:var(--transition);border-radius:1px}
+.nav-menu a:hover{color:#fff}
+.nav-menu a:hover::after{width:100%}
+.nav-menu a.active{color:var(--blue)}
+.nav-menu a.active::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.btn-nav-outline{padding:9px 20px;border-radius:50px;background:transparent;border:1.5px solid rgba(255,255,255,.18);color:#fff;font-size:.88rem;font-weight:700;transition:var(--transition);min-height:44px}
+.btn-nav-outline:hover{border-color:var(--blue);color:var(--blue)}
+.btn-nav-grad{padding:9px 20px;border-radius:50px;background:var(--grad);color:#fff;font-size:.88rem;font-weight:700;transition:var(--transition);min-height:44px;display:flex;align-items:center;gap:7px}
+.btn-nav-grad:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,210,255,.28)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.burger span{display:block;width:24px;height:2px;background:#fff;border-radius:1px;transition:var(--transition)}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(3,3,11,.98);backdrop-filter:blur(30px);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:'Orbitron',sans-serif;font-size:1.3rem;font-weight:700;color:#fff;transition:var(--transition)}
+.mobile-menu a:hover,.mobile-menu a.active{color:var(--blue)}
+.m-close{position:absolute;top:24px;right:24px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--muted);cursor:pointer;font-size:.9rem}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.container{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.section{padding:80px 0;position:relative;z-index:1}
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(30px);transition:.65s cubic-bezier(.4,0,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:.1s}.reveal-d2{transition-delay:.2s}.reveal-d3{transition-delay:.3s}
+
+/* ============================================================
+   PAGE HERO
+   ============================================================ */
+.page-hero{
+  padding:140px 0 70px;text-align:center;
+  background:linear-gradient(180deg,rgba(157,80,187,.05) 0%,transparent 100%);
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 20px;border-radius:50px;background:rgba(0,210,255,.08);border:1px solid rgba(0,210,255,.2);color:var(--blue);font-size:.76rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:22px}
+.hero-title{font-family:'Orbitron',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:900;color:#fff;margin-bottom:14px}
+.hero-title span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:1.05rem;color:var(--muted);max-width:500px;margin:0 auto 32px;line-height:1.7}
+.hero-icon-wrap{
+  width:80px;height:80px;border-radius:20px;margin:0 auto 24px;
+  background:linear-gradient(135deg,rgba(0,210,255,.1),rgba(157,80,187,.1));
+  border:1px solid rgba(0,210,255,.2);
+  display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:var(--blue);
+  animation:heroFloat 4s ease-in-out infinite;
+}
+@keyframes heroFloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+.response-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 20px;border-radius:50px;
+  background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);
+  color:var(--green);font-size:.82rem;font-weight:700;
+  animation:pulseBadge 2.5s ease-in-out infinite;
+}
+@keyframes pulseBadge{0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.2)}50%{box-shadow:0 0 0 8px rgba(16,185,129,0)}}
+
+/* ============================================================
+   CONTACT GRID
+   ============================================================ */
+.contact-grid{
+  display:grid;grid-template-columns:1.2fr 1fr;
+  gap:40px;align-items:start;
+}
+
+/* ============================================================
+   CONTACT FORM
+   ============================================================ */
+.form-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:40px 36px;
+  position:relative;overflow:hidden;
+}
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.form-card-title{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.form-card-sub{font-size:.88rem;color:var(--muted);margin-bottom:28px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fg{margin-bottom:16px;position:relative}
+.flabel{display:block;font-size:.82rem;font-weight:700;color:#c8c8e0;margin-bottom:7px;letter-spacing:.3px}
+.iwrap{position:relative}
+.iico{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.82rem;pointer-events:none;transition:var(--transition)}
+.finput,.fselect,.ftextarea{
+  width:100%;background:rgba(255,255,255,.05);
+  border:1.5px solid rgba(255,255,255,.1);
+  border-radius:var(--radius-sm);
+  color:#fff;font-size:.93rem;font-weight:500;
+  transition:var(--transition);
+}
+.finput{height:48px;padding:0 14px 0 42px}
+.fselect{height:48px;padding:0 14px 0 42px;cursor:pointer;-webkit-appearance:none}
+.fselect option{background:#0d0d28;color:#fff}
+.ftextarea{padding:14px 14px 14px 42px;resize:vertical;min-height:130px;line-height:1.6}
+.finput::placeholder,.ftextarea::placeholder{color:rgba(136,136,170,.55);font-size:.88rem}
+.finput:focus,.fselect:focus,.ftextarea:focus{
+  background:rgba(0,210,255,.06);border-color:rgba(0,210,255,.4);
+  box-shadow:0 0 0 3px rgba(0,210,255,.08);
+}
+.iwrap:focus-within .iico{color:var(--blue)}
+.finput.err,.fselect.err,.ftextarea.err{border-color:rgba(255,77,109,.45);background:rgba(255,77,109,.04)}
+.finput.ok,.fselect.ok,.ftextarea.ok{border-color:rgba(16,185,129,.35)}
+.select-arrow{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.75rem;pointer-events:none}
+.textarea-wrap .iico{top:16px;transform:none}
+.ferr{font-size:.75rem;color:var(--red);display:flex;align-items:center;gap:5px;margin-top:5px;max-height:0;overflow:hidden;opacity:0;transition:max-height .3s ease,opacity .3s ease}
+.ferr.show{max-height:30px;opacity:1}
+.ferr i{font-size:.65rem;flex-shrink:0}
+
+/* Checkbox */
+.checkbox-wrap{display:flex;align-items:flex-start;gap:12px;margin-bottom:20px}
+.fcheckbox{
+  width:20px;height:20px;flex-shrink:0;margin-top:2px;
+  background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.2);
+  border-radius:5px;cursor:pointer;appearance:none;-webkit-appearance:none;
+  transition:var(--transition);position:relative;
+}
+.fcheckbox:checked{background:var(--blue);border-color:var(--blue)}
+.fcheckbox:checked::after{content:'✓';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.75rem;font-weight:800}
+.checkbox-label{font-size:.83rem;color:var(--muted);line-height:1.5;cursor:pointer}
+.checkbox-label a{color:var(--blue);transition:var(--transition)}
+.checkbox-label a:hover{text-decoration:underline}
+
+/* Submit btn */
+.btn-submit{
+  width:100%;height:52px;border-radius:var(--radius-sm);
+  background:var(--grad);color:#fff;
+  font-size:1rem;font-weight:800;letter-spacing:.3px;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  transition:var(--transition);position:relative;overflow:hidden;
+  box-shadow:0 0 28px rgba(0,210,255,.18);
+}
+.btn-submit::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent);transition:.6s}
+.btn-submit:hover::before{left:100%}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 10px 36px rgba(0,210,255,.32)}
+.btn-submit:disabled{opacity:.55;cursor:not-allowed;transform:none!important;box-shadow:none}
+.spinner{width:20px;height:20px;border-radius:50%;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;animation:spin .7s linear infinite;flex-shrink:0}
+@keyframes spin{100%{transform:rotate(360deg)}}
+
+/* Success state */
+.form-success{
+  display:none;text-align:center;padding:24px;
+}
+.form-success.show{display:block}
+.success-circle{
+  width:80px;height:80px;border-radius:50%;
+  background:rgba(16,185,129,.1);border:2px solid rgba(16,185,129,.3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:2rem;color:var(--green);margin:0 auto 16px;
+  animation:popIn .5s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes popIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.success-title{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:8px}
+.success-sub{font-size:.88rem;color:var(--muted);line-height:1.6;margin-bottom:20px}
+.btn-send-another{padding:10px 24px;border-radius:50px;background:rgba(0,210,255,.1);border:1px solid rgba(0,210,255,.2);color:var(--blue);font-size:.88rem;font-weight:700;transition:var(--transition)}
+.btn-send-another:hover{background:rgba(0,210,255,.18)}
+
+/* ============================================================
+   CONTACT INFO COLUMN
+   ============================================================ */
+.info-title{font-family:'Orbitron',sans-serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.info-cards{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
+.info-card{
+  padding:20px;background:var(--card);
+  border:1px solid var(--border);border-radius:var(--radius-sm);
+  display:flex;align-items:flex-start;gap:16px;
+  transition:var(--transition);
+}
+.info-card:hover{border-color:rgba(0,210,255,.2);transform:translateX(4px);box-shadow:0 8px 30px rgba(0,210,255,.07)}
+.info-icon{
+  width:44px;height:44px;border-radius:10px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:1rem;
+}
+.ii-b{background:rgba(0,210,255,.1);color:var(--blue)}
+.ii-g{background:rgba(16,185,129,.1);color:var(--green)}
+.ii-p{background:rgba(157,80,187,.1);color:var(--purple)}
+.ii-gold{background:rgba(255,204,51,.1);color:var(--gold)}
+.info-card-body strong{display:block;color:#fff;font-size:.9rem;font-weight:700;margin-bottom:3px}
+.info-card-body p{font-size:.82rem;color:var(--muted);margin-bottom:6px}
+.info-link{display:inline-flex;align-items:center;gap:5px;font-size:.8rem;color:var(--blue);font-weight:700;transition:var(--transition)}
+.info-link:hover{gap:8px}
+.info-link i{font-size:.65rem}
+
+/* Social row */
+.social-title{font-size:.75rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
+.social-row{display:flex;gap:10px;flex-wrap:wrap}
+.soc-btn{
+  width:42px;height:42px;border-radius:10px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--muted);font-size:.9rem;transition:var(--transition);
+}
+.soc-btn:hover{background:rgba(0,210,255,.1);border-color:rgba(0,210,255,.2);color:var(--blue);transform:translateY(-2px)}
+
+/* ============================================================
+   RESPONSE TIME BANNER
+   ============================================================ */
+.response-banner{
+  background:linear-gradient(135deg,rgba(0,210,255,.05),rgba(157,80,187,.05));
+  border:1px solid rgba(0,210,255,.1);border-radius:var(--radius-sm);
+  padding:18px 20px;display:flex;align-items:center;gap:14px;margin-top:24px;
+}
+.rb-icon{width:40px;height:40px;border-radius:10px;background:rgba(16,185,129,.1);display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--green);flex-shrink:0}
+.rb-text strong{display:block;color:#fff;font-size:.88rem;font-weight:700;margin-bottom:2px}
+.rb-text span{font-size:.8rem;color:var(--muted)}
+
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+.faq-section{background:linear-gradient(180deg,transparent,rgba(157,80,187,.03),transparent)}
+.section-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 20px;border-radius:50px;background:rgba(0,210,255,.08);border:1px solid rgba(0,210,255,.18);color:var(--blue);font-size:.76rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px}
+.section-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:#fff;margin-bottom:10px}
+.section-sub{font-size:.95rem;color:var(--muted);max-width:550px;margin-bottom:36px;line-height:1.7}
+
+/* FAQ search */
+.faq-search-wrap{position:relative;max-width:480px;margin-bottom:28px}
+.faq-search-ico{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.9rem;pointer-events:none}
+.faq-search{
+  width:100%;height:48px;
+  background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);
+  border-radius:50px;padding:0 44px;
+  color:#fff;font-size:.92rem;font-weight:500;transition:var(--transition);
+}
+.faq-search::placeholder{color:rgba(136,136,170,.55)}
+.faq-search:focus{background:rgba(0,210,255,.05);border-color:rgba(0,210,255,.35);box-shadow:0 0 0 3px rgba(0,210,255,.07)}
+
+/* Accordion */
+.faq-list{display:flex;flex-direction:column;gap:10px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden;transition:var(--transition)}
+.faq-item.open{border-color:rgba(0,210,255,.2)}
+.faq-item.hidden{display:none}
+.faq-q{
+  width:100%;background:none;border:none;
+  padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  cursor:pointer;font-family:'Nunito',sans-serif;font-size:.95rem;font-weight:700;
+  color:#fff;text-align:left;min-height:44px;transition:var(--transition);
+}
+.faq-q:hover{color:var(--blue)}
+.faq-q-icon{
+  width:28px;height:28px;border-radius:8px;flex-shrink:0;
+  background:rgba(0,210,255,.08);border:1px solid rgba(0,210,255,.15);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--blue);font-size:.75rem;transition:var(--transition);
+}
+.faq-item.open .faq-q-icon{background:rgba(0,210,255,.15);transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:.4s cubic-bezier(.4,0,.2,1)}
+.faq-item.open .faq-a{max-height:260px}
+.faq-a-inner{padding:0 22px 20px;font-size:.9rem;color:var(--muted);line-height:1.75}
+.faq-a-inner a{color:var(--blue);transition:var(--transition)}
+.faq-a-inner a:hover{text-decoration:underline}
+.faq-no-results{text-align:center;padding:40px;color:var(--muted);font-size:.9rem;display:none}
+.faq-no-results.show{display:block}
+
+/* ============================================================
+   CONFETTI CANVAS
+   ============================================================ */
+#confetti-canvas{position:fixed;inset:0;z-index:9999;pointer-events:none;width:100%;height:100%}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{padding:60px 0 32px;border-top:1px solid rgba(255,255,255,.05);position:relative;z-index:1}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-logo{font-family:'Orbitron',sans-serif;font-size:1.2rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px}
+.footer-desc{font-size:.85rem;color:var(--muted);line-height:1.7;margin-bottom:18px}
+.footer-socials{display:flex;gap:8px}
+.footer-col-title{font-family:'Orbitron',sans-serif;font-size:.72rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-links a{font-size:.87rem;color:var(--muted);transition:var(--transition);display:inline-flex;align-items:center;gap:5px}
+.footer-links a:hover{color:var(--blue);transform:translateX(3px)}
+.footer-links a i{font-size:.6rem;opacity:.5}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.05)}
+.footer-copy{font-size:.82rem;color:var(--muted)}
+.footer-legal{display:flex;gap:16px;flex-wrap:wrap}
+.footer-legal a{font-size:.82rem;color:var(--muted);transition:var(--transition)}
+.footer-legal a:hover{color:var(--blue)}
+
+/* ============================================================
+   TOAST
+   ============================================================ */
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-90px);z-index:9998;min-width:280px;max-width:460px;padding:13px 18px;border-radius:14px;display:flex;align-items:center;gap:10px;font-size:.87rem;font-weight:600;transition:transform .4s cubic-bezier(.34,1.56,.64,1),opacity .4s ease;opacity:0;backdrop-filter:blur(20px);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.toast.terror{background:rgba(255,77,109,.12);border:1px solid rgba(255,77,109,.25);color:#ff8fa3}
+.toast.tsuccess{background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.25);color:#6ee7b7}
+.toast i{flex-shrink:0}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+@media(max-width:1024px){
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-menu,.nav-cta{display:none}
+  .burger{display:flex}
+  .form-row{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .footer-legal{justify-content:center}
+  .form-card{padding:28px 20px}
+}
+@media(max-width:480px){
+  .contact-grid{gap:28px}
+}
+</style>
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+<div class="nebula"><div class="nb1"></div><div class="nb2"></div></div>
+<canvas id="confetti-canvas"></canvas>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="m-close" id="mClose"><i class="fa-solid fa-xmark"></i></button>
+  <a href="index.html">Home</a>
+  <a href="index.html#features">Features</a>
+  <a href="index.html#exams">Exams</a>
+  <a href="index.html#pricing">Pricing</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="signup.html" style="padding:13px 36px;border-radius:50px;background:var(--grad);font-weight:800;font-family:'Orbitron',sans-serif;font-size:.9rem">Get Started</a>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <i id="toastIcon" class="fa-solid fa-circle-exclamation"></i>
+  <span id="toastMsg"></span>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">VURA AI</a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#exams">Exams</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="login.html" class="btn-nav-outline">Log In</a>
+      <a href="signup.html" class="btn-nav-grad"><i class="fa-solid fa-rocket"></i>Get Started</a>
+    </div>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="hero-icon-wrap reveal"><i class="fa-solid fa-message"></i></div>
+    <div class="hero-badge reveal"><i class="fa-solid fa-headset"></i> Support</div>
+    <h1 class="hero-title reveal">Get in <span>Touch</span></h1>
+    <p class="hero-sub reveal">Have questions? We're here to help. Message us anytime and we'll get back to you within 24 hours.</p>
+    <div class="response-badge reveal">
+      <i class="fa-solid fa-circle" style="font-size:.5rem"></i>
+      Typical response time: under 24 hours
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="form-card reveal">
+        <div class="form-card-title">
+          <i class="fa-solid fa-paper-plane" style="color:var(--blue)"></i>
+          Send us a Message
+        </div>
+        <p class="form-card-sub">Fill in the form below and a member of our team will respond within 24 hours.</p>
+
+        <!-- Success State -->
+        <div class="form-success" id="formSuccess">
+          <div class="success-circle"><i class="fa-solid fa-check"></i></div>
+          <div class="success-title">Message Sent!</div>
+          <p class="success-sub">Thanks for reaching out! We've received your message and will reply to your email within 24 hours.</p>
+          <button class="btn-send-another" onclick="resetForm()">
+            <i class="fa-solid fa-pen"></i> Send Another Message
+          </button>
+        </div>
+
+        <!-- The Form -->
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="fg">
+              <label class="flabel" for="firstName">First Name</label>
+              <div class="iwrap">
+                <input type="text" id="firstName" class="finput" placeholder="Adaeze" autocomplete="given-name" required/>
+                <i class="fa-solid fa-user iico"></i>
+              </div>
+              <div class="ferr" id="firstNameErr"><i class="fa-solid fa-circle-exclamation"></i><span id="firstNameErrMsg"></span></div>
+            </div>
+            <div class="fg">
+              <label class="flabel" for="lastName">Last Name</label>
+              <div class="iwrap">
+                <input type="text" id="lastName" class="finput" placeholder="Okonkwo" autocomplete="family-name" required/>
+                <i class="fa-solid fa-user iico"></i>
+              </div>
+              <div class="ferr" id="lastNameErr"><i class="fa-solid fa-circle-exclamation"></i><span id="lastNameErrMsg"></span></div>
+            </div>
+          </div>
+
+          <div class="fg">
+            <label class="flabel" for="contactEmail">Email Address</label>
+            <div class="iwrap">
+              <input type="email" id="contactEmail" class="finput" placeholder="you@example.com" autocomplete="email" required/>
+              <i class="fa-solid fa-envelope iico"></i>
+            </div>
+            <div class="ferr" id="emailErr"><i class="fa-solid fa-circle-exclamation"></i><span id="emailErrMsg"></span></div>
+          </div>
+
+          <div class="fg">
+            <label class="flabel" for="subject">Subject</label>
+            <div class="iwrap">
+              <select id="subject" class="fselect" required>
+                <option value="">Select a subject...</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Technical Issue">Technical Issue</option>
+                <option value="Feature Request">Feature Request</option>
+                <option value="Billing & Payments">Billing &amp; Payments</option>
+                <option value="Partnership">Partnership</option>
+                <option value="School / Institutional">School / Institutional</option>
+                <option value="Other">Other</option>
+              </select>
+              <i class="fa-solid fa-list iico"></i>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+            <div class="ferr" id="subjectErr"><i class="fa-solid fa-circle-exclamation"></i><span id="subjectErrMsg"></span></div>
+          </div>
+
+          <div class="fg">
+            <label class="flabel" for="message">Message</label>
+            <div class="iwrap textarea-wrap">
+              <textarea id="message" class="ftextarea" placeholder="Tell us how we can help you..." required minlength="10" rows="5"></textarea>
+              <i class="fa-solid fa-message iico"></i>
+            </div>
+            <div class="ferr" id="msgErr"><i class="fa-solid fa-circle-exclamation"></i><span id="msgErrMsg"></span></div>
+          </div>
+
+          <div class="checkbox-wrap">
+            <input type="checkbox" id="agreeTerms" class="fcheckbox"/>
+            <label class="checkbox-label" for="agreeTerms">
+              I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and
+              <a href="privacy.html" target="_blank">Privacy Policy</a>. I consent to Vura AI storing my message for support purposes.
+            </label>
+          </div>
+          <div class="ferr" id="termsErr" style="margin-top:-10px;margin-bottom:14px"><i class="fa-solid fa-circle-exclamation"></i><span id="termsErrMsg"></span></div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- INFO COLUMN -->
+      <div class="reveal reveal-d2">
+        <div class="info-title">
+          <i class="fa-solid fa-satellite-dish" style="color:var(--blue)"></i>
+          Other Ways to Reach Us
+        </div>
+
+        <div class="info-cards">
+          <!-- Email -->
+          <div class="info-card">
+            <div class="info-icon ii-b"><i class="fa-solid fa-envelope"></i></div>
+            <div class="info-card-body">
+              <strong>Email Support</strong>
+              <p>support@vura-ai.com</p>
+              <a href="mailto:support@vura-ai.com" class="info-link">Email us <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Live Chat -->
+          <div class="info-card">
+            <div class="info-icon ii-g"><i class="fa-solid fa-comments"></i></div>
+            <div class="info-card-body">
+              <strong>Live Chat</strong>
+              <p>Available 9am – 6pm WAT (Lagos)</p>
+              <a href="#" class="info-link">Start a chat <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Discord -->
+          <div class="info-card">
+            <div class="info-icon ii-p"><i class="fa-brands fa-discord"></i></div>
+            <div class="info-card-body">
+              <strong>Discord Community</strong>
+              <p>Connect with 10,000+ Vura students</p>
+              <a href="#" class="info-link">Join our server <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Schools -->
+          <div class="info-card">
+            <div class="info-icon ii-gold"><i class="fa-solid fa-school"></i></div>
+            <div class="info-card-body">
+              <strong>School &amp; Institutional</strong>
+              <p>schools@vura-ai.com</p>
+              <a href="mailto:schools@vura-ai.com" class="info-link">Contact our team <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="social-title">Find Us on Social Media</div>
+        <div class="social-row">
+          <a href="#" class="soc-btn" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="soc-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="soc-btn" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="soc-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="soc-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="soc-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <!-- Response time -->
+        <div class="response-banner">
+          <div class="rb-icon"><i class="fa-solid fa-hourglass-end"></i></div>
+          <div class="rb-text">
+            <strong>Under 24-Hour Response</strong>
+            <span>We respond to all messages within one business day, Monday to Saturday.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="text-center reveal" style="text-align:center">
+      <div class="section-badge"><i class="fa-solid fa-circle-question"></i> FAQ</div>
+      <h2 class="section-title">Frequently Asked <span style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Questions</span></h2>
+      <p class="section-sub" style="margin:0 auto 28px">Everything you need to know about Vura AI — answered clearly.</p>
+    </div>
+
+    <div class="faq-search-wrap reveal">
+      <i class="fa-solid fa-magnifying-glass faq-search-ico"></i>
+      <input type="text" class="faq-search" id="faqSearch" placeholder="Search questions..." oninput="filterFAQ(this.value)" autocomplete="off"/>
+    </div>
+
+    <div class="faq-list reveal" id="faqList">
+      <!-- Populated by JS -->
+    </div>
+    <div class="faq-no-results" id="faqNoResults">
+      <i class="fa-solid fa-magnifying-glass" style="font-size:2rem;color:var(--muted);display:block;margin-bottom:12px"></i>
+      No questions found for that search. Try different keywords.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">VURA AI</div>
+        <p class="footer-desc">The global AI study platform helping students in 50+ countries pass their national exams and unlock their future.</p>
+        <div class="footer-socials">
+          <a href="#" class="soc-btn"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="soc-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="soc-btn"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="soc-btn"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="soc-btn"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Platform</div>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+          <li><a href="index.html#features"><i class="fa-solid fa-chevron-right"></i>Features</a></li>
+          <li><a href="index.html#pricing"><i class="fa-solid fa-chevron-right"></i>Pricing</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i>Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Account</div>
+        <ul class="footer-links">
+          <li><a href="signup.html"><i class="fa-solid fa-chevron-right"></i>Sign Up Free</a></li>
+          <li><a href="login.html"><i class="fa-solid fa-chevron-right"></i>Log In</a></li>
+          <li><a href="onboarding.html"><i class="fa-solid fa-chevron-right"></i>Get Started</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <ul class="footer-links">
+          <li><a href="terms.html"><i class="fa-solid fa-chevron-right"></i>Terms</a></li>
+          <li><a href="privacy.html"><i class="fa-solid fa-chevron-right"></i>Privacy</a></li>
+          <li><a href="cookies.html"><i class="fa-solid fa-chevron-right"></i>Cookies</a></li>
+          <li><a href="refund.html"><i class="fa-solid fa-chevron-right"></i>Refunds</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 Vura AI — A Product of <strong style="color:var(--blue)">Michael Chibuzor Technology</strong>. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FIREBASE -->
+<script type="module">
+import { initializeApp }      from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+import { getFirestore, collection, addDoc, serverTimestamp }
+                              from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+
+const firebaseConfig = {
+  apiKey:            "AIzaSyAmk0Nyxfk4u9q_Ma2esj4ch8XMW6e49o4",
+  authDomain:        "vura-ai2026.firebaseapp.com",
+  projectId:         "vura-ai2026",
+  storageBucket:     "vura-ai2026.firebasestorage.app",
+  messagingSenderId: "973528287420",
+  appId:             "1:973528287420:web:bceffa7ce783add77528b9"
+};
+
+const app = initializeApp(firebaseConfig);
+const db  = getFirestore(app);
+
+window._submitContactForm = async function(data) {
+  await addDoc(collection(db, 'contact_messages'), {
+    firstName: data.firstName,
+    lastName:  data.lastName,
+    email:     data.email,
+    subject:   data.subject,
+    message:   data.message,
+    timestamp: serverTimestamp(),
+    status:    'new',
+    read:      false,
+    source:    'contact_page',
+  });
+};
+</script>
+
+<script>
+/* ============================================================
+   FAQ DATA
+   ============================================================ */
+const faqs = [
+  {
+    q: 'Is Vura AI really free?',
+    a: 'Yes! Our Free tier includes 5 quizzes per day, basic AI Tutor access, 300 VUX welcome coins, and access to the community. Upgrade to Pro (₦3,500/mo) for unlimited quizzes, full AI Tutor, and all features.',
+  },
+  {
+    q: 'Which exams does Vura AI support?',
+    a: 'We cover 20+ national and international exams: JAMB, WAEC, NECO, KCSE, NSC Matric, NEET, JEE Main &amp; Advanced, Gaokao, CSAT, SAT, ACT, GCSE, A-Levels, YKS, MDCAT, ECAT, SPM, STPM, GST, and more. We add new exams regularly.',
+  },
+  {
+    q: 'How do VUX coins work?',
+    a: 'VUX is Vura\'s virtual reward currency. Earn VUX by logging in daily (+200), completing quizzes (score-based), playing games (+5 per session), and referring friends (bonus). Spend VUX to unlock premium study packs, VIP study rooms, leaderboard boosts, and exclusive badges.',
+  },
+  {
+    q: 'Can I get a refund?',
+    a: 'Yes! We offer a full 7-day money-back guarantee on all paid plans. If you\'re not satisfied within 7 days of your first payment, contact us at support@vura-ai.com and we\'ll process a full refund. See our <a href="refund.html">Refund Policy</a> for details.',
+  },
+  {
+    q: 'How does the AI Tutor work?',
+    a: 'Ask our AI Tutor any academic question related to your exam subjects — in plain language, just like texting a teacher. It explains concepts step by step, gives worked examples, provides memory aids, and adapts to your learning pace over time. Available 24/7 on all paid plans.',
+  },
+  {
+    q: 'Can I study offline?',
+    a: 'Not yet — all features currently require an internet connection. Offline study mode is on our roadmap and will be available for Ultra plan subscribers. Follow our blog for updates on when this launches.',
+  },
+  {
+    q: 'Is my data secure?',
+    a: 'Absolutely. We use Google Firebase (Google Cloud infrastructure) with industry-standard encryption for data in transit (TLS/SSL) and at rest. We never sell your personal data to third parties. Read our full <a href="privacy.html">Privacy Policy</a> for details.',
+  },
+  {
+    q: 'How do I reset my password?',
+    a: 'Click "Forgot Password?" on the <a href="login.html">login page</a>, enter your registered email address, and we\'ll send you a reset link instantly. The link expires after 1 hour for security.',
+  },
+  {
+    q: 'Can schools use Vura AI?',
+    a: 'Absolutely! We offer school and institutional licences with custom dashboards for teachers to monitor student progress, assign practice tests, and track class performance. Email us at schools@vura-ai.com for bulk pricing.',
+  },
+  {
+    q: 'How often is content updated?',
+    a: 'We add new past questions, AI explanations, and study content every week. When exam bodies release new past papers, we process and add them to the platform within days. Subscribe to our newsletter or follow the blog for weekly updates.',
+  },
+];
+
+/* ============================================================
+   RENDER FAQ
+   ============================================================ */
+function renderFAQ(list) {
+  const container = document.getElementById('faqList');
+  container.innerHTML = '';
+  list.forEach((faq, i) => {
+    const item = document.createElement('div');
+    item.className = 'faq-item';
+    item.innerHTML = `
+      <button class="faq-q" aria-expanded="false">
+        <span>${faq.q}</span>
+        <span class="faq-q-icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-a" role="region">
+        <div class="faq-a-inner">${faq.a}</div>
+      </div>
+    `;
+    item.querySelector('.faq-q').addEventListener('click', () => toggleFAQ(item));
+    container.appendChild(item);
+  });
+}
+
+function toggleFAQ(item) {
+  const isOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-item.open').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+  });
+  if (!isOpen) {
+    item.classList.add('open');
+    item.querySelector('.faq-q').setAttribute('aria-expanded','true');
+  }
+}
+
+window.filterFAQ = function(val) {
+  const q       = val.trim().toLowerCase();
+  const items   = document.querySelectorAll('.faq-item');
+  const noRes   = document.getElementById('faqNoResults');
+  let visible   = 0;
+  items.forEach((item, i) => {
+    const text = faqs[i].q.toLowerCase() + ' ' + faqs[i].a.toLowerCase();
+    const show  = !q || text.includes(q);
+    item.classList.toggle('hidden', !show);
+    if (show) visible++;
+  });
+  noRes.classList.toggle('show', visible === 0);
+};
+
+renderFAQ(faqs);
+
+/* ============================================================
+   FORM VALIDATION
+   ============================================================ */
+function showErr(errId, msgId, inputId, msg) {
+  document.getElementById(msgId).textContent = msg;
+  document.getElementById(errId).classList.add('show');
+  const inp = document.getElementById(inputId);
+  if (inp) { inp.classList.add('err'); inp.classList.remove('ok'); }
+}
+function clearErr(errId, inputId) {
+  document.getElementById(errId).classList.remove('show');
+  const inp = document.getElementById(inputId);
+  if (inp) { inp.classList.remove('err'); }
+}
+function markOk(inputId) {
+  const inp = document.getElementById(inputId);
+  if (inp) { inp.classList.add('ok'); inp.classList.remove('err'); }
+}
+
+function validateForm() {
+  let ok = true;
+  const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const fn = document.getElementById('firstName').value.trim();
+  if (!fn) { showErr('firstNameErr','firstNameErrMsg','firstName','Please enter your first name'); ok=false; }
+  else if (fn.length < 2) { showErr('firstNameErr','firstNameErrMsg','firstName','Name must be at least 2 characters'); ok=false; }
+  else { clearErr('firstNameErr','firstName'); markOk('firstName'); }
+
+  const ln = document.getElementById('lastName').value.trim();
+  if (!ln) { showErr('lastNameErr','lastNameErrMsg','lastName','Please enter your last name'); ok=false; }
+  else { clearErr('lastNameErr','lastName'); markOk('lastName'); }
+
+  const em = document.getElementById('contactEmail').value.trim();
+  if (!em) { showErr('emailErr','emailErrMsg','contactEmail','Please enter your email address'); ok=false; }
+  else if (!emailReg.test(em)) { showErr('emailErr','emailErrMsg','contactEmail','Please enter a valid email address'); ok=false; }
+  else { clearErr('emailErr','contactEmail'); markOk('contactEmail'); }
+
+  const sub = document.getElementById('subject').value;
+  if (!sub) { showErr('subjectErr','subjectErrMsg','subject','Please select a subject'); ok=false; }
+  else { clearErr('subjectErr','subject'); markOk('subject'); }
+
+  const msg = document.getElementById('message').value.trim();
+  if (!msg) { showErr('msgErr','msgErrMsg','message','Please enter your message'); ok=false; }
+  else if (msg.length < 10) { showErr('msgErr','msgErrMsg','message','Message must be at least 10 characters'); ok=false; }
+  else { clearErr('msgErr','message'); markOk('message'); }
+
+  const agreed = document.getElementById('agreeTerms').checked;
+  if (!agreed) { showErr('termsErr','termsErrMsg','agreeTerms','Please agree to the terms to continue'); ok=false; }
+  else { clearErr('termsErr','agreeTerms'); }
+
+  return ok;
+}
+
+// Clear errors on input
+['firstName','lastName','contactEmail','subject','message'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('input', () => {
+    const errMap = { firstName:'firstNameErr', lastName:'lastNameErr', contactEmail:'emailErr', subject:'subjectErr', message:'msgErr' };
+    clearErr(errMap[id], id);
+  });
+});
+
+/* ============================================================
+   FORM SUBMIT
+   ============================================================ */
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  if (!validateForm()) return;
+
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<div class="spinner"></div> Sending...';
+
+  const data = {
+    firstName: document.getElementById('firstName').value.trim(),
+    lastName:  document.getElementById('lastName').value.trim(),
+    email:     document.getElementById('contactEmail').value.trim(),
+    subject:   document.getElementById('subject').value,
+    message:   document.getElementById('message').value.trim(),
+  };
+
+  try {
+    if (typeof VuraError !== 'undefined') VuraError.showLoading('Sending your message...');
+
+    if (typeof window._submitContactForm === 'function') {
+      await window._submitContactForm(data);
+    } else {
+      // Firebase not yet loaded — retry once
+      await new Promise(r => setTimeout(r, 1200));
+      if (typeof window._submitContactForm === 'function') {
+        await window._submitContactForm(data);
+      }
+    }
+
+    if (typeof VuraError !== 'undefined') VuraError.dismiss();
+
+    // Show success
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').classList.add('show');
+    startConfetti();
+
+  } catch(err) {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+    if (typeof VuraError !== 'undefined') {
+      if (!navigator.onLine) {
+        VuraError.showNoInternet({ onRetry: () => btn.closest('form').requestSubmit() });
+      } else {
+        VuraError.showServerError({
+          message: 'Message failed to send. Please try again or email support@vura-ai.com directly.',
+          onRetry: () => { VuraError.dismiss(); btn.closest('form').dispatchEvent(new Event('submit')); }
+        });
+      }
+    } else {
+      showToast('Failed to send message. Please try again or email us directly.', 'error');
+    }
+  }
+});
+
+window.resetForm = function() {
+  document.getElementById('contactForm').reset();
+  document.getElementById('contactForm').style.display = 'block';
+  document.getElementById('formSuccess').classList.remove('show');
+  document.querySelectorAll('.finput,.fselect,.ftextarea').forEach(el => el.classList.remove('ok','err'));
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = false;
+  btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+};
+
+/* ============================================================
+   TOAST
+   ============================================================ */
+function showToast(msg, type) {
+  const t   = document.getElementById('toast');
+  const ico = document.getElementById('toastIcon');
+  const m   = document.getElementById('toastMsg');
+  t.className = `toast show ${type === 'error' ? 'terror' : 'tsuccess'}`;
+  ico.className = type === 'error' ? 'fa-solid fa-circle-exclamation' : 'fa-solid fa-circle-check';
+  m.textContent = msg;
+  clearTimeout(t._t);
+  t._t = setTimeout(() => t.classList.remove('show'), 5000);
+}
+
+/* ============================================================
+   CONFETTI
+   ============================================================ */
+function startConfetti() {
+  const canvas = document.getElementById('confetti-canvas');
+  const ctx    = canvas.getContext('2d');
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+  const colors  = ['#00d2ff','#9d50bb','#ffcc33','#10b981','#ff4d6d','#fff'];
+  const pieces  = Array.from({length:120}, () => ({
+    x: Math.random() * canvas.width,
+    y: -20,
+    w: Math.random() * 10 + 4, h: Math.random() * 6 + 3,
+    color: colors[Math.floor(Math.random()*colors.length)],
+    rot: Math.random()*360, vx:(Math.random()-.5)*4,
+    vy: Math.random()*3+2, vr:(Math.random()-.5)*8, alpha:1,
+  }));
+  let frame;
+  (function draw() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    let alive = false;
+    pieces.forEach(p => {
+      p.x+=p.vx;p.y+=p.vy;p.vy+=.08;p.rot+=p.vr;
+      if(p.y>canvas.height*.75)p.alpha-=.03;
+      if(p.alpha>0){
+        alive=true;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rot*Math.PI/180);
+        ctx.globalAlpha=Math.max(0,p.alpha);ctx.fillStyle=p.color;
+        ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);ctx.restore();
+      }
+    });
+    if(alive)frame=requestAnimationFrame(draw);
+    else ctx.clearRect(0,0,canvas.width,canvas.height);
+  })();
+  setTimeout(()=>{cancelAnimationFrame(frame);ctx.clearRect(0,0,canvas.width,canvas.height)},3200);
+}
+
+/* ============================================================
+   NAV & MOBILE MENU
+   ============================================================ */
+window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',scrollY>40));
+document.getElementById('burger').addEventListener('click',()=>{
+  document.getElementById('burger').classList.toggle('open');
+  document.getElementById('mobileMenu').classList.toggle('open');
+  document.body.style.overflow=document.getElementById('mobileMenu').classList.contains('open')?'hidden':'';
+});
+document.getElementById('mClose').addEventListener('click',()=>{
+  document.getElementById('burger').classList.remove('open');
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.body.style.overflow='';
+});
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+const revealIO = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealIO.unobserve(e.target)}});
+},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealIO.observe(el));
+
+/* ============================================================
+   STARS
+   ============================================================ */
+(function(){
+  const canvas=document.getElementById('stars-canvas');
+  const ctx=canvas.getContext('2d');
+  let W,H,stars=[];
+  function resize(){W=canvas.width=innerWidth;H=canvas.height=innerHeight}
+  resize();window.addEventListener('resize',resize);
+  for(let i=0;i<180;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.3+.2,a:Math.random()*.6+.1,sp:Math.random()*.003+.001,ph:Math.random()*Math.PI*2});
+  let t=0;
+  (function draw(){ctx.clearRect(0,0,W,H);t++;stars.forEach(s=>{const a=s.a*(.5+.5*Math.sin(t*s.sp*60+s.ph));ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle=`rgba(255,255,255,${a})`;ctx.fill()});requestAnimationFrame(draw)})();
+})();
+</script>
+
+<!-- ===== VURA ERROR STATES SYSTEM ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script src="error-states.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof VuraError !== 'undefined') {
+    VuraError.watchNetwork({
+      onReconnect: function() {
+        VuraError.showLoading('Back online! Resuming...');
+        setTimeout(function() { location.reload(); }, 1200);
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
